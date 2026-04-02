@@ -1,0 +1,42 @@
+﻿version: 1
+allow_new_claims: false
+fail_fast: true
+auto_recovery: false
+allow_partial_output: false
+hard_fail_issue_types:
+  - schema_invalid
+  - missing_source_card_ids
+  - missing_evidence_refs
+  - unsupported_claim
+  - contradiction
+  - allow_new_claims_violation
+  - missing_section
+domains:
+  - domain: 300hPa
+    label_ko: 300hPa
+    role: upper_dynamics
+    priority: 100
+  - domain: 500hPa
+    label_ko: 500hPa
+    role: midlevel_synoptic
+    priority: 95
+  - domain: 850hPa
+    label_ko: 850hPa
+    role: lower_moisture
+    priority: 90
+  - domain: 925hPa
+    label_ko: 925hPa
+    role: near_surface_flow
+    priority: 80
+  - domain: surface
+    label_ko: 지상 6시간 일기도
+    role: surface_analysis
+    priority: 92
+  - domain: sfc12h_synoptic
+    label_ko: 지상 12시간 종관 일기도
+    role: surface_synoptic
+    priority: 85
+  - domain: satellite_wv
+    label_ko: 위성 WV
+    role: satellite_response
+    priority: 88

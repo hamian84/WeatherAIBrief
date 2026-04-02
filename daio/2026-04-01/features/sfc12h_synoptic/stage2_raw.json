@@ -1,0 +1,2466 @@
+﻿{
+  "manifest_id": "synoptic_sfc12h_stage2",
+  "domain": "sfc12h_synoptic",
+  "stage": "stage2",
+  "run_date": "2026-04-01",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": "synoptic_sfc12h_stage1",
+  "images": [
+    {
+      "source_image": "dain/2026-04-01/charts/nuri/surf_12h_2026033100.png",
+      "image_ref": "surf_12h_2026033100",
+      "valid_time": "2026033100",
+      "batch_index": 1,
+      "batch_count": 3,
+      "prompt_rows": [
+        {
+          "question_id": "stage2_manchuria_s_synoptic_high_center_relative_position",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_frontal_zone_relative_position",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_frontal_zone_type",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_surface_ridge_axis_relative_position",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_tight_pressure_gradient_zone_strength",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_movement_signal_direction",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_movement_signal_speed_class",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_synoptic_high_center_relative_position",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_surface_ridge_axis_relative_position",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_tight_pressure_gradient_zone_strength",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_movement_signal_direction",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_movement_signal_speed_class",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_synoptic_low_center_relative_position",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_surface_trough_axis_relative_position",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_gale_wind_area_strength",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_tight_pressure_gradient_zone_strength",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_movement_signal_direction",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_movement_signal_speed_class",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_synoptic_high_center_relative_position",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_surface_ridge_axis_relative_position",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_tight_pressure_gradient_zone_strength",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_movement_signal_direction",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_movement_signal_speed_class",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_synoptic_low_center_relative_position",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        }
+      ],
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\2026-04-01\\charts\\nuri\\surf_12h_2026033100.png",
+          "prompt_text": "You are a weather feature extraction assistant.\nAnalyze the attached synoptic chart image.\nAnswer every question below with exactly one value from the allowed_answers list.\nThe answer field must copy one allowed_answers value verbatim.\nDo not paraphrase, translate, inflect, pluralize, add adverbs, or add explanatory words.\nIf the best label is 'continuous', return 'continuous' exactly, not 'continuously'.\nIf you are uncertain, return 'unknown' exactly when 'unknown' is allowed.\nBefore returning JSON, verify that every answer value exactly matches one of the allowed_answers values for that question.\nKeep question_id unchanged.\nReturn JSON only that matches the provided schema.\nmanifest_id=synoptic_sfc12h_stage2\ndomain=sfc12h_synoptic\nstage=stage2\nimage_ref=surf_12h_2026033100\nvalid_time=2026033100\nQuestions:\n1. question_id=stage2_manchuria_s_synoptic_high_center_relative_position | region_id=manchuria_s | region_label=만주 남부 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=41~47N | lon_range=120~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n2. question_id=stage2_manchuria_s_frontal_zone_relative_position | region_id=manchuria_s | region_label=만주 남부 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=41~47N | lon_range=120~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n3. question_id=stage2_manchuria_s_frontal_zone_type | region_id=manchuria_s | region_label=만주 남부 | signal_key=frontal_zone | attribute_key=type | lat_range=41~47N | lon_range=120~130E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?\n4. question_id=stage2_manchuria_s_surface_ridge_axis_relative_position | region_id=manchuria_s | region_label=만주 남부 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=41~47N | lon_range=120~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?\n5. question_id=stage2_manchuria_s_tight_pressure_gradient_zone_strength | region_id=manchuria_s | region_label=만주 남부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=41~47N | lon_range=120~130E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n6. question_id=stage2_manchuria_s_movement_signal_direction | region_id=manchuria_s | region_label=만주 남부 | signal_key=movement_signal | attribute_key=direction | lat_range=41~47N | lon_range=120~130E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n7. question_id=stage2_manchuria_s_movement_signal_speed_class | region_id=manchuria_s | region_label=만주 남부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=41~47N | lon_range=120~130E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n8. question_id=stage2_liao_bohai_synoptic_high_center_relative_position | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=38~41N | lon_range=120~123E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n9. question_id=stage2_liao_bohai_surface_ridge_axis_relative_position | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=38~41N | lon_range=120~123E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?\n10. question_id=stage2_liao_bohai_tight_pressure_gradient_zone_strength | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=38~41N | lon_range=120~123E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n11. question_id=stage2_liao_bohai_movement_signal_direction | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=movement_signal | attribute_key=direction | lat_range=38~41N | lon_range=120~123E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n12. question_id=stage2_liao_bohai_movement_signal_speed_class | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=movement_signal | attribute_key=speed_class | lat_range=38~41N | lon_range=120~123E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n13. question_id=stage2_ws_mid_synoptic_low_center_relative_position | region_id=ws_mid | region_label=서해 중부 | signal_key=synoptic_low_center | attribute_key=relative_position | lat_range=35~38N | lon_range=122~126E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?\n14. question_id=stage2_ws_mid_surface_trough_axis_relative_position | region_id=ws_mid | region_label=서해 중부 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=35~38N | lon_range=122~126E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n15. question_id=stage2_ws_mid_gale_wind_area_strength | region_id=ws_mid | region_label=서해 중부 | signal_key=gale_wind_area | attribute_key=strength | lat_range=35~38N | lon_range=122~126E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?\n16. question_id=stage2_ws_mid_tight_pressure_gradient_zone_strength | region_id=ws_mid | region_label=서해 중부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=35~38N | lon_range=122~126E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n17. question_id=stage2_ws_mid_movement_signal_direction | region_id=ws_mid | region_label=서해 중부 | signal_key=movement_signal | attribute_key=direction | lat_range=35~38N | lon_range=122~126E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n18. question_id=stage2_ws_mid_movement_signal_speed_class | region_id=ws_mid | region_label=서해 중부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=35~38N | lon_range=122~126E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n19. question_id=stage2_kp_north_synoptic_high_center_relative_position | region_id=kp_north | region_label=한반도 북부 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=37~40N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n20. question_id=stage2_kp_north_surface_ridge_axis_relative_position | region_id=kp_north | region_label=한반도 북부 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=37~40N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?\n21. question_id=stage2_kp_north_tight_pressure_gradient_zone_strength | region_id=kp_north | region_label=한반도 북부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=37~40N | lon_range=124~130E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n22. question_id=stage2_kp_north_movement_signal_direction | region_id=kp_north | region_label=한반도 북부 | signal_key=movement_signal | attribute_key=direction | lat_range=37~40N | lon_range=124~130E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n23. question_id=stage2_kp_north_movement_signal_speed_class | region_id=kp_north | region_label=한반도 북부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=37~40N | lon_range=124~130E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n24. question_id=stage2_kp_south_synoptic_low_center_relative_position | region_id=kp_south | region_label=한반도 남부 | signal_key=synoptic_low_center | attribute_key=relative_position | lat_range=33~37N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?"
+        },
+        "response": {
+          "id": "resp_09caeeaaab893a520069ce19d158d08190a05f5ec758a2f9a7",
+          "object": "response",
+          "created_at": 1775114705,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775114714,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_09caeeaaab893a520069ce19d285688190989950339fdd6254",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage2_manchuria_s_synoptic_high_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_frontal_zone_relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_frontal_zone_type\",\"answer\":\"warm_front\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_surface_ridge_axis_relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_tight_pressure_gradient_zone_strength\",\"answer\":\"weak\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_movement_signal_direction\",\"answer\":\"southward\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_movement_signal_speed_class\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_synoptic_high_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_surface_ridge_axis_relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_tight_pressure_gradient_zone_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_movement_signal_direction\",\"answer\":\"southward\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_movement_signal_speed_class\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_synoptic_low_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_surface_trough_axis_relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_gale_wind_area_strength\",\"answer\":\"strong\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_tight_pressure_gradient_zone_strength\",\"answer\":\"strong\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_movement_signal_direction\",\"answer\":\"eastward\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_movement_signal_speed_class\",\"answer\":\"fast\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_synoptic_high_center_relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_surface_ridge_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_tight_pressure_gradient_zone_strength\",\"answer\":\"strong\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_movement_signal_direction\",\"answer\":\"northeastward\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_movement_signal_speed_class\",\"answer\":\"fast\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_synoptic_low_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "answer",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4146,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 570,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4716
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage2_manchuria_s_synoptic_high_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_frontal_zone_relative_position",
+              "answer": "west",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_frontal_zone_type",
+              "answer": "warm_front",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_surface_ridge_axis_relative_position",
+              "answer": "east",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_tight_pressure_gradient_zone_strength",
+              "answer": "weak",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_movement_signal_direction",
+              "answer": "southward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_movement_signal_speed_class",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_synoptic_high_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_surface_ridge_axis_relative_position",
+              "answer": "west",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_tight_pressure_gradient_zone_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_movement_signal_direction",
+              "answer": "southward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_movement_signal_speed_class",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_synoptic_low_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_surface_trough_axis_relative_position",
+              "answer": "west",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_gale_wind_area_strength",
+              "answer": "strong",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_tight_pressure_gradient_zone_strength",
+              "answer": "strong",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_movement_signal_direction",
+              "answer": "eastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_movement_signal_speed_class",
+              "answer": "fast",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_synoptic_high_center_relative_position",
+              "answer": "east",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_surface_ridge_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_tight_pressure_gradient_zone_strength",
+              "answer": "strong",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_movement_signal_direction",
+              "answer": "northeastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_movement_signal_speed_class",
+              "answer": "fast",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_synoptic_low_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/2026-04-01/charts/nuri/surf_12h_2026033100.png",
+      "image_ref": "surf_12h_2026033100",
+      "valid_time": "2026033100",
+      "batch_index": 2,
+      "batch_count": 3,
+      "prompt_rows": [
+        {
+          "question_id": "stage2_kp_south_frontal_zone_relative_position",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_frontal_zone_type",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_surface_trough_axis_relative_position",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_gale_wind_area_strength",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_tight_pressure_gradient_zone_strength",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_movement_signal_direction",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_movement_signal_speed_class",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ecs_north_synoptic_high_center_relative_position",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ecs_north_surface_ridge_axis_relative_position",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ecs_north_tight_pressure_gradient_zone_strength",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ecs_north_movement_signal_direction",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ecs_north_movement_signal_speed_class",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_synoptic_high_center_relative_position",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_surface_ridge_axis_relative_position",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_tight_pressure_gradient_zone_strength",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_movement_signal_direction",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_movement_signal_speed_class",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_synoptic_low_center_relative_position",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_frontal_zone_relative_position",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_frontal_zone_type",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_surface_trough_axis_relative_position",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_gale_wind_area_strength",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_tight_pressure_gradient_zone_strength",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_movement_signal_direction",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        }
+      ],
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\2026-04-01\\charts\\nuri\\surf_12h_2026033100.png",
+          "prompt_text": "You are a weather feature extraction assistant.\nAnalyze the attached synoptic chart image.\nAnswer every question below with exactly one value from the allowed_answers list.\nThe answer field must copy one allowed_answers value verbatim.\nDo not paraphrase, translate, inflect, pluralize, add adverbs, or add explanatory words.\nIf the best label is 'continuous', return 'continuous' exactly, not 'continuously'.\nIf you are uncertain, return 'unknown' exactly when 'unknown' is allowed.\nBefore returning JSON, verify that every answer value exactly matches one of the allowed_answers values for that question.\nKeep question_id unchanged.\nReturn JSON only that matches the provided schema.\nmanifest_id=synoptic_sfc12h_stage2\ndomain=sfc12h_synoptic\nstage=stage2\nimage_ref=surf_12h_2026033100\nvalid_time=2026033100\nQuestions:\n1. question_id=stage2_kp_south_frontal_zone_relative_position | region_id=kp_south | region_label=한반도 남부 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=33~37N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n2. question_id=stage2_kp_south_frontal_zone_type | region_id=kp_south | region_label=한반도 남부 | signal_key=frontal_zone | attribute_key=type | lat_range=33~37N | lon_range=124~130E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?\n3. question_id=stage2_kp_south_surface_trough_axis_relative_position | region_id=kp_south | region_label=한반도 남부 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=33~37N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n4. question_id=stage2_kp_south_gale_wind_area_strength | region_id=kp_south | region_label=한반도 남부 | signal_key=gale_wind_area | attribute_key=strength | lat_range=33~37N | lon_range=124~130E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?\n5. question_id=stage2_kp_south_tight_pressure_gradient_zone_strength | region_id=kp_south | region_label=한반도 남부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=33~37N | lon_range=124~130E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n6. question_id=stage2_kp_south_movement_signal_direction | region_id=kp_south | region_label=한반도 남부 | signal_key=movement_signal | attribute_key=direction | lat_range=33~37N | lon_range=124~130E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n7. question_id=stage2_kp_south_movement_signal_speed_class | region_id=kp_south | region_label=한반도 남부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=33~37N | lon_range=124~130E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n8. question_id=stage2_ecs_north_synoptic_high_center_relative_position | region_id=ecs_north | region_label=동중국해 북부 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=28~34N | lon_range=120~128E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n9. question_id=stage2_ecs_north_surface_ridge_axis_relative_position | region_id=ecs_north | region_label=동중국해 북부 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=28~34N | lon_range=120~128E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?\n10. question_id=stage2_ecs_north_tight_pressure_gradient_zone_strength | region_id=ecs_north | region_label=동중국해 북부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=28~34N | lon_range=120~128E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n11. question_id=stage2_ecs_north_movement_signal_direction | region_id=ecs_north | region_label=동중국해 북부 | signal_key=movement_signal | attribute_key=direction | lat_range=28~34N | lon_range=120~128E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n12. question_id=stage2_ecs_north_movement_signal_speed_class | region_id=ecs_north | region_label=동중국해 북부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=28~34N | lon_range=120~128E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n13. question_id=stage2_japan_w_synoptic_high_center_relative_position | region_id=japan_w | region_label=일본 서부 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=31~38N | lon_range=130~138E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n14. question_id=stage2_japan_w_surface_ridge_axis_relative_position | region_id=japan_w | region_label=일본 서부 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=31~38N | lon_range=130~138E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?\n15. question_id=stage2_japan_w_tight_pressure_gradient_zone_strength | region_id=japan_w | region_label=일본 서부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=31~38N | lon_range=130~138E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n16. question_id=stage2_japan_w_movement_signal_direction | region_id=japan_w | region_label=일본 서부 | signal_key=movement_signal | attribute_key=direction | lat_range=31~38N | lon_range=130~138E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n17. question_id=stage2_japan_w_movement_signal_speed_class | region_id=japan_w | region_label=일본 서부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=31~38N | lon_range=130~138E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n18. question_id=stage2_japan_east_offshore_synoptic_low_center_relative_position | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=synoptic_low_center | attribute_key=relative_position | lat_range=30~40N | lon_range=140~150E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?\n19. question_id=stage2_japan_east_offshore_frontal_zone_relative_position | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=30~40N | lon_range=140~150E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n20. question_id=stage2_japan_east_offshore_frontal_zone_type | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=frontal_zone | attribute_key=type | lat_range=30~40N | lon_range=140~150E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?\n21. question_id=stage2_japan_east_offshore_surface_trough_axis_relative_position | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=30~40N | lon_range=140~150E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n22. question_id=stage2_japan_east_offshore_gale_wind_area_strength | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=gale_wind_area | attribute_key=strength | lat_range=30~40N | lon_range=140~150E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?\n23. question_id=stage2_japan_east_offshore_tight_pressure_gradient_zone_strength | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=30~40N | lon_range=140~150E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n24. question_id=stage2_japan_east_offshore_movement_signal_direction | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=movement_signal | attribute_key=direction | lat_range=30~40N | lon_range=140~150E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?"
+        },
+        "response": {
+          "id": "resp_020f932827cbe4560069ce19dbe64481979bd6b669ec504af8",
+          "object": "response",
+          "created_at": 1775114715,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775114723,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_020f932827cbe4560069ce19dcfc648197803db2e3d0b9b47a",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage2_kp_south_frontal_zone_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_frontal_zone_type\",\"answer\":\"warm_front\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_surface_trough_axis_relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_gale_wind_area_strength\",\"answer\":\"weak\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_tight_pressure_gradient_zone_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_movement_signal_direction\",\"answer\":\"eastward\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_movement_signal_speed_class\",\"answer\":\"slow\",\"note\":\"\"},{\"question_id\":\"stage2_ecs_north_synoptic_high_center_relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"question_id\":\"stage2_ecs_north_surface_ridge_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_ecs_north_tight_pressure_gradient_zone_strength\",\"answer\":\"weak\",\"note\":\"\"},{\"question_id\":\"stage2_ecs_north_movement_signal_direction\",\"answer\":\"southward\",\"note\":\"\"},{\"question_id\":\"stage2_ecs_north_movement_signal_speed_class\",\"answer\":\"slow\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_synoptic_high_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_surface_ridge_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_tight_pressure_gradient_zone_strength\",\"answer\":\"weak\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_movement_signal_direction\",\"answer\":\"southwestward\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_movement_signal_speed_class\",\"answer\":\"slow\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_synoptic_low_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_frontal_zone_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_frontal_zone_type\",\"answer\":\"occluded_front\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_surface_trough_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_gale_wind_area_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_tight_pressure_gradient_zone_strength\",\"answer\":\"strong\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_movement_signal_direction\",\"answer\":\"eastward\",\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "answer",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4159,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 584,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4743
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage2_kp_south_frontal_zone_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_frontal_zone_type",
+              "answer": "warm_front",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_surface_trough_axis_relative_position",
+              "answer": "west",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_gale_wind_area_strength",
+              "answer": "weak",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_tight_pressure_gradient_zone_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_movement_signal_direction",
+              "answer": "eastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_movement_signal_speed_class",
+              "answer": "slow",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ecs_north_synoptic_high_center_relative_position",
+              "answer": "west",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ecs_north_surface_ridge_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ecs_north_tight_pressure_gradient_zone_strength",
+              "answer": "weak",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ecs_north_movement_signal_direction",
+              "answer": "southward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ecs_north_movement_signal_speed_class",
+              "answer": "slow",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_synoptic_high_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_surface_ridge_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_tight_pressure_gradient_zone_strength",
+              "answer": "weak",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_movement_signal_direction",
+              "answer": "southwestward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_movement_signal_speed_class",
+              "answer": "slow",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_synoptic_low_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_frontal_zone_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_frontal_zone_type",
+              "answer": "occluded_front",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_surface_trough_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_gale_wind_area_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_tight_pressure_gradient_zone_strength",
+              "answer": "strong",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_movement_signal_direction",
+              "answer": "eastward",
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/2026-04-01/charts/nuri/surf_12h_2026033100.png",
+      "image_ref": "surf_12h_2026033100",
+      "valid_time": "2026033100",
+      "batch_index": 3,
+      "batch_count": 3,
+      "prompt_rows": [
+        {
+          "question_id": "stage2_japan_east_offshore_movement_signal_speed_class",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        }
+      ],
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\2026-04-01\\charts\\nuri\\surf_12h_2026033100.png",
+          "prompt_text": "You are a weather feature extraction assistant.\nAnalyze the attached synoptic chart image.\nAnswer every question below with exactly one value from the allowed_answers list.\nThe answer field must copy one allowed_answers value verbatim.\nDo not paraphrase, translate, inflect, pluralize, add adverbs, or add explanatory words.\nIf the best label is 'continuous', return 'continuous' exactly, not 'continuously'.\nIf you are uncertain, return 'unknown' exactly when 'unknown' is allowed.\nBefore returning JSON, verify that every answer value exactly matches one of the allowed_answers values for that question.\nKeep question_id unchanged.\nReturn JSON only that matches the provided schema.\nmanifest_id=synoptic_sfc12h_stage2\ndomain=sfc12h_synoptic\nstage=stage2\nimage_ref=surf_12h_2026033100\nvalid_time=2026033100\nQuestions:\n1. question_id=stage2_japan_east_offshore_movement_signal_speed_class | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=movement_signal | attribute_key=speed_class | lat_range=30~40N | lon_range=140~150E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?"
+        },
+        "response": {
+          "id": "resp_022ce5e910ffa0690069ce19e5e344819c838b517f177fa2fb",
+          "object": "response",
+          "created_at": 1775114725,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775114726,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_022ce5e910ffa0690069ce19e68248819cb186a95561bb0052",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage2_japan_east_offshore_movement_signal_speed_class\",\"answer\":\"slow\",\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "answer",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1860,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 31,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 1891
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage2_japan_east_offshore_movement_signal_speed_class",
+              "answer": "slow",
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/2026-04-01/charts/nuri/surf_12h_2026033112.png",
+      "image_ref": "surf_12h_2026033112",
+      "valid_time": "2026033112",
+      "batch_index": 1,
+      "batch_count": 2,
+      "prompt_rows": [
+        {
+          "question_id": "stage2_manchuria_s_frontal_zone_relative_position",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_frontal_zone_type",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_surface_trough_axis_relative_position",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_tight_pressure_gradient_zone_strength",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_movement_signal_direction",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_manchuria_s_movement_signal_speed_class",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_synoptic_high_center_relative_position",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_frontal_zone_relative_position",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_frontal_zone_type",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_surface_trough_axis_relative_position",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_tight_pressure_gradient_zone_strength",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_movement_signal_direction",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_liao_bohai_movement_signal_speed_class",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_synoptic_low_center_relative_position",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_frontal_zone_relative_position",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_frontal_zone_type",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_surface_trough_axis_relative_position",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_gale_wind_area_strength",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_tight_pressure_gradient_zone_strength",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_movement_signal_direction",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ws_mid_movement_signal_speed_class",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_synoptic_low_center_relative_position",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_frontal_zone_relative_position",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_frontal_zone_type",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        }
+      ],
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\2026-04-01\\charts\\nuri\\surf_12h_2026033112.png",
+          "prompt_text": "You are a weather feature extraction assistant.\nAnalyze the attached synoptic chart image.\nAnswer every question below with exactly one value from the allowed_answers list.\nThe answer field must copy one allowed_answers value verbatim.\nDo not paraphrase, translate, inflect, pluralize, add adverbs, or add explanatory words.\nIf the best label is 'continuous', return 'continuous' exactly, not 'continuously'.\nIf you are uncertain, return 'unknown' exactly when 'unknown' is allowed.\nBefore returning JSON, verify that every answer value exactly matches one of the allowed_answers values for that question.\nKeep question_id unchanged.\nReturn JSON only that matches the provided schema.\nmanifest_id=synoptic_sfc12h_stage2\ndomain=sfc12h_synoptic\nstage=stage2\nimage_ref=surf_12h_2026033112\nvalid_time=2026033112\nQuestions:\n1. question_id=stage2_manchuria_s_frontal_zone_relative_position | region_id=manchuria_s | region_label=만주 남부 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=41~47N | lon_range=120~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n2. question_id=stage2_manchuria_s_frontal_zone_type | region_id=manchuria_s | region_label=만주 남부 | signal_key=frontal_zone | attribute_key=type | lat_range=41~47N | lon_range=120~130E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?\n3. question_id=stage2_manchuria_s_surface_trough_axis_relative_position | region_id=manchuria_s | region_label=만주 남부 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=41~47N | lon_range=120~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n4. question_id=stage2_manchuria_s_tight_pressure_gradient_zone_strength | region_id=manchuria_s | region_label=만주 남부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=41~47N | lon_range=120~130E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n5. question_id=stage2_manchuria_s_movement_signal_direction | region_id=manchuria_s | region_label=만주 남부 | signal_key=movement_signal | attribute_key=direction | lat_range=41~47N | lon_range=120~130E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n6. question_id=stage2_manchuria_s_movement_signal_speed_class | region_id=manchuria_s | region_label=만주 남부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=41~47N | lon_range=120~130E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n7. question_id=stage2_liao_bohai_synoptic_high_center_relative_position | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=38~41N | lon_range=120~123E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n8. question_id=stage2_liao_bohai_frontal_zone_relative_position | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=38~41N | lon_range=120~123E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n9. question_id=stage2_liao_bohai_frontal_zone_type | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=frontal_zone | attribute_key=type | lat_range=38~41N | lon_range=120~123E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?\n10. question_id=stage2_liao_bohai_surface_trough_axis_relative_position | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=38~41N | lon_range=120~123E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n11. question_id=stage2_liao_bohai_tight_pressure_gradient_zone_strength | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=38~41N | lon_range=120~123E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n12. question_id=stage2_liao_bohai_movement_signal_direction | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=movement_signal | attribute_key=direction | lat_range=38~41N | lon_range=120~123E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n13. question_id=stage2_liao_bohai_movement_signal_speed_class | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=movement_signal | attribute_key=speed_class | lat_range=38~41N | lon_range=120~123E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n14. question_id=stage2_ws_mid_synoptic_low_center_relative_position | region_id=ws_mid | region_label=서해 중부 | signal_key=synoptic_low_center | attribute_key=relative_position | lat_range=35~38N | lon_range=122~126E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?\n15. question_id=stage2_ws_mid_frontal_zone_relative_position | region_id=ws_mid | region_label=서해 중부 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=35~38N | lon_range=122~126E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n16. question_id=stage2_ws_mid_frontal_zone_type | region_id=ws_mid | region_label=서해 중부 | signal_key=frontal_zone | attribute_key=type | lat_range=35~38N | lon_range=122~126E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?\n17. question_id=stage2_ws_mid_surface_trough_axis_relative_position | region_id=ws_mid | region_label=서해 중부 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=35~38N | lon_range=122~126E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n18. question_id=stage2_ws_mid_gale_wind_area_strength | region_id=ws_mid | region_label=서해 중부 | signal_key=gale_wind_area | attribute_key=strength | lat_range=35~38N | lon_range=122~126E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?\n19. question_id=stage2_ws_mid_tight_pressure_gradient_zone_strength | region_id=ws_mid | region_label=서해 중부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=35~38N | lon_range=122~126E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n20. question_id=stage2_ws_mid_movement_signal_direction | region_id=ws_mid | region_label=서해 중부 | signal_key=movement_signal | attribute_key=direction | lat_range=35~38N | lon_range=122~126E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n21. question_id=stage2_ws_mid_movement_signal_speed_class | region_id=ws_mid | region_label=서해 중부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=35~38N | lon_range=122~126E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n22. question_id=stage2_kp_north_synoptic_low_center_relative_position | region_id=kp_north | region_label=한반도 북부 | signal_key=synoptic_low_center | attribute_key=relative_position | lat_range=37~40N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?\n23. question_id=stage2_kp_north_frontal_zone_relative_position | region_id=kp_north | region_label=한반도 북부 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=37~40N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n24. question_id=stage2_kp_north_frontal_zone_type | region_id=kp_north | region_label=한반도 북부 | signal_key=frontal_zone | attribute_key=type | lat_range=37~40N | lon_range=124~130E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?"
+        },
+        "response": {
+          "id": "resp_041046d3b7ef26d90069ce19e86cc48192be06ae1b26ea8eaf",
+          "object": "response",
+          "created_at": 1775114728,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775114735,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_041046d3b7ef26d90069ce19ea747c8192a71c5c150cddeec2",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage2_manchuria_s_frontal_zone_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_frontal_zone_type\",\"answer\":\"cold_front\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_surface_trough_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_tight_pressure_gradient_zone_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_movement_signal_direction\",\"answer\":\"southeastward\",\"note\":\"\"},{\"question_id\":\"stage2_manchuria_s_movement_signal_speed_class\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_synoptic_high_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_frontal_zone_relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_frontal_zone_type\",\"answer\":\"warm_front\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_surface_trough_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_tight_pressure_gradient_zone_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_movement_signal_direction\",\"answer\":\"eastward\",\"note\":\"\"},{\"question_id\":\"stage2_liao_bohai_movement_signal_speed_class\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_synoptic_low_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_frontal_zone_relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_frontal_zone_type\",\"answer\":\"warm_front\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_surface_trough_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_gale_wind_area_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_tight_pressure_gradient_zone_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_movement_signal_direction\",\"answer\":\"eastward\",\"note\":\"\"},{\"question_id\":\"stage2_ws_mid_movement_signal_speed_class\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_synoptic_low_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_frontal_zone_relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_frontal_zone_type\",\"answer\":\"cold_front\",\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "answer",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4126,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 568,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4694
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage2_manchuria_s_frontal_zone_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_frontal_zone_type",
+              "answer": "cold_front",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_surface_trough_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_tight_pressure_gradient_zone_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_movement_signal_direction",
+              "answer": "southeastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_manchuria_s_movement_signal_speed_class",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_synoptic_high_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_frontal_zone_relative_position",
+              "answer": "east",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_frontal_zone_type",
+              "answer": "warm_front",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_surface_trough_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_tight_pressure_gradient_zone_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_movement_signal_direction",
+              "answer": "eastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_liao_bohai_movement_signal_speed_class",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_synoptic_low_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_frontal_zone_relative_position",
+              "answer": "east",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_frontal_zone_type",
+              "answer": "warm_front",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_surface_trough_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_gale_wind_area_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_tight_pressure_gradient_zone_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_movement_signal_direction",
+              "answer": "eastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ws_mid_movement_signal_speed_class",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_synoptic_low_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_frontal_zone_relative_position",
+              "answer": "west",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_frontal_zone_type",
+              "answer": "cold_front",
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/2026-04-01/charts/nuri/surf_12h_2026033112.png",
+      "image_ref": "surf_12h_2026033112",
+      "valid_time": "2026033112",
+      "batch_index": 2,
+      "batch_count": 2,
+      "prompt_rows": [
+        {
+          "question_id": "stage2_kp_north_surface_trough_axis_relative_position",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_tight_pressure_gradient_zone_strength",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_movement_signal_direction",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_north_movement_signal_speed_class",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_synoptic_high_center_relative_position",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_kp_south_surface_ridge_axis_relative_position",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ecs_north_synoptic_high_center_relative_position",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_ecs_north_surface_ridge_axis_relative_position",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_synoptic_low_center_relative_position",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_frontal_zone_relative_position",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_frontal_zone_type",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "type",
+          "question_text": "이 영역과 가장 관련된 전선대의 유형은 무엇인가?",
+          "allowed_answers": [
+            "cold_front",
+            "warm_front",
+            "stationary_front",
+            "occluded_front",
+            "mixed",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_surface_trough_axis_relative_position",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_gale_wind_area_strength",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_tight_pressure_gradient_zone_strength",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "strength",
+          "question_text": "이 영역의 등압선 조밀대 강도는 어느 수준인가?",
+          "allowed_answers": [
+            "weak",
+            "moderate",
+            "strong",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_movement_signal_direction",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "movement_signal",
+          "attribute_key": "direction",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?",
+          "allowed_answers": [
+            "eastward",
+            "westward",
+            "northward",
+            "southward",
+            "northeastward",
+            "southeastward",
+            "southwestward",
+            "northwestward",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_w_movement_signal_speed_class",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "movement_signal",
+          "attribute_key": "speed_class",
+          "question_text": "이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?",
+          "allowed_answers": [
+            "slow",
+            "moderate",
+            "fast",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_synoptic_high_center_relative_position",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage2_japan_east_offshore_surface_ridge_axis_relative_position",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "relative_position",
+          "question_text": "이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?",
+          "allowed_answers": [
+            "west",
+            "inside",
+            "east",
+            "unknown"
+          ]
+        }
+      ],
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\2026-04-01\\charts\\nuri\\surf_12h_2026033112.png",
+          "prompt_text": "You are a weather feature extraction assistant.\nAnalyze the attached synoptic chart image.\nAnswer every question below with exactly one value from the allowed_answers list.\nThe answer field must copy one allowed_answers value verbatim.\nDo not paraphrase, translate, inflect, pluralize, add adverbs, or add explanatory words.\nIf the best label is 'continuous', return 'continuous' exactly, not 'continuously'.\nIf you are uncertain, return 'unknown' exactly when 'unknown' is allowed.\nBefore returning JSON, verify that every answer value exactly matches one of the allowed_answers values for that question.\nKeep question_id unchanged.\nReturn JSON only that matches the provided schema.\nmanifest_id=synoptic_sfc12h_stage2\ndomain=sfc12h_synoptic\nstage=stage2\nimage_ref=surf_12h_2026033112\nvalid_time=2026033112\nQuestions:\n1. question_id=stage2_kp_north_surface_trough_axis_relative_position | region_id=kp_north | region_label=한반도 북부 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=37~40N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n2. question_id=stage2_kp_north_tight_pressure_gradient_zone_strength | region_id=kp_north | region_label=한반도 북부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=37~40N | lon_range=124~130E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n3. question_id=stage2_kp_north_movement_signal_direction | region_id=kp_north | region_label=한반도 북부 | signal_key=movement_signal | attribute_key=direction | lat_range=37~40N | lon_range=124~130E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n4. question_id=stage2_kp_north_movement_signal_speed_class | region_id=kp_north | region_label=한반도 북부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=37~40N | lon_range=124~130E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n5. question_id=stage2_kp_south_synoptic_high_center_relative_position | region_id=kp_south | region_label=한반도 남부 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=33~37N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n6. question_id=stage2_kp_south_surface_ridge_axis_relative_position | region_id=kp_south | region_label=한반도 남부 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=33~37N | lon_range=124~130E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?\n7. question_id=stage2_ecs_north_synoptic_high_center_relative_position | region_id=ecs_north | region_label=동중국해 북부 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=28~34N | lon_range=120~128E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n8. question_id=stage2_ecs_north_surface_ridge_axis_relative_position | region_id=ecs_north | region_label=동중국해 북부 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=28~34N | lon_range=120~128E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?\n9. question_id=stage2_japan_w_synoptic_low_center_relative_position | region_id=japan_w | region_label=일본 서부 | signal_key=synoptic_low_center | attribute_key=relative_position | lat_range=31~38N | lon_range=130~138E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 저기압 중심의 상대 위치는 무엇인가?\n10. question_id=stage2_japan_w_frontal_zone_relative_position | region_id=japan_w | region_label=일본 서부 | signal_key=frontal_zone | attribute_key=relative_position | lat_range=31~38N | lon_range=130~138E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 전선대의 상대 위치는 무엇인가?\n11. question_id=stage2_japan_w_frontal_zone_type | region_id=japan_w | region_label=일본 서부 | signal_key=frontal_zone | attribute_key=type | lat_range=31~38N | lon_range=130~138E | allowed_answers=cold_front|warm_front|stationary_front|occluded_front|mixed|unknown | question_text=이 영역과 가장 관련된 전선대의 유형은 무엇인가?\n12. question_id=stage2_japan_w_surface_trough_axis_relative_position | region_id=japan_w | region_label=일본 서부 | signal_key=surface_trough_axis | attribute_key=relative_position | lat_range=31~38N | lon_range=130~138E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압골 축의 상대 위치는 무엇인가?\n13. question_id=stage2_japan_w_gale_wind_area_strength | region_id=japan_w | region_label=일본 서부 | signal_key=gale_wind_area | attribute_key=strength | lat_range=31~38N | lon_range=130~138E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 강풍 또는 강풍대 강도는 어느 수준인가?\n14. question_id=stage2_japan_w_tight_pressure_gradient_zone_strength | region_id=japan_w | region_label=일본 서부 | signal_key=tight_pressure_gradient_zone | attribute_key=strength | lat_range=31~38N | lon_range=130~138E | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 등압선 조밀대 강도는 어느 수준인가?\n15. question_id=stage2_japan_w_movement_signal_direction | region_id=japan_w | region_label=일본 서부 | signal_key=movement_signal | attribute_key=direction | lat_range=31~38N | lon_range=130~138E | allowed_answers=eastward|westward|northward|southward|northeastward|southeastward|southwestward|northwestward|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 방향은 무엇인가?\n16. question_id=stage2_japan_w_movement_signal_speed_class | region_id=japan_w | region_label=일본 서부 | signal_key=movement_signal | attribute_key=speed_class | lat_range=31~38N | lon_range=130~138E | allowed_answers=slow|moderate|fast|unknown | question_text=이 영역과 가장 관련된 기압계 또는 전선 이동 속도 등급은 무엇인가?\n17. question_id=stage2_japan_east_offshore_synoptic_high_center_relative_position | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=synoptic_high_center | attribute_key=relative_position | lat_range=30~40N | lon_range=140~150E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 종관 고기압 중심의 상대 위치는 무엇인가?\n18. question_id=stage2_japan_east_offshore_surface_ridge_axis_relative_position | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=surface_ridge_axis | attribute_key=relative_position | lat_range=30~40N | lon_range=140~150E | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 지상 기압능 축의 상대 위치는 무엇인가?"
+        },
+        "response": {
+          "id": "resp_0fac63a4307c43010069ce19f0c6a4819dae87ae211f1199d0",
+          "object": "response",
+          "created_at": 1775114736,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775114741,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0fac63a4307c43010069ce19f1cad0819d8ecabbce61b29e38",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage2_kp_north_surface_trough_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_tight_pressure_gradient_zone_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_movement_signal_direction\",\"answer\":\"eastward\",\"note\":\"\"},{\"question_id\":\"stage2_kp_north_movement_signal_speed_class\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_synoptic_high_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_kp_south_surface_ridge_axis_relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"question_id\":\"stage2_ecs_north_synoptic_high_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_ecs_north_surface_ridge_axis_relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_synoptic_low_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_frontal_zone_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_frontal_zone_type\",\"answer\":\"occluded_front\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_surface_trough_axis_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_gale_wind_area_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_tight_pressure_gradient_zone_strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_movement_signal_direction\",\"answer\":\"northeastward\",\"note\":\"\"},{\"question_id\":\"stage2_japan_w_movement_signal_speed_class\",\"answer\":\"moderate\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_synoptic_high_center_relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"question_id\":\"stage2_japan_east_offshore_surface_ridge_axis_relative_position\",\"answer\":\"east\",\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "answer",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3516,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 436,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3952
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage2_kp_north_surface_trough_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_tight_pressure_gradient_zone_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_movement_signal_direction",
+              "answer": "eastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_north_movement_signal_speed_class",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_synoptic_high_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_kp_south_surface_ridge_axis_relative_position",
+              "answer": "east",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ecs_north_synoptic_high_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_ecs_north_surface_ridge_axis_relative_position",
+              "answer": "west",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_synoptic_low_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_frontal_zone_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_frontal_zone_type",
+              "answer": "occluded_front",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_surface_trough_axis_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_gale_wind_area_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_tight_pressure_gradient_zone_strength",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_movement_signal_direction",
+              "answer": "northeastward",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_w_movement_signal_speed_class",
+              "answer": "moderate",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_synoptic_high_center_relative_position",
+              "answer": "inside",
+              "note": ""
+            },
+            {
+              "question_id": "stage2_japan_east_offshore_surface_ridge_axis_relative_position",
+              "answer": "east",
+              "note": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+﻿id: domain_semantic_cards
+stage: domain_semantic_cards
+model: gpt-4.1-mini
+allow_new_claims: false
+input_paths:
+  feature_bundle: daio/{date}/features/feature_bundle.json
+output_paths:
+  prompt_input: daio/{date}/cards/domain_semantic_cards_prompt_input.json
+  raw: daio/{date}/cards/domain_semantic_cards_raw.json
+  cards: daio/{date}/cards/domain_semantic_cards.json
+schema_path: prompts/schemas/domain_semantic_cards.schema.json
+policy_path: config/features/card_policies/domain_card_policy.yaml
+prompt_instructions: |
+  feature 입력을 읽어 도메인별 semantic card를 정확히 1개씩 생성합니다.
+  새로운 해석이나 근거를 추가하지 말고, 제공된 feature와 allowed_evidence_refs 안에서만 작성합니다.
+  title, summary, key_points, observed_links는 한국어로 작성합니다.
+  card_id, title, summary, time_window, evidence_refs, source_image_refs는 모두 비워 둘 수 없습니다.
+  time_window는 입력의 expected_time_window 값을 형식까지 그대로 복사해야 합니다.
+  evidence_refs는 반드시 allowed_evidence_refs에 포함된 값만 사용합니다.
+  source_image_refs는 파일 경로가 아니라 image_ref 값만 사용해야 하며, allowed_source_image_refs에 포함된 값만 사용할 수 있습니다.

@@ -1,0 +1,15 @@
+﻿id: briefing_validator
+stage: briefing_validator
+allow_new_claims: false
+input_paths:
+  domain_cards: daio/{date}/cards/domain_semantic_cards.json
+  upper_cards: daio/{date}/cards/upper_reasoning_cards.json
+  draft: daou/{date}/briefing_draft.json
+output_paths:
+  report: daio/{date}/validation/briefing_validation.json
+schema_path: prompts/schemas/briefing_validation.schema.json
+policy_path: config/features/card_policies/validator_policy.yaml
+prompt_instructions: |
+  validation은 규칙 기반으로 수행합니다.
+  unsupported claim, contradiction, duplicate meaning, missing evidence를 점검합니다.
+  allow_new_claims=false 원칙 위반 여부를 반드시 확인합니다.

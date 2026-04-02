@@ -1,0 +1,25 @@
+2026-04-02 20:55:30,848 [ERROR] write_briefing_from_cards_failed
+Traceback (most recent call last):
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 161, in main
+    section = _sanitize_section(parsed, policy_card, upper_cards_by_id, set(allowed_refs))
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 91, in _sanitize_section
+    raise ValueError(f'briefing section missing valid source_card_ids: {section_id}')
+ValueError: briefing section missing valid source_card_ids: overall_summary
+2026-04-02 22:00:01,797 [ERROR] write_briefing_from_cards_failed
+Traceback (most recent call last):
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 218, in main
+    section = _sanitize_section(parsed, policy_card, upper_cards_by_id)
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 127, in _sanitize_section
+    source_card_ids = _require_allowed_strings('source_card_ids', parsed.get('source_card_ids', []), set(upper_cards_by_id.keys()), context)
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 79, in _require_allowed_strings
+    raise ValueError(f'{context}: field contains unsupported values: {field_name} -> {invalid_items}')
+ValueError: briefing_section[overall_summary]: field contains unsupported values: source_card_ids -> ['300hPa_20260330_183118', '500hPa_20260330-31_synoptic', '850hPa_20260330_18_0318_20260331_18_0318', 'card_925hPa_2026033018-3118', 'satellite_wv_20260330-18_to_20260331-18', 'sfc12h_synoptic_20260331_00_12', 'surface_20260330-1800_to_20260331-1800']
+2026-04-02 22:08:46,493 [ERROR] write_briefing_from_cards_failed
+Traceback (most recent call last):
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 219, in main
+    section = _sanitize_section(parsed, policy_card, upper_cards_by_id)
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 127, in _sanitize_section
+    source_card_ids = _require_allowed_strings('source_card_ids', parsed.get('source_card_ids', []), set(upper_cards_by_id.keys()), context)
+  File "D:\99.project\03.WeatherAIBrief\scripts\write_briefing_from_cards.py", line 81, in _require_allowed_strings
+    raise ValueError(f'{context}: field must not be empty: {field_name}')
+ValueError: briefing_section[overall_summary]: field must not be empty: source_card_ids

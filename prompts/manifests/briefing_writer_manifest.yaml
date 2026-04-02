@@ -1,0 +1,20 @@
+﻿id: briefing_writer
+stage: briefing_writer
+model: gpt-4.1-mini
+allow_new_claims: false
+input_paths:
+  upper_cards: daio/{date}/cards/upper_reasoning_cards.json
+output_paths:
+  prompt_input: daio/{date}/cards/briefing_writer_prompt_input.json
+  raw: daio/{date}/cards/briefing_writer_raw.json
+  draft: daou/{date}/briefing_draft.json
+schema_path: prompts/schemas/briefing_draft.schema.json
+policy_path: config/features/card_policies/upper_card_policy.yaml
+prompt_instructions: |
+  upper reasoning cards를 기반으로 briefing draft를 작성합니다.
+  allow_new_claims는 false이며, 입력 카드에 없는 새 해석이나 새 근거를 만들면 안 됩니다.
+  overall_summary, synoptic_overview, surface_overview 섹션을 모두 생성해야 합니다.
+  source_card_ids는 allowed_source_card_ids 목록에 있는 값만 그대로 사용해야 하며, 새 card_id를 만들면 안 됩니다.
+  각 섹션의 evidence_refs는 반드시 입력 upper reasoning cards 안의 값만 사용합니다.
+  source_card_ids와 evidence_refs는 비워 둘 수 없습니다.
+  title과 text는 한국어로 작성합니다.

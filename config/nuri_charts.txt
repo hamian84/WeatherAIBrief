@@ -1,0 +1,16 @@
+# 이름 | 간격시간 | 확장자 | 주소_템플릿
+surf_12h | 12 | png | https://www.weather.go.kr/w/repositary/image/cht/img/surf_{yyyymmddHH}.png
+sfc3_3h | 3 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_sfc3_anlden_pa4_{yyyymmddHH}.gif
+up92_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_up92_anlmod_pa4_{yyyymmddHH}.gif
+up85_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_up85_anlmod_pa4_{yyyymmddHH}.gif
+up70_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_up70_anlmod_pa4_{yyyymmddHH}.gif
+up50_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_up50_anlmod_pa4_{yyyymmddHH}.gif
+up30_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_up30_anlmod_pa4_{yyyymmddHH}.gif
+up20_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_up20_anlmod_pa4_{yyyymmddHH}.gif
+up10_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_up10_anlmod_pa4_{yyyymmddHH}.gif
+surf_anl_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_surf_newsur_pa4_{yyyymmddHH}.gif
+kor1_anl_1h | 1 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_{yyyymmddHH}.gif
+n500_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_n500_anlmod_pb4_{yyyymmddHH}.gif
+n500_dif_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_n500_difmod_pb4_{yyyymmddHH}.gif
+gdps_axfe01_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_gdps_anal_axfe01_pb4_{yyyymmddHH}.gif
+gdps_axfe02_6h | 6 | gif | https://www.weather.go.kr/w/repositary/image/cht/img/kim_gdps_anal_axfe02_pb4_{yyyymmddHH}.gif

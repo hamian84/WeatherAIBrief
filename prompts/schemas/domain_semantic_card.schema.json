@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "card_id",
+    "domain",
+    "title",
+    "summary",
+    "time_window",
+    "key_points",
+    "observed_links",
+    "evidence_refs",
+    "source_image_refs",
+    "confidence"
+  ],
+  "properties": {
+    "card_id": {"type": "string", "minLength": 1},
+    "domain": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "summary": {"type": "string", "minLength": 1},
+    "time_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "end"],
+      "properties": {
+        "start": {"type": "string", "minLength": 1},
+        "end": {"type": "string", "minLength": 1}
+      }
+    },
+    "key_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "detail", "regions", "evidence_refs"],
+        "properties": {
+          "label": {"type": "string", "minLength": 1},
+          "detail": {"type": "string", "minLength": 1},
+          "regions": {"type": "array", "items": {"type": "string"}},
+          "evidence_refs": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "observed_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["link_type", "detail", "evidence_refs"],
+        "properties": {
+          "link_type": {"type": "string", "minLength": 1},
+          "detail": {"type": "string", "minLength": 1},
+          "evidence_refs": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "source_image_refs": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+  }
+}

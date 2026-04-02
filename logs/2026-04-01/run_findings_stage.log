@@ -1,0 +1,26 @@
+2026-04-02 19:34:17,368 [INFO] run_findings_stage_start: date=2026-04-01
+2026-04-02 19:34:17,369 [INFO] log_file: logs\2026-04-01\run_findings_stage.log
+2026-04-02 19:43:42,800 [INFO] run_findings_stage_start: date=2026-04-01
+2026-04-02 19:43:42,800 [INFO] log_file: logs\2026-04-01\run_findings_stage.log
+2026-04-02 19:44:13,255 [INFO] run_findings_stage_start: date=2026-04-01
+2026-04-02 19:44:13,255 [INFO] log_file: logs\2026-04-01\run_findings_stage.log
+2026-04-02 19:44:48,243 [ERROR] run_findings_stage_failed
+Traceback (most recent call last):
+  File "D:\99.project\03.WeatherAIBrief\scripts\run_findings_stage.py", line 37, in main
+    result = run_findings_stage(BASE_DIR, args.date, dry_run=args.dry_run, model=args.model)
+  File "D:\99.project\03.WeatherAIBrief\scripts\findings_stage_runner.py", line 266, in run_findings_stage
+    llm_result = call_findings_llm(
+        prompt_text=prompt_text,
+    ...<2 lines>...
+        max_output_tokens=5000,
+    )
+  File "D:\99.project\03.WeatherAIBrief\scripts\common\findings_llm_client.py", line 176, in call_findings_llm
+    raise RuntimeError(str(last_error))
+RuntimeError: OpenAI HTTPError 429: {
+  "error": {
+    "message": "Request too large for gpt-4.1-mini (for limit gpt-4.1-mini-long-context) in organization org-bI9UtHP1ymSOnxczHbpYMhO8 on tokens per min (TPM): Limit 400000, Requested 406729. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.",
+    "type": "tokens",
+    "param": null,
+    "code": "rate_limit_exceeded"
+  }
+}

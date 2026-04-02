@@ -1,0 +1,2573 @@
+﻿{
+  "manifest_id": "synoptic_sfc12h_stage1",
+  "domain": "sfc12h_synoptic",
+  "stage": "stage1",
+  "run_date": "2026-04-01",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": null,
+  "images": [
+    {
+      "source_image": "dain/2026-04-01/charts/nuri/surf_12h_2026033100.png",
+      "image_ref": "surf_12h_2026033100",
+      "valid_time": "2026033100",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_manchuria_s_synoptic_low_center_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_synoptic_high_center_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_frontal_zone_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_surface_trough_axis_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_surface_ridge_axis_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_gale_wind_area_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_tight_pressure_gradient_zone_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_movement_signal_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_synoptic_low_center_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_synoptic_high_center_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_frontal_zone_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_surface_trough_axis_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_surface_ridge_axis_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_gale_wind_area_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_tight_pressure_gradient_zone_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_movement_signal_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_synoptic_low_center_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_synoptic_high_center_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_frontal_zone_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_surface_trough_axis_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_surface_ridge_axis_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_gale_wind_area_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_tight_pressure_gradient_zone_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_movement_signal_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_synoptic_low_center_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_synoptic_high_center_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_frontal_zone_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_surface_trough_axis_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_surface_ridge_axis_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_gale_wind_area_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_tight_pressure_gradient_zone_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_movement_signal_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_synoptic_low_center_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_synoptic_high_center_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_frontal_zone_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_surface_trough_axis_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_surface_ridge_axis_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_gale_wind_area_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_tight_pressure_gradient_zone_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_movement_signal_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_synoptic_low_center_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_synoptic_high_center_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_frontal_zone_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_surface_trough_axis_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_surface_ridge_axis_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_gale_wind_area_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_tight_pressure_gradient_zone_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_movement_signal_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_synoptic_low_center_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_synoptic_high_center_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_frontal_zone_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_surface_trough_axis_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_surface_ridge_axis_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_gale_wind_area_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_tight_pressure_gradient_zone_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_movement_signal_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_synoptic_low_center_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_synoptic_high_center_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_frontal_zone_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_surface_trough_axis_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_surface_ridge_axis_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_gale_wind_area_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_tight_pressure_gradient_zone_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_movement_signal_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        }
+      ],
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\2026-04-01\\charts\\nuri\\surf_12h_2026033100.png",
+          "prompt_text": "You are a weather feature extraction assistant.\nAnalyze the attached synoptic chart image.\nAnswer every question below with exactly one value from the allowed_answers list.\nThe answer field must copy one allowed_answers value verbatim.\nDo not paraphrase, translate, inflect, pluralize, add adverbs, or add explanatory words.\nIf the best label is 'continuous', return 'continuous' exactly, not 'continuously'.\nIf you are uncertain, return 'unknown' exactly when 'unknown' is allowed.\nBefore returning JSON, verify that every answer value exactly matches one of the allowed_answers values for that question.\nKeep question_id unchanged.\nReturn JSON only that matches the provided schema.\nmanifest_id=synoptic_sfc12h_stage1\ndomain=sfc12h_synoptic\nstage=stage1\nimage_ref=surf_12h_2026033100\nvalid_time=2026033100\nQuestions:\n1. question_id=stage1_manchuria_s_synoptic_low_center_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n2. question_id=stage1_manchuria_s_synoptic_high_center_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n3. question_id=stage1_manchuria_s_frontal_zone_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=frontal_zone | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n4. question_id=stage1_manchuria_s_surface_trough_axis_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n5. question_id=stage1_manchuria_s_surface_ridge_axis_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n6. question_id=stage1_manchuria_s_gale_wind_area_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n7. question_id=stage1_manchuria_s_tight_pressure_gradient_zone_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n8. question_id=stage1_manchuria_s_movement_signal_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=movement_signal | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n9. question_id=stage1_liao_bohai_synoptic_low_center_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n10. question_id=stage1_liao_bohai_synoptic_high_center_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n11. question_id=stage1_liao_bohai_frontal_zone_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=frontal_zone | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n12. question_id=stage1_liao_bohai_surface_trough_axis_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n13. question_id=stage1_liao_bohai_surface_ridge_axis_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n14. question_id=stage1_liao_bohai_gale_wind_area_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=gale_wind_area | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n15. question_id=stage1_liao_bohai_tight_pressure_gradient_zone_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n16. question_id=stage1_liao_bohai_movement_signal_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=movement_signal | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n17. question_id=stage1_ws_mid_synoptic_low_center_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n18. question_id=stage1_ws_mid_synoptic_high_center_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n19. question_id=stage1_ws_mid_frontal_zone_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=frontal_zone | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n20. question_id=stage1_ws_mid_surface_trough_axis_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n21. question_id=stage1_ws_mid_surface_ridge_axis_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n22. question_id=stage1_ws_mid_gale_wind_area_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n23. question_id=stage1_ws_mid_tight_pressure_gradient_zone_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n24. question_id=stage1_ws_mid_movement_signal_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=movement_signal | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n25. question_id=stage1_kp_north_synoptic_low_center_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n26. question_id=stage1_kp_north_synoptic_high_center_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n27. question_id=stage1_kp_north_frontal_zone_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=frontal_zone | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n28. question_id=stage1_kp_north_surface_trough_axis_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n29. question_id=stage1_kp_north_surface_ridge_axis_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n30. question_id=stage1_kp_north_gale_wind_area_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n31. question_id=stage1_kp_north_tight_pressure_gradient_zone_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n32. question_id=stage1_kp_north_movement_signal_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=movement_signal | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n33. question_id=stage1_kp_south_synoptic_low_center_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n34. question_id=stage1_kp_south_synoptic_high_center_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n35. question_id=stage1_kp_south_frontal_zone_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=frontal_zone | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n36. question_id=stage1_kp_south_surface_trough_axis_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n37. question_id=stage1_kp_south_surface_ridge_axis_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n38. question_id=stage1_kp_south_gale_wind_area_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n39. question_id=stage1_kp_south_tight_pressure_gradient_zone_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n40. question_id=stage1_kp_south_movement_signal_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=movement_signal | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n41. question_id=stage1_ecs_north_synoptic_low_center_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n42. question_id=stage1_ecs_north_synoptic_high_center_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n43. question_id=stage1_ecs_north_frontal_zone_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=frontal_zone | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n44. question_id=stage1_ecs_north_surface_trough_axis_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n45. question_id=stage1_ecs_north_surface_ridge_axis_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n46. question_id=stage1_ecs_north_gale_wind_area_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n47. question_id=stage1_ecs_north_tight_pressure_gradient_zone_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n48. question_id=stage1_ecs_north_movement_signal_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=movement_signal | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n49. question_id=stage1_japan_w_synoptic_low_center_presence | region_id=japan_w | region_label=일본 서부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n50. question_id=stage1_japan_w_synoptic_high_center_presence | region_id=japan_w | region_label=일본 서부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n51. question_id=stage1_japan_w_frontal_zone_presence | region_id=japan_w | region_label=일본 서부 | signal_key=frontal_zone | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n52. question_id=stage1_japan_w_surface_trough_axis_presence | region_id=japan_w | region_label=일본 서부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n53. question_id=stage1_japan_w_surface_ridge_axis_presence | region_id=japan_w | region_label=일본 서부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n54. question_id=stage1_japan_w_gale_wind_area_presence | region_id=japan_w | region_label=일본 서부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n55. question_id=stage1_japan_w_tight_pressure_gradient_zone_presence | region_id=japan_w | region_label=일본 서부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n56. question_id=stage1_japan_w_movement_signal_presence | region_id=japan_w | region_label=일본 서부 | signal_key=movement_signal | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n57. question_id=stage1_japan_east_offshore_synoptic_low_center_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n58. question_id=stage1_japan_east_offshore_synoptic_high_center_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n59. question_id=stage1_japan_east_offshore_frontal_zone_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=frontal_zone | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n60. question_id=stage1_japan_east_offshore_surface_trough_axis_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n61. question_id=stage1_japan_east_offshore_surface_ridge_axis_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n62. question_id=stage1_japan_east_offshore_gale_wind_area_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=gale_wind_area | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n63. question_id=stage1_japan_east_offshore_tight_pressure_gradient_zone_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n64. question_id=stage1_japan_east_offshore_movement_signal_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=movement_signal | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?"
+        },
+        "response": {
+          "id": "resp_053970f0b43c4c0a0069ce1996c9c48192b8a041f05b9269dd",
+          "object": "response",
+          "created_at": 1775114646,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775114662,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_053970f0b43c4c0a0069ce1997cc808192b45b643c3dd7e527",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_manchuria_s_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_synoptic_low_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_synoptic_high_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_gale_wind_area_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_synoptic_low_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_synoptic_high_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_gale_wind_area_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_synoptic_low_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_synoptic_high_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_gale_wind_area_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "answer",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 7414,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1478,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 8892
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_manchuria_s_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_synoptic_low_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_synoptic_high_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_gale_wind_area_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_synoptic_low_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_synoptic_high_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_gale_wind_area_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_synoptic_low_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_synoptic_high_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_gale_wind_area_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/2026-04-01/charts/nuri/surf_12h_2026033112.png",
+      "image_ref": "surf_12h_2026033112",
+      "valid_time": "2026033112",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_manchuria_s_synoptic_low_center_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_synoptic_high_center_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_frontal_zone_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_surface_trough_axis_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_surface_ridge_axis_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_gale_wind_area_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_tight_pressure_gradient_zone_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_movement_signal_presence",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_synoptic_low_center_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_synoptic_high_center_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_frontal_zone_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_surface_trough_axis_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_surface_ridge_axis_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_gale_wind_area_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_tight_pressure_gradient_zone_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_movement_signal_presence",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_synoptic_low_center_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_synoptic_high_center_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_frontal_zone_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_surface_trough_axis_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_surface_ridge_axis_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_gale_wind_area_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_tight_pressure_gradient_zone_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_movement_signal_presence",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_synoptic_low_center_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_synoptic_high_center_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_frontal_zone_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_surface_trough_axis_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_surface_ridge_axis_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_gale_wind_area_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_tight_pressure_gradient_zone_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_movement_signal_presence",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_synoptic_low_center_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_synoptic_high_center_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_frontal_zone_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_surface_trough_axis_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_surface_ridge_axis_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_gale_wind_area_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_tight_pressure_gradient_zone_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_movement_signal_presence",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_synoptic_low_center_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_synoptic_high_center_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_frontal_zone_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_surface_trough_axis_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_surface_ridge_axis_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_gale_wind_area_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_tight_pressure_gradient_zone_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_movement_signal_presence",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_synoptic_low_center_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_synoptic_high_center_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_frontal_zone_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_surface_trough_axis_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_surface_ridge_axis_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_gale_wind_area_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_tight_pressure_gradient_zone_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_movement_signal_presence",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_synoptic_low_center_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "synoptic_low_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 저기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_synoptic_high_center_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "synoptic_high_center",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 종관 고기압 중심이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_frontal_zone_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "frontal_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 전선대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_surface_trough_axis_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "surface_trough_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압골 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_surface_ridge_axis_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "surface_ridge_axis",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 지상 기압능 축이 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_gale_wind_area_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "gale_wind_area",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 강풍 또는 강풍대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_tight_pressure_gradient_zone_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "tight_pressure_gradient_zone",
+          "attribute_key": "presence",
+          "question_text": "이 영역 내부에 등압선 조밀대가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_movement_signal_presence",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "movement_signal",
+          "attribute_key": "presence",
+          "question_text": "이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?",
+          "allowed_answers": [
+            "yes",
+            "no",
+            "unknown"
+          ]
+        }
+      ],
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\2026-04-01\\charts\\nuri\\surf_12h_2026033112.png",
+          "prompt_text": "You are a weather feature extraction assistant.\nAnalyze the attached synoptic chart image.\nAnswer every question below with exactly one value from the allowed_answers list.\nThe answer field must copy one allowed_answers value verbatim.\nDo not paraphrase, translate, inflect, pluralize, add adverbs, or add explanatory words.\nIf the best label is 'continuous', return 'continuous' exactly, not 'continuously'.\nIf you are uncertain, return 'unknown' exactly when 'unknown' is allowed.\nBefore returning JSON, verify that every answer value exactly matches one of the allowed_answers values for that question.\nKeep question_id unchanged.\nReturn JSON only that matches the provided schema.\nmanifest_id=synoptic_sfc12h_stage1\ndomain=sfc12h_synoptic\nstage=stage1\nimage_ref=surf_12h_2026033112\nvalid_time=2026033112\nQuestions:\n1. question_id=stage1_manchuria_s_synoptic_low_center_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n2. question_id=stage1_manchuria_s_synoptic_high_center_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n3. question_id=stage1_manchuria_s_frontal_zone_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=frontal_zone | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n4. question_id=stage1_manchuria_s_surface_trough_axis_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n5. question_id=stage1_manchuria_s_surface_ridge_axis_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n6. question_id=stage1_manchuria_s_gale_wind_area_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n7. question_id=stage1_manchuria_s_tight_pressure_gradient_zone_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n8. question_id=stage1_manchuria_s_movement_signal_presence | region_id=manchuria_s | region_label=만주 남부 | signal_key=movement_signal | attribute_key=presence | lat_range=41~47N | lon_range=120~130E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n9. question_id=stage1_liao_bohai_synoptic_low_center_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n10. question_id=stage1_liao_bohai_synoptic_high_center_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n11. question_id=stage1_liao_bohai_frontal_zone_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=frontal_zone | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n12. question_id=stage1_liao_bohai_surface_trough_axis_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n13. question_id=stage1_liao_bohai_surface_ridge_axis_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n14. question_id=stage1_liao_bohai_gale_wind_area_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=gale_wind_area | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n15. question_id=stage1_liao_bohai_tight_pressure_gradient_zone_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n16. question_id=stage1_liao_bohai_movement_signal_presence | region_id=liao_bohai | region_label=요동반도/발해만 | signal_key=movement_signal | attribute_key=presence | lat_range=38~41N | lon_range=120~123E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n17. question_id=stage1_ws_mid_synoptic_low_center_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n18. question_id=stage1_ws_mid_synoptic_high_center_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n19. question_id=stage1_ws_mid_frontal_zone_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=frontal_zone | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n20. question_id=stage1_ws_mid_surface_trough_axis_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n21. question_id=stage1_ws_mid_surface_ridge_axis_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n22. question_id=stage1_ws_mid_gale_wind_area_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n23. question_id=stage1_ws_mid_tight_pressure_gradient_zone_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n24. question_id=stage1_ws_mid_movement_signal_presence | region_id=ws_mid | region_label=서해 중부 | signal_key=movement_signal | attribute_key=presence | lat_range=35~38N | lon_range=122~126E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n25. question_id=stage1_kp_north_synoptic_low_center_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n26. question_id=stage1_kp_north_synoptic_high_center_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n27. question_id=stage1_kp_north_frontal_zone_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=frontal_zone | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n28. question_id=stage1_kp_north_surface_trough_axis_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n29. question_id=stage1_kp_north_surface_ridge_axis_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n30. question_id=stage1_kp_north_gale_wind_area_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n31. question_id=stage1_kp_north_tight_pressure_gradient_zone_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n32. question_id=stage1_kp_north_movement_signal_presence | region_id=kp_north | region_label=한반도 북부 | signal_key=movement_signal | attribute_key=presence | lat_range=37~40N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n33. question_id=stage1_kp_south_synoptic_low_center_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n34. question_id=stage1_kp_south_synoptic_high_center_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n35. question_id=stage1_kp_south_frontal_zone_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=frontal_zone | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n36. question_id=stage1_kp_south_surface_trough_axis_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n37. question_id=stage1_kp_south_surface_ridge_axis_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n38. question_id=stage1_kp_south_gale_wind_area_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n39. question_id=stage1_kp_south_tight_pressure_gradient_zone_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n40. question_id=stage1_kp_south_movement_signal_presence | region_id=kp_south | region_label=한반도 남부 | signal_key=movement_signal | attribute_key=presence | lat_range=33~37N | lon_range=124~130E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n41. question_id=stage1_ecs_north_synoptic_low_center_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n42. question_id=stage1_ecs_north_synoptic_high_center_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n43. question_id=stage1_ecs_north_frontal_zone_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=frontal_zone | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n44. question_id=stage1_ecs_north_surface_trough_axis_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n45. question_id=stage1_ecs_north_surface_ridge_axis_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n46. question_id=stage1_ecs_north_gale_wind_area_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n47. question_id=stage1_ecs_north_tight_pressure_gradient_zone_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n48. question_id=stage1_ecs_north_movement_signal_presence | region_id=ecs_north | region_label=동중국해 북부 | signal_key=movement_signal | attribute_key=presence | lat_range=28~34N | lon_range=120~128E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n49. question_id=stage1_japan_w_synoptic_low_center_presence | region_id=japan_w | region_label=일본 서부 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n50. question_id=stage1_japan_w_synoptic_high_center_presence | region_id=japan_w | region_label=일본 서부 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n51. question_id=stage1_japan_w_frontal_zone_presence | region_id=japan_w | region_label=일본 서부 | signal_key=frontal_zone | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n52. question_id=stage1_japan_w_surface_trough_axis_presence | region_id=japan_w | region_label=일본 서부 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n53. question_id=stage1_japan_w_surface_ridge_axis_presence | region_id=japan_w | region_label=일본 서부 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n54. question_id=stage1_japan_w_gale_wind_area_presence | region_id=japan_w | region_label=일본 서부 | signal_key=gale_wind_area | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n55. question_id=stage1_japan_w_tight_pressure_gradient_zone_presence | region_id=japan_w | region_label=일본 서부 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n56. question_id=stage1_japan_w_movement_signal_presence | region_id=japan_w | region_label=일본 서부 | signal_key=movement_signal | attribute_key=presence | lat_range=31~38N | lon_range=130~138E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?\n57. question_id=stage1_japan_east_offshore_synoptic_low_center_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=synoptic_low_center | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 저기압 중심이 존재하는가?\n58. question_id=stage1_japan_east_offshore_synoptic_high_center_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=synoptic_high_center | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 종관 고기압 중심이 존재하는가?\n59. question_id=stage1_japan_east_offshore_frontal_zone_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=frontal_zone | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 전선대가 존재하는가?\n60. question_id=stage1_japan_east_offshore_surface_trough_axis_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=surface_trough_axis | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압골 축이 존재하는가?\n61. question_id=stage1_japan_east_offshore_surface_ridge_axis_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=surface_ridge_axis | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 지상 기압능 축이 존재하는가?\n62. question_id=stage1_japan_east_offshore_gale_wind_area_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=gale_wind_area | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 강풍 또는 강풍대가 존재하는가?\n63. question_id=stage1_japan_east_offshore_tight_pressure_gradient_zone_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=tight_pressure_gradient_zone | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역 내부에 등압선 조밀대가 존재하는가?\n64. question_id=stage1_japan_east_offshore_movement_signal_presence | region_id=japan_east_offshore | region_label=일본 동부 해상 | signal_key=movement_signal | attribute_key=presence | lat_range=30~40N | lon_range=140~150E | allowed_answers=yes|no|unknown | question_text=이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?"
+        },
+        "response": {
+          "id": "resp_06a947e0c4783fb20069ce19a8715c81a18a46f944ba7e7eb0",
+          "object": "response",
+          "created_at": 1775114664,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775114684,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_06a947e0c4783fb20069ce19ab43d881a1ac0ce03ba9692882",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_manchuria_s_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_synoptic_high_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_manchuria_s_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_liao_bohai_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_synoptic_low_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_synoptic_high_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_gale_wind_area_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ws_mid_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_synoptic_low_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_synoptic_high_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_north_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_tight_pressure_gradient_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_kp_south_movement_signal_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_tight_pressure_gradient_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_movement_signal_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_synoptic_low_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_synoptic_high_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_frontal_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_surface_trough_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_surface_ridge_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_gale_wind_area_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_tight_pressure_gradient_zone_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_w_movement_signal_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_synoptic_low_center_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_synoptic_high_center_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_frontal_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_surface_trough_axis_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_surface_ridge_axis_presence\",\"answer\":\"yes\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_gale_wind_area_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_tight_pressure_gradient_zone_presence\",\"answer\":\"no\",\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_movement_signal_presence\",\"answer\":\"no\",\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "answer",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "answer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 7414,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 1478,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 8892
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_manchuria_s_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_synoptic_high_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_manchuria_s_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_liao_bohai_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_synoptic_low_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_synoptic_high_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_gale_wind_area_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ws_mid_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_synoptic_low_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_synoptic_high_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_tight_pressure_gradient_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_movement_signal_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_tight_pressure_gradient_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_movement_signal_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_synoptic_low_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_synoptic_high_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_frontal_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_surface_trough_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_surface_ridge_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_gale_wind_area_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_tight_pressure_gradient_zone_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_movement_signal_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_synoptic_low_center_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_synoptic_high_center_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_frontal_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_surface_trough_axis_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_surface_ridge_axis_presence",
+              "answer": "yes",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_gale_wind_area_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_tight_pressure_gradient_zone_presence",
+              "answer": "no",
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_movement_signal_presence",
+              "answer": "no",
+              "note": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

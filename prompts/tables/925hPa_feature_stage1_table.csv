@@ -1,0 +1,65 @@
+﻿stage,question_id,region_id,region_label,lat_range,lon_range,signal_key,attribute_key,question_text,allowed_answers
+stage1,stage1_manchuria_s_low_level_trough_presence,manchuria_s,만주 남부,41~47N,120~130E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_low_level_ridge_presence,manchuria_s,만주 남부,41~47N,120~130E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_warm_advection_presence,manchuria_s,만주 남부,41~47N,120~130E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_cold_advection_presence,manchuria_s,만주 남부,41~47N,120~130E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_thermal_gradient_zone_presence,manchuria_s,만주 남부,41~47N,120~130E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_wet_area_presence,manchuria_s,만주 남부,41~47N,120~130E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_strong_wind_zone_presence,manchuria_s,만주 남부,41~47N,120~130E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_freezing_line_candidate_presence,manchuria_s,만주 남부,41~47N,120~130E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_low_level_trough_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_low_level_ridge_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_warm_advection_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_cold_advection_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_thermal_gradient_zone_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_wet_area_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_strong_wind_zone_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_freezing_line_candidate_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_low_level_trough_presence,ws_mid,서해 중부,35~38N,122~126E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_low_level_ridge_presence,ws_mid,서해 중부,35~38N,122~126E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_warm_advection_presence,ws_mid,서해 중부,35~38N,122~126E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_cold_advection_presence,ws_mid,서해 중부,35~38N,122~126E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_thermal_gradient_zone_presence,ws_mid,서해 중부,35~38N,122~126E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_wet_area_presence,ws_mid,서해 중부,35~38N,122~126E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_strong_wind_zone_presence,ws_mid,서해 중부,35~38N,122~126E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_freezing_line_candidate_presence,ws_mid,서해 중부,35~38N,122~126E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_low_level_trough_presence,kp_north,한반도 북부,37~40N,124~130E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_low_level_ridge_presence,kp_north,한반도 북부,37~40N,124~130E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_warm_advection_presence,kp_north,한반도 북부,37~40N,124~130E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_cold_advection_presence,kp_north,한반도 북부,37~40N,124~130E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_thermal_gradient_zone_presence,kp_north,한반도 북부,37~40N,124~130E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_wet_area_presence,kp_north,한반도 북부,37~40N,124~130E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_strong_wind_zone_presence,kp_north,한반도 북부,37~40N,124~130E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_freezing_line_candidate_presence,kp_north,한반도 북부,37~40N,124~130E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_low_level_trough_presence,kp_south,한반도 남부,33~37N,124~130E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_low_level_ridge_presence,kp_south,한반도 남부,33~37N,124~130E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_warm_advection_presence,kp_south,한반도 남부,33~37N,124~130E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_cold_advection_presence,kp_south,한반도 남부,33~37N,124~130E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_thermal_gradient_zone_presence,kp_south,한반도 남부,33~37N,124~130E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_wet_area_presence,kp_south,한반도 남부,33~37N,124~130E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_strong_wind_zone_presence,kp_south,한반도 남부,33~37N,124~130E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_freezing_line_candidate_presence,kp_south,한반도 남부,33~37N,124~130E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_low_level_trough_presence,ecs_north,동중국해 북부,28~34N,120~128E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_low_level_ridge_presence,ecs_north,동중국해 북부,28~34N,120~128E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_warm_advection_presence,ecs_north,동중국해 북부,28~34N,120~128E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_cold_advection_presence,ecs_north,동중국해 북부,28~34N,120~128E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_thermal_gradient_zone_presence,ecs_north,동중국해 북부,28~34N,120~128E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_wet_area_presence,ecs_north,동중국해 북부,28~34N,120~128E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_strong_wind_zone_presence,ecs_north,동중국해 북부,28~34N,120~128E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_freezing_line_candidate_presence,ecs_north,동중국해 북부,28~34N,120~128E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_low_level_trough_presence,japan_w,일본 서부,31~38N,130~138E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_low_level_ridge_presence,japan_w,일본 서부,31~38N,130~138E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_warm_advection_presence,japan_w,일본 서부,31~38N,130~138E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_cold_advection_presence,japan_w,일본 서부,31~38N,130~138E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_thermal_gradient_zone_presence,japan_w,일본 서부,31~38N,130~138E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_wet_area_presence,japan_w,일본 서부,31~38N,130~138E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_strong_wind_zone_presence,japan_w,일본 서부,31~38N,130~138E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_freezing_line_candidate_presence,japan_w,일본 서부,31~38N,130~138E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_low_level_trough_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,low_level_trough,presence,이 영역 내부에 925hPa 하층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_low_level_ridge_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,low_level_ridge,presence,이 영역 내부에 925hPa 하층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_warm_advection_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,warm_advection,presence,이 영역 내부에 925hPa 난기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_cold_advection_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,cold_advection,presence,이 영역 내부에 925hPa 한기 이류가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_thermal_gradient_zone_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,thermal_gradient_zone,presence,이 영역 내부에 925hPa 강한 온도경도대 또는 전선대 후보가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_wet_area_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,wet_area,presence,이 영역 내부에 WET AREA(T-Td<2℃)가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_strong_wind_zone_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,strong_wind_zone,presence,이 영역 내부에 925hPa 강풍역이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_freezing_line_candidate_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,freezing_line_candidate,presence,이 영역 내부 또는 인접부에 925hPa 0℃선 후보가 존재하는가?,yes|no|unknown

@@ -1,0 +1,15 @@
+{
+  "version": "briefing_validation.v1",
+  "run_date": "2026-04-01",
+  "allow_new_claims": false,
+  "status": "pass",
+  "issue_count": 0,
+  "checks": {
+    "schema_valid": true,
+    "missing_evidence_count": 0,
+    "unsupported_claim_count": 0,
+    "contradiction_count": 0,
+    "duplicate_meaning_count": 0
+  },
+  "issues": []
+}

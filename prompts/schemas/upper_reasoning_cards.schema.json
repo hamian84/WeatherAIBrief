@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "run_date", "allow_new_claims", "cards"],
+  "properties": {
+    "version": {"type": "string", "minLength": 1},
+    "run_date": {"type": "string", "minLength": 1},
+    "allow_new_claims": {"type": "boolean"},
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "card_id",
+          "card_type",
+          "title",
+          "summary",
+          "source_card_ids",
+          "supporting_domains",
+          "evidence_refs",
+          "confidence"
+        ],
+        "properties": {
+          "card_id": {"type": "string", "minLength": 1},
+          "card_type": {"type": "string", "enum": ["overall_summary", "synoptic_overview", "surface_overview"]},
+          "title": {"type": "string", "minLength": 1},
+          "summary": {"type": "string", "minLength": 1},
+          "source_card_ids": {"type": "array", "items": {"type": "string"}},
+          "supporting_domains": {"type": "array", "items": {"type": "string"}},
+          "evidence_refs": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "version": "briefing_validation.v1",
+  "run_date": "2026-04-01",
+  "allow_new_claims": false,
+  "status": "fail",
+  "issue_count": 1,
+  "checks": {
+    "schema_valid": true,
+    "missing_evidence_count": 1,
+    "unsupported_claim_count": 0,
+    "contradiction_count": 0,
+    "duplicate_meaning_count": 0
+  },
+  "issues": [
+    {
+      "issue_id": "issue_001",
+      "issue_type": "missing_evidence_refs",
+      "severity": "error",
+      "section_id": "overall_summary",
+      "message": "draft file=D:\\99.project\\03.WeatherAIBrief\\daou\\2026-04-01\\tests\\failfast\\missing_evidence_draft.json section=overall_summary field=evidence_refs is empty"
+    }
+  ]
+}

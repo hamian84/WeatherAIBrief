@@ -1,0 +1,26 @@
+stage,question_id,region_id,region_label,lat_range,lon_range,signal_key,attribute_key,question_text,allowed_answers
+stage1,stage1_manchuria_s_jet_axis_presence,manchuria_s,만주 남부,41~47N,120~130E,jet_axis,presence,이 영역 내부에 300hPa 제트축이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_jet_core_presence,manchuria_s,만주 남부,41~47N,120~130E,jet_core,presence,이 영역 내부에 300hPa 제트코어가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_upper_trough_presence,manchuria_s,만주 남부,41~47N,120~130E,upper_trough,presence,이 영역 내부에 상층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_confluent_flow_presence,manchuria_s,만주 남부,41~47N,120~130E,confluent_flow,presence,이 영역 내부에 합류형 흐름이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_diffluent_flow_presence,manchuria_s,만주 남부,41~47N,120~130E,diffluent_flow,presence,이 영역 내부에 분류형 흐름이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_jet_axis_presence,kp_north,한반도 북부,37~40N,124~130E,jet_axis,presence,이 영역 내부에 300hPa 제트축이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_jet_core_presence,kp_north,한반도 북부,37~40N,124~130E,jet_core,presence,이 영역 내부에 300hPa 제트코어가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_upper_trough_presence,kp_north,한반도 북부,37~40N,124~130E,upper_trough,presence,이 영역 내부에 상층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_confluent_flow_presence,kp_north,한반도 북부,37~40N,124~130E,confluent_flow,presence,이 영역 내부에 합류형 흐름이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_diffluent_flow_presence,kp_north,한반도 북부,37~40N,124~130E,diffluent_flow,presence,이 영역 내부에 분류형 흐름이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_jet_axis_presence,kp_south,한반도 남부,33~37N,124~130E,jet_axis,presence,이 영역 내부에 300hPa 제트축이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_jet_core_presence,kp_south,한반도 남부,33~37N,124~130E,jet_core,presence,이 영역 내부에 300hPa 제트코어가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_upper_trough_presence,kp_south,한반도 남부,33~37N,124~130E,upper_trough,presence,이 영역 내부에 상층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_confluent_flow_presence,kp_south,한반도 남부,33~37N,124~130E,confluent_flow,presence,이 영역 내부에 합류형 흐름이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_diffluent_flow_presence,kp_south,한반도 남부,33~37N,124~130E,diffluent_flow,presence,이 영역 내부에 분류형 흐름이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_subtropical_jet_axis_presence,ecs_north,동중국해 북부,28~34N,120~128E,subtropical_jet_axis,presence,이 영역 내부에 아열대제트 축이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_jet_core_presence,ecs_north,동중국해 북부,28~34N,120~128E,jet_core,presence,이 영역 내부에 300hPa 제트코어가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_upper_ridge_presence,ecs_north,동중국해 북부,28~34N,120~128E,upper_ridge,presence,이 영역 내부에 상층 기압능이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_jet_axis_presence,japan_w,일본 서부,31~38N,130~138E,jet_axis,presence,이 영역 내부에 300hPa 제트축이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_jet_core_presence,japan_w,일본 서부,31~38N,130~138E,jet_core,presence,이 영역 내부에 300hPa 제트코어가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_diffluent_flow_presence,japan_w,일본 서부,31~38N,130~138E,diffluent_flow,presence,이 영역 내부에 분류형 흐름이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_jet_axis_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,jet_axis,presence,이 영역 내부에 300hPa 제트축이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_jet_core_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,jet_core,presence,이 영역 내부에 300hPa 제트코어가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_upper_trough_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,upper_trough,presence,이 영역 내부에 상층 기압골이 존재하는가?,yes|no|unknown
+stage1,stage1_tibet_n_polar_jet_axis_presence,tibet_n,티베트고원 북쪽,35~45N,90~105E,polar_jet_axis,presence,이 영역 내부에 한대제트 축이 존재하는가?,yes|no|unknown

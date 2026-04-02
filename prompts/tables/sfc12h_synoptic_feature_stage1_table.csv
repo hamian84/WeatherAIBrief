@@ -1,0 +1,65 @@
+﻿stage,question_id,region_id,region_label,lat_range,lon_range,signal_key,attribute_key,question_text,allowed_answers
+stage1,stage1_manchuria_s_synoptic_low_center_presence,manchuria_s,만주 남부,41~47N,120~130E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_synoptic_high_center_presence,manchuria_s,만주 남부,41~47N,120~130E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_frontal_zone_presence,manchuria_s,만주 남부,41~47N,120~130E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_surface_trough_axis_presence,manchuria_s,만주 남부,41~47N,120~130E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_surface_ridge_axis_presence,manchuria_s,만주 남부,41~47N,120~130E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_gale_wind_area_presence,manchuria_s,만주 남부,41~47N,120~130E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_tight_pressure_gradient_zone_presence,manchuria_s,만주 남부,41~47N,120~130E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_manchuria_s_movement_signal_presence,manchuria_s,만주 남부,41~47N,120~130E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_synoptic_low_center_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_synoptic_high_center_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_frontal_zone_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_surface_trough_axis_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_surface_ridge_axis_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_gale_wind_area_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_tight_pressure_gradient_zone_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_liao_bohai_movement_signal_presence,liao_bohai,요동반도/발해만,38~41N,120~123E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_synoptic_low_center_presence,ws_mid,서해 중부,35~38N,122~126E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_synoptic_high_center_presence,ws_mid,서해 중부,35~38N,122~126E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_frontal_zone_presence,ws_mid,서해 중부,35~38N,122~126E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_surface_trough_axis_presence,ws_mid,서해 중부,35~38N,122~126E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_surface_ridge_axis_presence,ws_mid,서해 중부,35~38N,122~126E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_gale_wind_area_presence,ws_mid,서해 중부,35~38N,122~126E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_tight_pressure_gradient_zone_presence,ws_mid,서해 중부,35~38N,122~126E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_ws_mid_movement_signal_presence,ws_mid,서해 중부,35~38N,122~126E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_synoptic_low_center_presence,kp_north,한반도 북부,37~40N,124~130E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_synoptic_high_center_presence,kp_north,한반도 북부,37~40N,124~130E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_frontal_zone_presence,kp_north,한반도 북부,37~40N,124~130E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_surface_trough_axis_presence,kp_north,한반도 북부,37~40N,124~130E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_surface_ridge_axis_presence,kp_north,한반도 북부,37~40N,124~130E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_gale_wind_area_presence,kp_north,한반도 북부,37~40N,124~130E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_tight_pressure_gradient_zone_presence,kp_north,한반도 북부,37~40N,124~130E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_north_movement_signal_presence,kp_north,한반도 북부,37~40N,124~130E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_synoptic_low_center_presence,kp_south,한반도 남부,33~37N,124~130E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_synoptic_high_center_presence,kp_south,한반도 남부,33~37N,124~130E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_frontal_zone_presence,kp_south,한반도 남부,33~37N,124~130E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_surface_trough_axis_presence,kp_south,한반도 남부,33~37N,124~130E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_surface_ridge_axis_presence,kp_south,한반도 남부,33~37N,124~130E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_gale_wind_area_presence,kp_south,한반도 남부,33~37N,124~130E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_tight_pressure_gradient_zone_presence,kp_south,한반도 남부,33~37N,124~130E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_kp_south_movement_signal_presence,kp_south,한반도 남부,33~37N,124~130E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_synoptic_low_center_presence,ecs_north,동중국해 북부,28~34N,120~128E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_synoptic_high_center_presence,ecs_north,동중국해 북부,28~34N,120~128E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_frontal_zone_presence,ecs_north,동중국해 북부,28~34N,120~128E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_surface_trough_axis_presence,ecs_north,동중국해 북부,28~34N,120~128E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_surface_ridge_axis_presence,ecs_north,동중국해 북부,28~34N,120~128E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_gale_wind_area_presence,ecs_north,동중국해 북부,28~34N,120~128E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_tight_pressure_gradient_zone_presence,ecs_north,동중국해 북부,28~34N,120~128E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_ecs_north_movement_signal_presence,ecs_north,동중국해 북부,28~34N,120~128E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_synoptic_low_center_presence,japan_w,일본 서부,31~38N,130~138E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_synoptic_high_center_presence,japan_w,일본 서부,31~38N,130~138E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_frontal_zone_presence,japan_w,일본 서부,31~38N,130~138E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_surface_trough_axis_presence,japan_w,일본 서부,31~38N,130~138E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_surface_ridge_axis_presence,japan_w,일본 서부,31~38N,130~138E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_gale_wind_area_presence,japan_w,일본 서부,31~38N,130~138E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_tight_pressure_gradient_zone_presence,japan_w,일본 서부,31~38N,130~138E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_w_movement_signal_presence,japan_w,일본 서부,31~38N,130~138E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_synoptic_low_center_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,synoptic_low_center,presence,이 영역 내부에 종관 저기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_synoptic_high_center_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,synoptic_high_center,presence,이 영역 내부에 종관 고기압 중심이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_frontal_zone_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,frontal_zone,presence,이 영역 내부에 전선대가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_surface_trough_axis_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,surface_trough_axis,presence,이 영역 내부에 지상 기압골 축이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_surface_ridge_axis_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,surface_ridge_axis,presence,이 영역 내부에 지상 기압능 축이 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_gale_wind_area_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,gale_wind_area,presence,이 영역 내부에 강풍 또는 강풍대가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_tight_pressure_gradient_zone_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,tight_pressure_gradient_zone,presence,이 영역 내부에 등압선 조밀대가 존재하는가?,yes|no|unknown
+stage1,stage1_japan_east_offshore_movement_signal_presence,japan_east_offshore,일본 동부 해상,30~40N,140~150E,movement_signal,presence,이 영역과 관련된 기압계 또는 전선 이동 신호가 존재하는가?,yes|no|unknown

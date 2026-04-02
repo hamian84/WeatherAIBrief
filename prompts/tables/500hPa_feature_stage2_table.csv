@@ -1,0 +1,49 @@
+stage,question_id,region_id,region_label,lat_range,lon_range,signal_key,attribute_key,question_text,allowed_answers
+stage2,stage2_kp_nw_trough_axis_relative_position,kp_nw,한반도 북서,37~40N,124~127E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_nw_ridge_axis_relative_position,kp_nw,한반도 북서,37~40N,124~127E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_nw_cold_core_strength,kp_nw,한반도 북서,37~40N,124~127E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_nw_cold_core_coverage,kp_nw,한반도 북서,37~40N,124~127E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_kp_nw_closed_cyclonic_circulation_strength,kp_nw,한반도 북서,37~40N,124~127E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_nw_tight_height_gradient_strength,kp_nw,한반도 북서,37~40N,124~127E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_ne_trough_axis_relative_position,kp_ne,한반도 북동,37~40N,127~130E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_ne_ridge_axis_relative_position,kp_ne,한반도 북동,37~40N,127~130E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_ne_cold_core_strength,kp_ne,한반도 북동,37~40N,127~130E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_ne_cold_core_coverage,kp_ne,한반도 북동,37~40N,127~130E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_kp_ne_closed_cyclonic_circulation_strength,kp_ne,한반도 북동,37~40N,127~130E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_ne_tight_height_gradient_strength,kp_ne,한반도 북동,37~40N,127~130E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_sw_trough_axis_relative_position,kp_sw,한반도 남서,34~37N,124~127E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_sw_ridge_axis_relative_position,kp_sw,한반도 남서,34~37N,124~127E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_sw_cold_core_strength,kp_sw,한반도 남서,34~37N,124~127E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_sw_cold_core_coverage,kp_sw,한반도 남서,34~37N,124~127E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_kp_sw_closed_cyclonic_circulation_strength,kp_sw,한반도 남서,34~37N,124~127E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_sw_tight_height_gradient_strength,kp_sw,한반도 남서,34~37N,124~127E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_se_trough_axis_relative_position,kp_se,한반도 남동,34~37N,127~130E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_se_ridge_axis_relative_position,kp_se,한반도 남동,34~37N,127~130E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_kp_se_cold_core_strength,kp_se,한반도 남동,34~37N,127~130E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_se_cold_core_coverage,kp_se,한반도 남동,34~37N,127~130E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_kp_se_closed_cyclonic_circulation_strength,kp_se,한반도 남동,34~37N,127~130E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_kp_se_tight_height_gradient_strength,kp_se,한반도 남동,34~37N,127~130E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_ws_n_trough_axis_relative_position,ws_n,서해 북부,37~40N,122~124E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_ws_n_ridge_axis_relative_position,ws_n,서해 북부,37~40N,122~124E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_ws_n_cold_core_strength,ws_n,서해 북부,37~40N,122~124E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_ws_n_cold_core_coverage,ws_n,서해 북부,37~40N,122~124E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_ws_n_closed_cyclonic_circulation_strength,ws_n,서해 북부,37~40N,122~124E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_ws_n_tight_height_gradient_strength,ws_n,서해 북부,37~40N,122~124E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_es_n_trough_axis_relative_position,es_n,동해 북부,37~40N,130~133E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_es_n_ridge_axis_relative_position,es_n,동해 북부,37~40N,130~133E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_es_n_cold_core_strength,es_n,동해 북부,37~40N,130~133E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_es_n_cold_core_coverage,es_n,동해 북부,37~40N,130~133E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_es_n_closed_cyclonic_circulation_strength,es_n,동해 북부,37~40N,130~133E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_es_n_tight_height_gradient_strength,es_n,동해 북부,37~40N,130~133E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_liao_bohai_trough_axis_relative_position,liao_bohai,요동반도/발해만,38~41N,120~123E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_liao_bohai_ridge_axis_relative_position,liao_bohai,요동반도/발해만,38~41N,120~123E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_liao_bohai_cold_core_strength,liao_bohai,요동반도/발해만,38~41N,120~123E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_liao_bohai_cold_core_coverage,liao_bohai,요동반도/발해만,38~41N,120~123E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_liao_bohai_closed_cyclonic_circulation_strength,liao_bohai,요동반도/발해만,38~41N,120~123E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_liao_bohai_tight_height_gradient_strength,liao_bohai,요동반도/발해만,38~41N,120~123E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_manchuria_s_trough_axis_relative_position,manchuria_s,만주 남부,41~45N,123~128E,trough_axis,relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_manchuria_s_ridge_axis_relative_position,manchuria_s,만주 남부,41~45N,123~128E,ridge_axis,relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown
+stage2,stage2_manchuria_s_cold_core_strength,manchuria_s,만주 남부,41~45N,123~128E,cold_core,strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_manchuria_s_cold_core_coverage,manchuria_s,만주 남부,41~45N,123~128E,cold_core,coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown
+stage2,stage2_manchuria_s_closed_cyclonic_circulation_strength,manchuria_s,만주 남부,41~45N,123~128E,closed_cyclonic_circulation,strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown
+stage2,stage2_manchuria_s_tight_height_gradient_strength,manchuria_s,만주 남부,41~45N,123~128E,tight_height_gradient,strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown

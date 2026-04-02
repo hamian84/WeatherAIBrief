@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "run_date", "allow_new_claims", "status", "issue_count", "checks", "issues"],
+  "properties": {
+    "version": {"type": "string", "minLength": 1},
+    "run_date": {"type": "string", "minLength": 1},
+    "allow_new_claims": {"type": "boolean"},
+    "status": {"type": "string", "enum": ["pass", "warning", "fail"]},
+    "issue_count": {"type": "integer", "minimum": 0},
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_valid", "missing_evidence_count", "unsupported_claim_count", "contradiction_count", "duplicate_meaning_count"],
+      "properties": {
+        "schema_valid": {"type": "boolean"},
+        "missing_evidence_count": {"type": "integer", "minimum": 0},
+        "unsupported_claim_count": {"type": "integer", "minimum": 0},
+        "contradiction_count": {"type": "integer", "minimum": 0},
+        "duplicate_meaning_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["issue_id", "issue_type", "severity", "section_id", "message"],
+        "properties": {
+          "issue_id": {"type": "string", "minLength": 1},
+          "issue_type": {"type": "string", "minLength": 1},
+          "severity": {"type": "string", "enum": ["warning", "error"]},
+          "section_id": {"type": "string", "minLength": 1},
+          "message": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

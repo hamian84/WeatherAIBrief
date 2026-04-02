@@ -1,0 +1,17 @@
+{
+  "id": "briefing_writer_schema_without_source_card_ids",
+  "stage": "briefing_writer",
+  "model": "gpt-4.1-mini",
+  "allow_new_claims": false,
+  "input_paths": {
+    "upper_cards": "daio/{date}/cards/upper_reasoning_cards.json"
+  },
+  "output_paths": {
+    "prompt_input": "daio/{date}/tests/failfast/write_schema_without_source_card_ids_prompt_input.json",
+    "raw": "daio/{date}/tests/failfast/write_schema_without_source_card_ids_raw.json",
+    "draft": "daou/{date}/tests/failfast/write_schema_without_source_card_ids_draft.json"
+  },
+  "schema_path": "daio/{date}/tests/failfast/briefing_draft_missing_source_card_ids.schema.json",
+  "policy_path": "config/features/card_policies/upper_card_policy.yaml",
+  "prompt_instructions": "upper reasoning cards? ???? ??? ?????."
+}

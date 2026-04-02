@@ -1,0 +1,128 @@
+{
+  "version": "findings_bundle.v1",
+  "date": "2026-04-01",
+  "analysis_time_kst": "2026-04-02 19:34:38",
+  "summary": "2026년 3월 30일부터 31일에 걸쳐 동중국해 북부와 일본 동부 해상, 한반도 북부 및 만주 남부 지역을 중심으로 고층 제트축과 수렴 흐름이 나타났으며, 500hPa에서 만주 남부를 중심으로 긴장된 고도 구배와 저심도 열핵, 대기 골 축이 관측되었다. 850hPa 및 925hPa에서는 한반도 북부와 일본 서부, 동중국해 북부 지역에서 수분 수송 축과 저층 수렴 후보 영역, 온난/한랭 부가 및 열구배대가 확인되었다. 지상 분석과 위성 수증기 영상에서는 동중국해 북부와 일본 서부, 한반도 남부에 강한 고기압 중심과 전선대, 강풍 구역, 다습 영역 및 대류성 구름 집단이 뚜렷하게 발달한 상태로 나타났다. 지상 관측에서는 강수 발생이 많고 평균 습도가 높으며, 일부 지점에서 풍속이 강하게 관측되었다.",
+  "synoptic_primary_cards": [
+    {
+      "section": "300hPa 상층",
+      "statement": "동중국해 북부와 일본 동부 해상, 한반도 북부에 제트축과 수렴 흐름이 뚜렷하게 형성되어 있다.",
+      "regions": [
+        "ecs_north",
+        "japan_east_offshore",
+        "kp_north"
+      ],
+      "evidence_refs": [
+        "up30_6h_2026033018",
+        "up30_6h_2026033118"
+      ]
+    },
+    {
+      "section": "500hPa 중층",
+      "statement": "만주 남부 지역에 강하고 뚜렷한 고도 구배와 열핵, 대기 골 축이 자리잡고 있다.",
+      "regions": [
+        "manchuria_s"
+      ],
+      "evidence_refs": [
+        "up50_6h_2026033018",
+        "up50_6h_2026033118"
+      ]
+    },
+    {
+      "section": "지상 및 위성 관측",
+      "statement": "일본 서부와 동중국해 북부, 한반도 남부에 고기압 중심과 전선대, 강풍 구역 및 다습 영역과 대류성 구름 집단이 관측되어 활발한 기상 활동이 진행 중이다.",
+      "regions": [
+        "ecs_north",
+        "japan_w",
+        "kp_south"
+      ],
+      "evidence_refs": [
+        "surf_anl_6h_2026033100",
+        "gk2a_le1b_WV063_EA_202603311800"
+      ]
+    }
+  ],
+  "cross_layer_cards": [
+    {
+      "card_id": "cross_1",
+      "summary": "동중국해 북부와 일본 동부 해상에서는 300hPa 제트축과 850hPa 수분 수송 축, 지상 고기압 중심이 일치하며, 위성 수증기 영상에 밴드 구름과 대류 구름이 연속적으로 나타나 기상 현상의 연속성이 포착된다.",
+      "regions": [
+        "ecs_north",
+        "japan_east_offshore"
+      ],
+      "evidence_refs": [
+        "up30_6h_2026033118",
+        "up85_6h_2026033118",
+        "surf_anl_6h_2026033118",
+        "gk2a_le1b_WV063_EA_202603311800"
+      ]
+    },
+    {
+      "card_id": "cross_2",
+      "summary": "한반도 북부에서는 300hPa와 850hPa 상층 제트흐름 및 저층 수렴 후보 영역, 열 구배대가 지속적으로 관측되며, 지상에서는 전선대와 강풍 구역이 활성화되어 복합적인 대기 불안정 상태가 유지되고 있다.",
+      "regions": [
+        "kp_north"
+      ],
+      "evidence_refs": [
+        "up30_6h_2026033118",
+        "up85_6h_2026033118",
+        "surf_anl_6h_2026033118"
+      ]
+    }
+  ],
+  "regional_response_cards": [
+    {
+      "region": "일본 서부",
+      "response_summary": "서부 일본 지역에서는 전선대가 명확히 발달하고 저기압 중심과 강풍대가 형성되어 있으며, 위성 영상에서 밴드 구름과 대류성 구름 집단이 넓게 퍼져있다.",
+      "evidence_refs": [
+        "surf_anl_6h_2026033118",
+        "gk2a_le1b_WV063_EA_202603311800"
+      ]
+    },
+    {
+      "region": "만주 남부",
+      "response_summary": "만주 남부에 강한 고도 구배와 냉핵, 골 축이 지속적으로 나타나 중층 대기 불안정이 현저하며, 상층 제트축도 관측되어 대기 역학이 활발하다.",
+      "evidence_refs": [
+        "up50_6h_2026033118"
+      ]
+    }
+  ],
+  "time_change_cards": [
+    {
+      "time_window": "2026-03-30 18:00 ~ 2026-03-31 18:00",
+      "change_summary": "기간 내 300hPa 제트축과 수렴 흐름이 동중국해 북부와 일본 동부 해상에서 지속적으로 활성화되었고, 850hPa 수분 수송 축과 저층 수렴 후보 지역의 신호가 증감하면서 기상 활동의 변동을 보였다.",
+      "evidence_refs": [
+        "up30_6h_2026033018",
+        "up30_6h_2026033118",
+        "up85_6h_2026033018",
+        "up85_6h_2026033118"
+      ]
+    },
+    {
+      "time_window": "2026-03-30 18:00 ~ 2026-03-31 18:00",
+      "change_summary": "500hPa에서 만주 남부의 긴장된 고도 구배와 골 축 신호가 유지되었으며, 지상에서는 일본 서부 지역의 전선대와 저기압 중심이 뚜렷해져 기상 상황의 활성화를 나타냈다.",
+      "evidence_refs": [
+        "up50_6h_2026033018",
+        "up50_6h_2026033118",
+        "surf_anl_6h_2026033018",
+        "surf_anl_6h_2026033118"
+      ]
+    }
+  ],
+  "source_feature_bundle": "daio/2026-04-01/features/feature_bundle.json",
+  "prompt_input_snapshot": {
+    "feature_summary": {
+      "domain_count": 7,
+      "image_feature_card_count": 32,
+      "total_stage1_record_count": 1813,
+      "total_stage2_record_count": 1209
+    },
+    "domain_count": 7,
+    "allowed_evidence_ref_count": 32,
+    "asos_status": "ok"
+  },
+  "meta": {
+    "model": "gpt-4.1-mini",
+    "raw_response_path": "daio/2026-04-01/findings/findings_llm_raw.json"
+  }
+}

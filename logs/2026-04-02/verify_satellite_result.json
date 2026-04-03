@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "date": "2026-04-02",
-  "utc_date": "20260401",
-  "expected_total": 8,
-  "found_total": 8,
-  "missing_items": [],
-  "failures": []
-}

@@ -1,9 +1,0 @@
-2026-04-02 21:57:11,412 [ERROR] compose_upper_reasoning_cards_failed
-Traceback (most recent call last):
-  File "D:\99.project\03.WeatherAIBrief\scripts\compose_upper_reasoning_cards.py", line 217, in main
-    card = _sanitize_card(parsed, domain_cards_by_id, allowed_refs, available_domains)
-  File "D:\99.project\03.WeatherAIBrief\scripts\compose_upper_reasoning_cards.py", line 114, in _sanitize_card
-    source_card_ids = _require_allowed_strings('source_card_ids', parsed.get('source_card_ids', []), set(domain_cards_by_id.keys()), context)
-  File "D:\99.project\03.WeatherAIBrief\scripts\compose_upper_reasoning_cards.py", line 80, in _require_allowed_strings
-    raise ValueError(f'{context}: field contains unsupported values: {field_name} -> {invalid_items}')
-ValueError: upper_reasoning_card[synoptic_overview]: field contains unsupported values: source_card_ids -> ['925hPa_card_2026033018-3118']

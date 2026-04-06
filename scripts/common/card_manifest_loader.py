@@ -57,7 +57,7 @@ def load_card_manifest(path: str | Path) -> dict[str, Any]:
     payload['input_paths'] = _normalize_mapping(payload['input_paths'], 'input_paths', manifest_path)
     payload['output_paths'] = _normalize_mapping(payload['output_paths'], 'output_paths', manifest_path)
     payload['policy_path'] = str(payload.get('policy_path', '')).strip()
-    payload['model'] = str(payload.get('model') or 'gpt-4.1-mini').strip()
+    payload['model'] = str(payload.get('model') or 'gemini-2.5-flash').strip()
     payload['allow_new_claims'] = bool(payload.get('allow_new_claims', False))
     payload['prompt_instructions'] = str(payload.get('prompt_instructions') or '').strip()
     return payload

@@ -552,7 +552,7 @@ def run_direct_grounded_briefing_stage(
 
     prompt_template_path = base_dir / "prompts" / "templates" / "direct_grounded_briefing_prompt.txt"
     prompt_template_text = prompt_template_path.read_text(encoding="utf-8-sig")
-    effective_model = (model or manifest.get("model") or "gpt-5.4-mini").strip()
+    effective_model = (model or manifest.get("model") or "gemini-2.5-pro").strip()
 
     sections: list[dict[str, Any]] = []
     raw_section_outputs: list[dict[str, Any]] = []

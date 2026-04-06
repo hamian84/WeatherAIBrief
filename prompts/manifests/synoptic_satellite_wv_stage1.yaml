@@ -11,8 +11,9 @@
   "artifact_subdir": "satellite_wv",
   "allow_multi_select": true,
   "bundle_fail_fast": true,
-  "model": "gpt-4.1-mini",
+  "model": "gemini-2.5-flash",
   "enabled": true
 }
+
 
 

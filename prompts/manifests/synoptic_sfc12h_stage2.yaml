@@ -15,8 +15,9 @@
   "gating_answer": "yes|unknown",
   "bundle_fail_fast": true,
   "max_bundles_per_request": 8,
-  "model": "gpt-4.1-mini",
+  "model": "gemini-2.5-flash",
   "max_questions_per_request": 24,
   "enabled": true
 }
+
 

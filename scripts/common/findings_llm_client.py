@@ -9,7 +9,7 @@ from urllib.request import Request, urlopen
 
 from scripts.common.config import get_env_value
 
-OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses'
+GEMINI_API_URL_TEMPLATE = 'https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent'
 DEFAULT_MAX_RETRIES = 3
 DEFAULT_RETRY_WAIT_SECONDS = 2.0
 DEFAULT_TIMEOUT_SECONDS = 240
@@ -41,57 +41,68 @@ def _build_request_body(
     max_output_tokens: int,
 ) -> dict[str, Any]:
     return {
-        'model': model,
-        'input': [
-            {
-                'role': 'system',
-                'content': [
-                    {
-                        'type': 'input_text',
-                        'text': (
-                            'You generate structured synoptic findings for a weather briefing. '
-                            'Return strict JSON only that matches the schema. '
-                            'Use only the information provided in the user prompt. '
-                            'Do not invent evidence references not included in allowed_evidence_refs. '
-                            'Write narrative text in Korean.'
-                        ),
-                    }
-                ],
-            },
+        'system_instruction': {
+            'parts': [
+                {
+                    'text': (
+                        'You generate structured synoptic findings for a weather briefing. '
+                        'Return strict JSON only that matches the schema. '
+                        'Use only the information provided in the user prompt. '
+                        'Do not invent evidence references not included in allowed_evidence_refs. '
+                        'Write narrative text in Korean.'
+                    )
+                }
+            ]
+        },
+        'contents': [
             {
                 'role': 'user',
-                'content': [
-                    {'type': 'input_text', 'text': prompt_text},
+                'parts': [
+                    {'text': prompt_text},
                 ],
             },
         ],
-        'text': {
-            'format': {
-                'type': 'json_schema',
-                'name': 'findings_bundle_response',
-                'schema': schema,
-                'strict': True,
-            }
+        'generationConfig': {
+            'responseMimeType': 'application/json',
+            'responseJsonSchema': schema,
+            'maxOutputTokens': max_output_tokens,
+            'temperature': 0,
         },
-        'max_output_tokens': max_output_tokens,
     }
 
 
 def _extract_output_text(payload: dict[str, Any]) -> str:
-    output_text = payload.get('output_text')
-    if isinstance(output_text, str) and output_text.strip():
-        return output_text
     texts: list[str] = []
-    for item in payload.get('output', []) or []:
+    for item in payload.get('candidates', []) or []:
         if not isinstance(item, dict):
             continue
-        for content in item.get('content', []) or []:
-            if not isinstance(content, dict):
+        content = item.get('content', {})
+        if not isinstance(content, dict):
+            continue
+        for part in content.get('parts', []) or []:
+            if not isinstance(part, dict):
                 continue
-            text = content.get('text')
+            text = part.get('text')
             if isinstance(text, str) and text.strip():
                 texts.append(text)
     return '\n'.join(texts).strip()
+
+
+def _extract_finish_reason(payload: dict[str, Any]) -> str:
+    for item in payload.get('candidates', []) or []:
+        if not isinstance(item, dict):
+            continue
+        reason = str(item.get('finishReason', '')).strip()
+        if reason:
+            return reason
+    return ''
+
+
+def _extract_prompt_feedback(payload: dict[str, Any]) -> str:
+    prompt_feedback = payload.get('promptFeedback')
+    if not isinstance(prompt_feedback, dict):
+        return ''
+    return json.dumps(prompt_feedback, ensure_ascii=False)
 
 
 def _manual_validate_schema(parsed_output: dict[str, Any]) -> None:
@@ -121,15 +132,15 @@ def _validate_schema(parsed_output: dict[str, Any], schema: dict[str, Any]) -> N
 def call_findings_llm(
     prompt_text: str,
     schema: dict[str, Any],
-    model: str = 'gpt-4.1-mini',
+    model: str = 'gemini-2.5-flash',
     max_output_tokens: int = DEFAULT_MAX_OUTPUT_TOKENS,
     timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS,
     max_retries: int = DEFAULT_MAX_RETRIES,
     retry_wait_seconds: float = DEFAULT_RETRY_WAIT_SECONDS,
 ) -> dict[str, Any]:
-    api_key = get_env_value('OPENAI_API_KEY')
+    api_key = get_env_value('GEMINI_API_KEY')
     if not api_key:
-        raise RuntimeError('OPENAI_API_KEY is not configured')
+        raise RuntimeError('GEMINI_API_KEY is not configured')
 
     request_body = _build_request_body(prompt_text, schema, model, max_output_tokens)
     request_payload = json.dumps(request_body).encode('utf-8')
@@ -138,10 +149,10 @@ def call_findings_llm(
     for attempt in range(1, max_retries + 1):
         try:
             request = Request(
-                OPENAI_RESPONSES_URL,
+                GEMINI_API_URL_TEMPLATE.format(model=model),
                 data=request_payload,
                 headers={
-                    'Authorization': f'Bearer {api_key}',
+                    'x-goog-api-key': api_key,
                     'Content-Type': 'application/json',
                 },
                 method='POST',
@@ -150,15 +161,19 @@ def call_findings_llm(
                 http_status = response.status
                 response_payload = json.loads(response.read().decode('utf-8'))
             if http_status != 200:
-                raise RuntimeError(f'OpenAI returned http_status={http_status}')
-            if str(response_payload.get('status', '')).lower() == 'incomplete':
-                raise RuntimeError(f"OpenAI response incomplete: {response_payload.get('incomplete_details')}")
+                raise RuntimeError(f'Gemini returned http_status={http_status}')
             output_text = _extract_output_text(response_payload)
             if not output_text:
-                raise RuntimeError('OpenAI response missing output text')
+                finish_reason = _extract_finish_reason(response_payload)
+                prompt_feedback = _extract_prompt_feedback(response_payload)
+                raise RuntimeError(
+                    f"Gemini response missing output text"
+                    f"{f' finishReason={finish_reason}' if finish_reason else ''}"
+                    f"{f' promptFeedback={prompt_feedback}' if prompt_feedback else ''}"
+                )
             parsed_output = json.loads(output_text)
             if not isinstance(parsed_output, dict):
-                raise RuntimeError('OpenAI parsed output must be an object')
+                raise RuntimeError('Gemini parsed output must be an object')
             _validate_schema(parsed_output, schema)
             return {
                 'request': {
@@ -172,12 +187,12 @@ def call_findings_llm(
         except HTTPError as exc:
             body = exc.read().decode('utf-8', errors='replace')
             retryable = exc.code in {408, 409, 429, 500, 502, 503, 504}
-            last_error = RuntimeError(f'OpenAI HTTPError {exc.code}: {body}')
+            last_error = RuntimeError(f'Gemini HTTPError {exc.code}: {body}')
             if not retryable or attempt >= max_retries:
                 break
             retry_after_seconds = _extract_retry_after_seconds(body)
         except URLError as exc:
-            last_error = RuntimeError(f'OpenAI URLError: {exc.reason}')
+            last_error = RuntimeError(f'Gemini URLError: {exc.reason}')
             if attempt >= max_retries:
                 break
             retry_after_seconds = None
@@ -192,5 +207,5 @@ def call_findings_llm(
         time.sleep(wait_seconds)
 
     if last_error is None:
-        raise RuntimeError('OpenAI request failed without a captured error')
+        raise RuntimeError('Gemini request failed without a captured error')
     raise RuntimeError(str(last_error))

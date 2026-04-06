@@ -1,6 +1,6 @@
-id: direct_grounded_briefing_writer
+﻿id: direct_grounded_briefing_writer
 stage: direct_grounded_briefing_writer
-model: gpt-5.4-mini
+model: gemini-2.5-pro
 allow_new_claims: false
 input_paths:
   feature_bundle: daio/{date}/features/feature_bundle.json
@@ -15,4 +15,5 @@ output_paths:
   markdown: daou/{date}/direct_grounded_briefing_draft.md
 schema_path: prompts/schemas/direct_grounded_briefing.schema.json
 prompt_instructions: |
-  evidence_pack과 hands37_rule_pack을 직접 읽고 direct grounded briefing을 생성합니다.
+  evidence_pack怨?hands37_rule_pack??吏곸젒 ?쎄퀬 direct grounded briefing???앹꽦?⑸땲??
+

@@ -86,7 +86,7 @@ def _validate_manifest(path: Path, payload: dict[str, Any]) -> dict[str, Any]:
     payload["id"] = str(payload["id"]).strip()
     payload["domain"] = str(payload["domain"]).strip()
     payload["artifact_subdir"] = str(payload["artifact_subdir"]).strip()
-    payload["model"] = str(payload.get("model") or "gpt-4.1-mini").strip()
+    payload["model"] = str(payload.get("model") or "gemini-2.5-flash").strip()
     payload["allow_multi_select"] = bool(payload.get("allow_multi_select", prompt_table_mode == "stage1_bundle"))
     payload["bundle_fail_fast"] = bool(payload.get("bundle_fail_fast", True))
     if prompt_table_mode in {"row", "stage1_bundle"}:

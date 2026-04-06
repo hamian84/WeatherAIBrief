@@ -24,7 +24,7 @@ def build_parser() -> argparse.ArgumentParser:
     manifest_group = parser.add_mutually_exclusive_group(required=True)
     manifest_group.add_argument("--manifest", help="Single manifest path")
     manifest_group.add_argument("--manifest-dir", help="Manifest directory for batch execution")
-    parser.add_argument("--dry-run", action="store_true", help="Validate inputs and gating without calling OpenAI")
+    parser.add_argument("--dry-run", action="store_true", help="Validate inputs and gating without calling Gemini")
     parser.add_argument(
         "--include-disabled",
         action="store_true",

@@ -1,34 +1,55 @@
 ﻿{
-    "type":  "object",
-    "additionalProperties":  false,
-    "required":  [
-                     "answers"
-                 ],
-    "properties":  {
-                       "answers":  {
-                                       "type":  "array",
-                                       "items":  {
-                                                     "type":  "object",
-                                                     "additionalProperties":  false,
-                                                     "required":  [
-                                                                      "question_id",
-                                                                      "answer",
-                                                                      "note"
-                                                                  ],
-                                                     "properties":  {
-                                                                        "question_id":  {
-                                                                                            "type":  "string",
-                                                                                            "minLength":  1
-                                                                                        },
-                                                                        "answer":  {
-                                                                                       "type":  "string",
-                                                                                       "minLength":  1
-                                                                                   },
-                                                                        "note":  {
-                                                                                     "type":  "string"
-                                                                                 }
-                                                                    }
-                                                 }
-                                   }
-                   }
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bundle_answers"
+  ],
+  "properties": {
+    "bundle_answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundle_id",
+          "targets",
+          "note"
+        ],
+        "properties": {
+          "bundle_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "targets": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "target_label",
+                "answer",
+                "note"
+              ],
+              "properties": {
+                "target_label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "answer": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
 }

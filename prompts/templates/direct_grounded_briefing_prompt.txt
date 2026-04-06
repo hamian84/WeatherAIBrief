@@ -1,0 +1,72 @@
+﻿feature_bundle, image_feature_cards에서 만든 신호 반복 요약, hands37_rule_pack을 직접 읽고 예보관 검토용 grounded briefing draft를 작성합니다.
+반드시 JSON만 반환하고, 제공된 schema를 엄격히 따라야 합니다.
+
+목표:
+- Codex가 수동으로 수행한 방식처럼 현재 사례를 하나의 종관 사건으로 다시 조직해 브리핑을 작성합니다.
+- 먼저 briefing_priority_summary를 읽고 이번 사례의 중심 축과 우선 영향 구역을 파악한 뒤, 그다음 feature_bundle_summary와 image_feature_signal_summary로 세부 근거를 확인합니다.
+- 중간 findings를 만들지 말고, feature_bundle 요약과 image_feature_cards 기반 신호 반복 요약, rule_pack을 읽어 바로 5개 section 브리핑을 작성합니다.
+- 단순 신호 나열이 아니라 중심 구조, 핵심 영역, 반복 시각, 층위 간 결합 의미를 먼저 설명합니다.
+- top_signal_items의 occurrence_count와 priority_axes의 importance_score를 실제 서술 우선순위 판단에 사용합니다.
+
+핵심 규칙:
+1. allow_new_claims는 false입니다.
+2. evidence_ids는 image_feature_signal_summary 안의 evidence_id만 사용합니다.
+3. focus_regions는 allowed_regions 안의 사람이 읽는 한국어 영역명만 사용합니다. region_id를 그대로 쓰면 안 됩니다.
+4. evidence_refs는 선택한 evidence_ids가 실제로 가지는 active_image_refs 범위 안에서만 사용합니다.
+5. rule_refs는 rule_pack.rules 안의 rule_id만 사용합니다.
+6. section text는 근거 안에서만 서술해야 하고, 정량 강수량, 경보단계, 재해급 확정 표현은 금지합니다.
+7. 가능한 경우 반복 시각은 "00UTC, 06UTC, 12UTC, 18UTC"처럼 구체적으로 표현합니다.
+8. signal_key를 기계적으로 나열하지 말고, 사건 구조와 영향 축을 우선 설명합니다.
+9. 본문 첫 문장에서는 가능하면 영문 signal 식별자(예: jet_core, low_level_jet)를 직접 쓰지 말고, 한국어 의미 표현으로 바꿔 씁니다.
+10. 반복 강도는 필요할 때 "23회 반복", "27회 반복"처럼 occurrence_count를 직접 활용합니다.
+11. 지역은 단순 위치 나열이 아니라 "강수 영향 구역", "해상 강풍 영향 구역", "우선 점검 구역"처럼 기능적으로 해석합니다.
+
+section 역할:
+1. overall_summary
+   - 이번 사례를 하나의 종합 사건으로 먼저 규정합니다.
+   - 상층 제트, 중층 순환, 저층 습윤 수송, 지상 전선과 저기압을 한 구조로 묶습니다.
+2. synoptic_overview
+   - 상층-중층-하층 구조의 연결을 중심으로 씁니다.
+   - 어떤 축을 따라 어떤 신호가 반복되었는지 설명합니다.
+3. precipitation_structure
+   - 강수 배경과 대류 강화 구간을 설명합니다.
+   - 수증기 플룸, 대류운집, 저층 습윤축, 하층제트의 결합을 중심으로 씁니다.
+4. surface_marine_impacts
+   - 전선대, 지상 저기압, 강풍대, 해상 영향 축을 설명합니다.
+   - 어느 영역에서 지상과 해상 영향이 큰지 공간적으로 분명히 적습니다.
+5. review_draft
+   - 예보관이 바로 검토할 수 있는 최종 초안 문단을 작성합니다.
+   - 앞선 section을 단순 반복하지 말고, 핵심 사건과 우선 점검 구역을 압축해서 제시합니다.
+   - 2문단으로 작성합니다.
+   - 첫 문단은 사건 규정과 강수/종관 핵심, 둘째 문단은 영향 구역과 우선 점검 축으로 씁니다.
+
+문체 기준:
+1. 사람 예보관이 바로 검토할 수 있는 완성형 문장으로 작성합니다.
+2. 각 section은 2~4문장으로 씁니다.
+3. "검토 필요", "권고" 같은 안전 문구보다 현재 관측 구조의 의미를 우선 설명합니다.
+4. feature_bundle_summary와 image_feature_signal_summary에서 드러난 반복 횟수와 시각, 영역 축을 적극적으로 사용합니다.
+5. 의미 없는 포괄 표현보다 "동중국해 북부-서해 중부-한반도 남부"처럼 실제 축을 명시합니다.
+6. `review_draft`는 가장 사람다운 예보관 검토용 문체로 씁니다.
+7. 관측 근거를 설명하되 보고서식 기술 나열보다 사건 해석을 먼저 씁니다.
+8. top_signal_items의 상위 항목과 priority_axes의 중심 축을 본문 핵심 문장에 반영합니다.
+
+run_date={{RUN_DATE}}
+allow_new_claims=false
+
+briefing_priority_summary_json=
+{{BRIEFING_PRIORITY_SUMMARY_JSON}}
+allowed_evidence_ids={{ALLOWED_EVIDENCE_IDS_JSON}}
+allowed_evidence_refs={{ALLOWED_EVIDENCE_REFS_JSON}}
+allowed_rule_refs={{ALLOWED_RULE_REFS_JSON}}
+allowed_regions={{ALLOWED_REGIONS_JSON}}
+
+feature_bundle_summary_json=
+{{FEATURE_BUNDLE_SUMMARY_JSON}}
+
+image_feature_signal_summary_json=
+{{IMAGE_FEATURE_SIGNAL_SUMMARY_JSON}}
+
+rule_pack_json=
+{{RULE_PACK_JSON}}
+
+

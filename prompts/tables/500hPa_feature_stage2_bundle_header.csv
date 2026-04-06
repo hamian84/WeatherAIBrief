@@ -1,0 +1,9 @@
+﻿stage,bundle_id,region_id,region_label,lat_range,lon_range,gate_signals,question_text
+stage2,stage2_kp_nw_bundle,kp_nw,한반도 북서,37~40N,124~127E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.
+stage2,stage2_kp_ne_bundle,kp_ne,한반도 북동,37~40N,127~130E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.
+stage2,stage2_kp_sw_bundle,kp_sw,한반도 남서,34~37N,124~127E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.
+stage2,stage2_kp_se_bundle,kp_se,한반도 남동,34~37N,127~130E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.
+stage2,stage2_ws_n_bundle,ws_n,서해 북부,37~40N,122~124E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.
+stage2,stage2_es_n_bundle,es_n,동해 북부,37~40N,130~133E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.
+stage2,stage2_liao_bohai_bundle,liao_bohai,요동반도/발해만,38~41N,120~123E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.
+stage2,stage2_manchuria_s_bundle,manchuria_s,만주 남부,41~45N,123~128E,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient,이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.

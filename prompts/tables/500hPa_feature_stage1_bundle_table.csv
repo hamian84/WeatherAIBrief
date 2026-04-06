@@ -1,0 +1,9 @@
+﻿stage,question_id,region_id,region_label,lat_range,lon_range,signal_key,attribute_key,question_text,allowed_answers
+stage1,stage1_kp_nw_signal_bundle,kp_nw,한반도 북서,37~40N,124~127E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none
+stage1,stage1_kp_ne_signal_bundle,kp_ne,한반도 북동,37~40N,127~130E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none
+stage1,stage1_kp_sw_signal_bundle,kp_sw,한반도 남서,34~37N,124~127E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none
+stage1,stage1_kp_se_signal_bundle,kp_se,한반도 남동,34~37N,127~130E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none
+stage1,stage1_ws_n_signal_bundle,ws_n,서해 북부,37~40N,122~124E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none
+stage1,stage1_es_n_signal_bundle,es_n,동해 북부,37~40N,130~133E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none
+stage1,stage1_liao_bohai_signal_bundle,liao_bohai,요동반도/발해만,38~41N,120~123E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none
+stage1,stage1_manchuria_s_signal_bundle,manchuria_s,만주 남부,41~45N,123~128E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none

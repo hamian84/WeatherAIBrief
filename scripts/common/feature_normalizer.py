@@ -3,6 +3,8 @@
 from datetime import datetime
 from typing import Any
 
+from scripts.common.feature_bundle_normalizer import build_stage1_bundle_records, build_stage2_bundle_records
+
 
 def _format_valid_time(value: str) -> str:
     if not value.isdigit():
@@ -45,6 +47,11 @@ def normalize_stage_response(
     prompt_rows: list[dict[str, Any]],
     parsed_output: dict[str, Any],
 ) -> list[dict[str, Any]]:
+    prompt_table_mode = str(manifest.get("prompt_table_mode") or "row").strip()
+    if prompt_table_mode == "stage1_bundle":
+        return build_stage1_bundle_records(manifest, image_info, prompt_rows, parsed_output)
+    if prompt_table_mode == "stage2_bundle":
+        return build_stage2_bundle_records(manifest, image_info, prompt_rows, parsed_output)
     answer_map = _build_answer_map(parsed_output)
     expected_question_ids = {str(row["question_id"]) for row in prompt_rows}
     response_question_ids = set(answer_map)
@@ -82,6 +89,10 @@ def normalize_stage_response(
             "image_ref": image_info.get("image_ref", ""),
             "note": str(answer_item.get("note", "")).strip(),
         }
+        if not bool(record["is_valid_answer"]):
+            raise ValueError(
+                f"response has invalid answer '{record['model_answer_raw']}' for question_id={question_id}"
+            )
         if str(manifest["stage"]) == "stage2":
             record["gating_selected"] = True
         records.append(record)

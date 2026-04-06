@@ -1,0 +1,8 @@
+﻿stage,question_id,region_id,region_label,lat_range,lon_range,signal_key,attribute_key,question_text,allowed_answers
+stage1,stage1_manchuria_s_signal_bundle,manchuria_s,만주 남부,41~47N,120~130E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none
+stage1,stage1_kp_north_signal_bundle,kp_north,한반도 북부,37~40N,124~130E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none
+stage1,stage1_kp_south_signal_bundle,kp_south,한반도 남부,33~37N,124~130E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none
+stage1,stage1_ecs_north_signal_bundle,ecs_north,동중국해 북부,28~34N,120~128E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,subtropical_jet_axis|jet_core|upper_ridge|none
+stage1,stage1_japan_w_signal_bundle,japan_w,일본 서부,31~38N,130~138E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,jet_axis|jet_core|diffluent_flow|none
+stage1,stage1_japan_east_offshore_signal_bundle,japan_east_offshore,일본 동부 해상,30~40N,140~150E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,jet_axis|jet_core|upper_trough|none
+stage1,stage1_tibet_n_signal_bundle,tibet_n,티베트고원 북쪽,35~45N,90~105E,signal_bundle,presence_bundle,이 영역 내부에 존재하는 신호를 모두 선택하라.,polar_jet_axis|none

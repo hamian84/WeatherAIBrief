@@ -5,9 +5,12 @@
   "image_root_template": "dain/{date}/satellite/LE1B/WV063/EA",
   "image_glob": "gk2a_le1b_WV063_EA_*.png",
   "image_ref_regex": "^(?P<image_ref>gk2a_le1b_WV063_EA_(?P<valid_time>\\d{12}))\\.png$",
-  "prompt_table_path": "prompts/tables/satellite_wv_feature_stage1_table.csv",
+  "prompt_table_mode": "stage1_bundle",
+  "prompt_table_path": "prompts/tables/satellite_wv_feature_stage1_bundle_table.csv",
   "response_schema_path": "prompts/schemas/feature_stage1_response.schema.json",
   "artifact_subdir": "satellite_wv",
+  "allow_multi_select": true,
+  "bundle_fail_fast": true,
   "model": "gpt-4.1-mini",
   "enabled": true
 }

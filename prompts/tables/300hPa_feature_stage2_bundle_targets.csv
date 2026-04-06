@@ -1,0 +1,31 @@
+﻿bundle_id,target_order,signal_key,attribute_key,target_label,question_text,allowed_answers,gate_on_stage1,gate_rule,tier
+stage2_manchuria_s_bundle,1,jet_axis,relative_position,jet_axis.relative_position,이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?,west|inside|east|unknown,jet_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,2,jet_core,strength,jet_core.strength,이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?,weak|moderate|strong|unknown,jet_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,3,jet_axis,orientation,jet_axis.orientation,이 영역과 가장 관련된 제트축 방향은 무엇인가?,W-E|NW-SE|SW-NE|curved|unknown,jet_axis,full_if_yes_extended_if_unknown_skip_if_no,extended
+stage2_manchuria_s_bundle,4,flow_regime,type,flow_regime.type,이 영역과 가장 관련된 흐름 유형은 무엇인가?,confluent|diffluent|neutral|unknown,confluent_flow|diffluent_flow,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,5,upper_trough,relative_position,upper_trough.relative_position,이 영역과 가장 관련된 상층 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,upper_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,1,jet_axis,relative_position,jet_axis.relative_position,이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?,west|inside|east|unknown,jet_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,2,jet_core,strength,jet_core.strength,이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?,weak|moderate|strong|unknown,jet_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,3,jet_axis,orientation,jet_axis.orientation,이 영역과 가장 관련된 제트축 방향은 무엇인가?,W-E|NW-SE|SW-NE|curved|unknown,jet_axis,full_if_yes_extended_if_unknown_skip_if_no,extended
+stage2_kp_north_bundle,4,flow_regime,type,flow_regime.type,이 영역과 가장 관련된 흐름 유형은 무엇인가?,confluent|diffluent|neutral|unknown,confluent_flow|diffluent_flow,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,5,upper_trough,relative_position,upper_trough.relative_position,이 영역과 가장 관련된 상층 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,upper_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,6,influencing_jet_type,jet_type,influencing_jet_type.jet_type,이 영역에 영향을 주는 제트 종류는 무엇인가?,polar_jet|subtropical_jet|mixed|unknown,jet_axis|subtropical_jet_axis|polar_jet_axis,full_if_yes_extended_if_unknown_skip_if_no,extended
+stage2_kp_south_bundle,1,jet_axis,relative_position,jet_axis.relative_position,이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?,west|inside|east|unknown,jet_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,2,jet_core,strength,jet_core.strength,이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?,weak|moderate|strong|unknown,jet_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,3,jet_axis,orientation,jet_axis.orientation,이 영역과 가장 관련된 제트축 방향은 무엇인가?,W-E|NW-SE|SW-NE|curved|unknown,jet_axis,full_if_yes_extended_if_unknown_skip_if_no,extended
+stage2_kp_south_bundle,4,flow_regime,type,flow_regime.type,이 영역과 가장 관련된 흐름 유형은 무엇인가?,confluent|diffluent|neutral|unknown,confluent_flow|diffluent_flow,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,5,upper_trough,relative_position,upper_trough.relative_position,이 영역과 가장 관련된 상층 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,upper_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,6,influencing_jet_type,jet_type,influencing_jet_type.jet_type,이 영역에 영향을 주는 제트 종류는 무엇인가?,polar_jet|subtropical_jet|mixed|unknown,jet_axis|subtropical_jet_axis|polar_jet_axis,full_if_yes_extended_if_unknown_skip_if_no,extended
+stage2_ecs_north_bundle,1,jet_core,strength,jet_core.strength,이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?,weak|moderate|strong|unknown,jet_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,2,upper_ridge,relative_position,upper_ridge.relative_position,이 영역과 가장 관련된 상층 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,upper_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,3,subtropical_jet_axis,strength,subtropical_jet_axis.strength,이 영역과 가장 관련된 아열대제트 강도는 어느 수준인가?,weak|moderate|strong|unknown,subtropical_jet_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,1,jet_axis,relative_position,jet_axis.relative_position,이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?,west|inside|east|unknown,jet_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,2,jet_core,strength,jet_core.strength,이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?,weak|moderate|strong|unknown,jet_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,3,jet_axis,orientation,jet_axis.orientation,이 영역과 가장 관련된 제트축 방향은 무엇인가?,W-E|NW-SE|SW-NE|curved|unknown,jet_axis,full_if_yes_extended_if_unknown_skip_if_no,extended
+stage2_japan_w_bundle,4,flow_regime,type,flow_regime.type,이 영역과 가장 관련된 흐름 유형은 무엇인가?,confluent|diffluent|neutral|unknown,confluent_flow|diffluent_flow,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,5,diffluent_flow,strength,diffluent_flow.strength,이 영역과 가장 관련된 분류형 흐름 강도는 어느 수준인가?,weak|moderate|strong|unknown,diffluent_flow,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,1,jet_axis,relative_position,jet_axis.relative_position,이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?,west|inside|east|unknown,jet_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,2,jet_core,strength,jet_core.strength,이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?,weak|moderate|strong|unknown,jet_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,3,jet_axis,orientation,jet_axis.orientation,이 영역과 가장 관련된 제트축 방향은 무엇인가?,W-E|NW-SE|SW-NE|curved|unknown,jet_axis,full_if_yes_extended_if_unknown_skip_if_no,extended
+stage2_japan_east_offshore_bundle,4,upper_trough,relative_position,upper_trough.relative_position,이 영역과 가장 관련된 상층 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,upper_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_tibet_n_bundle,1,polar_jet_axis,strength,polar_jet_axis.strength,이 영역과 가장 관련된 한대제트 강도는 어느 수준인가?,weak|moderate|strong|unknown,polar_jet_axis,full_if_yes_core_if_unknown_skip_if_no,core

@@ -1,0 +1,81 @@
+﻿bundle_id,target_order,signal_key,attribute_key,target_label,question_text,allowed_answers,gate_on_stage1,gate_rule,tier
+stage2_manchuria_s_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_mid_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_north_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_south_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ecs_north_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_w_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,1,low_center,relative_position,low_center.relative_position,이 영역과 가장 관련된 지상 저기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,low_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,2,high_center,relative_position,high_center.relative_position,이 영역과 가장 관련된 지상 고기압 중심의 상대 위치는 무엇인가?,west|inside|east|unknown,high_center,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,3,surface_trough,relative_position,surface_trough.relative_position,이 영역과 가장 관련된 지상 기압골의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_trough,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,4,surface_ridge,relative_position,surface_ridge.relative_position,이 영역과 가장 관련된 지상 기압능의 상대 위치는 무엇인가?,west|inside|east|unknown,surface_ridge,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,5,front,relative_position,front.relative_position,이 영역과 가장 관련된 지상 전선의 상대 위치는 무엇인가?,west|inside|east|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,6,front,type,front.type,이 영역과 가장 관련된 지상 전선의 유형은 무엇인가?,cold_front|warm_front|stationary_front|occluded_front|unknown,front,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,7,tight_pressure_gradient,strength,tight_pressure_gradient.strength,이 영역의 등압선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_pressure_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,8,wet_area,coverage,wet_area.coverage,이 영역의 습윤역 범위는 어느 수준인가?,local|regional|broad|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,9,wet_area,relative_position,wet_area.relative_position,이 영역과 가장 관련된 습윤역의 상대 위치는 무엇인가?,west|inside|east|unknown,wet_area,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_japan_east_offshore_bundle,10,strong_wind_zone,strength,strong_wind_zone.strength,이 영역의 강풍역 강도는 어느 수준인가?,weak|moderate|strong|unknown,strong_wind_zone,full_if_yes_core_if_unknown_skip_if_no,core

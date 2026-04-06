@@ -1,0 +1,1192 @@
+version: rule_pack.v2
+source_document:
+  file: yaml/rules/hands_37.pdf
+  title: 손에 잡히는 예보필수요소의 활용법과 정의
+  published_at: 2014-10
+  total_pages: 236
+  usage_policy:
+    direct_evidence_source: false
+    interpretation_reference_only: true
+    notes:
+    - 현재 상황의 직접 증거로 사용하지 않는다.
+    - 관측 기반 feature를 해석하는 참고 규칙집으로만 사용한다.
+    - rule만으로 현재 상황을 단정하지 않고, 반드시 evidence_pack과 함께 사용한다.
+coverage_status:
+  all_sections_cataloged: true
+  all_sections_normalized: true
+  notes:
+  - 목차 기준 26개 장을 모두 section 단위로 구조화했다.
+  - 각 section에는 핵심 요약, 운영 해석 포인트, 연결 rule_id를 포함했다.
+  - rules에는 현재 feature 체계와 직접 연결 가능한 운영 규칙과, 향후 확장을 위한 참고 규칙을 함께 포함했다.
+section_ranges:
+- section_no: 1
+  title: 일기도 분석 가이던스(1)
+  page_range:
+    start: 4
+    end: 11
+- section_no: 2
+  title: 일기도 분석 가이던스(2)
+  page_range:
+    start: 12
+    end: 17
+- section_no: 3
+  title: 보조일기도 분석 및 적용
+  page_range:
+    start: 18
+    end: 23
+- section_no: 4
+  title: 단열선도 분석
+  page_range:
+    start: 24
+    end: 33
+- section_no: 5
+  title: 주요 기상현상별 단열선도 분석 및 활용
+  page_range:
+    start: 34
+    end: 43
+- section_no: 6
+  title: 등온위면 분석
+  page_range:
+    start: 44
+    end: 51
+- section_no: 7
+  title: 실전 등온위면 분석
+  page_range:
+    start: 52
+    end: 59
+- section_no: 8
+  title: 앙상블예측
+  page_range:
+    start: 60
+    end: 67
+- section_no: 9
+  title: 전선의 특징 이해와 활용
+  page_range:
+    start: 68
+    end: 77
+- section_no: 10
+  title: 층후분석
+  page_range:
+    start: 78
+    end: 83
+- section_no: 11
+  title: 하층제트
+  page_range:
+    start: 84
+    end: 89
+- section_no: 12
+  title: 불안정 지수
+  page_range:
+    start: 90
+    end: 97
+- section_no: 13
+  title: 호우분석 및 예측 가이던스
+  page_range:
+    start: 98
+    end: 101
+- section_no: 14
+  title: 중규모 대류시스템
+  page_range:
+    start: 102
+    end: 113
+- section_no: 15
+  title: 장마전선의 특징과 분석
+  page_range:
+    start: 114
+    end: 125
+- section_no: 16
+  title: 대설판단 가이던스
+  page_range:
+    start: 126
+    end: 139
+- section_no: 17
+  title: 대설사례 분석과 예측
+  page_range:
+    start: 140
+    end: 151
+- section_no: 18
+  title: 빙정핵의 이해를 통한 눈 예보 활용
+  page_range:
+    start: 152
+    end: 155
+- section_no: 19
+  title: 블로킹
+  page_range:
+    start: 156
+    end: 165
+- section_no: 20
+  title: MJO의 이해와 활용
+  page_range:
+    start: 166
+    end: 177
+- section_no: 21
+  title: 황사분석 및 예측 가이던스
+  page_range:
+    start: 178
+    end: 185
+- section_no: 22
+  title: 황사예측 및 사례분석
+  page_range:
+    start: 186
+    end: 199
+- section_no: 23
+  title: 우박분석 및 판단
+  page_range:
+    start: 200
+    end: 209
+- section_no: 24
+  title: 급격히 발달하는 저기압
+  page_range:
+    start: 210
+    end: 217
+- section_no: 25
+  title: 겨울철 특이기상
+  page_range:
+    start: 218
+    end: 225
+- section_no: 26
+  title: 용오름의 발생특징 및 분석
+  page_range:
+    start: 226
+    end: 236
+sections:
+- section_no: 1
+  title: 일기도 분석 가이던스(1)
+  category: synoptic_basics
+  page_range:
+    start: 4
+    end: 11
+  summary: 동아시아 지형과 계절 배경을 고려한 겨울철·봄철 일기도 기본 원칙.
+  key_points:
+  - 티베트고원·몽골고원 보정
+  - 열저기압과 전선저기압 구분
+  - 850hPa 필리핀 고기압과 수증기 유입
+  rule_refs:
+  - east_asia_topography_adjustment
+  - spring_heat_low_vs_frontal_low
+  - philippines_high_moist_inflow
+- section_no: 2
+  title: 일기도 분석 가이던스(2)
+  category: summer_synoptic
+  page_range:
+    start: 12
+    end: 17
+  summary: 여름철 열저기압·북태평양고기압·티베트고기압·상층제트를 이용한 호우형 일기도 해석.
+  key_points:
+  - 하층 남풍 기본 구조
+  - 티베트고기압과 북태평양고기압 분리
+  - 상층 분류형과 하층제트 결합
+  rule_refs:
+  - summer_monsoon_lowlevel_pattern
+  - tibetan_high_vs_nph_split
+  - upper_difffluence_heavy_rain
+- section_no: 3
+  title: 보조일기도 분석 및 적용
+  category: auxiliary_charts
+  page_range:
+    start: 18
+    end: 23
+  summary: 수분속·수렴장·가강수량 등 보조장을 이용한 강수·대류 해석.
+  key_points:
+  - 벡터 크기보다 수렴 위치
+  - PW와 대류 구름 교차 검증
+  - 보조장 단독 판정 금지
+  rule_refs:
+  - moisture_flux_convergence_focus
+  - pw_convergence_crosscheck
+- section_no: 4
+  title: 단열선도 분석
+  category: thermodynamic_profile
+  page_range:
+    start: 24
+    end: 33
+  summary: 단열선도 기본 요소와 불안정 지수 해석.
+  key_points:
+  - LCL·FL·TP 기본 해석
+  - 층 구조 우선
+  - 역전층 동시 확인
+  rule_refs:
+  - skewt_basic_structure_check
+  - freezing_level_lcl_diagnosis
+- section_no: 5
+  title: 주요 기상현상별 단열선도 분석 및 활용
+  category: thermodynamic_cases
+  page_range:
+    start: 34
+    end: 43
+  summary: 호우·대류 환경을 단열선도와 하층제트·TPW와 연결하는 사례 해석.
+  key_points:
+  - 낮은 CAPE라도 호우 가능
+  - 수증기 공급과 강제 상승 중시
+  - 레이더·지상일기도·850hPa 연계
+  rule_refs:
+  - skewt_llj_heavy_rain
+  - high_tpw_low_cape_heavy_rain
+- section_no: 6
+  title: 등온위면 분석
+  category: isentropic_basics
+  page_range:
+    start: 44
+    end: 51
+  summary: 등온위면의 물리적 의미와 온난·한랭이류, 상승·하강 해석.
+  key_points:
+  - 온위 보존량
+  - 기압 감소 방향 이동과 상승
+  - 수증기장 결합
+  rule_refs:
+  - isentropic_advection_basics
+- section_no: 7
+  title: 실전 등온위면 분석
+  category: isentropic_operations
+  page_range:
+    start: 52
+    end: 59
+  summary: 305K~310K 등온위면을 이용한 하층 상승류·가강수량·강수대 해석.
+  key_points:
+  - 여름철 305~310K 활용
+  - 상승류·PW·강수대 일치
+  - 등압선 교차 정도
+  rule_refs:
+  - isentropic_ascent_heavy_rain
+- section_no: 8
+  title: 앙상블예측
+  category: forecast_uncertainty
+  page_range:
+    start: 60
+    end: 67
+  summary: 불확실성을 확률적으로 다루는 앙상블 예측 해석.
+  key_points:
+  - 분산·일치도·확률 정보
+  - 단일 결정론 의존 위험
+  - 배경 신뢰도 층
+  rule_refs:
+  - ensemble_spread_uncertainty
+- section_no: 9
+  title: 전선의 특징 이해와 활용
+  category: frontal_analysis
+  page_range:
+    start: 68
+    end: 77
+  summary: 전선·전선대·경계 개념과 중규모 경계 해석.
+  key_points:
+  - 전선은 폭을 가진 전이층
+  - 중규모 경계 포함
+  - 수렴만으로 전선 단정 금지
+  rule_refs:
+  - front_boundary_identification
+  - mesoscale_boundary_attention
+- section_no: 10
+  title: 층후분석
+  category: thickness_analysis
+  page_range:
+    start: 78
+    end: 83
+  summary: 층후분류형을 이용한 온난이류성 대류성 강수대 해석.
+  key_points:
+  - 등층후선 전이 구역
+  - 온난이류와 상승
+  - 계절별 상대 위치
+  rule_refs:
+  - thickness_diffluence_convective_rain
+- section_no: 11
+  title: 하층제트
+  category: low_level_jet
+  page_range:
+    start: 84
+    end: 89
+  summary: 하층제트 축·최대풍속 기준의 폭넓은 강수와 좁고 강한 강수 구분.
+  key_points:
+  - 북동쪽 폭넓은 강수
+  - 남서쪽 좁고 강한 강수
+  - 15kts 이상 풍속대 왼쪽
+  rule_refs:
+  - llj_broad_rain
+  - llj_narrow_convective_rain
+- section_no: 12
+  title: 불안정 지수
+  category: instability_indices
+  page_range:
+    start: 90
+    end: 97
+  summary: 계절·상황별 적절한 불안정 지수 선택.
+  key_points:
+  - KI 습윤·하층제트형
+  - SSI 안정 기단형
+  - CT·TT·CAPE 상황 구분
+  rule_refs:
+  - instability_index_selection
+- section_no: 13
+  title: 호우분석 및 예측 가이던스
+  category: heavy_rain_guidance
+  page_range:
+    start: 98
+    end: 101
+  summary: 상·하층 제트 결합과 제트 분면 해석을 통한 호우 구역 판별.
+  key_points:
+  - 상하층 제트 결합
+  - 상층 제트 3분면
+  - 발산 중심 탐색
+  rule_refs:
+  - jet_coupling_heavy_rain
+  - upper_jet_quadrant_selection
+- section_no: 14
+  title: 중규모 대류시스템
+  category: mesoscale_convection
+  page_range:
+    start: 102
+    end: 113
+  summary: MCS 정의와 대류성·층운형 강수 구역 구분, 형태학적 해석.
+  key_points:
+  - 최소 100km 규모
+  - 대류성·층운형 구분
+  - 스콜선·활에코·MCC
+  rule_refs:
+  - mcs_convective_stratiform_split
+  - squall_line_attention
+- section_no: 15
+  title: 장마전선의 특징과 분석
+  category: seasonal_front
+  page_range:
+    start: 114
+    end: 125
+  summary: 몬순 순환과 장마전선 형성 구조, 연직시어, 습윤 기류 유입 해석.
+  key_points:
+  - 정체전선 구조
+  - 하층 남서류·상층 티베트고기압
+  - 큰 연직시어
+  rule_refs:
+  - changma_like_structure
+  - changma_vertical_shear_support
+- section_no: 16
+  title: 대설판단 가이던스
+  category: snow_guidance
+  page_range:
+    start: 126
+    end: 139
+  summary: 강수형태·적설 개시·수상당량비를 포함한 적설 예보 절차.
+  key_points:
+  - 판별 순서 고정
+  - 저층 층후 중시
+  - 강수량·형태 동시 정확도
+  rule_refs:
+  - snow_forecast_procedure
+  - lowlevel_thickness_precip_type
+- section_no: 17
+  title: 대설사례 분석과 예측
+  category: snow_cases
+  page_range:
+    start: 140
+    end: 151
+  summary: 저기압 이동 경로 유형별 대설 사례 해석.
+  key_points:
+  - 경로 유형 반복 패턴
+  - 수상당량비 차이
+  - 지역 대설 선별
+  rule_refs:
+  - snowfall_track_type_assessment
+- section_no: 18
+  title: 빙정핵의 이해를 통한 눈 예보 활용
+  category: snow_microphysics
+  page_range:
+    start: 152
+    end: 155
+  summary: 빙정핵 종류·활성 온도·지역 구성 차이 해석.
+  key_points:
+  - 종류별 활성 온도
+  - 토양 성분 비중
+  - 해양 염분 역할 제한
+  rule_refs:
+  - ice_nuclei_temperature_window
+- section_no: 19
+  title: 블로킹
+  category: climate_pattern
+  page_range:
+    start: 156
+    end: 165
+  summary: 500hPa 블로킹 정의와 유형.
+  key_points:
+  - 5일 이상 지속
+  - 오메가형·분리형
+  - 장기 정체 배경
+  rule_refs:
+  - blocking_persistence_definition
+- section_no: 20
+  title: MJO의 이해와 활용
+  category: climate_pattern
+  page_range:
+    start: 166
+    end: 177
+  summary: MJO 구조·동진 특성과 동아시아 강수 배경 연계.
+  key_points:
+  - 30~90일 주기
+  - 인도양-서태평양 동진
+  - 장마·집중호우·태풍 배경
+  rule_refs:
+  - mjo_tropical_convection_link
+- section_no: 21
+  title: 황사분석 및 예측 가이던스
+  category: dust_guidance
+  page_range:
+    start: 178
+    end: 185
+  summary: 황사 발원과 이동을 위성·PM10·850hPa 기온·발원지 상태로 해석.
+  key_points:
+  - 적설 여부와 850hPa 기온
+  - 위성·관측·모델 동시 확인
+  - 발원지 고도와 850hPa 의미
+  rule_refs:
+  - dust_source_detection
+- section_no: 22
+  title: 황사예측 및 사례분석
+  category: dust_cases
+  page_range:
+    start: 186
+    end: 199
+  summary: 황사 예보 체크리스트와 사례 분석.
+  key_points:
+  - snow cover·온도·warm ridge
+  - 야간 적외 영상 과소 탐지
+  - 전선 동쪽 상승·후면 하강
+  rule_refs:
+  - dust_forecast_checklist
+- section_no: 23
+  title: 우박분석 및 판단
+  category: hail
+  page_range:
+    start: 200
+    end: 209
+  summary: 중상층 한기와 시어 기반 우박 해석.
+  key_points:
+  - 하층 고온보다 중상층 한기
+  - 절리저기압·한기핵
+  - 전선형·절리저기압형 구분
+  rule_refs:
+  - hail_cold_core_shear
+- section_no: 24
+  title: 급격히 발달하는 저기압
+  category: explosive_cyclone
+  page_range:
+    start: 210
+    end: 217
+  summary: Bomb Low 정의와 강풍·황사·불안정 연계.
+  key_points:
+  - 24시간 24hPa 심화
+  - 강풍·너울·황사 낙하
+  - 상층 절리저기압과 기압경도
+  rule_refs:
+  - explosive_cyclone_risk
+- section_no: 25
+  title: 겨울철 특이기상
+  category: winter_hazards
+  page_range:
+    start: 218
+    end: 225
+  summary: 어는 비와 블랙아이스 같은 겨울철 특이기상 해석.
+  key_points:
+  - 상층 눈-하층 비-지표 결빙
+  - 분지 지형 위험
+  - 표면 온도 차이
+  rule_refs:
+  - freezing_rain_blackice_risk
+- section_no: 26
+  title: 용오름의 발생특징 및 분석
+  category: tornado
+  page_range:
+    start: 226
+    end: 236
+  summary: 거대세포뇌우 내부 용오름·토네이도 구조 해석.
+  key_points:
+  - 온난습윤 유입과 후면 건조
+  - 거대세포뇌우 내부 후면
+  - 호우 구역과 위치 구분
+  rule_refs:
+  - tornadic_supercell_structure
+rules:
+- rule_id: east_asia_topography_adjustment
+  section_no: 1
+  category: synoptic_basics
+  rule_type: operational
+  title: 고지대 지형을 고려한 저층 일기도 보정
+  source_ref: hands_37.pdf p.4-5
+  applicable_domains:
+  - 850hPa
+  - 925hPa
+  - surface
+  - sfc12h_synoptic
+  feature_mapping_status: partial
+  trigger_conditions:
+    any_of:
+    - - 850hPa:surface_below_ground_risk_area
+    - - 925hPa:surface_below_ground_risk_area
+  interpretation: 티베트고원과 몽골고원 같은 고지대는 저층 일기도에서 지면 아래 영역이 포함될 수 있으므로 기압·바람을 기계적으로 따라가면 안 된다.
+  forecast_use: 고지대 인접 구역의 저층 신호는 연속성, 기후 배경, 상층 구조와 함께 보정 해석한다.
+  prohibited_use:
+  - 고지대 저층 기압값만으로 폐쇄 저기압이나 전선을 단정하지 않는다.
+- rule_id: spring_heat_low_vs_frontal_low
+  section_no: 1
+  category: synoptic_basics
+  rule_type: operational
+  title: 봄철 열저기압과 전선저기압 구분
+  source_ref: hands_37.pdf p.7-8
+  applicable_domains:
+  - 300hPa
+  - 500hPa
+  - 850hPa
+  - surface
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - 850hPa:warm_advection
+      - surface:low_center
+    - - 500hPa:trough_axis
+      - 850hPa:warm_advection
+      - surface:low_center
+  interpretation: 봄철 지표가열로 생긴 열저기압은 정체성 저기압이며, 상층 한기와 기압골이 결합할 때만 연직 발달한 전선저기압으로 전환될 수 있다.
+  forecast_use: 상층 한기·기압골 동반 여부가 없으면 열저기압을 전선저기압으로 과대해석하지 않는다.
+  prohibited_use:
+  - 상층 온도골과 기압골 확인 없이 전선 분석을 붙이지 않는다.
+- rule_id: philippines_high_moist_inflow
+  section_no: 1
+  category: synoptic_basics
+  rule_type: operational
+  title: 필리핀 고기압 확장과 온난다습 기류 유입
+  source_ref: hands_37.pdf p.8-9
+  applicable_domains:
+  - 850hPa
+  - surface
+  - satellite_wv
+  feature_mapping_status: partial
+  trigger_conditions:
+    any_of:
+    - - 850hPa:ridge_axis
+      - 850hPa:warm_advection
+    - - 850hPa:ridge_axis
+      - satellite_wv:moist_plume
+  interpretation: 동중국해 쪽 하층 고기압성 능 확장은 우리나라로 온난다습 기류를 유입시키는 배경이 될 수 있다.
+  forecast_use: 서쪽 저기압 접근과 함께 나타나면 많은 비의 배경장으로 해석한다.
+- rule_id: summer_monsoon_lowlevel_pattern
+  section_no: 2
+  category: summer_synoptic
+  rule_type: operational
+  title: 여름철 대륙 열저기압-북태평양고기압 사이 남풍 구조
+  source_ref: hands_37.pdf p.12
+  applicable_domains:
+  - 850hPa
+  - 925hPa
+  - surface
+  feature_mapping_status: partial
+  trigger_conditions:
+    any_of:
+    - - 850hPa:warm_advection
+      - 850hPa:moisture_transport_axis
+    - - 925hPa:warm_advection
+      - surface:wet_area
+  interpretation: 여름철 하층 남풍 기류는 대륙 열저기압과 해양 고기압 사이에서 형성되는 기본 구조다.
+  forecast_use: 남서류 강화는 고온다습 공기 유입과 호우·무더위 배경으로 해석한다.
+- rule_id: tibetan_high_vs_nph_split
+  section_no: 2
+  category: summer_synoptic
+  rule_type: reference
+  title: 티베트고기압과 북태평양고기압의 고도별 구분
+  source_ref: hands_37.pdf p.12
+  applicable_domains:
+  - 300hPa
+  - 500hPa
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - 300hPa:upper_ridge
+    - - 500hPa:subtropical_high_edge
+  interpretation: 티베트고기압은 300hPa 이상, 북태평양고기압은 500hPa 부근에서 상대적으로 뚜렷하므로 같은 고기압으로 단순화하면 안 된다.
+  forecast_use: 상하층 고기압 구조를 분리해서 계절 배경장을 판단한다.
+- rule_id: upper_difffluence_heavy_rain
+  section_no: 2
+  category: summer_synoptic
+  rule_type: operational
+  title: 상층 분류형과 하층제트 결합 호우
+  source_ref: hands_37.pdf p.15-16
+  applicable_domains:
+  - 300hPa
+  - 850hPa
+  - surface
+  - satellite_wv
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - 300hPa:diffluent_flow
+      - 850hPa:low_level_jet
+    - - 300hPa:jet_axis
+      - 850hPa:low_level_jet
+      - satellite_wv:convective_cloud_cluster
+  interpretation: 상층 분류형 발산 구역과 하층제트 북쪽 상승 구역이 겹치면 호우 발생 환경이 강해질 수 있다.
+  forecast_use: 상층 발산 최대 구역과 하층제트 축 왼쪽의 겹침을 우선 탐색한다.
+- rule_id: moisture_flux_convergence_focus
+  section_no: 3
+  category: auxiliary_charts
+  rule_type: operational
+  title: 수분속 해석은 벡터 크기보다 수렴 위치 우선
+  source_ref: hands_37.pdf p.18
+  applicable_domains:
+  - 850hPa
+  - satellite_wv
+  - surface
+  feature_mapping_status: partial
+  trigger_conditions:
+    any_of:
+    - - 850hPa:moisture_transport_axis
+      - 850hPa:wet_area
+    - - 850hPa:moisture_transport_axis
+      - satellite_wv:moist_plume
+  interpretation: 수분속은 단순 최대값보다 어디에서 수렴하는지와 그 구역의 지속성이 더 중요하다.
+  forecast_use: 강수 분석 시 수분속 크기보다 수렴 중심과 대류 구름 위치 일치를 우선 본다.
+- rule_id: pw_convergence_crosscheck
+  section_no: 3
+  category: auxiliary_charts
+  rule_type: reference
+  title: 수렴장과 가강수량 교차 검증
+  source_ref: hands_37.pdf p.18-19
+  applicable_domains:
+  - 850hPa
+  - surface
+  - satellite_wv
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - 850hPa:wet_area
+      - satellite_wv:convective_cloud_cluster
+  interpretation: 높은 가강수량과 수렴장이 겹치는 구역은 강수와 대류 발달 가능성이 높다.
+  forecast_use: 보조장은 레이더·위성과 같이 확인할 때 의미가 커진다.
+- rule_id: skewt_basic_structure_check
+  section_no: 4
+  category: thermodynamic_profile
+  rule_type: reference
+  title: 단열선도 기본 요소 종합 진단
+  source_ref: hands_37.pdf p.24-25
+  applicable_domains:
+  - thermodynamic_profile
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - thermodynamic_profile:lcl
+    - - thermodynamic_profile:freezing_level
+  interpretation: LCL, FL, 850EQT, TP 등은 대기층의 포화 고도, 빙결 고도, 열적 성격을 종합적으로 보여준다.
+  forecast_use: 단열선도 해석은 불안정 지수보다 층 구조 확인을 우선한다.
+- rule_id: freezing_level_lcl_diagnosis
+  section_no: 4
+  category: thermodynamic_profile
+  rule_type: reference
+  title: 빙결고도와 상승응결고도 활용
+  source_ref: hands_37.pdf p.24-26
+  applicable_domains:
+  - thermodynamic_profile
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - thermodynamic_profile:lcl
+      - thermodynamic_profile:freezing_level
+  interpretation: 상승응결고도와 빙결고도는 강수형태와 구름 성장 환경 해석의 기본 축이다.
+  forecast_use: 강수형태와 구름 상부의 얼음 과정 가능성 판단에 활용한다.
+- rule_id: skewt_llj_heavy_rain
+  section_no: 5
+  category: thermodynamic_cases
+  rule_type: reference
+  title: 하층제트 호우 사례의 단열선도 해석
+  source_ref: hands_37.pdf p.34-36
+  applicable_domains:
+  - thermodynamic_profile
+  - 850hPa
+  - surface
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - 850hPa:low_level_jet
+      - surface:wet_area
+  interpretation: 하층제트에 의한 호우는 단열선도에서 강한 대류 가용에너지보다 수증기량과 강제 상승 구조가 핵심일 수 있다.
+  forecast_use: CAPE 부재만으로 호우 가능성을 배제하지 않는다.
+- rule_id: high_tpw_low_cape_heavy_rain
+  section_no: 5
+  category: thermodynamic_cases
+  rule_type: reference
+  title: 낮은 CAPE와 높은 TPW의 동시 해석
+  source_ref: hands_37.pdf p.34-38
+  applicable_domains:
+  - thermodynamic_profile
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - thermodynamic_profile:tpw_high
+      - thermodynamic_profile:cape_low
+  interpretation: CAPE가 낮아도 TPW가 매우 높고 역학적 상승이 강하면 호우가 가능하다.
+  forecast_use: 열역학 수치만으로 강수 강도를 단정하지 않는다.
+- rule_id: isentropic_advection_basics
+  section_no: 6
+  category: isentropic_basics
+  rule_type: reference
+  title: 등온위면의 상승·하강과 온난·한랭이류 해석
+  source_ref: hands_37.pdf p.44-46
+  applicable_domains:
+  - isentropic_analysis
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - isentropic_analysis:theta_surface
+  interpretation: 등온위면을 따라 이동하는 기류는 상승과 하강, 온난이류와 한랭이류를 함께 읽는 데 유용하다.
+  forecast_use: 등온위면과 수증기 정보를 결합해 강수 발생층을 해석한다.
+- rule_id: isentropic_ascent_heavy_rain
+  section_no: 7
+  category: isentropic_operations
+  rule_type: reference
+  title: 305K~310K 등온위면 상승과 호우 구역
+  source_ref: hands_37.pdf p.52-55
+  applicable_domains:
+  - isentropic_analysis
+  - 850hPa
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - isentropic_analysis:isentropic_ascent
+      - isentropic_analysis:pw_high
+  interpretation: 여름철 305K~310K 등온위면 상승류는 하층 남서류와 높은 가강수량이 겹치는 호우 구역 해석에 유용하다.
+  forecast_use: 상승류 지역, 높은 PW, 레이더 강수대의 일치 여부를 함께 본다.
+- rule_id: ensemble_spread_uncertainty
+  section_no: 8
+  category: forecast_uncertainty
+  rule_type: reference
+  title: 앙상블 분산 기반 불확실성 해석
+  source_ref: hands_37.pdf p.60-67
+  applicable_domains:
+  - ensemble_forecast
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - ensemble_forecast:spread_high
+    - - ensemble_forecast:cluster_split
+  interpretation: 앙상블은 단일 예측값보다 분산과 군집 구조를 통해 불확실성을 보여준다.
+  forecast_use: 후반부 자동 브리핑에는 배경 신뢰도 정보로 연결하는 것이 적절하다.
+- rule_id: front_boundary_identification
+  section_no: 9
+  category: frontal_analysis
+  rule_type: operational
+  title: 전선대와 경계의 구조적 식별
+  source_ref: hands_37.pdf p.68-70
+  applicable_domains:
+  - surface
+  - sfc12h_synoptic
+  - 850hPa
+  - 925hPa
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - surface:front
+    - - sfc12h_synoptic:frontal_zone
+    - - 850hPa:thermal_gradient_zone
+      - surface:front
+  interpretation: 전선은 물리 성질이 다른 기단 사이의 전이층이며, 가장 큰 기압·기온경도 구역이 전선대 핵심이다.
+  forecast_use: 전선은 선 하나보다 폭을 가진 경계 구조로 해석한다.
+  prohibited_use:
+  - 단순 수렴이나 바람 시어만으로 전선을 단정하지 않는다.
+- rule_id: mesoscale_boundary_attention
+  section_no: 9
+  category: frontal_analysis
+  rule_type: operational
+  title: 중규모 경계의 중요성
+  source_ref: hands_37.pdf p.68-70
+  applicable_domains:
+  - surface
+  - satellite_wv
+  - sfc12h_synoptic
+  feature_mapping_status: partial
+  trigger_conditions:
+    any_of:
+    - - surface:boundary_zone
+    - - satellite_wv:convective_cloud_cluster
+      - surface:boundary_zone
+  interpretation: 중규모 기상현상은 전선뿐 아니라 해륙 경계, 강수 경계, 산악 경계 같은 환경 경계에서도 급발달할 수 있다.
+  forecast_use: 전선 표기가 없더라도 경계 존재 여부를 별도 점검한다.
+- rule_id: thickness_diffluence_convective_rain
+  section_no: 10
+  category: thickness_analysis
+  rule_type: reference
+  title: 층후분류지역과 대류성 강수
+  source_ref: hands_37.pdf p.78-83
+  applicable_domains:
+  - thickness_analysis
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - thickness_analysis:diffluence_area
+      - thickness_analysis:warm_advection
+  interpretation: 1000-500hPa 층후분류지역은 온난이류와 함께 상승기류가 강화되어 대류성 강수 구역이 되기 쉽다.
+  forecast_use: 계절에 따라 전선 북쪽 또는 남쪽 상대 위치를 함께 판단한다.
+- rule_id: llj_broad_rain
+  section_no: 11
+  category: low_level_jet
+  rule_type: operational
+  title: 하층제트 북동측 폭넓은 강수대
+  source_ref: hands_37.pdf p.84-85
+  applicable_domains:
+  - 850hPa
+  - 925hPa
+  - surface
+  - satellite_wv
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - 850hPa:low_level_jet
+      - 850hPa:wet_area
+    - - 850hPa:low_level_jet
+      - satellite_wv:moist_plume
+  interpretation: 하층제트 북동쪽은 온난·습윤 공기가 차고 건조한 공기 위로 타고 오르며 폭넓은 강수대를 만들 수 있다.
+  forecast_use: 저기압 동쪽 또는 하층제트 축 왼쪽의 폭넓은 강수대 여부를 우선 본다.
+- rule_id: llj_narrow_convective_rain
+  section_no: 11
+  category: low_level_jet
+  rule_type: operational
+  title: 하층제트 후면 좁고 강한 대류성 강수
+  source_ref: hands_37.pdf p.84-85
+  applicable_domains:
+  - 850hPa
+  - 925hPa
+  - surface
+  - satellite_wv
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - 850hPa:low_level_jet
+      - 850hPa:thermal_gradient_zone
+      - satellite_wv:convective_cloud_cluster
+    - - 850hPa:low_level_jet
+      - surface:front
+  interpretation: 하층제트 남서쪽은 건조 공기 침투와 경계가 결합되어 폭은 좁지만 강한 비와 대류가 나타날 수 있다.
+  forecast_use: 좁고 강한 비대는 습도 경도와 대류운 집중 여부를 함께 본다.
+- rule_id: instability_index_selection
+  section_no: 12
+  category: instability_indices
+  rule_type: reference
+  title: 계절·상황별 불안정 지수 선택
+  source_ref: hands_37.pdf p.90-97
+  applicable_domains:
+  - thermodynamic_profile
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - thermodynamic_profile:ki
+    - - thermodynamic_profile:ssi
+    - - thermodynamic_profile:cape
+  interpretation: 불안정 지수는 상황별 선택이 중요하며, KI·SSI·CT·TT·CAPE를 일괄 적용하면 오판 가능성이 있다.
+  forecast_use: 하층제트·습윤 여부·한기핵 존재·지면가열 여부를 먼저 판단하고 지수를 선택한다.
+- rule_id: jet_coupling_heavy_rain
+  section_no: 13
+  category: heavy_rain_guidance
+  rule_type: operational
+  title: 상하층 제트 결합 호우
+  source_ref: hands_37.pdf p.98-99
+  applicable_domains:
+  - 300hPa
+  - 850hPa
+  - 925hPa
+  - surface
+  - satellite_wv
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - 300hPa:jet_axis
+      - 850hPa:low_level_jet
+      - 850hPa:wet_area
+    - - 300hPa:diffluent_flow
+      - 850hPa:warm_advection
+      - surface:low_center
+  interpretation: 하층제트가 습윤한 공기를 공급하는 구역 위를 상층제트가 지나가면 대류가 급격히 발달할 수 있다.
+  forecast_use: 발산 중심이 하층 습윤 구역 위를 통과하는지 확인한다.
+  prohibited_use:
+  - 상하층 제트가 시간적·공간적으로 분리되면 결합으로 단정하지 않는다.
+- rule_id: upper_jet_quadrant_selection
+  section_no: 13
+  category: heavy_rain_guidance
+  rule_type: reference
+  title: 상층제트 분면별 호우 가능 구역
+  source_ref: hands_37.pdf p.98-99
+  applicable_domains:
+  - 300hPa
+  feature_mapping_status: partial
+  trigger_conditions:
+    any_of:
+    - - 300hPa:jet_axis
+  interpretation: 상층제트 최대풍속 기준 3분면은 아열대 기단의 습윤 환경과 겹쳐 호우 발생 가능성이 높은 대표 구역이다.
+  forecast_use: 제트 분면 해석은 하층 수증기 조건과 함께 사용한다.
+- rule_id: mcs_convective_stratiform_split
+  section_no: 14
+  category: mesoscale_convection
+  rule_type: reference
+  title: MCS의 대류성·층운형 강수 구역 분리
+  source_ref: hands_37.pdf p.102-104
+  applicable_domains:
+  - satellite_wv
+  - radar
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - satellite_wv:convective_cloud_cluster
+  interpretation: MCS는 강한 대류성 강수 구역과 상대적으로 약한 층운형 강수 구역으로 나누어 해석해야 한다.
+  forecast_use: 강수 강도와 지속성을 구름계 내부 구역별로 나누어 본다.
+- rule_id: squall_line_attention
+  section_no: 14
+  category: mesoscale_convection
+  rule_type: reference
+  title: 스콜선과 활에코 같은 형태학적 분류
+  source_ref: hands_37.pdf p.102-113
+  applicable_domains:
+  - satellite_wv
+  - radar
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - radar:linear_convective_band
+    - - satellite_wv:band_cloud
+  interpretation: 중규모 대류계는 스콜선, 활에코, MCC 등 형태학적 구분이 운영 해석에 중요하다.
+  forecast_use: 형태학적 분류는 돌풍·집중호우와 연결해서 판단한다.
+- rule_id: changma_like_structure
+  section_no: 15
+  category: seasonal_front
+  rule_type: operational
+  title: 장마전선 유사 구조
+  source_ref: hands_37.pdf p.114-115
+  applicable_domains:
+  - 850hPa
+  - 300hPa
+  - surface
+  - satellite_wv
+  - sfc12h_synoptic
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - 850hPa:low_level_jet
+      - surface:front
+      - satellite_wv:band_cloud
+    - - 850hPa:moisture_transport_axis
+      - surface:wet_area
+      - 300hPa:jet_axis
+  interpretation: 하층 남서류, 정체전선성 경계, 상층 배경장이 결합하면 장마전선 유사 구조로 볼 수 있다.
+  forecast_use: 광범위 강수와 지속성 여부를 함께 점검한다.
+- rule_id: changma_vertical_shear_support
+  section_no: 15
+  category: seasonal_front
+  rule_type: reference
+  title: 장마 환경의 연직시어 강화
+  source_ref: hands_37.pdf p.114-118
+  applicable_domains:
+  - 300hPa
+  - 850hPa
+  feature_mapping_status: partial
+  trigger_conditions:
+    any_of:
+    - - 300hPa:jet_axis
+      - 850hPa:low_level_jet
+  interpretation: 장마전선 환경에서는 큰 연직 바람시어가 대류 강화를 돕는다.
+  forecast_use: 장마성 강수는 단순 습윤역보다 시어 구조를 함께 본다.
+- rule_id: snow_forecast_procedure
+  section_no: 16
+  category: snow_guidance
+  rule_type: reference
+  title: 적설 예보 절차
+  source_ref: hands_37.pdf p.126-129
+  applicable_domains:
+  - snow_forecast
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - snow_forecast:precip_expected
+  interpretation: 적설 예보는 강수형태 판단, 적설 가능 여부 판단, 수상당량비 계산 순으로 진행해야 한다.
+  forecast_use: 강수량만으로 적설량을 계산하지 않는다.
+- rule_id: lowlevel_thickness_precip_type
+  section_no: 16
+  category: snow_guidance
+  rule_type: reference
+  title: 저층 층후를 이용한 강수형태 판별
+  source_ref: hands_37.pdf p.126-139
+  applicable_domains:
+  - snow_forecast
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - snow_forecast:thickness_1000_850
+    - - snow_forecast:thickness_1000_700
+  interpretation: 국내 사례에서는 저층 층후가 눈·비·진눈깨비 판별에 실무적으로 중요하다.
+  forecast_use: 1000-700hPa 층후 단독 사용을 경계한다.
+- rule_id: snowfall_track_type_assessment
+  section_no: 17
+  category: snow_cases
+  rule_type: reference
+  title: 저기압 경로 유형에 따른 대설 사례 분류
+  source_ref: hands_37.pdf p.140-151
+  applicable_domains:
+  - snow_forecast
+  - surface
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - surface:low_track_type
+  interpretation: 대설 사례는 지상저기압 이동 경로 유형으로 나누어 해석할 수 있으며, 유형별 반복 패턴이 존재한다.
+  forecast_use: 지역 대설 가능성을 선별할 때 과거 경로 유형과 유사성 여부를 점검한다.
+- rule_id: ice_nuclei_temperature_window
+  section_no: 18
+  category: snow_microphysics
+  rule_type: reference
+  title: 빙정핵 종류별 활성 온도 구간
+  source_ref: hands_37.pdf p.152-155
+  applicable_domains:
+  - snow_microphysics
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - snow_microphysics:ice_nuclei_type
+  interpretation: 빙정핵 종류에 따라 활발히 성장하는 온도 구간이 달라 눈 결정 형성과 수상당량비에 영향을 줄 수 있다.
+  forecast_use: 미세물리 해석은 눈 예보 보조 정보로 사용한다.
+- rule_id: blocking_persistence_definition
+  section_no: 19
+  category: climate_pattern
+  rule_type: reference
+  title: 500hPa 블로킹 정의와 지속 조건
+  source_ref: hands_37.pdf p.156-165
+  applicable_domains:
+  - 500hPa
+  - climate_pattern
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - 500hPa:blocking_pattern
+  interpretation: 500hPa에서 남북류 강화와 고저기압 정체 패턴이 5일 이상 지속되면 블로킹으로 볼 수 있다.
+  forecast_use: 특정 일기시스템 장기 정체 가능성의 배경장으로 활용한다.
+- rule_id: mjo_tropical_convection_link
+  section_no: 20
+  category: climate_pattern
+  rule_type: reference
+  title: MJO와 동아시아 강수 배경장 연계
+  source_ref: hands_37.pdf p.166-177
+  applicable_domains:
+  - climate_pattern
+  - tropical_convection
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - tropical_convection:mjo_active_phase
+  interpretation: MJO는 인도양에서 발달한 열대 대류성 구름대가 동진하는 변동으로, 동아시아 여름철 강수 배경장과 연동될 수 있다.
+  forecast_use: 주간 이후 배경 설명용으로 사용하며 단기 종관 판정과는 분리한다.
+- rule_id: dust_source_detection
+  section_no: 21
+  category: dust_guidance
+  rule_type: reference
+  title: 황사 발원 여부 기본 판단
+  source_ref: hands_37.pdf p.178-185
+  applicable_domains:
+  - dust
+  - 850hPa
+  - satellite
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - dust:pm10_high
+      - satellite:dust_detected
+  interpretation: 황사 발원 판단은 위성, PM10, 적설 여부, 850hPa 기온을 함께 봐야 한다.
+  forecast_use: 발원지 적설과 지면 상태를 확인하지 않으면 오탐 위험이 있다.
+- rule_id: dust_forecast_checklist
+  section_no: 22
+  category: dust_cases
+  rule_type: reference
+  title: 황사 예보 필수 점검 요소
+  source_ref: hands_37.pdf p.186-199
+  applicable_domains:
+  - dust
+  - 850hPa
+  - 700hPa
+  - satellite
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - dust:source_region_check
+  interpretation: 황사 발원은 snow cover, 850hPa 온도, warm ridge, 실제 황사 관측, 모델 예측의 동시 확인이 필요하다.
+  forecast_use: 야간 적외 황사영상은 과소 탐지 가능성을 고려한다.
+- rule_id: hail_cold_core_shear
+  section_no: 23
+  category: hail
+  rule_type: reference
+  title: 우박은 중상층 한기와 시어가 핵심
+  source_ref: hands_37.pdf p.200-209
+  applicable_domains:
+  - 500hPa
+  - 300hPa
+  - surface
+  - hail
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - 500hPa:cold_core
+      - 300hPa:vertical_shear_strong
+    - - 500hPa:cutoff_low
+      - surface:convective_precip
+  interpretation: 우박은 하층 고온보다 중상층 찬 공기와 강한 연직시어, 포화층 구조가 중요하다.
+  forecast_use: 우박 가능성 판단 시 KI·SSI보다 중상층 구조를 우선 본다.
+- rule_id: explosive_cyclone_risk
+  section_no: 24
+  category: explosive_cyclone
+  rule_type: operational
+  title: 급격히 발달하는 저기압과 강풍·불안정
+  source_ref: hands_37.pdf p.210-217
+  applicable_domains:
+  - 300hPa
+  - 500hPa
+  - surface
+  - sfc12h_synoptic
+  - satellite_wv
+  feature_mapping_status: mapped
+  trigger_conditions:
+    any_of:
+    - - 500hPa:cold_core
+      - surface:low_center
+      - surface:strong_wind_zone
+    - - 500hPa:closed_cyclonic_circulation
+      - sfc12h_synoptic:synoptic_low_center
+      - sfc12h_synoptic:gale_wind_area
+  interpretation: 급격히 발달하는 저기압은 강한 기압경도력, 강풍, 해상 너울, 소낙성 강수, 황사 낙하를 동반할 수 있다.
+  forecast_use: 동해상 급발달 저기압은 저기압 중심이 멀어도 우리나라 영향이 클 수 있다.
+- rule_id: freezing_rain_blackice_risk
+  section_no: 25
+  category: winter_hazards
+  rule_type: reference
+  title: 어는 비와 블랙아이스 위험
+  source_ref: hands_37.pdf p.218-225
+  applicable_domains:
+  - winter_hazards
+  - surface
+  - thermodynamic_profile
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - surface:subfreezing_surface
+      - surface:liquid_precip
+  interpretation: 중상층에서 눈이 형성된 뒤 하층 영상층을 거쳐 비로 내리고, 지표가 영하이면 어는 비와 블랙아이스가 발생할 수 있다.
+  forecast_use: 강수량보다 지표와 물체 표면의 냉각 환경을 함께 본다.
+- rule_id: tornadic_supercell_structure
+  section_no: 26
+  category: tornado
+  rule_type: reference
+  title: 거대세포뇌우 내부 용오름 구조
+  source_ref: hands_37.pdf p.226-236
+  applicable_domains:
+  - tornado
+  - surface
+  - satellite
+  - radar
+  feature_mapping_status: not_mapped_yet
+  trigger_conditions:
+    any_of:
+    - - surface:warm_moist_inflow
+      - surface:rear_flank_dry_intrusion
+    - - radar:supercell_signature
+  interpretation: 용오름은 거대세포뇌우 내부에서 따뜻하고 습한 유입과 후면의 한랭건조 침강이 공존하는 구조와 연결된다.
+  forecast_use: 호우 구역과 용오름 위치가 동일하지 않으므로 전후면 구조를 분리해 해석한다.
+usage_notes:
+- section 단위 요약은 PDF 전 장을 빠짐없이 추적하기 위한 기본 층이다.
+- rules는 현재 feature 체계와 연결 가능한 operational 규칙과 향후 확장용 reference 규칙을 함께 담는다.
+- operational 규칙도 evidence_pack과 함께 사용할 때만 유효하다.
+- feature_mapping_status가 not_mapped_yet인 rule은 현재 자동화 파이프라인에서 직접 실행하지 않고 참고 규칙으로 취급한다.

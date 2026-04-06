@@ -1,0 +1,49 @@
+﻿bundle_id,target_order,signal_key,attribute_key,target_label,question_text,allowed_answers,gate_on_stage1,gate_rule,tier
+stage2_kp_nw_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_nw_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_nw_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_nw_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_nw_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_nw_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_ne_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_ne_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_ne_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_ne_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_ne_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_ne_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_sw_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_sw_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_sw_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_sw_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_sw_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_sw_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_se_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_se_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_se_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_se_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_se_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_kp_se_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_n_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_n_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_n_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_n_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_n_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_ws_n_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_es_n_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_es_n_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_es_n_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_es_n_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_es_n_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_es_n_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_liao_bohai_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,1,trough_axis,relative_position,trough_axis.relative_position,이 영역과 가장 관련된 500hPa 기압골 축의 상대 위치는 무엇인가?,west|inside|east|unknown,trough_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,2,ridge_axis,relative_position,ridge_axis.relative_position,이 영역과 가장 관련된 500hPa 기압능 축의 상대 위치는 무엇인가?,west|inside|east|unknown,ridge_axis,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,3,cold_core,strength,cold_core.strength,이 영역과 가장 관련된 500hPa 상층 한기 강도는 어느 수준인가?,weak|moderate|strong|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,4,cold_core,coverage,cold_core.coverage,이 영역과 가장 관련된 500hPa 상층 한기 확장 범위는 어느 수준인가?,local|regional|broad|unknown,cold_core,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,5,closed_cyclonic_circulation,strength,closed_cyclonic_circulation.strength,이 영역과 가장 관련된 폐합 저기압성 순환 강도는 어느 수준인가?,weak|moderate|strong|unknown,closed_cyclonic_circulation,full_if_yes_core_if_unknown_skip_if_no,core
+stage2_manchuria_s_bundle,6,tight_height_gradient,strength,tight_height_gradient.strength,이 영역과 가장 관련된 등고선 조밀대 강도는 어느 수준인가?,weak|moderate|strong|unknown,tight_height_gradient,full_if_yes_core_if_unknown_skip_if_no,core

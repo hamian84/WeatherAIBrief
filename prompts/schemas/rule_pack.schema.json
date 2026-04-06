@@ -1,0 +1,292 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "source_document",
+    "coverage_status",
+    "section_ranges",
+    "sections",
+    "rules",
+    "usage_notes"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_document": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "title",
+        "published_at",
+        "total_pages",
+        "usage_policy"
+      ],
+      "properties": {
+        "file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "published_at": {
+          "type": "string",
+          "minLength": 1
+        },
+        "total_pages": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "usage_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "direct_evidence_source",
+            "interpretation_reference_only",
+            "notes"
+          ],
+          "properties": {
+            "direct_evidence_source": {
+              "type": "boolean"
+            },
+            "interpretation_reference_only": {
+              "type": "boolean"
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "coverage_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "all_sections_cataloged",
+        "all_sections_normalized",
+        "notes"
+      ],
+      "properties": {
+        "all_sections_cataloged": {
+          "type": "boolean"
+        },
+        "all_sections_normalized": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "section_ranges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "section_no",
+          "title",
+          "page_range"
+        ],
+        "properties": {
+          "section_no": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "page_range": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "section_no",
+          "title",
+          "category",
+          "page_range",
+          "summary",
+          "key_points",
+          "rule_refs"
+        ],
+        "properties": {
+          "section_no": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "page_range": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "start",
+              "end"
+            ],
+            "properties": {
+              "start": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "end": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "key_points": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "rule_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "section_no",
+          "category",
+          "rule_type",
+          "title",
+          "source_ref",
+          "applicable_domains",
+          "feature_mapping_status",
+          "trigger_conditions",
+          "interpretation",
+          "forecast_use"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "section_no": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rule_type": {
+            "type": "string",
+            "enum": [
+              "operational",
+              "reference"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "applicable_domains": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "feature_mapping_status": {
+            "type": "string",
+            "enum": [
+              "mapped",
+              "partial",
+              "not_mapped_yet"
+            ]
+          },
+          "trigger_conditions": {
+            "type": "object"
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "forecast_use": {
+            "type": "string",
+            "minLength": 1
+          },
+          "prohibited_use": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "usage_notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

@@ -99,6 +99,30 @@ def _extract_output_text(payload: dict[str, Any]) -> str:
 
 
 def _manual_validate_schema(parsed_output: dict[str, Any]) -> None:
+    if "bundle_answers" in parsed_output:
+        bundle_answers = parsed_output.get("bundle_answers")
+        if not isinstance(bundle_answers, list):
+            raise ValueError("response payload missing bundle_answers list")
+        for bundle in bundle_answers:
+            if not isinstance(bundle, dict):
+                raise ValueError("response bundle item must be an object")
+            if not isinstance(bundle.get("bundle_id"), str) or not str(bundle.get("bundle_id")).strip():
+                raise ValueError("response bundle item missing bundle_id")
+            targets = bundle.get("targets")
+            if not isinstance(targets, list):
+                raise ValueError("response bundle item missing targets list")
+            for target in targets:
+                if not isinstance(target, dict):
+                    raise ValueError("response target item must be an object")
+                if not isinstance(target.get("target_label"), str) or not str(target.get("target_label")).strip():
+                    raise ValueError("response target item missing target_label")
+                if not isinstance(target.get("answer"), str) or not str(target.get("answer")).strip():
+                    raise ValueError("response target item missing answer")
+                note = target.get("note")
+                if note is not None and not isinstance(note, str):
+                    raise ValueError("response target note must be a string when present")
+        return
+
     answers = parsed_output.get("answers")
     if not isinstance(answers, list):
         raise ValueError("response payload missing answers list")
@@ -107,7 +131,13 @@ def _manual_validate_schema(parsed_output: dict[str, Any]) -> None:
             raise ValueError("response answer item must be an object")
         if not isinstance(item.get("question_id"), str) or not str(item.get("question_id")).strip():
             raise ValueError("response answer item missing question_id")
-        if not isinstance(item.get("answer"), str) or not str(item.get("answer")).strip():
+        if "selected_answers" in item:
+            selected_answers = item.get("selected_answers")
+            if not isinstance(selected_answers, list) or not selected_answers:
+                raise ValueError("response answer item missing selected_answers")
+            if any(not isinstance(value, str) or not str(value).strip() for value in selected_answers):
+                raise ValueError("response selected_answers item must be a non-empty string")
+        elif not isinstance(item.get("answer"), str) or not str(item.get("answer")).strip():
             raise ValueError("response answer item missing answer")
         note = item.get("note")
         if note is not None and not isinstance(note, str):

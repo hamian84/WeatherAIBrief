@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -22,9 +22,6 @@ STAGE_ORDER = (
     "collect",
     "feature",
     "feature-bundle",
-    "findings",
-    "domain-cards",
-    "upper-cards",
     "briefing",
     "validation",
 )
@@ -45,24 +42,16 @@ STAGE_REQUIREMENTS: dict[str, dict[str, object]] = {
         ),
         "upstream_stages": ("feature",),
     },
-    "findings": {
-        "required_paths": ("daio/{date}/features/feature_bundle.json",),
-        "upstream_stages": ("feature-bundle",),
-    },
-    "domain-cards": {
-        "required_paths": ("daio/{date}/features/feature_bundle.json",),
-        "upstream_stages": ("feature-bundle",),
-    },
-    "upper-cards": {
-        "required_paths": ("daio/{date}/cards/domain_semantic_cards.json",),
-        "upstream_stages": ("domain-cards",),
-    },
     "briefing": {
-        "required_paths": ("daio/{date}/cards/upper_reasoning_cards.json",),
-        "upstream_stages": ("upper-cards",),
+        "required_paths": (
+            "daio/{date}/features/feature_bundle.json",
+            "daio/{date}/features/image_feature_cards.json",
+            "yaml/rules/hands37_rule_pack.yaml",
+        ),
+        "upstream_stages": ("feature-bundle",),
     },
     "validation": {
-        "required_paths": ("daou/{date}/briefing_draft.json",),
+        "required_paths": ("daou/{date}/direct_grounded_briefing_draft.json",),
         "upstream_stages": ("briefing",),
     },
 }
@@ -117,24 +106,22 @@ def _validate_single_stage_prerequisites(base_dir: Path, run_date: str, stage: s
     missing_path_lines = "\n".join(f"- {path}" for path in missing_paths)
     raise FileNotFoundError(
         f"stage prerequisite missing for '{stage}'.\n"
-        f"필요한 선행 산출물이 없습니다. 먼저 다음 단계를 실행하세요: {hint_text}\n"
+        f"필요한 선행 산출물이 없습니다. 먼저 다음 단계를 실행하십시오: {hint_text}\n"
         f"누락 경로:\n{missing_path_lines}"
     )
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="수집부터 브리핑 검증까지 전체 파이프라인을 실행합니다.")
+    parser = argparse.ArgumentParser(description="수집부터 direct 브리핑 검증까지 일일 파이프라인을 실행합니다.")
     parser.add_argument("--date", help="YYYY-MM-DD (기본: KST 오늘)")
     parser.add_argument(
         "--stage",
         action="append",
         choices=STAGE_ORDER,
-        help="특정 단계만 실행할 때 사용합니다. 여러 번 지정할 수 있습니다.",
+        help="특정 단계만 실행합니다. 여러 번 지정할 수 있습니다.",
     )
-
     parser.add_argument("--phase", choices=("primary", "secondary"), default="primary", help="수집 단계 phase")
     parser.add_argument("--overwrite", action="store_true", help="기존 산출물이 있어도 덮어씁니다.")
-
     parser.add_argument(
         "--asos",
         action=argparse.BooleanOptionalAction,
@@ -155,13 +142,12 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--sleep-seconds", type=float, default=1.0, help="ASOS 호출 간격(초)")
     parser.add_argument("--max-retries", type=int, default=3, help="ASOS 재시도 횟수")
-    parser.add_argument("--retry-backoff-seconds", type=float, default=2.0, help="ASOS 초기 backoff 초")
-    parser.add_argument("--retry-backoff-max-seconds", type=float, default=20.0, help="ASOS 최대 backoff 초")
-
+    parser.add_argument("--retry-backoff-seconds", type=float, default=2.0, help="ASOS 초기 backoff(초)")
+    parser.add_argument("--retry-backoff-max-seconds", type=float, default=20.0, help="ASOS 최대 backoff(초)")
     parser.add_argument(
         "--feature-manifest-dir",
         default="prompts/manifests",
-        help="feature 단계 manifest 디렉토리",
+        help="feature 단계 manifest 디렉터리",
     )
     parser.add_argument("--feature-dry-run", action="store_true", help="feature 단계만 dry-run으로 실행")
     parser.add_argument(
@@ -169,8 +155,8 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="feature 단계에서 enabled=false manifest도 포함",
     )
-
-    parser.add_argument("--findings-dry-run", action="store_true", help="findings 단계만 dry-run으로 실행")
+    parser.add_argument("--briefing-dry-run", action="store_true", help="briefing 단계만 dry-run으로 실행")
+    parser.add_argument("--model", help="direct briefing 모델 override")
     return parser
 
 
@@ -186,11 +172,8 @@ def _build_stage_commands(args: argparse.Namespace, python_executable: str) -> d
             args.feature_manifest_dir,
         ],
         "feature-bundle": [python_executable, "-m", "scripts.run_feature_bundle", "--date", args.date],
-        "findings": [python_executable, "-m", "scripts.run_findings_stage", "--date", args.date],
-        "domain-cards": [python_executable, "scripts/build_domain_semantic_cards.py", "--date", args.date],
-        "upper-cards": [python_executable, "scripts/compose_upper_reasoning_cards.py", "--date", args.date],
-        "briefing": [python_executable, "scripts/write_briefing_from_cards.py", "--date", args.date],
-        "validation": [python_executable, "scripts/validate_briefing_from_cards.py", "--date", args.date],
+        "briefing": [python_executable, "-m", "scripts.run_grounded_briefing", "--date", args.date],
+        "validation": [python_executable, "-m", "scripts.validate_grounded_briefing", "--date", args.date],
     }
 
     if args.overwrite:
@@ -218,8 +201,10 @@ def _build_stage_commands(args: argparse.Namespace, python_executable: str) -> d
         commands["feature"].append("--dry-run")
     if args.feature_include_disabled:
         commands["feature"].append("--include-disabled")
-    if args.findings_dry_run:
-        commands["findings"].append("--dry-run")
+    if args.briefing_dry_run:
+        commands["briefing"].append("--dry-run")
+    if args.model:
+        commands["briefing"].extend(["--model", args.model])
 
     return commands
 
@@ -258,11 +243,23 @@ def main() -> int:
                 )
             )
             return 1
-        command = commands[stage]
-        rc = _run_step(command, BASE_DIR, stage)
-        results.append({"stage": stage, "command": command, "returncode": rc})
+
+        cmd = commands[stage]
+        rc = _run_step(cmd, BASE_DIR, stage)
+        results.append({"stage": stage, "command": cmd, "returncode": rc})
         if rc != 0:
-            print(json.dumps({"status": "error", "failed_stage": stage, "results": results}, ensure_ascii=False, indent=2))
+            print(
+                json.dumps(
+                    {
+                        "status": "error",
+                        "failed_stage": stage,
+                        "selected_stages": selected_stages,
+                        "results": results,
+                    },
+                    ensure_ascii=False,
+                    indent=2,
+                )
+            )
             return rc
 
     print(
@@ -270,7 +267,7 @@ def main() -> int:
             {
                 "status": "ok",
                 "run_date": args.date,
-                "stages": selected_stages,
+                "selected_stages": selected_stages,
                 "results": results,
             },
             ensure_ascii=False,

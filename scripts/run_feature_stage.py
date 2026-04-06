@@ -13,7 +13,7 @@ if str(BASE_DIR) not in sys.path:
 from scripts.common.config import load_project_env
 from scripts.common.feature_manifest_loader import load_manifest, load_manifests_from_dir
 from scripts.common.logging import configure_logging
-from scripts.feature_stage_runner import run_manifest
+from scripts.feature_stage_runner_bundle import run_manifest
 
 DATE_FORMAT_HINT = "YYYY-MM-DD"
 
@@ -78,7 +78,12 @@ def main() -> int:
                 manifest["stage"],
                 manifest["domain"],
             )
-            summary = run_manifest(BASE_DIR, args.date, manifest_path, dry_run=args.dry_run)
+            summary = run_manifest(
+                BASE_DIR,
+                args.date,
+                manifest,
+                dry_run=args.dry_run,
+            )
             results.append(summary)
         except Exception as exc:
             logging.exception("feature_stage_failed: manifest=%s", manifest_path)

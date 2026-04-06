@@ -1,0 +1,18 @@
+id: direct_grounded_briefing_writer
+stage: direct_grounded_briefing_writer
+model: gpt-5.4-mini
+allow_new_claims: false
+input_paths:
+  feature_bundle: daio/{date}/features/feature_bundle.json
+  image_feature_cards: daio/{date}/features/image_feature_cards.json
+  rule_pack: yaml/rules/hands37_rule_pack.yaml
+  rule_pack_schema: prompts/schemas/rule_pack.schema.json
+output_paths:
+  priority_summary: daio/{date}/briefing/briefing_priority_summary.json
+  prompt_input: daio/{date}/briefing/direct_grounded_briefing_prompt_input.json
+  raw: daio/{date}/briefing/direct_grounded_briefing_raw.json
+  draft: daou/{date}/direct_grounded_briefing_draft.json
+  markdown: daou/{date}/direct_grounded_briefing_draft.md
+schema_path: prompts/schemas/direct_grounded_briefing.schema.json
+prompt_instructions: |
+  evidence_pack과 hands37_rule_pack을 직접 읽고 direct grounded briefing을 생성합니다.

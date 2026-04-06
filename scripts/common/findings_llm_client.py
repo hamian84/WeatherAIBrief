@@ -1,6 +1,7 @@
 ﻿from __future__ import annotations
 
 import json
+import re
 import time
 from typing import Any
 from urllib.error import HTTPError, URLError
@@ -18,6 +19,19 @@ try:
     from jsonschema import validate as jsonschema_validate  # type: ignore
 except ImportError:  # pragma: no cover
     jsonschema_validate = None
+
+
+RETRY_AFTER_PATTERN = re.compile(r'try again in\s+([0-9]+(?:\.[0-9]+)?)s', re.IGNORECASE)
+
+
+def _extract_retry_after_seconds(message: str) -> float | None:
+    match = RETRY_AFTER_PATTERN.search(message)
+    if not match:
+        return None
+    try:
+        return float(match.group(1))
+    except ValueError:
+        return None
 
 
 def _build_request_body(
@@ -161,15 +175,21 @@ def call_findings_llm(
             last_error = RuntimeError(f'OpenAI HTTPError {exc.code}: {body}')
             if not retryable or attempt >= max_retries:
                 break
+            retry_after_seconds = _extract_retry_after_seconds(body)
         except URLError as exc:
             last_error = RuntimeError(f'OpenAI URLError: {exc.reason}')
             if attempt >= max_retries:
                 break
+            retry_after_seconds = None
         except Exception as exc:  # pragma: no cover
             last_error = exc
             if attempt >= max_retries:
                 break
-        time.sleep(retry_wait_seconds * attempt)
+            retry_after_seconds = None
+        wait_seconds = retry_wait_seconds * attempt
+        if retry_after_seconds is not None:
+            wait_seconds = max(wait_seconds, retry_after_seconds + 1.0)
+        time.sleep(wait_seconds)
 
     if last_error is None:
         raise RuntimeError('OpenAI request failed without a captured error')

@@ -58,7 +58,7 @@ def validate_grounded_briefing_stage(base_dir: Path, run_date: str, manifest_pat
 
     evidence_by_id = {
         str(item.get("evidence_id", "")).strip(): item
-        for item in direct_inputs.get("image_feature_signal_summary", []) or []
+        for item in direct_inputs.get("evidence_catalog", []) or []
         if isinstance(item, dict) and str(item.get("evidence_id", "")).strip()
     }
     rule_ids = {

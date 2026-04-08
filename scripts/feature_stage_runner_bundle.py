@@ -12,6 +12,8 @@ from scripts.common.feature_normalizer import normalize_stage_response
 from scripts.common.feature_preflight_validator import load_prompt_spec
 from scripts.common.feature_stage_gating import select_stage2_targets
 
+DEFAULT_RESPONSE_VALIDATION_ATTEMPTS = 3
+
 
 def _resolve_project_path(base_dir: Path, value: str) -> Path:
     path = Path(value)
@@ -93,23 +95,23 @@ def _build_row_prompt_text(manifest: dict[str, Any], image_info: dict[str, str],
                 question_text=row["question_text"],
             )
         )
-    return "\n".join(
-        [
-            "당신은 기상 feature 추출 보조자이다.",
-            "첨부된 종관장 이미지를 보고 아래 질문에 답하라.",
-            "각 question_id마다 allowed_answers 중 정확히 하나만 answer에 넣어라.",
-            "answer는 allowed_answers 값을 그대로 복사해야 하며 변형하면 안 된다.",
-            "불확실하고 unknown이 허용되면 unknown만 사용하라.",
-            "JSON만 반환하고 schema를 정확히 따라라.",
-            f"manifest_id={manifest['id']}",
-            f"domain={manifest['domain']}",
-            f"stage={manifest['stage']}",
-            f"image_ref={image_info['image_ref']}",
-            f"valid_time={image_info['valid_time']}",
-            "Questions:",
-            *question_lines,
-        ]
-    )
+    instructions = [
+        "You are extracting weather features from a single image.",
+        "Return strict JSON only and follow the schema exactly.",
+        "Return every question_id exactly once.",
+        "Never omit a question_id and never repeat a question_id.",
+        "Each answer must be exactly one of the allowed_answers values.",
+        "Do not paraphrase any answer value.",
+        "If uncertain and unknown is allowed, return unknown exactly.",
+        f"manifest_id={manifest['id']}",
+        f"domain={manifest['domain']}",
+        f"stage={manifest['stage']}",
+        f"image_ref={image_info['image_ref']}",
+        f"valid_time={image_info['valid_time']}",
+        "Questions:",
+        *question_lines,
+    ]
+    return "\n".join(instructions)
 
 
 def _build_stage1_bundle_prompt_text(
@@ -134,30 +136,27 @@ def _build_stage1_bundle_prompt_text(
                 question_text=row["question_text"],
             )
         )
-    return "\n".join(
-        [
-            "당신은 기상 feature 추출 보조자이다.",
-            "첨부된 종관장 이미지를 보고 각 영역 내부에 존재하는 신호를 모두 선택하라.",
-            "각 question_id마다 selected_answers 배열을 반드시 반환하라.",
-            "selected_answers의 각 원소는 allowed_answers 값과 정확히 일치해야 한다.",
-            "allowed_answers 목록에 없는 값은 절대로 만들지 마라.",
-            "신호가 없으면 none만 단독으로 선택하라.",
-            "none과 다른 신호를 함께 선택하면 안 된다.",
-            "하나 이상의 실제 신호를 선택했다면 none은 절대로 포함하지 마라.",
-            "selected_answers를 만들기 전에 'none 단독' 또는 '실제 신호 목록' 둘 중 하나만 가능한지 스스로 다시 확인하라.",
-            "잘못된 예: ['none', 'ridge_axis']",
-            "올바른 예 1: ['none']",
-            "올바른 예 2: ['ridge_axis', 'warm_advection']",
-            "JSON만 반환하고 schema를 정확히 따라라.",
-            f"manifest_id={manifest['id']}",
-            f"domain={manifest['domain']}",
-            f"stage={manifest['stage']}",
-            f"image_ref={image_info['image_ref']}",
-            f"valid_time={image_info['valid_time']}",
-            "Bundles:",
-            *question_lines,
-        ]
-    )
+    instructions = [
+        "You are extracting stage1 bundle features from a single image.",
+        "Return strict JSON only and follow the schema exactly.",
+        "Return every question_id exactly once.",
+        "Never omit a question_id and never repeat a question_id.",
+        "selected_answers must contain unique values only.",
+        "Every selected_answers value must be exactly one of the allowed_answers values.",
+        "If none is selected, selected_answers must be exactly ['none'].",
+        "Never mix none with any other signal.",
+        "Bad example: ['none', 'ridge_axis']",
+        "Good example 1: ['none']",
+        "Good example 2: ['ridge_axis', 'warm_advection']",
+        f"manifest_id={manifest['id']}",
+        f"domain={manifest['domain']}",
+        f"stage={manifest['stage']}",
+        f"image_ref={image_info['image_ref']}",
+        f"valid_time={image_info['valid_time']}",
+        "Bundles:",
+        *question_lines,
+    ]
+    return "\n".join(instructions)
 
 
 def _build_stage2_bundle_prompt_text(
@@ -197,23 +196,38 @@ def _build_stage2_bundle_prompt_text(
                     question_text=target["question_text"],
                 )
             )
-    return "\n".join(
-        [
-            "당신은 기상 feature 추출 보조자이다.",
-            "첨부된 종관장 이미지를 보고 각 bundle_id에 속한 targets 전체에 대해 한 번에 답하라.",
-            "반드시 bundle_answers 배열을 반환하라.",
-            "각 bundle_answers 항목은 bundle_id를 그대로 유지하고, targets 배열에 target_label별 answer를 모두 포함해야 한다.",
-            "answer는 각 target의 allowed_answers 값 중 하나를 정확히 복사해야 한다.",
-            "JSON만 반환하고 schema를 정확히 따라라.",
-            f"manifest_id={manifest['id']}",
-            f"domain={manifest['domain']}",
-            f"stage={manifest['stage']}",
-            f"image_ref={image_info['image_ref']}",
-            f"valid_time={image_info['valid_time']}",
-            "Bundles:",
-            *bundle_lines,
-        ]
-    )
+    instructions = [
+        "You are extracting stage2 bundle features from a single image.",
+        "Return strict JSON only and follow the schema exactly.",
+        "Return every bundle_id exactly once.",
+        "Never omit a bundle_id and never repeat a bundle_id.",
+        "Inside each bundle, return every target_label exactly once.",
+        "Never omit a target_label and never repeat a target_label.",
+        "Each answer must be exactly one of the allowed_answers values for that target.",
+        f"manifest_id={manifest['id']}",
+        f"domain={manifest['domain']}",
+        f"stage={manifest['stage']}",
+        f"image_ref={image_info['image_ref']}",
+        f"valid_time={image_info['valid_time']}",
+        "Bundles:",
+        *bundle_lines,
+    ]
+    return "\n".join(instructions)
+
+
+def _build_repair_prompt_text(base_prompt_text: str, error_message: str, attempt: int) -> str:
+    correction_lines = [
+        "",
+        "RESPONSE REPAIR REQUIRED",
+        f"Previous response attempt {attempt - 1} was rejected.",
+        f"Validation error: {error_message}",
+        "Return a completely new JSON response from scratch.",
+        "Do not repeat the previous invalid structure.",
+        "Do not duplicate ids.",
+        "Do not omit any required ids.",
+        "Obey every schema rule exactly.",
+    ]
+    return "\n".join([base_prompt_text, *correction_lines])
 
 
 def _build_prompt_text(manifest: dict[str, Any], image_info: dict[str, str], prompt_rows: list[dict[str, Any]]) -> str:
@@ -252,6 +266,7 @@ def _build_stage_summary(
     if artifact_paths:
         summary["raw_artifact"] = str(artifact_paths["raw"])
         summary["normalized_artifact"] = str(artifact_paths["normalized"])
+        summary["compact_artifact"] = str(artifact_paths["compact"])
     if extra:
         summary.update(extra)
     return summary
@@ -264,6 +279,51 @@ def _chunk_prompt_rows(prompt_rows: list[dict[str, Any]], max_items_per_request:
         prompt_rows[index:index + max_items_per_request]
         for index in range(0, len(prompt_rows), max_items_per_request)
     ]
+
+
+def _call_and_normalize_batch(
+    manifest: dict[str, Any],
+    image_info: dict[str, str],
+    prompt_row_batch: list[dict[str, Any]],
+    schema: dict[str, Any],
+) -> tuple[dict[str, Any], list[dict[str, Any]], int, str]:
+    base_prompt_text = _build_prompt_text(manifest, image_info, prompt_row_batch)
+    last_error: Exception | None = None
+    attempt_count = DEFAULT_RESPONSE_VALIDATION_ATTEMPTS
+
+    for attempt in range(1, DEFAULT_RESPONSE_VALIDATION_ATTEMPTS + 1):
+        prompt_text = base_prompt_text
+        if last_error is not None:
+            prompt_text = _build_repair_prompt_text(base_prompt_text, str(last_error), attempt)
+        llm_result = call_feature_llm(
+            prompt_text=prompt_text,
+            image_path=image_info["image_path"],
+            schema=schema,
+            model=str(manifest["model"]),
+        )
+        try:
+            normalized_batch = normalize_stage_response(
+                manifest=manifest,
+                image_info=image_info,
+                prompt_rows=prompt_row_batch,
+                parsed_output=llm_result["parsed_output"],
+            )
+            return llm_result, normalized_batch, attempt, prompt_text
+        except Exception as exc:
+            last_error = exc
+            logging.warning(
+                "feature_response_validation_failed: manifest=%s stage=%s domain=%s image_ref=%s attempt=%s error=%s",
+                manifest["id"],
+                manifest["stage"],
+                manifest["domain"],
+                image_info["image_ref"],
+                attempt,
+                exc,
+            )
+            if attempt >= DEFAULT_RESPONSE_VALIDATION_ATTEMPTS:
+                raise
+
+    raise RuntimeError(f"feature response validation failed after {attempt_count} attempts")
 
 
 def run_manifest_bundle(
@@ -390,12 +450,11 @@ def run_manifest_bundle(
             continue
         prompt_row_batches = _chunk_prompt_rows(rows_for_image, max_items_per_request)
         for batch_index, prompt_row_batch in enumerate(prompt_row_batches, start=1):
-            prompt_text = _build_prompt_text(manifest, image_info, prompt_row_batch)
-            llm_result = call_feature_llm(
-                prompt_text=prompt_text,
-                image_path=image_info["image_path"],
+            llm_result, normalized_batch, validation_attempts, prompt_text = _call_and_normalize_batch(
+                manifest=manifest,
+                image_info=image_info,
+                prompt_row_batch=prompt_row_batch,
                 schema=schema,
-                model=str(manifest["model"]),
             )
             raw_entries.append(
                 {
@@ -406,19 +465,13 @@ def run_manifest_bundle(
                     "batch_count": len(prompt_row_batches),
                     "prompt_text_length": len(prompt_text),
                     "prompt_table_mode": prompt_table_mode,
+                    "validation_attempts": validation_attempts,
                     "prompt_rows": _serialize_prompt_rows(prompt_row_batch, prompt_table_mode),
                     "llm_usage": llm_result["response"].get("usage", {}),
                     "llm_result": llm_result,
                 }
             )
-            normalized_records.extend(
-                normalize_stage_response(
-                    manifest=manifest,
-                    image_info=image_info,
-                    prompt_rows=prompt_row_batch,
-                    parsed_output=llm_result["parsed_output"],
-                )
-            )
+            normalized_records.extend(normalized_batch)
 
     raw_payload = {
         "manifest_id": manifest["id"],

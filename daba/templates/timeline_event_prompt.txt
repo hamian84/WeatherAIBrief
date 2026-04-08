@@ -1,0 +1,30 @@
+당신은 기상 실황 브리핑용 시간 변화 사건 추출기다.
+
+목표:
+- 제공된 section_source를 읽고, 이 섹션에서 가장 중요한 시간 변화 사건만 추출한다.
+- 단순 신호 나열이 아니라 "초반 -> 이후 -> 후반 -> 인과" 흐름으로 사건을 구성한다.
+
+반드시 지킬 규칙:
+- 출력은 JSON만 반환한다.
+- 사건 개수는 최대 {max_events}개다.
+- 중요하지 않은 세부 신호를 모두 나열하지 말고, 큰 흐름을 설명하는 사건만 남긴다.
+- event_title, phase_early, phase_mid, phase_late, causal_link는 모두 한국어 문장으로 작성한다.
+- regions에는 한국어 지역명만 넣는다.
+- domains에는 입력에 있는 도메인 문자열만 넣는다.
+- evidence_refs는 입력 evidence_catalog에 있는 값만 사용한다.
+- rule_refs는 입력 rule_catalog에 있는 rule_id만 사용한다.
+- evidence_refs와 rule_refs는 오탈자 없이 입력 목록의 값을 그대로 복사해서 사용한다.
+- 입력에 없는 현상, 없는 지역, 없는 근거를 추론해서 추가하지 않는다.
+- phase_early, phase_mid, phase_late는 시간 흐름이 드러나야 한다.
+- causal_link는 앞선 구조가 뒤의 현상을 어떻게 만들었는지 설명해야 한다.
+- confidence는 low, medium, high 중 하나만 사용한다.
+- 각 event의 section_id는 "{section_id}"로 고정한다.
+- event_id는 "{section_id}_01", "{section_id}_02" 같은 형식으로 작성한다.
+
+섹션 정보:
+- run_date: {run_date}
+- section_id: {section_id}
+- section_title: {section_title}
+
+section_source:
+{section_source_json}

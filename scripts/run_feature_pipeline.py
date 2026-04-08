@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -61,7 +61,7 @@ def _run_manifest(manifest_path: Path, run_date: str, dry_run: bool) -> int:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="전체 feature 단계를 순차 실행합니다.")
     parser.add_argument("--date", required=True, help="YYYY-MM-DD")
-    parser.add_argument("--manifest-dir", default="prompts/manifests", help="feature manifest 디렉토리")
+    parser.add_argument("--manifest-dir", default="daba/manifests", help="feature manifest 디렉토리")
     parser.add_argument("--dry-run", action="store_true", help="feature 단계 dry-run 실행")
     parser.add_argument("--include-disabled", action="store_true", help="enabled=false manifest도 포함")
     return parser

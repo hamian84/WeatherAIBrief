@@ -1,0 +1,22 @@
+﻿{
+  "id": "synoptic_850hPa_stage2",
+  "domain": "850hPa",
+  "stage": "stage2",
+  "image_root_template": "dain/{date}/charts/nuri",
+  "image_glob": "up85_6h_*.gif",
+  "image_ref_regex": "^(?P<image_ref>up85_6h_(?P<valid_time>\\d{10}))\\.gif$",
+  "prompt_table_mode": "stage2_bundle",
+  "stage2_bundle_header_path": "daba/tables/850hPa_feature_stage2_bundle_header.csv",
+  "stage2_bundle_targets_path": "daba/tables/850hPa_feature_stage2_bundle_targets.csv",
+  "response_schema_path": "daba/schemas/feature_stage2_response.schema.json",
+  "artifact_subdir": "850hPa",
+  "gating_source": "synoptic_850hPa_stage1",
+  "gating_match_keys": ["region_id", "signal_key"],
+  "gating_answer": "yes|unknown",
+  "bundle_fail_fast": true,
+  "max_bundles_per_request": 8,
+  "model": "gpt-4.1-mini",
+  "max_questions_per_request": 24,
+  "enabled": true
+}
+

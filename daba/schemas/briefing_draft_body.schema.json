@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "briefing_draft_body.schema.json",
+  "title": "검토용 초안 작성 응답 스키마",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "body",
+    "source_section_ids"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "source_section_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  }
+}

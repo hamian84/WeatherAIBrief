@@ -1,358 +1,236 @@
 # WeatherAIBrief
 
-`03.WeatherAIBrief`는 관측 기반 기상 브리핑 자동 생성을 목표로 하는 독립 프로젝트입니다.
-
-현재 기준 기본 파이프라인은 아래와 같습니다.
-
-`수집 -> feature -> feature bundle -> direct grounded briefing -> validation`
-
-이 저장소는 예전 `observed_v1` 계열 브리핑 체계를 그대로 따르지 않습니다. 현재 운영 경로의 중심은 `feature_bundle.json`과 `image_feature_cards.json`을 기반으로 직접 브리핑을 생성하는 `direct grounded briefing`입니다.
-
-## 1. 핵심 원칙
-
-- 입력 자료는 `dain/<date>/...` 아래에 둡니다.
-- 중간 산출물은 `daio/<date>/...` 아래에 둡니다.
-- 최종 산출물은 `daou/<date>/...` 아래에 둡니다.
-- 날짜가 항상 최상위 경로입니다.
-- feature 단계는 manifest 기반으로 동작합니다.
-- feature 질문 구조는 bundle CSV 기반입니다.
-- 브리핑 단계는 `allow_new_claims=false`를 기본값으로 사용합니다.
-- 브리핑 문구 규칙은 최소화하고, 근거 연결과 validation을 강하게 유지합니다.
-
-## 2. 주요 디렉터리
-
-- `config`
-  - 수집 및 카드/브리핑 정책 파일
-- `dain`
-  - 날짜별 입력 자료
-- `daio`
-  - feature, bundle, briefing 중간 산출물, validation 리포트
-- `daou`
-  - 최종 브리핑 산출물
-- `jobs`
-  - 일일 전체 실행기
-- `logs`
-  - 실행 로그
-- `prompts`
-  - manifest, schema, feature table, prompt template
-- `scripts`
-  - 단계별 메인 스크립트와 공통 유틸
-- `yaml`
-  - 룰 팩과 관련 YAML 자산
-
-## 3. 현재 입력 자료
-
-입력 자료는 날짜 기준으로 `dain/<date>/...` 아래에 저장됩니다.
-
-### 3.1 수집 대상
-
-- ASOS 시간자료
-- 날씨누리 상층/지상 일기도
-- GK2A 위성자료
-
-### 3.2 현재 사용하는 주요 차트/영상
-
-- `300hPa`
-  - `up30_6h_{yyyymmddhh}.gif`
-- `500hPa`
-  - `up50_6h_{yyyymmddhh}.gif`
-- `850hPa`
-  - `up85_6h_{yyyymmddhh}.gif`
-- `925hPa`
-  - `up92_6h_{yyyymmddhh}.gif`
-- `surface`
-  - `surf_anl_6h_{yyyymmddhh}.gif`
-- `sfc12h_synoptic`
-  - `surf_12h_{yyyymmddhh}.png`
-- `satellite_wv`
-  - GK2A WV063 EA PNG
-
-## 4. 현재 파이프라인
-
-### 4.1 수집
-
-수집 단계는 아래 스크립트가 담당합니다.
-
-- `scripts/collect_asos.py`
-- `scripts/collect_charts.py`
-- `scripts/collect_satellite.py`
-- `scripts/run_collection_stage.py`
-- `scripts/verify_asos_outputs.py`
-- `scripts/verify_satellite_outputs.py`
-
-### 4.2 feature
-
-feature 단계는 각 도메인에 대해 stage1, stage2를 수행합니다.
-
-- stage1
-  - 영역/신호 존재 여부 판정
-- stage2
-  - 위치, 강도, 방향, 범위 등 세부 속성 판정
-
-현재 운영 도메인:
-
-- `300hPa`
-- `500hPa`
-- `850hPa`
-- `925hPa`
-- `surface`
-- `satellite_wv`
-- `sfc12h_synoptic`
-
-실행 스크립트:
-
-- `scripts/run_feature_stage.py`
-- `scripts/run_feature_pipeline.py`
-- `scripts/feature_stage_runner_bundle.py`
-- `scripts/run_feature_bundle.py`
-- `scripts/feature_bundle_builder.py`
-
-### 4.3 feature bundle
-
-feature 개별 산출물을 묶어 아래 파일을 생성합니다.
-
-- `daio/<date>/features/image_feature_cards.json`
-- `daio/<date>/features/domain_sequence_features.json`
-- `daio/<date>/features/feature_bundle.json`
-
-이 중 `feature_bundle.json`은 상위 요약과 도메인별 요약을, `image_feature_cards.json`은 이미지 단위 구조화 결과를, `domain_sequence_features.json`은 시간 흐름 축 정보를 담습니다.
-
-### 4.4 direct grounded briefing
-
-현재 브리핑 기본 경로는 `findings -> claims`가 아니라 `feature_bundle` 기반 `direct grounded briefing`입니다.
-
-입력 자료:
-
-- `daio/<date>/features/feature_bundle.json`
-- `daio/<date>/features/image_feature_cards.json`
-- `yaml/rules/hands37_rule_pack.yaml`
-
-실행 스크립트:
-
-- `scripts/run_grounded_briefing.py`
-- `scripts/direct_grounded_briefing_runner.py`
-- `scripts/validate_grounded_briefing.py`
-
-현재 direct grounded briefing의 핵심 특징:
-
-- `feature_bundle`와 `image_feature_cards`를 직접 읽습니다.
-- 예전 `briefing_priority_summary`, `image_feature_signal_summary` 중심 압축 경로를 기본 경로로 사용하지 않습니다.
-- section별로 나누어 순차 생성합니다.
-- 각 section은 원자료를 바탕으로 해석한 뒤 문장을 작성합니다.
-- `evidence_refs`, `focus_regions`, `rule_refs`를 구조적으로 남깁니다.
-- `evidence_ids`는 최종 구조 필드로 유지하되, writer 내부에서 후처리 검증을 거칩니다.
-- OpenAI TPM 제한을 만나면 `429` 메시지의 대기 시간을 읽어 재시도합니다.
-
-현재 생성 section:
-
-- `overall_summary`
-- `synoptic_overview`
-- `precipitation_structure`
-- `surface_marine_impacts`
-- `review_draft`
-
-### 4.5 validation
-
-validation 단계는 direct grounded briefing draft를 검사합니다.
-
-검사 항목:
-
-- schema 적합 여부
-- unsupported claim 여부
-- `evidence_ids` / `evidence_refs` 정합성
-- `focus_regions` 정합성
-- `rule_refs` 정합성
-
-validation 결과는 아래에 저장됩니다.
-
-- `daio/<date>/validation/direct_grounded_briefing_validation.json`
-
-## 5. bundle CSV 기반 feature 구조
-
-현재 feature 질문표는 bundle CSV 구조를 사용합니다.
-
-### 5.1 stage1
-
-stage1은 아래 파일을 사용합니다.
-
-- `*_feature_stage1_bundle_table.csv`
-
-특징:
-
-- 한 row가 영역 bundle 단위입니다.
-- `allowed_answers`는 해당 영역에서 선택 가능한 signal 목록과 `none`을 포함합니다.
-- 모델은 `selected_answers` 형태로 응답합니다.
-
-### 5.2 stage2
-
-stage2는 아래 2개 파일을 사용합니다.
-
-- `*_feature_stage2_bundle_header.csv`
-- `*_feature_stage2_bundle_targets.csv`
-
-특징:
-
-- header는 bundle 단위 메타를 정의합니다.
-- targets는 해당 bundle 안의 세부 판정 항목을 정의합니다.
-- `bundle_id`로 header와 targets를 연결합니다.
-- stage1 결과를 gating에 사용해 필요한 bundle만 stage2로 보냅니다.
-
-### 5.3 manifest 기반 실행
-
-feature manifest에는 아래 정보가 들어갑니다.
-
-- `prompt_table_mode`
-- `prompt_table_path`
-- `stage2_bundle_header_path`
-- `stage2_bundle_targets_path`
-- `response_schema_path`
-- `gating_source`
-- `gating_match_keys`
-- `gating_answer`
-- `bundle_fail_fast`
-- `max_bundles_per_request`
-
-즉 현재 feature 단계는 `bundle CSV + manifest + 범용 runner` 구조입니다.
-
-## 6. 현재 주요 manifest / schema
-
-### 6.1 feature manifest
-
-- `prompts/manifests/synoptic_300hPa_stage1.yaml`
-- `prompts/manifests/synoptic_300hPa_stage2.yaml`
-- `prompts/manifests/synoptic_500hPa_stage1.yaml`
-- `prompts/manifests/synoptic_500hPa_stage2.yaml`
-- `prompts/manifests/synoptic_850hPa_stage1.yaml`
-- `prompts/manifests/synoptic_850hPa_stage2.yaml`
-- `prompts/manifests/synoptic_925hPa_stage1.yaml`
-- `prompts/manifests/synoptic_925hPa_stage2.yaml`
-- `prompts/manifests/synoptic_surface_stage1.yaml`
-- `prompts/manifests/synoptic_surface_stage2.yaml`
-- `prompts/manifests/synoptic_satellite_wv_stage1.yaml`
-- `prompts/manifests/synoptic_satellite_wv_stage2.yaml`
-- `prompts/manifests/synoptic_sfc12h_stage1.yaml`
-- `prompts/manifests/synoptic_sfc12h_stage2.yaml`
-
-### 6.2 briefing manifest
-
-- `prompts/manifests/direct_grounded_briefing_writer_manifest.yaml`
-- `prompts/manifests/direct_grounded_briefing_validator_manifest.yaml`
-
-### 6.3 schema
-
-- `prompts/schemas/feature_stage1_response.schema.json`
-- `prompts/schemas/feature_stage2_response.schema.json`
-- `prompts/schemas/direct_grounded_briefing.schema.json`
-- `prompts/schemas/direct_grounded_briefing_validation.schema.json`
-- `prompts/schemas/rule_pack.schema.json`
-
-## 7. 주요 산출물
-
-### 7.1 feature 개별 산출물
+## 개요
+
+이 저장소는 일기도, 위성, ASOS 기반의 일별 입력 자료를 수집하고, 도메인별 feature를 추출한 뒤, 그 결과와 `hands37_rule_pack.yaml`를 바탕으로 기상 실황 브리핑을 생성하기 위한 실험/운영 저장소다.
+
+현재 기준의 핵심 흐름은 아래와 같다.
+
+1. 수집
+2. feature LLM 응답 생성
+3. normalized 산출물 생성
+4. compact 산출물 생성
+5. 브리핑용 section source 생성
+6. timeline event 추출
+7. section 본문 생성
+8. 검토용 초안 생성
+9. 최종 Markdown/JSON 브리핑 조합
+
+## 현재 디렉토리 구조
+
+- `config/`
+  - 브리핑 섹션 구성과 표시명 설정
+- `daba/`
+  - feature manifest, schema, prompt template, rule pack
+- `dain/`
+  - 수집 원천 자료
+- `daio/`
+  - feature 및 briefing 산출물
+- `jobs/`
+  - 일괄 실행기
+- `scripts/`
+  - 수집, feature, compact, briefing 생성 스크립트
+
+## 현재 구현 상태
+
+### 1. 수집 + feature
+
+현재 유지되는 feature 파이프라인은 아래와 같다.
+
+- 수집
+  - `scripts/collect_asos.py`
+  - `scripts/collect_charts.py`
+  - `scripts/collect_satellite.py`
+  - `scripts/run_collection_stage.py`
+- feature
+  - `scripts/run_feature_stage.py`
+  - `scripts/run_feature_pipeline.py`
+  - `scripts/feature_stage_runner_bundle.py`
+  - `scripts/common/feature_llm_client.py`
+- compact
+  - `scripts/run_feature_compact.py`
+  - `scripts/common/feature_compactor.py`
+
+feature 산출물은 도메인별로 아래 경로에 저장된다.
 
 - `daio/<date>/features/<domain>/stage1_raw.json`
 - `daio/<date>/features/<domain>/stage1_normalized.json`
+- `daio/<date>/features/<domain>/stage1_compact.json`
 - `daio/<date>/features/<domain>/stage2_raw.json`
 - `daio/<date>/features/<domain>/stage2_normalized.json`
+- `daio/<date>/features/<domain>/stage2_compact.json`
 
-### 7.2 feature 통합 산출물
+현재 feature 단계는 bundle CSV를 사용한다.
 
-- `daio/<date>/features/image_feature_cards.json`
-- `daio/<date>/features/domain_sequence_features.json`
-- `daio/<date>/features/feature_bundle.json`
+- `daba/tables/*_feature_stage1_bundle_table.csv`
+- `daba/tables/*_feature_stage2_bundle_header.csv`
+- `daba/tables/*_feature_stage2_bundle_targets.csv`
 
-### 7.3 briefing 산출물
+manifest는 `daba/manifests/` 아래의 `synoptic_*.yaml`을 사용한다.
 
-- `daio/<date>/briefing/briefing_priority_summary.json`
-  - 현재는 과거 priority 요약이 아니라 source summary 호환 산출물 역할입니다.
-- `daio/<date>/briefing/direct_grounded_briefing_prompt_input.json`
-- `daio/<date>/briefing/direct_grounded_briefing_raw.json`
-- `daio/<date>/validation/direct_grounded_briefing_validation.json`
-- `daou/<date>/direct_grounded_briefing_draft.json`
-- `daou/<date>/direct_grounded_briefing_draft.md`
+### 2. 브리핑 생성 파이프라인
 
-## 8. 기본 실행 방법
+현재 브리핑은 예전 `feature_bundle -> direct briefing` 경로가 아니라, 아래의 새 파이프라인으로 생성한다.
 
-### 8.1 전체 실행
+1. `stage1/2_compact.json`과 `hands37_rule_pack.yaml`을 읽어 section source 생성
+2. section source를 LLM으로 해석해 timeline event 추출
+3. timeline event를 LLM으로 해석해 section 본문 생성
+4. 앞선 section들을 기반으로 `검토용 초안` 생성
+5. 최종 Markdown/JSON 브리핑 조합
+
+관련 스크립트:
+
+- `scripts/build_briefing_section_sources.py`
+- `scripts/extract_timeline_events.py`
+- `scripts/write_briefing_from_events.py`
+- `scripts/write_briefing_draft.py`
+- `scripts/compose_weather_briefing.py`
+
+관련 공통 모듈:
+
+- `scripts/common/briefing_section_source_builder.py`
+- `scripts/common/openai_structured_client.py`
+
+관련 설정:
+
+- `config/briefing/section_map.yaml`
+- `config/briefing/display_labels.yaml`
+
+관련 schema:
+
+- `daba/schemas/briefing_section_source.schema.json`
+- `daba/schemas/timeline_event.schema.json`
+- `daba/schemas/timeline_event_list.schema.json`
+- `daba/schemas/briefing_section_body.schema.json`
+- `daba/schemas/briefing_section.schema.json`
+- `daba/schemas/briefing_draft_body.schema.json`
+- `daba/schemas/weather_briefing.schema.json`
+- `daba/schemas/weather_briefing_validation.schema.json`
+
+관련 template:
+
+- `daba/templates/timeline_event_prompt.txt`
+- `daba/templates/briefing_section_prompt.txt`
+- `daba/templates/briefing_draft_prompt.txt`
+
+### 3. 브리핑 문서 구조
+
+현재 브리핑은 아래 고정 소제목 체계를 사용한다.
+
+- `전체 개황`
+- `종관 해석`
+- `강수 구조 해석`
+- `지상 및 해상 영향 해석`
+- `검토용 초안`
+
+각 섹션은 아래 블록을 포함한다.
+
+- 본문
+- `관측 근거`
+- `적용 패턴`
+
+`적용 패턴`은 아래 형식으로 출력하도록 설계되어 있다.
+
+- `rule_id, 섹션 N, p.xx-yy`
+
+예:
+
+- `front_boundary_identification, 섹션 9, p.68-70`
+
+### 4. rule 참조 방식
+
+현재 브리핑 파이프라인은 `daba/rules/hands37_rule_pack.yaml`을 사용한다.
+
+- `section_map.yaml`은 더 이상 섹션별 고정 rule 묶음을 강제하지 않는다.
+- 현재는 `all_relevant` 방식으로, 해당 날짜의 활성 feature 신호와 관련된 rule 후보를 동적으로 section source에 포함한다.
+
+참고:
+
+- `hands_37.pdf`는 로컬 참고 자료로 둘 수 있다.
+- 현재 자동 브리핑 런타임은 PDF 원문이 아니라 `hands37_rule_pack.yaml`을 기준으로 동작한다.
+- 대용량 PDF는 기본적으로 git 추적 대상에 포함하지 않는다.
+
+## 현재 산출물 구조
+
+브리핑 중간 산출물은 아래에 저장된다.
+
+- `daio/<date>/briefing/section_sources/<section_id>.json`
+- `daio/<date>/briefing/events/<section_id>.prompt_input.json`
+- `daio/<date>/briefing/events/<section_id>.raw.json`
+- `daio/<date>/briefing/events/<section_id>.json`
+- `daio/<date>/briefing/sections/<section_id>.prompt_input.json`
+- `daio/<date>/briefing/sections/<section_id>.raw.json`
+- `daio/<date>/briefing/sections/<section_id>.json`
+
+최종 브리핑은 아래에 저장된다.
+
+- `daio/<date>/briefing/weather_briefing.json`
+- `daio/<date>/briefing/weather_briefing.md`
+
+## 실행 방법
+
+### 수집 + feature
 
 ```powershell
+cd D:\99.project\03.WeatherAIBrief
 python jobs\run_daily.py --date 2026-04-01
 ```
 
-현재 `run_daily.py`의 기본 stage 순서:
-
-- `collect`
-- `feature`
-- `feature-bundle`
-- `briefing`
-- `validation`
-
-### 8.2 특정 단계만 실행
+또는 단계별로 실행:
 
 ```powershell
-python jobs\run_daily.py --date 2026-04-01 --stage collect
-python jobs\run_daily.py --date 2026-04-01 --stage feature
-python jobs\run_daily.py --date 2026-04-01 --stage feature-bundle
-python jobs\run_daily.py --date 2026-04-01 --stage briefing
-python jobs\run_daily.py --date 2026-04-01 --stage validation
-```
-
-### 8.3 feature 전체 실행
-
-```powershell
+python scripts\run_collection_stage.py --date 2026-04-01
 python scripts\run_feature_pipeline.py --date 2026-04-01
+python scripts\run_feature_compact.py --date 2026-04-01
 ```
 
-### 8.4 개별 feature manifest 실행
+### 브리핑 생성
+
+현재 브리핑 파이프라인은 아직 `run_daily.py`에 통합되지 않았고, 아래 순서로 별도 실행한다.
 
 ```powershell
-python -m scripts.run_feature_stage --date 2026-04-01 --manifest prompts/manifests/synoptic_300hPa_stage1.yaml
+python scripts\build_briefing_section_sources.py --date 2026-04-01
+
+python scripts\extract_timeline_events.py --date 2026-04-01 --section overall_summary
+python scripts\extract_timeline_events.py --date 2026-04-01 --section synoptic_analysis
+python scripts\extract_timeline_events.py --date 2026-04-01 --section precipitation_structure
+python scripts\extract_timeline_events.py --date 2026-04-01 --section surface_marine_impacts
+
+python scripts\write_briefing_from_events.py --date 2026-04-01 --section overall_summary
+python scripts\write_briefing_from_events.py --date 2026-04-01 --section synoptic_analysis
+python scripts\write_briefing_from_events.py --date 2026-04-01 --section precipitation_structure
+python scripts\write_briefing_from_events.py --date 2026-04-01 --section surface_marine_impacts
+
+python scripts\write_briefing_draft.py --date 2026-04-01
+python scripts\compose_weather_briefing.py --date 2026-04-01
 ```
 
-### 8.5 feature bundle 실행
+## 현재까지의 진행 결과
 
-```powershell
-python -m scripts.run_feature_bundle --date 2026-04-01
-```
+`2026-04-01` 기준으로 아래 단계는 실제 동작 확인을 마쳤다.
 
-### 8.6 direct grounded briefing 실행
+- section source 생성
+- timeline event 추출
+- section 본문 생성
+- 검토용 초안 생성
+- 최종 브리핑 Markdown/JSON 조합
 
-```powershell
-python -m scripts.run_grounded_briefing --date 2026-04-01
-python -m scripts.validate_grounded_briefing --date 2026-04-01
-```
+실제 생성 예시는 아래 경로에 있다.
 
-## 9. 현재 direct grounded briefing 구조
+- `daio/2026-04-01/briefing/weather_briefing.md`
+- `daio/2026-04-01/briefing/weather_briefing.json`
 
-현재 direct grounded briefing은 아래 흐름으로 동작합니다.
+## 설계 원칙
 
-`feature_bundle + image_feature_cards + hands37_rule_pack -> section별 해석 -> 최종 브리핑 문장`
+- feature 원자료는 가능한 한 `stage1/2_compact.json`을 직접 사용한다.
+- 브리핑 본문은 신호 나열이 아니라 시간 변화가 있는 사건 흐름으로 작성한다.
+- 본문에는 내부 영문 키를 드러내지 않는다.
+- `관측 근거`와 `적용 패턴`은 본문과 분리한다.
+- LLM 응답은 strict하게 검증하고, 유효하지 않으면 결과를 보정하지 않고 재질의한다.
 
-현재 구조의 특징:
+## 현재 한계
 
-- 원자료를 직접 읽습니다.
-- section별로 입력을 나누어 토큰 과부하를 줄입니다.
-- `domain_sequence_features`와 `image_feature_cards`를 같이 사용합니다.
-- 해석과 문장화를 분리하기 위해 `review_draft`는 앞서 생성된 section들을 바탕으로 작성합니다.
-- validation은 최종 draft에 대해 별도로 수행합니다.
-
-## 10. 현재 모델 사용
-
-- feature 단계
-  - 기본값: `gpt-4.1-mini`
-- direct grounded briefing 단계
-  - 기본값: `gpt-5.4-mini`
-
-필요하면 manifest 또는 CLI에서 override할 수 있습니다.
-
-## 11. 운영 시 주의 사항
-
-- `config/keys.env`는 Git에 올리지 않습니다.
-- feature 단계 실행 전 `dain/<date>/charts/nuri` 입력이 있어야 합니다.
-- briefing 단계 실행 전 `daio/<date>/features/feature_bundle.json`과 `image_feature_cards.json`이 있어야 합니다.
-- validation 단계 실행 전 `daou/<date>/direct_grounded_briefing_draft.json`이 있어야 합니다.
-- rule pack은 `yaml/rules/hands37_rule_pack.yaml`을 사용합니다.
-
-## 12. 기준 테스트 날짜
-
-현재 이 저장소에서 가장 많이 검증한 기준 날짜는 `2026-04-01`입니다.
+- 브리핑 파이프라인은 아직 `run_daily.py`에 통합되지 않았다.
+- 최종 `validate_briefing.py`는 아직 구현되지 않았다.
+- PowerShell 콘솔에서는 한글이 깨져 보일 수 있으나, 생성 파일은 UTF-8로 저장된다.
+- 현재 rule 참조는 `hands37_rule_pack.yaml` 기준이며, `hands_37.pdf` 원문 직접 참조는 아직 운영 경로에 포함되지 않았다.

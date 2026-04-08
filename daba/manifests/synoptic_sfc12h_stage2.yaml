@@ -1,0 +1,22 @@
+﻿{
+  "id": "synoptic_sfc12h_stage2",
+  "domain": "sfc12h_synoptic",
+  "stage": "stage2",
+  "image_root_template": "dain/{date}/charts/nuri",
+  "image_glob": "surf_12h_*.png",
+  "image_ref_regex": "^(?P<image_ref>surf_12h_(?P<valid_time>\\d{10}))\\.png$",
+  "prompt_table_mode": "stage2_bundle",
+  "stage2_bundle_header_path": "daba/tables/sfc12h_synoptic_feature_stage2_bundle_header.csv",
+  "stage2_bundle_targets_path": "daba/tables/sfc12h_synoptic_feature_stage2_bundle_targets.csv",
+  "response_schema_path": "daba/schemas/feature_stage2_response.schema.json",
+  "artifact_subdir": "sfc12h_synoptic",
+  "gating_source": "synoptic_sfc12h_stage1",
+  "gating_match_keys": ["region_id", "signal_key"],
+  "gating_answer": "yes|unknown",
+  "bundle_fail_fast": true,
+  "max_bundles_per_request": 8,
+  "model": "gpt-4.1-mini",
+  "max_questions_per_request": 24,
+  "enabled": true
+}
+

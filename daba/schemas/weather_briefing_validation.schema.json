@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weather_briefing_validation.schema.json",
+  "title": "기상 브리핑 검증 결과 스키마",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_date",
+    "status",
+    "issue_count",
+    "issues"
+  ],
+  "properties": {
+    "run_date": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["pass", "fail"]
+    },
+    "issue_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["issue_type", "message"],
+        "properties": {
+          "issue_type": { "type": "string" },
+          "section_id": { "type": "string" },
+          "message": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["warning", "error"]
+          }
+        }
+      }
+    }
+  }
+}

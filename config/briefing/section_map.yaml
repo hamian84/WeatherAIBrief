@@ -1,0 +1,91 @@
+version: 1
+
+document:
+  title_template: "{date} 기상 실황 브리핑"
+  section_order:
+    - overall_summary
+    - synoptic_analysis
+    - precipitation_structure
+    - surface_marine_impacts
+    - briefing_draft
+
+sections:
+  - section_id: overall_summary
+    title: 전체 개황
+    source_type: feature_compact
+    domains:
+      - 300hPa
+      - 500hPa
+      - 850hPa
+      - 925hPa
+      - satellite_wv
+      - surface
+      - sfc12h_synoptic
+    rule_selection:
+      mode: all_relevant
+      hard_section_filter: false
+    max_events: 2
+    writing_policy:
+      require_timeline_flow: true
+      allow_counts_in_body: false
+      require_conclusion_sentence: true
+
+  - section_id: synoptic_analysis
+    title: 종관 해석
+    source_type: feature_compact
+    domains:
+      - 300hPa
+      - 500hPa
+    rule_selection:
+      mode: all_relevant
+      hard_section_filter: false
+    max_events: 3
+    writing_policy:
+      require_timeline_flow: true
+      allow_counts_in_body: false
+      require_conclusion_sentence: true
+
+  - section_id: precipitation_structure
+    title: 강수 구조 해석
+    source_type: feature_compact
+    domains:
+      - 850hPa
+      - 925hPa
+      - satellite_wv
+    rule_selection:
+      mode: all_relevant
+      hard_section_filter: false
+    max_events: 3
+    writing_policy:
+      require_timeline_flow: true
+      allow_counts_in_body: false
+      require_conclusion_sentence: true
+
+  - section_id: surface_marine_impacts
+    title: 지상 및 해상 영향 해석
+    source_type: feature_compact
+    domains:
+      - surface
+      - sfc12h_synoptic
+    rule_selection:
+      mode: all_relevant
+      hard_section_filter: false
+    max_events: 3
+    writing_policy:
+      require_timeline_flow: true
+      allow_counts_in_body: false
+      require_conclusion_sentence: true
+
+  - section_id: briefing_draft
+    title: 검토용 초안
+    source_type: section_outputs
+    source_sections:
+      - overall_summary
+      - synoptic_analysis
+      - precipitation_structure
+      - surface_marine_impacts
+    writing_policy:
+      require_timeline_flow: true
+      allow_counts_in_body: false
+      require_conclusion_sentence: true
+      allow_new_claims: false

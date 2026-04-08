@@ -56,7 +56,10 @@ def _build_request_body(
                             "allowed_answers values provided in the user prompt. "
                             "Do not paraphrase, translate, inflect, pluralize, or output synonyms. "
                             "If the allowed value is 'continuous', do not output 'continuously'. "
-                            "If uncertain and 'unknown' is allowed, return 'unknown' exactly."
+                            "If uncertain and 'unknown' is allowed, return 'unknown' exactly. "
+                            "Never omit required ids. Never duplicate question_id, bundle_id, or target_label. "
+                            "For stage1 bundle responses, selected_answers must contain unique values only, "
+                            "and 'none' must appear alone if selected."
                         ),
                     }
                 ],
@@ -103,19 +106,31 @@ def _manual_validate_schema(parsed_output: dict[str, Any]) -> None:
         bundle_answers = parsed_output.get("bundle_answers")
         if not isinstance(bundle_answers, list):
             raise ValueError("response payload missing bundle_answers list")
+        seen_bundle_ids: set[str] = set()
         for bundle in bundle_answers:
             if not isinstance(bundle, dict):
                 raise ValueError("response bundle item must be an object")
-            if not isinstance(bundle.get("bundle_id"), str) or not str(bundle.get("bundle_id")).strip():
+            bundle_id = bundle.get("bundle_id")
+            if not isinstance(bundle_id, str) or not str(bundle_id).strip():
                 raise ValueError("response bundle item missing bundle_id")
+            bundle_id = str(bundle_id).strip()
+            if bundle_id in seen_bundle_ids:
+                raise ValueError(f"duplicate bundle_id in response: {bundle_id}")
+            seen_bundle_ids.add(bundle_id)
             targets = bundle.get("targets")
             if not isinstance(targets, list):
                 raise ValueError("response bundle item missing targets list")
+            seen_target_labels: set[str] = set()
             for target in targets:
                 if not isinstance(target, dict):
                     raise ValueError("response target item must be an object")
-                if not isinstance(target.get("target_label"), str) or not str(target.get("target_label")).strip():
+                target_label = target.get("target_label")
+                if not isinstance(target_label, str) or not str(target_label).strip():
                     raise ValueError("response target item missing target_label")
+                target_label = str(target_label).strip()
+                if target_label in seen_target_labels:
+                    raise ValueError(f"duplicate target_label in response: {target_label}")
+                seen_target_labels.add(target_label)
                 if not isinstance(target.get("answer"), str) or not str(target.get("answer")).strip():
                     raise ValueError("response target item missing answer")
                 note = target.get("note")
@@ -126,17 +141,28 @@ def _manual_validate_schema(parsed_output: dict[str, Any]) -> None:
     answers = parsed_output.get("answers")
     if not isinstance(answers, list):
         raise ValueError("response payload missing answers list")
+    seen_question_ids: set[str] = set()
     for item in answers:
         if not isinstance(item, dict):
             raise ValueError("response answer item must be an object")
-        if not isinstance(item.get("question_id"), str) or not str(item.get("question_id")).strip():
+        question_id = item.get("question_id")
+        if not isinstance(question_id, str) or not str(question_id).strip():
             raise ValueError("response answer item missing question_id")
+        question_id = str(question_id).strip()
+        if question_id in seen_question_ids:
+            raise ValueError(f"duplicate question_id in response: {question_id}")
+        seen_question_ids.add(question_id)
         if "selected_answers" in item:
             selected_answers = item.get("selected_answers")
             if not isinstance(selected_answers, list) or not selected_answers:
                 raise ValueError("response answer item missing selected_answers")
             if any(not isinstance(value, str) or not str(value).strip() for value in selected_answers):
                 raise ValueError("response selected_answers item must be a non-empty string")
+            normalized_selected = [str(value).strip().lower() for value in selected_answers]
+            if len(normalized_selected) != len(set(normalized_selected)):
+                raise ValueError(f"selected_answers must contain unique values: {question_id}")
+            if "none" in normalized_selected and len(normalized_selected) > 1:
+                raise ValueError(f"selected_answers must not mix none with other values: {question_id}")
         elif not isinstance(item.get("answer"), str) or not str(item.get("answer")).strip():
             raise ValueError("response answer item missing answer")
         note = item.get("note")

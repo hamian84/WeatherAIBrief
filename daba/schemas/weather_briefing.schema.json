@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weather_briefing.schema.json",
+  "title": "최종 기상 브리핑 스키마",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_date",
+    "title",
+    "sections"
+  ],
+  "properties": {
+    "run_date": { "type": "string" },
+    "title": { "type": "string" },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "briefing_section.schema.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "timeline_event.schema.json",
+  "title": "시간 변화 사건 스키마",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "section_id",
+    "event_title",
+    "phase_early",
+    "phase_mid",
+    "phase_late",
+    "causal_link",
+    "regions",
+    "domains",
+    "evidence_refs",
+    "rule_refs",
+    "confidence"
+  ],
+  "properties": {
+    "event_id": { "type": "string" },
+    "section_id": { "type": "string" },
+    "event_title": { "type": "string" },
+    "phase_early": { "type": "string" },
+    "phase_mid": { "type": "string" },
+    "phase_late": { "type": "string" },
+    "causal_link": { "type": "string" },
+    "regions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "domains": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "rule_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    }
+  }
+}

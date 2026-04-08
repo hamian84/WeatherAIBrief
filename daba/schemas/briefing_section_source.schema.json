@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "briefing_section_source.schema.json",
+  "title": "브리핑 섹션 원자료 스키마",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_date",
+    "section_id",
+    "section_title",
+    "source_domains",
+    "time_catalog",
+    "region_catalog",
+    "signal_catalog",
+    "evidence_catalog",
+    "rule_catalog",
+    "row_fields",
+    "rows",
+    "row_count"
+  ],
+  "properties": {
+    "run_date": {
+      "type": "string"
+    },
+    "section_id": {
+      "type": "string"
+    },
+    "section_title": {
+      "type": "string"
+    },
+    "source_domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "time_catalog": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "region_catalog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["region_id", "region_label"],
+        "properties": {
+          "region_id": { "type": "string" },
+          "region_label": { "type": "string" }
+        }
+      }
+    },
+    "signal_catalog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["signal_key", "signal_label"],
+        "properties": {
+          "signal_key": { "type": "string" },
+          "signal_label": { "type": "string" }
+        }
+      }
+    },
+    "evidence_catalog": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rule_catalog": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["rule_id", "section_no", "page_range"],
+        "properties": {
+          "rule_id": { "type": "string" },
+          "section_no": { "type": "integer" },
+          "page_range": { "type": "string" }
+        }
+      }
+    },
+    "row_fields": {
+      "type": "array",
+      "const": [
+        "time_idx",
+        "domain",
+        "region_idx",
+        "signal_idx",
+        "stage",
+        "count",
+        "detail_text",
+        "evidence_idx_list"
+      ]
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          { "type": "integer", "minimum": 0 },
+          { "type": "string" },
+          { "type": "integer", "minimum": 0 },
+          { "type": "integer", "minimum": 0 },
+          { "type": "string", "enum": ["stage1", "stage2"] },
+          { "type": "integer", "minimum": 1 },
+          { "type": "string" },
+          {
+            "type": "array",
+            "items": { "type": "integer", "minimum": 0 }
+          }
+        ],
+        "minItems": 8,
+        "maxItems": 8
+      }
+    },
+    "row_count": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}

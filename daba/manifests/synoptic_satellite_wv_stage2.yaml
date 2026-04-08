@@ -1,0 +1,23 @@
+﻿{
+  "id": "synoptic_satellite_wv_stage2",
+  "domain": "satellite_wv",
+  "stage": "stage2",
+  "image_root_template": "dain/{date}/satellite/LE1B/WV063/EA",
+  "image_glob": "gk2a_le1b_WV063_EA_*.png",
+  "image_ref_regex": "^(?P<image_ref>gk2a_le1b_WV063_EA_(?P<valid_time>\\d{12}))\\.png$",
+  "prompt_table_mode": "stage2_bundle",
+  "stage2_bundle_header_path": "daba/tables/satellite_wv_feature_stage2_bundle_header.csv",
+  "stage2_bundle_targets_path": "daba/tables/satellite_wv_feature_stage2_bundle_targets.csv",
+  "response_schema_path": "daba/schemas/feature_stage2_response.schema.json",
+  "artifact_subdir": "satellite_wv",
+  "gating_source": "synoptic_satellite_wv_stage1",
+  "gating_match_keys": ["region_id", "signal_key"],
+  "gating_answer": "yes|unknown",
+  "bundle_fail_fast": true,
+  "max_bundles_per_request": 8,
+  "model": "gpt-4.1-mini",
+  "max_questions_per_request": 24,
+  "enabled": true
+}
+
+

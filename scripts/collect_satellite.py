@@ -15,7 +15,7 @@ import re
 import subprocess
 import sys
 import time
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Iterable
 from urllib.error import HTTPError, URLError
@@ -23,10 +23,11 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 from scripts.collect_asos import DEFAULT_RETRY_WAIT_SECONDS
+from scripts.common.collection_schedule import resolve_collection_target
 from scripts.common.config import get_env_value, load_project_env
 from scripts.common.logging import configure_logging
 
-DATE_FORMAT = "%Y-%m-%d"
+DATE_FORMAT = "%Y%m%d"
 SERVICE_KEY_ENV = "KMA_APIHUB_AUTH_KEY"
 VERIFY_REPORT_FILENAME = "verify_satellite_result.json"
 
@@ -35,26 +36,11 @@ BASE_URL = "https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B"
 PRODUCTS_FILENAME = "satellite_le1b_products.txt"
 AREAS_FILENAME = "satellite_areas.txt"
 
-UTC_TIMES = ("0000", "0600", "1200", "1800")
 DEFAULT_TIMEOUT_SECONDS = 600
 
 
 def _setup_logging(run_date: str) -> Path:
     return configure_logging("collect_satellite", run_date)
-
-
-def _parse_date(value: str) -> date:
-    return datetime.strptime(value, DATE_FORMAT).date()
-
-
-def _target_utc_date(run_date: date) -> date:
-    return run_date - timedelta(days=1)
-
-
-def _build_utc_times(target_date: date) -> list[str]:
-    date_prefix = target_date.strftime("%Y%m%d")
-    previous_prefix = (target_date - timedelta(days=1)).strftime("%Y%m%d")
-    return [f"{previous_prefix}1800", *[f"{date_prefix}{hhmm}" for hhmm in UTC_TIMES]]
 
 
 def _encode_query(params: dict[str, Any]) -> str:
@@ -206,7 +192,11 @@ def _download_image(url: str, dest_path: Path, timeout_seconds: int) -> bool:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="GK2A LE1B 위성자료 수집")
-    parser.add_argument("--date", required=True, help="기준일(YYYY-MM-DD)")
+    parser.add_argument(
+        "--date",
+        required=True,
+        help="collection target (YYYYMMDD or YYYYMMDDHH, HH in 00/12)",
+    )
     parser.add_argument(
         "--phase",
         choices=("primary", "secondary"),
@@ -236,7 +226,12 @@ def _default_verify_report_path(base_dir: Path, target_date: date) -> Path:
     return base_dir / "logs" / target_date.strftime(DATE_FORMAT) / VERIFY_REPORT_FILENAME
 
 
-def _run_verify(base_dir: Path, target_date: date, report_path: Path) -> int:
+def _run_verify(
+    base_dir: Path,
+    target_date: date,
+    report_path: Path,
+    cycle: str | None = None,
+) -> int:
     env = dict(os.environ)
     cmd = [
         sys.executable,
@@ -246,6 +241,8 @@ def _run_verify(base_dir: Path, target_date: date, report_path: Path) -> int:
         "--report-path",
         str(report_path),
     ]
+    if cycle:
+        cmd.extend(["--cycle", cycle])
     result = subprocess.run(cmd, cwd=base_dir, env=env)
     return result.returncode
 
@@ -348,14 +345,16 @@ def _download_one(
 
 def main() -> int:
     args = build_parser().parse_args()
-    log_path = _setup_logging(args.date)
-    logging.info("위성 수집 시작: date=%s", args.date)
-    logging.info("로그 파일: %s", log_path)
 
     try:
-        run_date = _parse_date(args.date)
-        utc_date = _target_utc_date(run_date)
-        target_times = _build_utc_times(utc_date)
+        target = resolve_collection_target(args.date)
+        log_path = _setup_logging(target.storage_date_text)
+        logging.info("위성 수집 시작: input=%s storage_date=%s", args.date, target.storage_date_text)
+        logging.info("로그 파일: %s", log_path)
+
+        run_date = target.storage_date
+        reference_utc = target.reference_utc
+        target_times = [reference_utc.strftime("%Y%m%d%H%M")]
 
         base_dir = Path(__file__).resolve().parents[1]
         load_project_env(base_dir)
@@ -378,12 +377,22 @@ def main() -> int:
         )
 
         if args.dry_run:
-            logging.info("[DRY-RUN] UTC 대상 날짜: %s", utc_date.strftime("%Y%m%d"))
+            logging.info(
+                "[DRY-RUN] 기준 synoptic UTC: %s",
+                reference_utc.strftime("%Y-%m-%d %H:%M UTC"),
+            )
+            logging.info("[DRY-RUN] 기준 선택 방식: %s", target.mode)
             logging.info("[DRY-RUN] 대상 시간: %s", ", ".join(target_times))
             logging.info("[DRY-RUN] product 개수: %d", len(products))
             logging.info("[DRY-RUN] area 개수: %d", len(areas))
             logging.info("[DRY-RUN] meta 저장 경로: %s", meta_dir)
             return 0
+
+        logging.info(
+            "기준 synoptic UTC 선택: %s",
+            reference_utc.strftime("%Y-%m-%d %H:%M UTC"),
+        )
+        logging.info("기준 선택 방식: %s", target.mode)
 
         targets: list[dict[str, str]] = []
         if args.phase == "secondary":
@@ -423,7 +432,7 @@ def main() -> int:
         logging.info("수집 실패 건수: %d", len(failures))
 
         report_path.parent.mkdir(parents=True, exist_ok=True)
-        _run_verify(base_dir, run_date, report_path)
+        _run_verify(base_dir, run_date, report_path, cycle=target_times[0])
         report = _load_verify_report(report_path)
         if report.get("status") == "PASS":
             logging.info("primary 검증 PASS")
@@ -458,7 +467,7 @@ def main() -> int:
             if not ok:
                 failures.append(item)
 
-        _run_verify(base_dir, run_date, recover_report_path)
+        _run_verify(base_dir, run_date, recover_report_path, cycle=target_times[0])
         report_after = _load_verify_report(recover_report_path)
         if report_after.get("status") == "PASS":
             logging.info("복구 완료")

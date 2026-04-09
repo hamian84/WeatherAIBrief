@@ -5,6 +5,7 @@
   "image_root_template": "dain/{date}/charts/nuri",
   "image_glob": "up50_6h_*.gif",
   "image_ref_regex": "^(?P<image_ref>up50_6h_(?P<valid_time>\\d{10}))\\.gif$",
+  "target_hours": ["00", "12"],
   "prompt_table_mode": "stage2_bundle",
   "stage2_bundle_header_path": "daba/tables/500hPa_feature_stage2_bundle_header.csv",
   "stage2_bundle_targets_path": "daba/tables/500hPa_feature_stage2_bundle_targets.csv",

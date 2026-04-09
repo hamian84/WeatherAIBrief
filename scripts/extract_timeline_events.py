@@ -11,13 +11,14 @@ if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
 from scripts.common.config import load_project_env
+from scripts.common.date_utils import normalize_run_date
 from scripts.common.openai_structured_client import call_structured_text_llm
 from scripts.common.schema_utils import load_json_schema, validate_instance
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="섹션 원자료에서 시간 변화 사건 목록을 추출합니다.")
-    parser.add_argument("--date", required=True, help="YYYY-MM-DD")
+    parser.add_argument("--date", required=True, help="YYYYMMDD")
     parser.add_argument("--section", required=True, help="section_id")
     parser.add_argument("--model", default="gpt-4.1-mini", help="OpenAI model name")
     parser.add_argument("--max-output-tokens", type=int, default=4000, help="max_output_tokens")
@@ -130,6 +131,7 @@ def _validate_event_references(parsed_output: dict[str, Any], prompt_input: dict
 
 def main() -> int:
     args = build_parser().parse_args()
+    args.date = normalize_run_date(args.date)
     load_project_env(BASE_DIR)
 
     section_map = _load_yaml(BASE_DIR / "config" / "briefing" / "section_map.yaml")

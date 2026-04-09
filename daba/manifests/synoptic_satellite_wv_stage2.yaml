@@ -5,6 +5,7 @@
   "image_root_template": "dain/{date}/satellite/LE1B/WV063/EA",
   "image_glob": "gk2a_le1b_WV063_EA_*.png",
   "image_ref_regex": "^(?P<image_ref>gk2a_le1b_WV063_EA_(?P<valid_time>\\d{12}))\\.png$",
+  "target_hours": ["00", "12"],
   "prompt_table_mode": "stage2_bundle",
   "stage2_bundle_header_path": "daba/tables/satellite_wv_feature_stage2_bundle_header.csv",
   "stage2_bundle_targets_path": "daba/tables/satellite_wv_feature_stage2_bundle_targets.csv",

@@ -5,6 +5,7 @@
   "image_root_template": "dain/{date}/charts/nuri",
   "image_glob": "surf_12h_*.png",
   "image_ref_regex": "^(?P<image_ref>surf_12h_(?P<valid_time>\\d{10}))\\.png$",
+  "target_hours": ["00", "12"],
   "prompt_table_mode": "stage2_bundle",
   "stage2_bundle_header_path": "daba/tables/sfc12h_synoptic_feature_stage2_bundle_header.csv",
   "stage2_bundle_targets_path": "daba/tables/sfc12h_synoptic_feature_stage2_bundle_targets.csv",

@@ -10,10 +10,11 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
+from scripts.common.date_utils import normalize_run_date
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="생성된 브리핑 섹션들을 최종 Markdown으로 조합합니다.")
-    parser.add_argument("--date", required=True, help="YYYY-MM-DD")
+    parser.add_argument("--date", required=True, help="YYYYMMDD")
     return parser
 
 
@@ -62,6 +63,7 @@ def _render_markdown(title: str, sections: list[dict[str, Any]]) -> str:
 
 def main() -> int:
     args = build_parser().parse_args()
+    args.date = normalize_run_date(args.date)
     section_map = _load_yaml(BASE_DIR / "config" / "briefing" / "section_map.yaml")
     title_template = section_map.get("document", {}).get("title_template", "{date} 기상 실황 브리핑")
     section_order = section_map.get("document", {}).get("section_order", [])

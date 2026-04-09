@@ -1,0 +1,17 @@
+{
+  "id": "synoptic_radar_precipitation_stage1",
+  "domain": "radar_precipitation",
+  "stage": "stage1",
+  "image_root_template": "dain/{date}/radar/cmi",
+  "image_glob": "rdr_cmp_cmi_*.*",
+  "image_ref_regex": "^(?P<image_ref>rdr_cmp_cmi_(?P<valid_time>\\d{12}))\\.(png|jpg|gif)$",
+  "target_hours": ["00", "12"],
+  "prompt_table_mode": "stage1_bundle",
+  "prompt_table_path": "daba/tables/radar_precipitation_feature_stage1_bundle_table.csv",
+  "response_schema_path": "daba/schemas/feature_stage1_response.schema.json",
+  "artifact_subdir": "radar_precipitation",
+  "allow_multi_select": true,
+  "bundle_fail_fast": true,
+  "model": "gpt-4.1-mini",
+  "enabled": true
+}

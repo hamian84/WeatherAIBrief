@@ -1,22 +1,20 @@
 import logging
 import os
-from datetime import datetime
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
-KST = ZoneInfo("Asia/Seoul")
-DATE_FORMAT = "%Y-%m-%d"
+from scripts.common.date_utils import normalize_run_date, today_run_date_kst
+
 LOG_PATH_ENV = "WEATHERAI_LOG_PATH"
 LOG_DATE_ENV = "WEATHERAI_LOG_DATE"
 
 
 def _resolve_run_date(run_date: str | None) -> str:
     if run_date:
-        return run_date
+        return normalize_run_date(run_date)
     env_date = os.environ.get(LOG_DATE_ENV)
     if env_date:
-        return env_date
-    return datetime.now(tz=KST).strftime(DATE_FORMAT)
+        return normalize_run_date(env_date)
+    return today_run_date_kst()
 
 
 def build_log_path(run_name: str, run_date: str | None = None) -> Path:

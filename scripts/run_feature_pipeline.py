@@ -13,6 +13,7 @@ if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
 from scripts.common.config import load_project_env
+from scripts.common.date_utils import normalize_run_date
 from scripts.common.feature_manifest_loader import load_manifest
 from scripts.common.logging import configure_logging
 
@@ -60,7 +61,7 @@ def _run_manifest(manifest_path: Path, run_date: str, dry_run: bool) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="전체 feature 단계를 순차 실행합니다.")
-    parser.add_argument("--date", required=True, help="YYYY-MM-DD")
+    parser.add_argument("--date", required=True, help="YYYYMMDD")
     parser.add_argument("--manifest-dir", default="daba/manifests", help="feature manifest 디렉토리")
     parser.add_argument("--dry-run", action="store_true", help="feature 단계 dry-run 실행")
     parser.add_argument("--include-disabled", action="store_true", help="enabled=false manifest도 포함")
@@ -69,6 +70,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> int:
     args = build_parser().parse_args()
+    args.date = normalize_run_date(args.date)
     os_manifest_dir = BASE_DIR / args.manifest_dir
     load_project_env(BASE_DIR)
     log_path = configure_logging("run_feature_pipeline", args.date)

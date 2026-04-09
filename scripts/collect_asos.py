@@ -24,11 +24,12 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
+from scripts.common.collection_schedule import resolve_collection_target
 from scripts.common.config import get_env_value, load_project_env
 from scripts.common.logging import configure_logging
 
 KST = ZoneInfo("Asia/Seoul")
-DATE_FORMAT = "%Y-%m-%d"
+DATE_FORMAT = "%Y%m%d"
 
 BASE_URL = "https://apihub.kma.go.kr/api/typ01/url/kma_sfctm3.php"
 RAW_FILENAME = "asos_hourly.csv"
@@ -48,18 +49,17 @@ def _setup_logging(run_date: str) -> Path:
     return configure_logging("collect_asos", run_date)
 
 
-def _parse_date(value: str) -> date:
-    return datetime.strptime(value, DATE_FORMAT).date()
-
-
-def _window_for_date(target_date: date) -> tuple[str, str, str, str, str, str]:
-    start_date = target_date - timedelta(days=1)
-    start_dt = start_date.strftime("%Y%m%d")
-    end_dt = target_date.strftime("%Y%m%d")
-    start_hh = "07"
-    end_hh = "07"
-    window_start = f"{start_date.strftime(DATE_FORMAT)} 07:00"
-    window_end = f"{target_date.strftime(DATE_FORMAT)} 07:59"
+def _window_for_reference(reference_utc: datetime) -> tuple[str, str, str, str, str, str]:
+    reference_kst = reference_utc.astimezone(KST)
+    reference_dt = reference_kst.strftime("%Y%m%d")
+    reference_hh = reference_kst.strftime("%H")
+    window_text = reference_kst.strftime("%Y%m%d %H:00")
+    start_dt = reference_dt
+    end_dt = reference_dt
+    start_hh = reference_hh
+    end_hh = reference_hh
+    window_start = window_text
+    window_end = window_text
     return start_dt, start_hh, end_dt, end_hh, window_start, window_end
 
 
@@ -766,6 +766,21 @@ def _merge_rows(
     return merged_rows, stats
 
 
+def _derive_window_text_from_rows(rows: list[dict[str, Any]]) -> tuple[str | None, str | None]:
+    valid_tms = sorted(
+        str(row.get("tm") or "").strip()
+        for row in rows
+        if str(row.get("tm") or "").strip()
+    )
+    if not valid_tms:
+        return None, None
+
+    def _format_tm(tm: str) -> str:
+        return datetime.strptime(tm, "%Y%m%d%H%M").strftime("%Y%m%d %H:%M")
+
+    return _format_tm(valid_tms[0]), _format_tm(valid_tms[-1])
+
+
 def _to_float(value: Any) -> float | None:
     if value is None:
         return None
@@ -857,7 +872,11 @@ def _has_csv_data(path: Path) -> bool:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="ASOS 시간자료 수집")
-    parser.add_argument("--date", required=True, help="기준일(YYYY-MM-DD)")
+    parser.add_argument(
+        "--date",
+        required=True,
+        help="collection target (YYYYMMDD or YYYYMMDDHH, HH in 00/12)",
+    )
     parser.add_argument(
         "--phase",
         choices=("primary", "secondary"),
@@ -1152,15 +1171,20 @@ def auto_recover_after_primary(
 
 def main() -> int:
     args = build_parser().parse_args()
-    log_path = _setup_logging(args.date)
-    logging.info("수집 시작: date=%s", args.date)
-    logging.info("로그 파일: %s", log_path)
 
     try:
-        target_date = _parse_date(args.date)
-        start_dt, start_hh, end_dt, end_hh, window_start, window_end = _window_for_date(
-            target_date
+        target = resolve_collection_target(args.date)
+        log_path = _setup_logging(target.storage_date_text)
+        logging.info(
+            "수집 시작: input=%s storage_date=%s",
+            args.date,
+            target.storage_date_text,
         )
+        logging.info("로그 파일: %s", log_path)
+
+        target_date = target.storage_date
+        reference_utc = target.reference_utc
+        start_dt, start_hh, end_dt, end_hh, window_start, window_end = _window_for_reference(reference_utc)
 
         base_dir = Path(__file__).resolve().parents[1]
         load_project_env(base_dir)
@@ -1184,6 +1208,11 @@ def main() -> int:
 
         logging.info("수집 단계=%s", args.phase)
         logging.info(
+            "기준 synoptic UTC 선택: %s",
+            reference_utc.strftime("%Y-%m-%d %H:%M UTC"),
+        )
+        logging.info("기준 선택 방식: %s", target.mode)
+        logging.info(
             "수집 시간창: startDt=%s,startHh=%s,endDt=%s,endHh=%s (%s ~ %s)",
             start_dt,
             start_hh,
@@ -1197,6 +1226,11 @@ def main() -> int:
 
         if args.dry_run:
             logging.info("[DRY-RUN] API 호출 스킵")
+            logging.info(
+                "[DRY-RUN] 기준 synoptic UTC: %s",
+                reference_utc.strftime("%Y-%m-%d %H:%M UTC"),
+            )
+            logging.info("[DRY-RUN] 기준 선택 방식: %s", target.mode)
             logging.info("[DRY-RUN] 호출 URL: %s", BASE_URL)
             logging.info(
                 "[DRY-RUN] 호출 파라미터(일괄): tm1=%s%s00, tm2=%s%s00, stn_id=<지점ID,콤마구분>, authKey=***",
@@ -1213,7 +1247,14 @@ def main() -> int:
             logging.info("[DRY-RUN] verify report 경로: %s", report_path)
             return 0
 
-        if args.phase == "primary" and not args.overwrite:
+        curated_window_start = window_start
+        curated_window_end = window_end
+
+        if (
+            args.phase == "primary"
+            and not args.overwrite
+            and target.mode != "explicit_utc_cycle"
+        ):
             raw_ready = _has_csv_data(raw_path)
             curated_ready = _has_csv_data(curated_path)
             if raw_ready and curated_ready:
@@ -1255,6 +1296,10 @@ def main() -> int:
                 return 1
             items_for_curated = _read_csv_rows(raw_path)
             items_for_curated, dropped = _filter_rows_by_station_ids(items_for_curated, stn_ids)
+            derived_window_start, derived_window_end = _derive_window_text_from_rows(items_for_curated)
+            if derived_window_start and derived_window_end:
+                curated_window_start = derived_window_start
+                curated_window_end = derived_window_end
             if dropped > 0:
                 logging.warning("요청 목록 외/무효 지점 행 제외(secondary): %d건", dropped)
         else:
@@ -1293,16 +1338,33 @@ def main() -> int:
             raw_dir.mkdir(parents=True, exist_ok=True)
             curated_dir.mkdir(parents=True, exist_ok=True)
 
-            _write_csv(raw_path, items)
-            logging.info("raw 저장 완료: %s", raw_path)
             items_for_curated = items
+            if raw_path.exists() and target.mode == "explicit_utc_cycle" and not args.overwrite:
+                existing_rows = _read_csv_rows(raw_path)
+                merged_rows, stats = _merge_rows(existing_rows, items)
+                logging.info(
+                    "explicit cycle merge: before=%d, new=%d, after=%d, dedup_removed=%d",
+                    stats["before"],
+                    stats["new"],
+                    stats["after"],
+                    stats["dedup_removed"],
+                )
+                _write_csv(raw_path, merged_rows)
+                items_for_curated = merged_rows
+                derived_window_start, derived_window_end = _derive_window_text_from_rows(merged_rows)
+                if derived_window_start and derived_window_end:
+                    curated_window_start = derived_window_start
+                    curated_window_end = derived_window_end
+            else:
+                _write_csv(raw_path, items)
+            logging.info("raw 저장 완료: %s", raw_path)
 
         curated_rows, fieldnames = _build_curated_rows(
             items_for_curated,
             stn_ids,
             report_date=target_date.strftime(DATE_FORMAT),
-            window_start=window_start,
-            window_end=window_end,
+            window_start=curated_window_start,
+            window_end=curated_window_end,
         )
         with curated_path.open("w", newline="", encoding="utf-8") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)

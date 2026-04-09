@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 import json
@@ -6,26 +6,32 @@ import logging
 import subprocess
 import sys
 import time
-from datetime import datetime
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
+from scripts.common.date_utils import normalize_run_date, today_run_date_kst
 from scripts.common.logging import configure_logging
 
-KST = ZoneInfo("Asia/Seoul")
-DATE_FORMAT = "%Y-%m-%d"
 STAGE_ORDER = (
     "collect",
     "feature",
+    "briefing",
 )
 STAGE_REQUIREMENTS: dict[str, dict[str, object]] = {
     "feature": {
-        "required_paths": ("dain/{date}/charts/nuri",),
+        "required_paths": (
+            "dain/{date}/charts/nuri",
+            "dain/{date}/satellite/LE1B/WV063/EA",
+            "dain/{date}/radar/cmi",
+        ),
         "upstream_stages": ("collect",),
+    },
+    "briefing": {
+        "required_paths": ("daio/{date}/features",),
+        "upstream_stages": ("feature",),
     },
 }
 
@@ -75,58 +81,64 @@ def _validate_single_stage_prerequisites(base_dir: Path, run_date: str, stage: s
         return
 
     upstream_stages = [str(item) for item in requirement.get("upstream_stages", ())]
-    hint_text = ", ".join(upstream_stages) or "선행 단계 확인 필요"
+    hint_text = ", ".join(upstream_stages) or "check upstream stages"
     missing_path_lines = "\n".join(f"- {path}" for path in missing_paths)
     raise FileNotFoundError(
         f"stage prerequisite missing for '{stage}'.\n"
-        f"필요한 선행 산출물이 없습니다. 먼저 다음 단계를 실행하세요: {hint_text}\n"
-        f"누락 경로:\n{missing_path_lines}"
+        f"Required upstream outputs are missing. Run these stages first: {hint_text}\n"
+        f"Missing paths:\n{missing_path_lines}"
     )
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="수집부터 feature compact 산출물까지 일일 파이프라인을 실행합니다.")
-    parser.add_argument("--date", help="YYYY-MM-DD (기본: KST 오늘)")
+    parser = argparse.ArgumentParser(description="Run the daily collect, feature, and briefing pipeline.")
+    parser.add_argument("--date", help="YYYYMMDD (default: current KST date)")
     parser.add_argument(
         "--stage",
         action="append",
         choices=STAGE_ORDER,
-        help="특정 단계만 실행합니다. 여러 번 지정할 수 있습니다.",
+        help="Run only selected stages. Can be provided multiple times.",
     )
-    parser.add_argument("--phase", choices=("primary", "secondary"), default="primary", help="수집 단계 phase")
-    parser.add_argument("--overwrite", action="store_true", help="기존 산출물이 있어도 덮어씁니다.")
+    parser.add_argument("--phase", choices=("primary", "secondary"), default="primary", help="Collection phase")
+    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing outputs")
     parser.add_argument(
         "--asos",
         action=argparse.BooleanOptionalAction,
         default=True,
-        help="수집 단계에서 ASOS 수집 여부",
+        help="Enable ASOS collection in the collect stage",
     )
     parser.add_argument(
         "--nuri-charts",
         action=argparse.BooleanOptionalAction,
         default=True,
-        help="수집 단계에서 일기도 수집 여부",
+        help="Enable Nuri chart collection in the collect stage",
     )
     parser.add_argument(
         "--satellite",
         action=argparse.BooleanOptionalAction,
         default=True,
-        help="수집 단계에서 위성 수집 여부",
+        help="Enable satellite collection in the collect stage",
     )
-    parser.add_argument("--sleep-seconds", type=float, default=1.0, help="ASOS 호출 간격(초)")
-    parser.add_argument("--max-retries", type=int, default=3, help="ASOS 재시도 횟수")
-    parser.add_argument("--retry-backoff-seconds", type=float, default=2.0, help="ASOS 초기 backoff(초)")
-    parser.add_argument("--retry-backoff-max-seconds", type=float, default=20.0, help="ASOS 최대 backoff(초)")
+    parser.add_argument(
+        "--radar",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Enable radar collection in the collect stage",
+    )
+    parser.add_argument("--sleep-seconds", type=float, default=1.0, help="ASOS API sleep interval (seconds)")
+    parser.add_argument("--max-retries", type=int, default=3, help="ASOS retry count")
+    parser.add_argument("--retry-backoff-seconds", type=float, default=2.0, help="ASOS initial backoff (seconds)")
+    parser.add_argument("--retry-backoff-max-seconds", type=float, default=20.0, help="ASOS max backoff (seconds)")
     parser.add_argument(
         "--feature-manifest-dir",
         default="daba/manifests",
-        help="feature 단계 manifest 디렉터리",
+        help="Feature stage manifest directory",
     )
-    parser.add_argument("--feature-dry-run", action="store_true", help="feature 단계만 dry-run으로 실행")
+    parser.add_argument("--feature-dry-run", action="store_true", help="Run the feature stage in dry-run mode")
     parser.add_argument(
         "--feature-include-disabled",
         action="store_true",
-        help="feature 단계에서 enabled=false manifest도 포함",
+        help="Include disabled manifests in the feature stage",
     )
     return parser
 
@@ -142,6 +154,12 @@ def _build_stage_commands(args: argparse.Namespace, python_executable: str) -> d
             "--manifest-dir",
             args.feature_manifest_dir,
         ],
+        "briefing": [
+            python_executable,
+            "scripts/run_briefing_pipeline.py",
+            "--date",
+            args.date,
+        ],
     }
 
     if args.overwrite:
@@ -152,6 +170,8 @@ def _build_stage_commands(args: argparse.Namespace, python_executable: str) -> d
         commands["collect"].append("--no-nuri-charts")
     if not args.satellite:
         commands["collect"].append("--no-satellite")
+    if not args.radar:
+        commands["collect"].append("--no-radar")
     commands["collect"].extend(
         [
             "--sleep-seconds",
@@ -176,7 +196,9 @@ def _build_stage_commands(args: argparse.Namespace, python_executable: str) -> d
 def main() -> int:
     args = build_parser().parse_args()
     if not args.date:
-        args.date = datetime.now(tz=KST).strftime(DATE_FORMAT)
+        args.date = today_run_date_kst()
+    else:
+        args.date = normalize_run_date(args.date)
 
     log_path = _setup_logging(args.date)
     logging.info("run_daily_start: date=%s", args.date)

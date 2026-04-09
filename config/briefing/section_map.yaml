@@ -19,6 +19,7 @@ sections:
       - 850hPa
       - 925hPa
       - satellite_wv
+      - radar_precipitation
       - surface
       - sfc12h_synoptic
     rule_selection:
@@ -52,6 +53,7 @@ sections:
       - 850hPa
       - 925hPa
       - satellite_wv
+      - radar_precipitation
     rule_selection:
       mode: all_relevant
       hard_section_filter: false

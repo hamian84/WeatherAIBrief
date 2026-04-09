@@ -11,11 +11,12 @@ if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
 from scripts.common.config import load_project_env
+from scripts.common.date_utils import normalize_run_date
 from scripts.common.feature_manifest_loader import load_manifest, load_manifests_from_dir
 from scripts.common.logging import configure_logging
 from scripts.feature_stage_runner_bundle import run_manifest
 
-DATE_FORMAT_HINT = "YYYY-MM-DD"
+DATE_FORMAT_HINT = "YYYYMMDD"
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -56,6 +57,7 @@ def _collect_manifest_jobs(base_dir: Path, args: argparse.Namespace) -> list[Pat
 
 def main() -> int:
     args = build_parser().parse_args()
+    args.date = normalize_run_date(args.date)
     load_project_env(BASE_DIR)
     log_path = configure_logging("run_feature_stage", args.date)
     logging.info("run_feature_stage_start: date=%s", args.date)

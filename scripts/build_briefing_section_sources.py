@@ -14,18 +14,20 @@ from scripts.common.briefing_section_source_builder import (
     build_section_source_payload,
     load_yaml,
 )
+from scripts.common.date_utils import normalize_run_date
 from scripts.common.feature_artifact_writer import write_json
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="feature compact 산출물로 브리핑 섹션 원자료를 생성합니다.")
-    parser.add_argument("--date", required=True, help="YYYY-MM-DD")
+    parser.add_argument("--date", required=True, help="YYYYMMDD")
     parser.add_argument("--section", help="특정 section_id만 생성합니다.")
     return parser
 
 
 def main() -> int:
     args = build_parser().parse_args()
+    args.date = normalize_run_date(args.date)
 
     section_map = load_yaml(BASE_DIR / "config" / "briefing" / "section_map.yaml")
     display_labels = load_yaml(BASE_DIR / "config" / "briefing" / "display_labels.yaml")

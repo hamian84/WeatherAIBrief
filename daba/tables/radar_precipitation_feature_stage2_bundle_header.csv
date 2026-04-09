@@ -1,0 +1,6 @@
+stage,bundle_id,region_id,region_label,lat_range,lon_range,gate_signals,question_text
+stage2,stage2_west_sea_bundle,west_sea,West Sea,35~38N,124~126E,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima,Use the stage1 result for this region and determine the needed radar precipitation attributes.
+stage2,stage2_central_korea_bundle,central_korea,Central Korea,36~38N,126~129E,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima,Use the stage1 result for this region and determine the needed radar precipitation attributes.
+stage2,stage2_south_korea_bundle,south_korea,South Korea,34~36N,126~129E,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima,Use the stage1 result for this region and determine the needed radar precipitation attributes.
+stage2,stage2_south_sea_bundle,south_sea,South Sea,33~35N,127~130E,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima,Use the stage1 result for this region and determine the needed radar precipitation attributes.
+stage2,stage2_east_sea_bundle,east_sea,East Sea,36~39N,129~132E,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima,Use the stage1 result for this region and determine the needed radar precipitation attributes.

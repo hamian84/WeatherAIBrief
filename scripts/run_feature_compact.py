@@ -9,13 +9,14 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
+from scripts.common.date_utils import normalize_run_date
 from scripts.common.feature_artifact_writer import build_stage_artifact_paths, write_json_compact
 from scripts.common.feature_compactor import compact_normalized_payload
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="기존 normalized feature 산출물로 compact 파일을 재생성합니다.")
-    parser.add_argument("--date", required=True, help="YYYY-MM-DD")
+    parser.add_argument("--date", required=True, help="YYYYMMDD")
     parser.add_argument("--domain", help="특정 도메인만 처리합니다.")
     parser.add_argument("--stage", choices=("stage1", "stage2"), help="특정 stage만 처리합니다.")
     return parser
@@ -41,6 +42,7 @@ def _collect_jobs(base_dir: Path, run_date: str, domain: str | None, stage: str 
 
 def main() -> int:
     args = build_parser().parse_args()
+    args.date = normalize_run_date(args.date)
     jobs = _collect_jobs(BASE_DIR, args.date, args.domain, args.stage)
     results: list[dict[str, object]] = []
     for domain, stage, normalized_path, compact_path in jobs:

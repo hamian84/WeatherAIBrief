@@ -1,0 +1,6 @@
+stage,question_id,region_id,region_label,lat_range,lon_range,signal_key,attribute_key,question_text,allowed_answers
+stage1,stage1_west_sea_signal_bundle,west_sea,West Sea,35~38N,124~126E,signal_bundle,presence_bundle,Select every radar precipitation signal present in this region.,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima|none
+stage1,stage1_central_korea_signal_bundle,central_korea,Central Korea,36~38N,126~129E,signal_bundle,presence_bundle,Select every radar precipitation signal present in this region.,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima|none
+stage1,stage1_south_korea_signal_bundle,south_korea,South Korea,34~36N,126~129E,signal_bundle,presence_bundle,Select every radar precipitation signal present in this region.,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima|none
+stage1,stage1_south_sea_signal_bundle,south_sea,South Sea,33~35N,127~130E,signal_bundle,presence_bundle,Select every radar precipitation signal present in this region.,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima|none
+stage1,stage1_east_sea_signal_bundle,east_sea,East Sea,36~39N,129~132E,signal_bundle,presence_bundle,Select every radar precipitation signal present in this region.,precip_echo|convective_core|rain_band|stratiform_area|localized_maxima|none

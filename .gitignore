@@ -1,9 +1,2 @@
 config/keys.env
-dain/*.zip
-dain/2026-04-02/
-daio/
-daou/
-logs/
-**/__pycache__/
-*.pyc
 daba/rules/hands_37.pdf

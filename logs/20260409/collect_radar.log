@@ -1,0 +1,32 @@
+2026-04-10 11:52:50,285 [INFO] radar collection start: input=2026040900 storage_date=20260409
+2026-04-10 11:52:50,286 [INFO] log_file: logs\20260409\collect_radar.log
+2026-04-10 11:52:50,287 [INFO] reference synoptic UTC: 2026-04-09 00:00 UTC
+2026-04-10 11:52:50,287 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 11:52:50,287 [INFO] radar target tm: 202604090000
+2026-04-10 11:52:50,287 [INFO] radar cmp=cmi data=img
+2026-04-10 11:52:50,289 [INFO] download request: https://apihub.kma.go.kr/api/typ04/url/rdr_cmp_file.php?tm=202604090000&data=img&cmp=cmi&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:50,540 [INFO] verification PASS
+2026-04-10 11:53:08,961 [INFO] radar collection start: input=2026040912 storage_date=20260409
+2026-04-10 11:53:09,110 [INFO] log_file: logs\20260409\collect_radar.log
+2026-04-10 11:53:09,111 [INFO] reference synoptic UTC: 2026-04-09 12:00 UTC
+2026-04-10 11:53:09,112 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 11:53:09,112 [INFO] radar target tm: 202604091200
+2026-04-10 11:53:09,113 [INFO] radar cmp=cmi data=img
+2026-04-10 11:53:09,114 [INFO] download request: https://apihub.kma.go.kr/api/typ04/url/rdr_cmp_file.php?tm=202604091200&data=img&cmp=cmi&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:09,405 [INFO] verification PASS
+2026-04-10 13:03:16,714 [INFO] radar collection start: input=2026040900 storage_date=20260409
+2026-04-10 13:03:16,715 [INFO] log_file: logs\20260409\collect_radar.log
+2026-04-10 13:03:16,716 [INFO] reference synoptic UTC: 2026-04-09 00:00 UTC
+2026-04-10 13:03:16,716 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 13:03:16,716 [INFO] radar target tm: 202604090000
+2026-04-10 13:03:16,716 [INFO] radar cmp=cmi data=img
+2026-04-10 13:03:16,717 [INFO] already exists, skip: D:\99.project\03.WeatherAIBrief\dain\20260409\radar\cmi\rdr_cmp_cmi_202604090000.png
+2026-04-10 13:03:16,717 [INFO] verification PASS
+2026-04-10 13:03:18,003 [INFO] radar collection start: input=2026040912 storage_date=20260409
+2026-04-10 13:03:18,003 [INFO] log_file: logs\20260409\collect_radar.log
+2026-04-10 13:03:18,004 [INFO] reference synoptic UTC: 2026-04-09 12:00 UTC
+2026-04-10 13:03:18,004 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 13:03:18,004 [INFO] radar target tm: 202604091200
+2026-04-10 13:03:18,004 [INFO] radar cmp=cmi data=img
+2026-04-10 13:03:18,005 [INFO] already exists, skip: D:\99.project\03.WeatherAIBrief\dain\20260409\radar\cmi\rdr_cmp_cmi_202604091200.png
+2026-04-10 13:03:18,005 [INFO] verification PASS

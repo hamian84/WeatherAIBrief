@@ -1,0 +1,104 @@
+2026-04-10 11:53:10,065 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 11:53:10,065 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 11:53:10,067 [INFO] feature_stage_start: manifest=synoptic_300hPa_stage1 stage=stage1 domain=300hPa
+2026-04-10 11:53:10,069 [ERROR] feature_stage_failed: manifest=D:\99.project\03.WeatherAIBrief\daba\manifests\synoptic_300hPa_stage1.yaml
+Traceback (most recent call last):
+  File "D:\99.project\03.WeatherAIBrief\scripts\run_feature_stage.py", line 83, in main
+    summary = run_manifest(
+        BASE_DIR,
+    ...<2 lines>...
+        dry_run=args.dry_run,
+    )
+  File "D:\99.project\03.WeatherAIBrief\scripts\feature_stage_runner_bundle.py", line 537, in run_manifest
+    return run_manifest_bundle(base_dir, run_date, manifest, dry_run=dry_run)
+  File "D:\99.project\03.WeatherAIBrief\scripts\feature_stage_runner_bundle.py", line 337, in run_manifest_bundle
+    prompt_spec = load_prompt_spec(base_dir, manifest)
+  File "D:\99.project\03.WeatherAIBrief\scripts\common\feature_preflight_validator.py", line 41, in load_prompt_spec
+    prompt_rows = load_stage1_bundle_table(prompt_table_path)
+  File "D:\99.project\03.WeatherAIBrief\scripts\common\feature_prompt_table_loader.py", line 114, in load_stage1_bundle_table
+    raise FileNotFoundError(f"stage1 bundle table not found: {table_path}")
+FileNotFoundError: stage1 bundle table not found: D:\99.project\03.WeatherAIBrief\daba\tables\300hPa_feature_stage1_bundle_table.csv
+2026-04-10 13:03:18,471 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 13:03:18,472 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 13:03:18,473 [INFO] feature_stage_start: manifest=synoptic_300hPa_stage1 stage=stage1 domain=300hPa
+2026-04-10 13:03:18,474 [ERROR] feature_stage_failed: manifest=D:\99.project\03.WeatherAIBrief\daba\manifests\synoptic_300hPa_stage1.yaml
+Traceback (most recent call last):
+  File "D:\99.project\03.WeatherAIBrief\scripts\run_feature_stage.py", line 83, in main
+    summary = run_manifest(
+        BASE_DIR,
+    ...<2 lines>...
+        dry_run=args.dry_run,
+    )
+  File "D:\99.project\03.WeatherAIBrief\scripts\feature_stage_runner_bundle.py", line 537, in run_manifest
+    return run_manifest_bundle(base_dir, run_date, manifest, dry_run=dry_run)
+  File "D:\99.project\03.WeatherAIBrief\scripts\feature_stage_runner_bundle.py", line 337, in run_manifest_bundle
+    prompt_spec = load_prompt_spec(base_dir, manifest)
+  File "D:\99.project\03.WeatherAIBrief\scripts\common\feature_preflight_validator.py", line 41, in load_prompt_spec
+    prompt_rows = load_stage1_bundle_table(prompt_table_path)
+  File "D:\99.project\03.WeatherAIBrief\scripts\common\feature_prompt_table_loader.py", line 114, in load_stage1_bundle_table
+    raise FileNotFoundError(f"stage1 bundle table not found: {table_path}")
+FileNotFoundError: stage1 bundle table not found: D:\99.project\03.WeatherAIBrief\daba\tables\300hPa_feature_stage1_bundle_table.csv
+2026-04-10 14:46:51,536 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:46:51,536 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:46:51,539 [INFO] feature_stage_start: manifest=synoptic_300hPa_stage1 stage=stage1 domain=300hPa
+2026-04-10 14:47:04,415 [INFO] feature_stage_done: manifest=synoptic_300hPa_stage1 stage=stage1 domain=300hPa records=50
+2026-04-10 14:47:04,918 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:47:04,918 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:47:04,921 [INFO] feature_stage_start: manifest=synoptic_500hPa_stage1 stage=stage1 domain=500hPa
+2026-04-10 14:47:17,039 [INFO] feature_stage_done: manifest=synoptic_500hPa_stage1 stage=stage1 domain=500hPa records=80
+2026-04-10 14:47:17,428 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:47:17,428 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:47:17,430 [INFO] feature_stage_start: manifest=synoptic_850hPa_stage1 stage=stage1 domain=850hPa
+2026-04-10 14:47:29,526 [INFO] feature_stage_done: manifest=synoptic_850hPa_stage1 stage=stage1 domain=850hPa records=160
+2026-04-10 14:47:29,909 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:47:29,909 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:47:29,911 [INFO] feature_stage_start: manifest=synoptic_925hPa_stage1 stage=stage1 domain=925hPa
+2026-04-10 14:47:41,857 [INFO] feature_stage_done: manifest=synoptic_925hPa_stage1 stage=stage1 domain=925hPa records=128
+2026-04-10 14:47:42,188 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:47:42,188 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:47:42,190 [INFO] feature_stage_start: manifest=synoptic_radar_precipitation_stage1 stage=stage1 domain=radar_precipitation
+2026-04-10 14:47:49,125 [INFO] feature_stage_done: manifest=synoptic_radar_precipitation_stage1 stage=stage1 domain=radar_precipitation records=50
+2026-04-10 14:47:49,478 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:47:49,478 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:47:49,480 [INFO] feature_stage_start: manifest=synoptic_satellite_wv_stage1 stage=stage1 domain=satellite_wv
+2026-04-10 14:48:06,545 [INFO] feature_stage_done: manifest=synoptic_satellite_wv_stage1 stage=stage1 domain=satellite_wv records=128
+2026-04-10 14:48:06,905 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:48:06,905 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:48:06,907 [INFO] feature_stage_start: manifest=synoptic_sfc12h_stage1 stage=stage1 domain=sfc12h_synoptic
+2026-04-10 14:48:21,546 [INFO] feature_stage_done: manifest=synoptic_sfc12h_stage1 stage=stage1 domain=sfc12h_synoptic records=128
+2026-04-10 14:48:21,934 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:48:21,934 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:48:21,936 [INFO] feature_stage_start: manifest=synoptic_surface_stage1 stage=stage1 domain=surface
+2026-04-10 14:48:33,529 [INFO] feature_stage_done: manifest=synoptic_surface_stage1 stage=stage1 domain=surface records=128
+2026-04-10 14:48:33,924 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:48:33,924 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:48:33,926 [INFO] feature_stage_start: manifest=synoptic_300hPa_stage2 stage=stage2 domain=300hPa
+2026-04-10 14:48:47,548 [INFO] feature_stage_done: manifest=synoptic_300hPa_stage2 stage=stage2 domain=300hPa records=36
+2026-04-10 14:48:47,899 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:48:47,899 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:48:47,901 [INFO] feature_stage_start: manifest=synoptic_500hPa_stage2 stage=stage2 domain=500hPa
+2026-04-10 14:48:59,201 [INFO] feature_stage_done: manifest=synoptic_500hPa_stage2 stage=stage2 domain=500hPa records=22
+2026-04-10 14:48:59,530 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:48:59,530 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:48:59,532 [INFO] feature_stage_start: manifest=synoptic_850hPa_stage2 stage=stage2 domain=850hPa
+2026-04-10 14:50:41,452 [INFO] feature_stage_done: manifest=synoptic_850hPa_stage2 stage=stage2 domain=850hPa records=50
+2026-04-10 14:50:41,782 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:50:41,782 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:50:41,785 [INFO] feature_stage_start: manifest=synoptic_925hPa_stage2 stage=stage2 domain=925hPa
+2026-04-10 14:50:59,424 [INFO] feature_stage_done: manifest=synoptic_925hPa_stage2 stage=stage2 domain=925hPa records=45
+2026-04-10 14:50:59,765 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:50:59,765 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:50:59,767 [INFO] feature_stage_start: manifest=synoptic_radar_precipitation_stage2 stage=stage2 domain=radar_precipitation
+2026-04-10 14:51:17,863 [INFO] feature_stage_done: manifest=synoptic_radar_precipitation_stage2 stage=stage2 domain=radar_precipitation records=30
+2026-04-10 14:51:18,205 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:51:18,205 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:51:18,207 [INFO] feature_stage_start: manifest=synoptic_satellite_wv_stage2 stage=stage2 domain=satellite_wv
+2026-04-10 14:51:50,658 [INFO] feature_stage_done: manifest=synoptic_satellite_wv_stage2 stage=stage2 domain=satellite_wv records=39
+2026-04-10 14:51:50,982 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:51:50,983 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:51:50,985 [INFO] feature_stage_start: manifest=synoptic_sfc12h_stage2 stage=stage2 domain=sfc12h_synoptic
+2026-04-10 14:52:22,978 [INFO] feature_stage_done: manifest=synoptic_sfc12h_stage2 stage=stage2 domain=sfc12h_synoptic records=81
+2026-04-10 14:52:23,299 [INFO] run_feature_stage_start: date=20260409
+2026-04-10 14:52:23,299 [INFO] log_file: logs\20260409\run_feature_stage.log
+2026-04-10 14:52:23,301 [INFO] feature_stage_start: manifest=synoptic_surface_stage2 stage=stage2 domain=surface
+2026-04-10 14:52:54,481 [INFO] feature_stage_done: manifest=synoptic_surface_stage2 stage=stage2 domain=surface records=79

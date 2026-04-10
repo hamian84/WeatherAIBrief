@@ -1,0 +1,1569 @@
+{
+  "manifest_id": "synoptic_satellite_wv_stage2",
+  "domain": "satellite_wv",
+  "stage": "stage2",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": "synoptic_satellite_wv_stage1",
+  "prompt_table_mode": "stage2_bundle",
+  "images": [
+    {
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "valid_time": "202604090000",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 8691,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_ecs_north_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 9,
+              "target_label": "convective_cloud_cluster.coverage",
+              "signal_key": "convective_cloud_cluster",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 대류성 구름군 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_cloud_cluster",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_east_offshore_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "upper_dry_intrusion.relative_position",
+              "signal_key": "upper_dry_intrusion",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 건조역 침투의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "upper_dry_intrusion",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "upper_dry_intrusion.strength",
+              "signal_key": "upper_dry_intrusion",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 상층 건조역 침투 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "upper_dry_intrusion",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_w_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 8,
+              "target_label": "cyclonic_swirl_cloud.strength",
+              "signal_key": "cyclonic_swirl_cloud",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cyclonic_swirl_cloud",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_north_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 5,
+              "target_label": "band_cloud.orientation",
+              "signal_key": "band_cloud",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 띠형 구름대의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "band_cloud",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "band_cloud.continuity",
+              "signal_key": "band_cloud",
+              "attribute_key": "continuity",
+              "question_text": "이 영역의 띠형 구름대 연속성은 어느 수준인가?",
+              "allowed_answers": [
+                "fragmented",
+                "partial",
+                "continuous",
+                "unknown"
+              ],
+              "gate_on_stage1": "band_cloud",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_south_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 9,
+              "target_label": "convective_cloud_cluster.coverage",
+              "signal_key": "convective_cloud_cluster",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 대류성 구름군 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_cloud_cluster",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_liao_bohai_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 9,
+              "target_label": "convective_cloud_cluster.coverage",
+              "signal_key": "convective_cloud_cluster",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 대류성 구름군 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_cloud_cluster",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_manchuria_s_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 8,
+              "target_label": "cyclonic_swirl_cloud.strength",
+              "signal_key": "cyclonic_swirl_cloud",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cyclonic_swirl_cloud",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_ws_mid_bundle",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 9,
+              "target_label": "convective_cloud_cluster.coverage",
+              "signal_key": "convective_cloud_cluster",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 대류성 구름군 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_cloud_cluster",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 5252,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 451,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5703
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\satellite\\LE1B\\WV063\\EA\\gk2a_le1b_WV063_EA_202604090000.png",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_satellite_wv_stage2\ndomain=satellite_wv\nstage=stage2\nimage_ref=gk2a_le1b_WV063_EA_202604090000\nvalid_time=202604090000\nBundles:\n1. bundle_id=stage2_ecs_north_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"yes\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n   - target_label=convective_cloud_cluster.coverage | signal_key=convective_cloud_cluster | attribute_key=coverage | target_order=9 | tier=core | gate_on_stage1=convective_cloud_cluster | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 대류성 구름군 범위는 어느 수준인가?\n2. bundle_id=stage2_japan_east_offshore_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"no\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"yes\"}\n   - target_label=upper_dry_intrusion.relative_position | signal_key=upper_dry_intrusion | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=upper_dry_intrusion | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 건조역 침투의 상대 위치는 무엇인가?\n   - target_label=upper_dry_intrusion.strength | signal_key=upper_dry_intrusion | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=upper_dry_intrusion | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 상층 건조역 침투 강도는 어느 수준인가?\n3. bundle_id=stage2_japan_w_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"yes\", \"moist_plume\": \"no\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=cyclonic_swirl_cloud.strength | signal_key=cyclonic_swirl_cloud | attribute_key=strength | target_order=8 | tier=core | gate_on_stage1=cyclonic_swirl_cloud | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?\n4. bundle_id=stage2_kp_north_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"yes\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n   - target_label=band_cloud.orientation | signal_key=band_cloud | attribute_key=orientation | target_order=5 | tier=extended | gate_on_stage1=band_cloud | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 띠형 구름대의 방향은 무엇인가?\n   - target_label=band_cloud.continuity | signal_key=band_cloud | attribute_key=continuity | target_order=6 | tier=extended | gate_on_stage1=band_cloud | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=fragmented|partial|continuous|unknown | question_text=이 영역의 띠형 구름대 연속성은 어느 수준인가?\n5. bundle_id=stage2_kp_south_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"yes\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"no\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=convective_cloud_cluster.coverage | signal_key=convective_cloud_cluster | attribute_key=coverage | target_order=9 | tier=core | gate_on_stage1=convective_cloud_cluster | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 대류성 구름군 범위는 어느 수준인가?\n6. bundle_id=stage2_liao_bohai_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"yes\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n   - target_label=convective_cloud_cluster.coverage | signal_key=convective_cloud_cluster | attribute_key=coverage | target_order=9 | tier=core | gate_on_stage1=convective_cloud_cluster | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 대류성 구름군 범위는 어느 수준인가?\n7. bundle_id=stage2_manchuria_s_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"yes\", \"moist_plume\": \"no\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=cyclonic_swirl_cloud.strength | signal_key=cyclonic_swirl_cloud | attribute_key=strength | target_order=8 | tier=core | gate_on_stage1=cyclonic_swirl_cloud | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?\n8. bundle_id=stage2_ws_mid_bundle | region_id=ws_mid | region_label=서해 중부 | lat_range=35~38N | lon_range=122~126E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"yes\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"no\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=convective_cloud_cluster.coverage | signal_key=convective_cloud_cluster | attribute_key=coverage | target_order=9 | tier=core | gate_on_stage1=convective_cloud_cluster | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 대류성 구름군 범위는 어느 수준인가?"
+        },
+        "response": {
+          "id": "resp_0f9879bac86200de0069d88fd774248190a655ca5ce8e595c4",
+          "object": "response",
+          "created_at": 1775800279,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800296,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0f9879bac86200de0069d88fdc05a8819084848a23b39e4f7d",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_ecs_north_bundle\",\"targets\":[{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"convective_cloud_cluster.coverage\",\"answer\":\"regional\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_east_offshore_bundle\",\"targets\":[{\"target_label\":\"upper_dry_intrusion.relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"target_label\":\"upper_dry_intrusion.strength\",\"answer\":\"moderate\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_w_bundle\",\"targets\":[{\"target_label\":\"cyclonic_swirl_cloud.strength\",\"answer\":\"moderate\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_north_bundle\",\"targets\":[{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"band_cloud.orientation\",\"answer\":\"W-E\",\"note\":\"\"},{\"target_label\":\"band_cloud.continuity\",\"answer\":\"continuous\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_south_bundle\",\"targets\":[{\"target_label\":\"convective_cloud_cluster.coverage\",\"answer\":\"local\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_liao_bohai_bundle\",\"targets\":[{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"convective_cloud_cluster.coverage\",\"answer\":\"regional\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_manchuria_s_bundle\",\"targets\":[{\"target_label\":\"cyclonic_swirl_cloud.strength\",\"answer\":\"moderate\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_ws_mid_bundle\",\"targets\":[{\"target_label\":\"convective_cloud_cluster.coverage\",\"answer\":\"regional\",\"note\":\"\"}],\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5252,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 451,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5703
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_ecs_north_bundle",
+              "targets": [
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_cloud_cluster.coverage",
+                  "answer": "regional",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_east_offshore_bundle",
+              "targets": [
+                {
+                  "target_label": "upper_dry_intrusion.relative_position",
+                  "answer": "east",
+                  "note": ""
+                },
+                {
+                  "target_label": "upper_dry_intrusion.strength",
+                  "answer": "moderate",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_w_bundle",
+              "targets": [
+                {
+                  "target_label": "cyclonic_swirl_cloud.strength",
+                  "answer": "moderate",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_north_bundle",
+              "targets": [
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "band_cloud.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                },
+                {
+                  "target_label": "band_cloud.continuity",
+                  "answer": "continuous",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_south_bundle",
+              "targets": [
+                {
+                  "target_label": "convective_cloud_cluster.coverage",
+                  "answer": "local",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_liao_bohai_bundle",
+              "targets": [
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_cloud_cluster.coverage",
+                  "answer": "regional",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_manchuria_s_bundle",
+              "targets": [
+                {
+                  "target_label": "cyclonic_swirl_cloud.strength",
+                  "answer": "moderate",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_ws_mid_bundle",
+              "targets": [
+                {
+                  "target_label": "convective_cloud_cluster.coverage",
+                  "answer": "regional",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "valid_time": "202604091200",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 10502,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_ecs_north_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 5,
+              "target_label": "band_cloud.orientation",
+              "signal_key": "band_cloud",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 띠형 구름대의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "band_cloud",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "band_cloud.continuity",
+              "signal_key": "band_cloud",
+              "attribute_key": "continuity",
+              "question_text": "이 영역의 띠형 구름대 연속성은 어느 수준인가?",
+              "allowed_answers": [
+                "fragmented",
+                "partial",
+                "continuous",
+                "unknown"
+              ],
+              "gate_on_stage1": "band_cloud",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_east_offshore_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 8,
+              "target_label": "cyclonic_swirl_cloud.strength",
+              "signal_key": "cyclonic_swirl_cloud",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cyclonic_swirl_cloud",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 9,
+              "target_label": "convective_cloud_cluster.coverage",
+              "signal_key": "convective_cloud_cluster",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 대류성 구름군 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_cloud_cluster",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_w_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 9,
+              "target_label": "convective_cloud_cluster.coverage",
+              "signal_key": "convective_cloud_cluster",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 대류성 구름군 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_cloud_cluster",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_north_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 8,
+              "target_label": "cyclonic_swirl_cloud.strength",
+              "signal_key": "cyclonic_swirl_cloud",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cyclonic_swirl_cloud",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_south_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 9,
+              "target_label": "convective_cloud_cluster.coverage",
+              "signal_key": "convective_cloud_cluster",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 대류성 구름군 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_cloud_cluster",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_liao_bohai_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "upper_dry_intrusion.relative_position",
+              "signal_key": "upper_dry_intrusion",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 건조역 침투의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "upper_dry_intrusion",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "upper_dry_intrusion.strength",
+              "signal_key": "upper_dry_intrusion",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 상층 건조역 침투 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "upper_dry_intrusion",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_manchuria_s_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "gate_signals": [
+            "upper_dry_intrusion",
+            "moist_plume",
+            "band_cloud",
+            "comma_cloud",
+            "jet_related_cloud_band",
+            "cyclonic_swirl_cloud",
+            "convective_cloud_cluster",
+            "subsidence_clear_slot"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "upper_dry_intrusion.relative_position",
+              "signal_key": "upper_dry_intrusion",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 건조역 침투의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "upper_dry_intrusion",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "upper_dry_intrusion.strength",
+              "signal_key": "upper_dry_intrusion",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 상층 건조역 침투 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "upper_dry_intrusion",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "moist_plume.relative_position",
+              "signal_key": "moist_plume",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "moist_plume.orientation",
+              "signal_key": "moist_plume",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moist_plume",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 5,
+              "target_label": "band_cloud.orientation",
+              "signal_key": "band_cloud",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 띠형 구름대의 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "band_cloud",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "band_cloud.continuity",
+              "signal_key": "band_cloud",
+              "attribute_key": "continuity",
+              "question_text": "이 영역의 띠형 구름대 연속성은 어느 수준인가?",
+              "allowed_answers": [
+                "fragmented",
+                "partial",
+                "continuous",
+                "unknown"
+              ],
+              "gate_on_stage1": "band_cloud",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 5771,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 560,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 6331
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\satellite\\LE1B\\WV063\\EA\\gk2a_le1b_WV063_EA_202604091200.png",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_satellite_wv_stage2\ndomain=satellite_wv\nstage=stage2\nimage_ref=gk2a_le1b_WV063_EA_202604091200\nvalid_time=202604091200\nBundles:\n1. bundle_id=stage2_ecs_north_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"yes\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n   - target_label=band_cloud.orientation | signal_key=band_cloud | attribute_key=orientation | target_order=5 | tier=extended | gate_on_stage1=band_cloud | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 띠형 구름대의 방향은 무엇인가?\n   - target_label=band_cloud.continuity | signal_key=band_cloud | attribute_key=continuity | target_order=6 | tier=extended | gate_on_stage1=band_cloud | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=fragmented|partial|continuous|unknown | question_text=이 영역의 띠형 구름대 연속성은 어느 수준인가?\n2. bundle_id=stage2_japan_east_offshore_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"yes\", \"cyclonic_swirl_cloud\": \"yes\", \"moist_plume\": \"no\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=cyclonic_swirl_cloud.strength | signal_key=cyclonic_swirl_cloud | attribute_key=strength | target_order=8 | tier=core | gate_on_stage1=cyclonic_swirl_cloud | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?\n   - target_label=convective_cloud_cluster.coverage | signal_key=convective_cloud_cluster | attribute_key=coverage | target_order=9 | tier=core | gate_on_stage1=convective_cloud_cluster | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 대류성 구름군 범위는 어느 수준인가?\n3. bundle_id=stage2_japan_w_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"yes\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n   - target_label=convective_cloud_cluster.coverage | signal_key=convective_cloud_cluster | attribute_key=coverage | target_order=9 | tier=core | gate_on_stage1=convective_cloud_cluster | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 대류성 구름군 범위는 어느 수준인가?\n4. bundle_id=stage2_kp_north_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"yes\", \"moist_plume\": \"no\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=cyclonic_swirl_cloud.strength | signal_key=cyclonic_swirl_cloud | attribute_key=strength | target_order=8 | tier=core | gate_on_stage1=cyclonic_swirl_cloud | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 저기압성 회전 구름 구조 강도는 어느 수준인가?\n5. bundle_id=stage2_kp_south_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"yes\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"no\"}\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n   - target_label=convective_cloud_cluster.coverage | signal_key=convective_cloud_cluster | attribute_key=coverage | target_order=9 | tier=core | gate_on_stage1=convective_cloud_cluster | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 대류성 구름군 범위는 어느 수준인가?\n6. bundle_id=stage2_liao_bohai_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"no\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"yes\"}\n   - target_label=upper_dry_intrusion.relative_position | signal_key=upper_dry_intrusion | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=upper_dry_intrusion | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 건조역 침투의 상대 위치는 무엇인가?\n   - target_label=upper_dry_intrusion.strength | signal_key=upper_dry_intrusion | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=upper_dry_intrusion | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 상층 건조역 침투 강도는 어느 수준인가?\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n7. bundle_id=stage2_manchuria_s_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"band_cloud\": \"yes\", \"comma_cloud\": \"no\", \"convective_cloud_cluster\": \"no\", \"cyclonic_swirl_cloud\": \"no\", \"moist_plume\": \"yes\", \"subsidence_clear_slot\": \"no\", \"upper_dry_intrusion\": \"yes\"}\n   - target_label=upper_dry_intrusion.relative_position | signal_key=upper_dry_intrusion | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=upper_dry_intrusion | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 건조역 침투의 상대 위치는 무엇인가?\n   - target_label=upper_dry_intrusion.strength | signal_key=upper_dry_intrusion | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=upper_dry_intrusion | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 상층 건조역 침투 강도는 어느 수준인가?\n   - target_label=moist_plume.relative_position | signal_key=moist_plume | attribute_key=relative_position | target_order=3 | tier=core | gate_on_stage1=moist_plume | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 상대 위치는 무엇인가?\n   - target_label=moist_plume.orientation | signal_key=moist_plume | attribute_key=orientation | target_order=4 | tier=extended | gate_on_stage1=moist_plume | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 상층 수증기 플룸의 방향은 무엇인가?\n   - target_label=band_cloud.orientation | signal_key=band_cloud | attribute_key=orientation | target_order=5 | tier=extended | gate_on_stage1=band_cloud | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 띠형 구름대의 방향은 무엇인가?\n   - target_label=band_cloud.continuity | signal_key=band_cloud | attribute_key=continuity | target_order=6 | tier=extended | gate_on_stage1=band_cloud | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=fragmented|partial|continuous|unknown | question_text=이 영역의 띠형 구름대 연속성은 어느 수준인가?"
+        },
+        "response": {
+          "id": "resp_0eaaef82d1eeb97a0069d88fec311c819caf190b830054cbc7",
+          "object": "response",
+          "created_at": 1775800300,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800309,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0eaaef82d1eeb97a0069d88fef7d6c819cb89616ef25ce1a5c",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_ecs_north_bundle\",\"targets\":[{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"band_cloud.orientation\",\"answer\":\"W-E\",\"note\":\"\"},{\"target_label\":\"band_cloud.continuity\",\"answer\":\"continuous\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_east_offshore_bundle\",\"targets\":[{\"target_label\":\"cyclonic_swirl_cloud.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"convective_cloud_cluster.coverage\",\"answer\":\"regional\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_w_bundle\",\"targets\":[{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"W-E\",\"note\":\"\"},{\"target_label\":\"convective_cloud_cluster.coverage\",\"answer\":\"local\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_north_bundle\",\"targets\":[{\"target_label\":\"cyclonic_swirl_cloud.strength\",\"answer\":\"weak\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_south_bundle\",\"targets\":[{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"curved\",\"note\":\"\"},{\"target_label\":\"convective_cloud_cluster.coverage\",\"answer\":\"regional\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_liao_bohai_bundle\",\"targets\":[{\"target_label\":\"upper_dry_intrusion.relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"target_label\":\"upper_dry_intrusion.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"SW-NE\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_manchuria_s_bundle\",\"targets\":[{\"target_label\":\"upper_dry_intrusion.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"upper_dry_intrusion.strength\",\"answer\":\"weak\",\"note\":\"\"},{\"target_label\":\"moist_plume.relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"target_label\":\"moist_plume.orientation\",\"answer\":\"W-E\",\"note\":\"\"},{\"target_label\":\"band_cloud.orientation\",\"answer\":\"SW-NE\",\"note\":\"\"},{\"target_label\":\"band_cloud.continuity\",\"answer\":\"partial\",\"note\":\"\"}],\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5771,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 560,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 6331
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_ecs_north_bundle",
+              "targets": [
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "band_cloud.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                },
+                {
+                  "target_label": "band_cloud.continuity",
+                  "answer": "continuous",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_east_offshore_bundle",
+              "targets": [
+                {
+                  "target_label": "cyclonic_swirl_cloud.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_cloud_cluster.coverage",
+                  "answer": "regional",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_w_bundle",
+              "targets": [
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "east",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_cloud_cluster.coverage",
+                  "answer": "local",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_north_bundle",
+              "targets": [
+                {
+                  "target_label": "cyclonic_swirl_cloud.strength",
+                  "answer": "weak",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_south_bundle",
+              "targets": [
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "curved",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_cloud_cluster.coverage",
+                  "answer": "regional",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_liao_bohai_bundle",
+              "targets": [
+                {
+                  "target_label": "upper_dry_intrusion.relative_position",
+                  "answer": "east",
+                  "note": ""
+                },
+                {
+                  "target_label": "upper_dry_intrusion.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "SW-NE",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_manchuria_s_bundle",
+              "targets": [
+                {
+                  "target_label": "upper_dry_intrusion.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "upper_dry_intrusion.strength",
+                  "answer": "weak",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.relative_position",
+                  "answer": "east",
+                  "note": ""
+                },
+                {
+                  "target_label": "moist_plume.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                },
+                {
+                  "target_label": "band_cloud.orientation",
+                  "answer": "SW-NE",
+                  "note": ""
+                },
+                {
+                  "target_label": "band_cloud.continuity",
+                  "answer": "partial",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

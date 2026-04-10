@@ -1,0 +1,3080 @@
+{
+  "manifest_id": "synoptic_500hPa_stage1",
+  "domain": "500hPa",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "records": [
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_nw_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A trough axis and cold core are evident around 37~40N, 124~127E area with lower height contours and cold temperature.",
+      "selected_answers": [
+        "trough_axis",
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core",
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_nw_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A trough axis and cold core are evident around 37~40N, 124~127E area with lower height contours and cold temperature.",
+      "selected_answers": [
+        "trough_axis",
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core",
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_nw_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A trough axis and cold core are evident around 37~40N, 124~127E area with lower height contours and cold temperature.",
+      "selected_answers": [
+        "trough_axis",
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core",
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_nw_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A trough axis and cold core are evident around 37~40N, 124~127E area with lower height contours and cold temperature.",
+      "selected_answers": [
+        "trough_axis",
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core",
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_nw_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A trough axis and cold core are evident around 37~40N, 124~127E area with lower height contours and cold temperature.",
+      "selected_answers": [
+        "trough_axis",
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core",
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_ne_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is present near 37~40N, 127~130E with elevated height contours.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_ne_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is present near 37~40N, 127~130E with elevated height contours.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_ne_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is present near 37~40N, 127~130E with elevated height contours.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_ne_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is present near 37~40N, 127~130E with elevated height contours.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_ne_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is present near 37~40N, 127~130E with elevated height contours.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_sw_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is visible around 34~37N, 124~127E with elevated heights.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_sw_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is visible around 34~37N, 124~127E with elevated heights.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_sw_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is visible around 34~37N, 124~127E with elevated heights.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_sw_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is visible around 34~37N, 124~127E with elevated heights.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_sw_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A ridge axis is visible around 34~37N, 124~127E with elevated heights.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_se_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "Ridge axis feature is seen in 34~37N, 127~130E with raised height values.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_se_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "Ridge axis feature is seen in 34~37N, 127~130E with raised height values.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_se_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "Ridge axis feature is seen in 34~37N, 127~130E with raised height values.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_se_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "Ridge axis feature is seen in 34~37N, 127~130E with raised height values.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_se_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "Ridge axis feature is seen in 34~37N, 127~130E with raised height values.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_n_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "There is an evident trough axis in 37~40N, 122~124E region indicated by lowered height contours.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_n_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "There is an evident trough axis in 37~40N, 122~124E region indicated by lowered height contours.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_n_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "There is an evident trough axis in 37~40N, 122~124E region indicated by lowered height contours.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_n_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "There is an evident trough axis in 37~40N, 122~124E region indicated by lowered height contours.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_n_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "There is an evident trough axis in 37~40N, 122~124E region indicated by lowered height contours.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_es_n_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "No significant signals of the listed types are observed in 37~40N, 130~133E region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_es_n_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "No significant signals of the listed types are observed in 37~40N, 130~133E region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_es_n_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "No significant signals of the listed types are observed in 37~40N, 130~133E region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_es_n_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "No significant signals of the listed types are observed in 37~40N, 130~133E region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_es_n_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "No significant signals of the listed types are observed in 37~40N, 130~133E region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "In 38~41N, 120~123E region, there is a cold core with closed cyclonic circulation and tight height gradient as shown by tightly packed contours and cold temperatures.",
+      "selected_answers": [
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "cold_core",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "In 38~41N, 120~123E region, there is a cold core with closed cyclonic circulation and tight height gradient as shown by tightly packed contours and cold temperatures.",
+      "selected_answers": [
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "cold_core",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "In 38~41N, 120~123E region, there is a cold core with closed cyclonic circulation and tight height gradient as shown by tightly packed contours and cold temperatures.",
+      "selected_answers": [
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "cold_core",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "In 38~41N, 120~123E region, there is a cold core with closed cyclonic circulation and tight height gradient as shown by tightly packed contours and cold temperatures.",
+      "selected_answers": [
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "cold_core",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "In 38~41N, 120~123E region, there is a cold core with closed cyclonic circulation and tight height gradient as shown by tightly packed contours and cold temperatures.",
+      "selected_answers": [
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "cold_core",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A closed cyclonic circulation is visible in 41~45N, 123~128E with circular contour pattern.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A closed cyclonic circulation is visible in 41~45N, 123~128E with circular contour pattern.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A closed cyclonic circulation is visible in 41~45N, 123~128E with circular contour pattern.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A closed cyclonic circulation is visible in 41~45N, 123~128E with circular contour pattern.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "note": "A closed cyclonic circulation is visible in 41~45N, 123~128E with circular contour pattern.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_nw_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "There is a ridge axis visible near the region and a closed cyclonic circulation marked with 'L' on the northwest part of the Korean Peninsula.",
+      "selected_answers": [
+        "ridge_axis",
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_nw_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "There is a ridge axis visible near the region and a closed cyclonic circulation marked with 'L' on the northwest part of the Korean Peninsula.",
+      "selected_answers": [
+        "ridge_axis",
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_nw_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "There is a ridge axis visible near the region and a closed cyclonic circulation marked with 'L' on the northwest part of the Korean Peninsula.",
+      "selected_answers": [
+        "ridge_axis",
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_nw_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "There is a ridge axis visible near the region and a closed cyclonic circulation marked with 'L' on the northwest part of the Korean Peninsula.",
+      "selected_answers": [
+        "ridge_axis",
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_nw_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_nw_signal_bundle",
+      "region_id": "kp_nw",
+      "region_label": "한반도 북서",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "There is a ridge axis visible near the region and a closed cyclonic circulation marked with 'L' on the northwest part of the Korean Peninsula.",
+      "selected_answers": [
+        "ridge_axis",
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation",
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_ne_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A ridge axis extends into the northeastern part of the Korean Peninsula region.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_ne_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A ridge axis extends into the northeastern part of the Korean Peninsula region.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_ne_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A ridge axis extends into the northeastern part of the Korean Peninsula region.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_ne_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A ridge axis extends into the northeastern part of the Korean Peninsula region.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_ne_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_ne_signal_bundle",
+      "region_id": "kp_ne",
+      "region_label": "한반도 북동",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A ridge axis extends into the northeastern part of the Korean Peninsula region.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_sw_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "No significant signals detected in the southwest region of the Korean Peninsula.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_sw_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "No significant signals detected in the southwest region of the Korean Peninsula.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_sw_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "No significant signals detected in the southwest region of the Korean Peninsula.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_sw_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "No significant signals detected in the southwest region of the Korean Peninsula.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_sw_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_sw_signal_bundle",
+      "region_id": "kp_sw",
+      "region_label": "한반도 남서",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "No significant signals detected in the southwest region of the Korean Peninsula.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_se_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A trough axis appears to be present in the southeast region of the Korean Peninsula.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_se_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A trough axis appears to be present in the southeast region of the Korean Peninsula.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_se_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A trough axis appears to be present in the southeast region of the Korean Peninsula.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_se_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A trough axis appears to be present in the southeast region of the Korean Peninsula.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_se_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_kp_se_signal_bundle",
+      "region_id": "kp_se",
+      "region_label": "한반도 남동",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "A trough axis appears to be present in the southeast region of the Korean Peninsula.",
+      "selected_answers": [
+        "trough_axis"
+      ],
+      "selected_signal_keys": [
+        "trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_n_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis indicated over the northern West Sea area.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_n_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis indicated over the northern West Sea area.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_n_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis indicated over the northern West Sea area.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_n_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis indicated over the northern West Sea area.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_n_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_ws_n_signal_bundle",
+      "region_id": "ws_n",
+      "region_label": "서해 북부",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis indicated over the northern West Sea area.",
+      "selected_answers": [
+        "ridge_axis"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_es_n_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Cold core low pressure is observed in the northeastern East Sea region.",
+      "selected_answers": [
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_es_n_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Cold core low pressure is observed in the northeastern East Sea region.",
+      "selected_answers": [
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_es_n_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Cold core low pressure is observed in the northeastern East Sea region.",
+      "selected_answers": [
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_es_n_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Cold core low pressure is observed in the northeastern East Sea region.",
+      "selected_answers": [
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_es_n_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_es_n_signal_bundle",
+      "region_id": "es_n",
+      "region_label": "동해 북부",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Cold core low pressure is observed in the northeastern East Sea region.",
+      "selected_answers": [
+        "cold_core"
+      ],
+      "selected_signal_keys": [
+        "cold_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis and tight height gradient lines are present in Liaoning/Bohai region.",
+      "selected_answers": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis and tight height gradient lines are present in Liaoning/Bohai region.",
+      "selected_answers": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis and tight height gradient lines are present in Liaoning/Bohai region.",
+      "selected_answers": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis and tight height gradient lines are present in Liaoning/Bohai region.",
+      "selected_answers": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Ridge axis and tight height gradient lines are present in Liaoning/Bohai region.",
+      "selected_answers": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "selected_signal_keys": [
+        "ridge_axis",
+        "tight_height_gradient"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__trough_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Closed cyclonic circulation is visible in southern Manchuria region.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__ridge_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Closed cyclonic circulation is visible in southern Manchuria region.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__cold_core",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "cold_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Closed cyclonic circulation is visible in southern Manchuria region.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__closed_cyclonic_circulation",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "closed_cyclonic_circulation",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Closed cyclonic circulation is visible in southern Manchuria region.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_500hPa_stage1",
+      "domain": "500hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__tight_height_gradient",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "tight_height_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "trough_axis",
+        "ridge_axis",
+        "cold_core",
+        "closed_cyclonic_circulation",
+        "tight_height_gradient",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "note": "Closed cyclonic circulation is visible in southern Manchuria region.",
+      "selected_answers": [
+        "closed_cyclonic_circulation"
+      ],
+      "selected_signal_keys": [
+        "closed_cyclonic_circulation"
+      ],
+      "none_selected": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "date": "20260409",
+  "raw_path": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\asos\\asos_hourly.csv",
+  "curated_path": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\curated\\asos\\asos_daily_summary.csv",
+  "raw_has_rows": true,
+  "curated_has_rows": true,
+  "missing_keys": [],
+  "duplicate_keys": []
+}

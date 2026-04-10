@@ -1,0 +1,24 @@
+2026-04-10 14:52:54,643 [INFO] run_briefing_pipeline_start: date=20260409
+2026-04-10 14:52:54,644 [INFO] log_file: logs\20260409\run_briefing_pipeline.log
+2026-04-10 14:52:54,669 [INFO] briefing_step_start: build_briefing_section_sources
+2026-04-10 14:52:54,913 [INFO] briefing_step_done: build_briefing_section_sources (elapsed=0.24s)
+2026-04-10 14:52:54,913 [INFO] briefing_step_start: extract_timeline_events:overall_summary
+2026-04-10 14:53:07,514 [INFO] briefing_step_done: extract_timeline_events:overall_summary (elapsed=12.60s)
+2026-04-10 14:53:07,514 [INFO] briefing_step_start: write_briefing_from_events:overall_summary
+2026-04-10 14:53:14,299 [INFO] briefing_step_done: write_briefing_from_events:overall_summary (elapsed=6.78s)
+2026-04-10 14:53:14,300 [INFO] briefing_step_start: extract_timeline_events:synoptic_analysis
+2026-04-10 14:53:36,492 [INFO] briefing_step_done: extract_timeline_events:synoptic_analysis (elapsed=22.19s)
+2026-04-10 14:53:36,492 [INFO] briefing_step_start: write_briefing_from_events:synoptic_analysis
+2026-04-10 14:53:41,255 [INFO] briefing_step_done: write_briefing_from_events:synoptic_analysis (elapsed=4.76s)
+2026-04-10 14:53:41,255 [INFO] briefing_step_start: extract_timeline_events:precipitation_structure
+2026-04-10 14:53:54,582 [INFO] briefing_step_done: extract_timeline_events:precipitation_structure (elapsed=13.33s)
+2026-04-10 14:53:54,582 [INFO] briefing_step_start: write_briefing_from_events:precipitation_structure
+2026-04-10 14:53:59,516 [INFO] briefing_step_done: write_briefing_from_events:precipitation_structure (elapsed=4.93s)
+2026-04-10 14:53:59,516 [INFO] briefing_step_start: extract_timeline_events:surface_marine_impacts
+2026-04-10 14:54:11,663 [INFO] briefing_step_done: extract_timeline_events:surface_marine_impacts (elapsed=12.15s)
+2026-04-10 14:54:11,663 [INFO] briefing_step_start: write_briefing_from_events:surface_marine_impacts
+2026-04-10 14:54:17,200 [INFO] briefing_step_done: write_briefing_from_events:surface_marine_impacts (elapsed=5.54s)
+2026-04-10 14:54:17,200 [INFO] briefing_step_start: write_briefing_draft
+2026-04-10 14:54:22,459 [INFO] briefing_step_done: write_briefing_draft (elapsed=5.26s)
+2026-04-10 14:54:22,459 [INFO] briefing_step_start: compose_weather_briefing
+2026-04-10 14:54:22,614 [INFO] briefing_step_done: compose_weather_briefing (elapsed=0.15s)

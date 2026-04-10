@@ -1,0 +1,760 @@
+{
+  "manifest_id": "synoptic_surface_stage1",
+  "domain": "surface",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": null,
+  "prompt_table_mode": "stage1_bundle",
+  "images": [
+    {
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "valid_time": "2026040900",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 3129,
+      "prompt_table_mode": "stage1_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_manchuria_s_signal_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_signal_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_signal_bundle",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_signal_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_signal_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_signal_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_signal_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_signal_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 2086,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 376,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2462
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\surf_anl_6h_2026040900.gif",
+          "prompt_text": "You are extracting stage1 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every question_id exactly once.\nNever omit a question_id and never repeat a question_id.\nselected_answers must contain unique values only.\nEvery selected_answers value must be exactly one of the allowed_answers values.\nIf none is selected, selected_answers must be exactly ['none'].\nNever mix none with any other signal.\nBad example: ['none', 'ridge_axis']\nGood example 1: ['none']\nGood example 2: ['ridge_axis', 'warm_advection']\nmanifest_id=synoptic_surface_stage1\ndomain=surface\nstage=stage1\nimage_ref=surf_anl_6h_2026040900\nvalid_time=2026040900\nBundles:\n1. question_id=stage1_manchuria_s_signal_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n2. question_id=stage1_liao_bohai_signal_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n3. question_id=stage1_ws_mid_signal_bundle | region_id=ws_mid | region_label=서해 중부 | lat_range=35~38N | lon_range=122~126E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n4. question_id=stage1_kp_north_signal_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n5. question_id=stage1_kp_south_signal_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n6. question_id=stage1_ecs_north_signal_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n7. question_id=stage1_japan_w_signal_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n8. question_id=stage1_japan_east_offshore_signal_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라."
+        },
+        "response": {
+          "id": "resp_0b27efb1977a84230069d88f25bfd8819d8a10f64a156f0f3f",
+          "object": "response",
+          "created_at": 1775800101,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800106,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0b27efb1977a84230069d88f26802c819da7545f47a4a84c92",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_manchuria_s_signal_bundle\",\"selected_answers\":[\"low_center\",\"surface_trough\",\"front\",\"wet_area\"] ,\"note\":\"Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria\"},{\"question_id\":\"stage1_liao_bohai_signal_bundle\",\"selected_answers\":[\"low_center\",\"surface_trough\",\"front\",\"wet_area\"] ,\"note\":\"Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present\"},{\"question_id\":\"stage1_ws_mid_signal_bundle\",\"selected_answers\":[\"front\",\"wet_area\",\"strong_wind_zone\"] ,\"note\":\"Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs\"},{\"question_id\":\"stage1_kp_north_signal_bundle\",\"selected_answers\":[\"front\",\"wet_area\",\"strong_wind_zone\"] ,\"note\":\"Front and wet area along northern Korean Peninsula, strong wind zone also detected\"},{\"question_id\":\"stage1_kp_south_signal_bundle\",\"selected_answers\":[\"front\",\"wet_area\",\"strong_wind_zone\"] ,\"note\":\"Front, wet area and strong wind zone also appear over southern Korean Peninsula\"},{\"question_id\":\"stage1_ecs_north_signal_bundle\",\"selected_answers\":[\"surface_trough\",\"wet_area\"] ,\"note\":\"Surface trough and wet area seen over northern East China Sea region\"},{\"question_id\":\"stage1_japan_w_signal_bundle\",\"selected_answers\":[\"high_center\",\"wet_area\"] ,\"note\":\"High pressure center west of Japan and wet area present over western Japan region\"},{\"question_id\":\"stage1_japan_east_offshore_signal_bundle\",\"selected_answers\":[\"high_center\",\"wet_area\",\"strong_wind_zone\"] ,\"note\":\"High center over east offshore region of Japan with wet area and strong wind zone observed\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "selected_answers",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "selected_answers": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2086,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 376,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2462
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_manchuria_s_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "surface_trough",
+                "front",
+                "wet_area"
+              ],
+              "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria"
+            },
+            {
+              "question_id": "stage1_liao_bohai_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "surface_trough",
+                "front",
+                "wet_area"
+              ],
+              "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present"
+            },
+            {
+              "question_id": "stage1_ws_mid_signal_bundle",
+              "selected_answers": [
+                "front",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs"
+            },
+            {
+              "question_id": "stage1_kp_north_signal_bundle",
+              "selected_answers": [
+                "front",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected"
+            },
+            {
+              "question_id": "stage1_kp_south_signal_bundle",
+              "selected_answers": [
+                "front",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula"
+            },
+            {
+              "question_id": "stage1_ecs_north_signal_bundle",
+              "selected_answers": [
+                "surface_trough",
+                "wet_area"
+              ],
+              "note": "Surface trough and wet area seen over northern East China Sea region"
+            },
+            {
+              "question_id": "stage1_japan_w_signal_bundle",
+              "selected_answers": [
+                "high_center",
+                "wet_area"
+              ],
+              "note": "High pressure center west of Japan and wet area present over western Japan region"
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_signal_bundle",
+              "selected_answers": [
+                "high_center",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "High center over east offshore region of Japan with wet area and strong wind zone observed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "valid_time": "2026040912",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 3129,
+      "prompt_table_mode": "stage1_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_manchuria_s_signal_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_signal_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_mid_signal_bundle",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_signal_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_signal_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_signal_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_signal_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_signal_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "low_center",
+            "high_center",
+            "surface_trough",
+            "surface_ridge",
+            "front",
+            "tight_pressure_gradient",
+            "wet_area",
+            "strong_wind_zone",
+            "none"
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 2086,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 386,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2472
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\surf_anl_6h_2026040912.gif",
+          "prompt_text": "You are extracting stage1 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every question_id exactly once.\nNever omit a question_id and never repeat a question_id.\nselected_answers must contain unique values only.\nEvery selected_answers value must be exactly one of the allowed_answers values.\nIf none is selected, selected_answers must be exactly ['none'].\nNever mix none with any other signal.\nBad example: ['none', 'ridge_axis']\nGood example 1: ['none']\nGood example 2: ['ridge_axis', 'warm_advection']\nmanifest_id=synoptic_surface_stage1\ndomain=surface\nstage=stage1\nimage_ref=surf_anl_6h_2026040912\nvalid_time=2026040912\nBundles:\n1. question_id=stage1_manchuria_s_signal_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n2. question_id=stage1_liao_bohai_signal_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n3. question_id=stage1_ws_mid_signal_bundle | region_id=ws_mid | region_label=서해 중부 | lat_range=35~38N | lon_range=122~126E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n4. question_id=stage1_kp_north_signal_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n5. question_id=stage1_kp_south_signal_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n6. question_id=stage1_ecs_north_signal_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n7. question_id=stage1_japan_w_signal_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n8. question_id=stage1_japan_east_offshore_signal_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | allowed_answers=low_center|high_center|surface_trough|surface_ridge|front|tight_pressure_gradient|wet_area|strong_wind_zone|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라."
+        },
+        "response": {
+          "id": "resp_06a54ce495432d730069d88f2aa9f081978d6338ccfdd472e6",
+          "object": "response",
+          "created_at": 1775800106,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800112,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_06a54ce495432d730069d88f2c23788197929914d40b6e2b57",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_manchuria_s_signal_bundle\",\"selected_answers\":[\"low_center\",\"front\",\"wet_area\",\"strong_wind_zone\"],\"note\":\"Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.\"},{\"question_id\":\"stage1_liao_bohai_signal_bundle\",\"selected_answers\":[\"low_center\",\"front\",\"wet_area\"],\"note\":\"Low pressure in Liao Bohai area with front and wet area present.\"},{\"question_id\":\"stage1_ws_mid_signal_bundle\",\"selected_answers\":[\"none\"],\"note\":\"No significant signals detected in West Sea mid region.\"},{\"question_id\":\"stage1_kp_north_signal_bundle\",\"selected_answers\":[\"low_center\",\"front\",\"wet_area\",\"strong_wind_zone\"],\"note\":\"Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.\"},{\"question_id\":\"stage1_kp_south_signal_bundle\",\"selected_answers\":[\"low_center\",\"front\",\"wet_area\",\"strong_wind_zone\"],\"note\":\"Low pressure and related front, wet area, strong winds in southern Korean Peninsula.\"},{\"question_id\":\"stage1_ecs_north_signal_bundle\",\"selected_answers\":[\"low_center\",\"high_center\",\"front\",\"wet_area\",\"tight_pressure_gradient\",\"strong_wind_zone\"],\"note\":\"Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.\"},{\"question_id\":\"stage1_japan_w_signal_bundle\",\"selected_answers\":[\"low_center\",\"front\",\"wet_area\",\"strong_wind_zone\"],\"note\":\"Low pressure with frontal zone, wet area and strong winds in western Japan.\"},{\"question_id\":\"stage1_japan_east_offshore_signal_bundle\",\"selected_answers\":[\"high_center\",\"surface_ridge\",\"wet_area\",\"strong_wind_zone\"],\"note\":\"High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "selected_answers",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "selected_answers": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2086,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 386,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2472
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_manchuria_s_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "front",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone."
+            },
+            {
+              "question_id": "stage1_liao_bohai_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "front",
+                "wet_area"
+              ],
+              "note": "Low pressure in Liao Bohai area with front and wet area present."
+            },
+            {
+              "question_id": "stage1_ws_mid_signal_bundle",
+              "selected_answers": [
+                "none"
+              ],
+              "note": "No significant signals detected in West Sea mid region."
+            },
+            {
+              "question_id": "stage1_kp_north_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "front",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula."
+            },
+            {
+              "question_id": "stage1_kp_south_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "front",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula."
+            },
+            {
+              "question_id": "stage1_ecs_north_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "high_center",
+                "front",
+                "wet_area",
+                "tight_pressure_gradient",
+                "strong_wind_zone"
+              ],
+              "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea."
+            },
+            {
+              "question_id": "stage1_japan_w_signal_bundle",
+              "selected_answers": [
+                "low_center",
+                "front",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "Low pressure with frontal zone, wet area and strong winds in western Japan."
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_signal_bundle",
+              "selected_answers": [
+                "high_center",
+                "surface_ridge",
+                "wet_area",
+                "strong_wind_zone"
+              ],
+              "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

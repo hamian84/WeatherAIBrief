@@ -1,0 +1,21 @@
+2026-04-10 11:51:25,400 [INFO] run_daily_start: date=20260409
+2026-04-10 11:51:25,401 [INFO] log_file: logs\20260409\run_daily.log
+2026-04-10 11:51:25,401 [INFO] selected_stages: collect,feature,briefing
+2026-04-10 11:51:25,401 [INFO] step_start: collect
+2026-04-10 11:53:09,429 [INFO] step_done: collect (elapsed=104.03s)
+2026-04-10 11:53:09,430 [INFO] step_start: feature
+2026-04-10 11:53:10,102 [ERROR] step_fail: feature (code=1, elapsed=0.67s)
+2026-04-10 13:03:09,299 [INFO] run_daily_start: date=20260409
+2026-04-10 13:03:09,299 [INFO] log_file: logs\20260409\run_daily.log
+2026-04-10 13:03:09,299 [INFO] selected_stages: collect,feature,briefing
+2026-04-10 13:03:09,299 [INFO] step_start: collect
+2026-04-10 13:03:18,030 [INFO] step_done: collect (elapsed=8.73s)
+2026-04-10 13:03:18,053 [INFO] step_start: feature
+2026-04-10 13:03:18,511 [ERROR] step_fail: feature (code=1, elapsed=0.46s)
+2026-04-10 14:46:50,978 [INFO] run_daily_start: date=20260409
+2026-04-10 14:46:50,978 [INFO] log_file: logs\20260409\run_daily.log
+2026-04-10 14:46:50,978 [INFO] selected_stages: feature,briefing
+2026-04-10 14:46:50,979 [INFO] step_start: feature
+2026-04-10 14:52:54,518 [INFO] step_done: feature (elapsed=363.54s)
+2026-04-10 14:52:54,519 [INFO] step_start: briefing
+2026-04-10 14:54:22,625 [INFO] step_done: briefing (elapsed=88.11s)

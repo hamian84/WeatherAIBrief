@@ -1,0 +1,116 @@
+{
+  "request": {
+    "model": "gpt-4.1-mini",
+    "max_output_tokens": 3000,
+    "prompt_text": "당신은 기상 실황 브리핑 섹션 작성기다.\n\n목표:\n- 제공된 시간 변화 사건 목록을 바탕으로 \"종관 해석\" 섹션의 본문을 작성한다.\n- 본문은 관측 근거를 그대로 나열하지 말고, 시간 변화와 인과관계를 중심으로 서술한다.\n\n반드시 지킬 규칙:\n- 출력은 JSON만 반환한다.\n- title은 \"종관 해석\"로 고정한다.\n- source_event_ids는 입력 events에 있는 event_id만 사용한다.\n- body는 한국어로 작성한다.\n- body 첫 문장은 결론형으로 쓴다.\n- body에는 \"초반\", \"이후\", \"후반\", \"따라서\"의 흐름이 드러나야 한다.\n- body에는 횟수(예: 5회, 4회)를 쓰지 않는다.\n- body에는 내부 영문 키(kp_south, wet_area 같은 값)를 쓰지 않는다.\n- body에는 적용 패턴 문자열을 직접 쓰지 않는다.\n- body는 선택한 사건들을 자연스럽게 연결해 한 개의 서사형 단락으로 작성한다.\n- 입력에 없는 현상, 지역, 근거를 새로 추가하지 않는다.\n\n섹션 정보:\n- run_date: 20260409\n- section_id: synoptic_analysis\n- section_title: 종관 해석\n\nevents:\n[{\"event_id\":\"synoptic_analysis_01\",\"section_id\":\"synoptic_analysis\",\"event_title\":\"한반도 인근 상층 제트코어 강도 변화와 위치 변동\",\"phase_early\":\"00시 기준으로 동중국해 북부와 한반도 주변 300hPa에서 제트축과 제트코어가 존재하며, 일부 지역에서 강한 제트코어가 관측되었다.\",\"phase_mid\":\"12시에는 제트축의 방향이 일부 지역에서 동서 방향에서 북서-남동 방향으로 변하며 제트코어 강도가 변하였다.\",\"phase_late\":\"이러한 제트코어 강도 및 위치 변화는 한반도 전역 및 동중국해 북부 지역의 대기 흐름에 영향을 미쳐 중규모 기압계 발전을 유도하였다.\",\"causal_link\":\"초반에 강한 제트코어가 한반도 북서지역에 위치함에 따라 상층 기압골과 능선 배치가 변동되어 제트코어의 위치와 강도가 바뀌면서 한반도 주변 대기 불안정성이 확대되었다.\",\"regions\":[\"동중국해 북부\",\"한반도 북서\",\"한반도 북부\",\"한반도 남서\"],\"domains\":[\"300hPa\"],\"evidence_refs\":[\"up30_6h_2026040900\",\"up30_6h_2026040912\"],\"rule_refs\":[\"upper_jet_quadrant_selection\",\"jet_coupling_heavy_rain\"],\"confidence\":\"high\"},{\"event_id\":\"synoptic_analysis_02\",\"section_id\":\"synoptic_analysis\",\"event_title\":\"500hPa 폐합성 저기압과 한랭핵의 강도 변화 및 지역 확대\",\"phase_early\":\"00시 기준으로 한반도 남부와 만주 남부 일대에 폐합성 저기압과 한랭핵이 각각 보통 및 강한 강도로 존재하였다.\",\"phase_mid\":\"12시에는 폐합성 저기압이 약화하였으나 한랭핵은 규모가 광역으로 확대되고 강도도 유지 또는 증가하였다.\",\"phase_late\":\"한랭핵의 확대와 폐합성 저기압 강도 변화는 500hPa 레벨에서 강한 고도경도대를 형성하며 한반도 주변 대기 불안정을 증가시켰다.\",\"causal_link\":\"초기의 폐합성 저기압 활성화가 한랭핵의 광역적 확장과 결합하여 기압골과 능선, 고도경도대 강화를 초래하였고, 이로 인한 대기 불안정성 증대가 연결된다.\",\"regions\":[\"한반도 남부\",\"만주 남부\",\"요동반도/발해만\"],\"domains\":[\"500hPa\"],\"evidence_refs\":[\"up50_6h_2026040900\",\"up50_6h_2026040912\"],\"rule_refs\":[\"explosive_cyclone_risk\",\"hail_cold_core_shear\"],\"confidence\":\"high\"},{\"event_id\":\"synoptic_analysis_03\",\"section_id\":\"synoptic_analysis\",\"event_title\":\"아열대 제트축과 한대 제트축의 상호 작용 현상\",\"phase_early\":\"00시에는 일본 동부 해상과 동중국해 북부 300hPa 레벨에서 아열대 제트축과 한대 제트축이 혼재되어 관측되었다.\",\"phase_mid\":\"12시에는 양 제트축의 위치와 강도가 변동하며, 일부 지역에서 혼합 제트 유형이 우세해졌다.\",\"phase_late\":\"제트축의 다양화와 강도 변화는 일본 서부 및 동해 북부 지역에 기압골과 능선형 특성 변화를 유발하였다.\",\"causal_link\":\"아열대 제트축과 한대 제트축이 상호작용하며 제트축 방향성과 강도에 변화를 주어 중규모 기압계의 형성과 변동에 영향을 주었다.\",\"regions\":[\"일본 동부 해상\",\"일본 서부\",\"동해 북부\"],\"domains\":[\"300hPa\"],\"evidence_refs\":[\"up30_6h_2026040900\",\"up30_6h_2026040912\"],\"rule_refs\":[\"spring_heat_low_vs_frontal_low\",\"upper_difffluence_heavy_rain\"],\"confidence\":\"medium\"}]\n"
+  },
+  "response": {
+    "id": "resp_0d0ff092e673f2b60069d890607ce08197a10b1b4311c71748",
+    "object": "response",
+    "created_at": 1775800416,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1775800420,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 3000,
+    "max_tool_calls": null,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "output": [
+      {
+        "id": "msg_0d0ff092e673f2b60069d89060e80c8197a8d721556d50d677",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"title\":\"종관 해석\",\"body\":\"현재 한반도 주변 대기 상황은 상층 제트코어 및 중간 고도에서의 기압계 변화와 밀접하게 연관되어 있다. 초반에는 동중국해 북부와 한반도 인근에서 강한 제트코어가 관측되어 이로 인해 상층의 기압골과 능선 배치가 변화하며 대기 불안정성이 증가하였다. 이후 500hPa에서는 한반도 남부와 만주 남부 일대에서 폐합성 저기압과 강한 한랭핵이 나타났는데, 이들 기압계는 초기 폐합성 저기압의 활성화로 강도가 변화하며, 한랭핵은 규모가 광역으로 확대되어 고도경도대가 강화되고 대기 불안정을 더욱 증대시켰다. 후반으로 갈수록 한반도 전역 및 동중국해 북부 지역에서 상층 제트코어 강도와 위치가 변동하며 중규모 기압계의 발달을 유도하였고, 이와 함께 300hPa에서는 아열대 제트축과 한대 제트축이 혼재하며 그 상호작용으로 인해 기압골과 능선 형태가 변화하여 한반도 주변 대기 흐름에 중요한 영향을 미쳤다. 따라서 상하층의 기압계 변화와 제트축 상호작용이 복합적으로 작용하여 이번 기간 동안 한반도 주변의 대기 불안정성이 크게 확장되었다고 평가된다.\",\"source_event_ids\":[\"synoptic_analysis_01\",\"synoptic_analysis_02\",\"synoptic_analysis_03\"]}"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "structured_text_response",
+        "schema": {
+          "$id": "briefing_section_body.schema.json",
+          "title": "브리핑 섹션 본문 작성 응답 스키마",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body",
+            "source_event_ids"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "source_event_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1408,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 368,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1776
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "parsed_output": {
+    "title": "종관 해석",
+    "body": "현재 한반도 주변 대기 상황은 상층 제트코어 및 중간 고도에서의 기압계 변화와 밀접하게 연관되어 있다. 초반에는 동중국해 북부와 한반도 인근에서 강한 제트코어가 관측되어 이로 인해 상층의 기압골과 능선 배치가 변화하며 대기 불안정성이 증가하였다. 이후 500hPa에서는 한반도 남부와 만주 남부 일대에서 폐합성 저기압과 강한 한랭핵이 나타났는데, 이들 기압계는 초기 폐합성 저기압의 활성화로 강도가 변화하며, 한랭핵은 규모가 광역으로 확대되어 고도경도대가 강화되고 대기 불안정을 더욱 증대시켰다. 후반으로 갈수록 한반도 전역 및 동중국해 북부 지역에서 상층 제트코어 강도와 위치가 변동하며 중규모 기압계의 발달을 유도하였고, 이와 함께 300hPa에서는 아열대 제트축과 한대 제트축이 혼재하며 그 상호작용으로 인해 기압골과 능선 형태가 변화하여 한반도 주변 대기 흐름에 중요한 영향을 미쳤다. 따라서 상하층의 기압계 변화와 제트축 상호작용이 복합적으로 작용하여 이번 기간 동안 한반도 주변의 대기 불안정성이 크게 확장되었다고 평가된다.",
+    "source_event_ids": [
+      "synoptic_analysis_01",
+      "synoptic_analysis_02",
+      "synoptic_analysis_03"
+    ]
+  }
+}

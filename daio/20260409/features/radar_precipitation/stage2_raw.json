@@ -1,0 +1,1149 @@
+{
+  "manifest_id": "synoptic_radar_precipitation_stage2",
+  "domain": "radar_precipitation",
+  "stage": "stage2",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": "synoptic_radar_precipitation_stage1",
+  "prompt_table_mode": "stage2_bundle",
+  "images": [
+    {
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "valid_time": "202604090000",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 3940,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_south_sea_bundle",
+          "region_id": "south_sea",
+          "region_label": "South Sea",
+          "gate_signals": [
+            "precip_echo",
+            "convective_core",
+            "rain_band",
+            "stratiform_area",
+            "localized_maxima"
+          ],
+          "question_text": "Use the stage1 result for this region and determine the needed radar precipitation attributes.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "precip_echo.coverage",
+              "signal_key": "precip_echo",
+              "attribute_key": "coverage",
+              "question_text": "What is the precipitation echo coverage in this region?",
+              "allowed_answers": [
+                "isolated",
+                "scattered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "precip_echo.intensity",
+              "signal_key": "precip_echo",
+              "attribute_key": "intensity",
+              "question_text": "What is the dominant precipitation echo intensity in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "convective_core.coverage",
+              "signal_key": "convective_core",
+              "attribute_key": "coverage",
+              "question_text": "How widespread are convective cores in this region?",
+              "allowed_answers": [
+                "isolated",
+                "clustered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "convective_core.intensity",
+              "signal_key": "convective_core",
+              "attribute_key": "intensity",
+              "question_text": "How strong are the convective cores in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 5,
+              "target_label": "rain_band.orientation",
+              "signal_key": "rain_band",
+              "attribute_key": "orientation",
+              "question_text": "What is the dominant orientation of the radar rain band in this region?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "rain_band",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "rain_band.continuity",
+              "signal_key": "rain_band",
+              "attribute_key": "continuity",
+              "question_text": "How continuous is the rain band in this region?",
+              "allowed_answers": [
+                "fragmented",
+                "partial",
+                "continuous",
+                "unknown"
+              ],
+              "gate_on_stage1": "rain_band",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_west_sea_bundle",
+          "region_id": "west_sea",
+          "region_label": "West Sea",
+          "gate_signals": [
+            "precip_echo",
+            "convective_core",
+            "rain_band",
+            "stratiform_area",
+            "localized_maxima"
+          ],
+          "question_text": "Use the stage1 result for this region and determine the needed radar precipitation attributes.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "convective_core.coverage",
+              "signal_key": "convective_core",
+              "attribute_key": "coverage",
+              "question_text": "How widespread are convective cores in this region?",
+              "allowed_answers": [
+                "isolated",
+                "clustered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "convective_core.intensity",
+              "signal_key": "convective_core",
+              "attribute_key": "intensity",
+              "question_text": "How strong are the convective cores in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 1879,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 184,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2063
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\radar\\cmi\\rdr_cmp_cmi_202604090000.png",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_radar_precipitation_stage2\ndomain=radar_precipitation\nstage=stage2\nimage_ref=rdr_cmp_cmi_202604090000\nvalid_time=202604090000\nBundles:\n1. bundle_id=stage2_south_sea_bundle | region_id=south_sea | region_label=South Sea | lat_range=33~35N | lon_range=127~130E | question_text=Use the stage1 result for this region and determine the needed radar precipitation attributes. | gate_summary={\"convective_core\": \"yes\", \"localized_maxima\": \"no\", \"precip_echo\": \"yes\", \"rain_band\": \"yes\", \"stratiform_area\": \"no\"}\n   - target_label=precip_echo.coverage | signal_key=precip_echo | attribute_key=coverage | target_order=1 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|scattered|widespread|unknown | question_text=What is the precipitation echo coverage in this region?\n   - target_label=precip_echo.intensity | signal_key=precip_echo | attribute_key=intensity | target_order=2 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=What is the dominant precipitation echo intensity in this region?\n   - target_label=convective_core.coverage | signal_key=convective_core | attribute_key=coverage | target_order=3 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|clustered|widespread|unknown | question_text=How widespread are convective cores in this region?\n   - target_label=convective_core.intensity | signal_key=convective_core | attribute_key=intensity | target_order=4 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=How strong are the convective cores in this region?\n   - target_label=rain_band.orientation | signal_key=rain_band | attribute_key=orientation | target_order=5 | tier=extended | gate_on_stage1=rain_band | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=What is the dominant orientation of the radar rain band in this region?\n   - target_label=rain_band.continuity | signal_key=rain_band | attribute_key=continuity | target_order=6 | tier=extended | gate_on_stage1=rain_band | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=fragmented|partial|continuous|unknown | question_text=How continuous is the rain band in this region?\n2. bundle_id=stage2_west_sea_bundle | region_id=west_sea | region_label=West Sea | lat_range=35~38N | lon_range=124~126E | question_text=Use the stage1 result for this region and determine the needed radar precipitation attributes. | gate_summary={\"convective_core\": \"yes\", \"localized_maxima\": \"no\", \"precip_echo\": \"no\", \"rain_band\": \"no\", \"stratiform_area\": \"no\"}\n   - target_label=convective_core.coverage | signal_key=convective_core | attribute_key=coverage | target_order=3 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|clustered|widespread|unknown | question_text=How widespread are convective cores in this region?\n   - target_label=convective_core.intensity | signal_key=convective_core | attribute_key=intensity | target_order=4 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=How strong are the convective cores in this region?"
+        },
+        "response": {
+          "id": "resp_08b1fb3ac6857d2d0069d88fc454a4819e9eb9d43ba91a0d00",
+          "object": "response",
+          "created_at": 1775800260,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800262,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_08b1fb3ac6857d2d0069d88fc4f9a0819e98d726501a4e0d71",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_south_sea_bundle\",\"targets\":[{\"target_label\":\"precip_echo.coverage\",\"answer\":\"widespread\",\"note\":\"\"},{\"target_label\":\"precip_echo.intensity\",\"answer\":\"strong\",\"note\":\"\"},{\"target_label\":\"convective_core.coverage\",\"answer\":\"clustered\",\"note\":\"\"},{\"target_label\":\"convective_core.intensity\",\"answer\":\"strong\",\"note\":\"\"},{\"target_label\":\"rain_band.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"rain_band.continuity\",\"answer\":\"continuous\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_west_sea_bundle\",\"targets\":[{\"target_label\":\"convective_core.coverage\",\"answer\":\"isolated\",\"note\":\"\"},{\"target_label\":\"convective_core.intensity\",\"answer\":\"weak\",\"note\":\"\"}],\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1879,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 184,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2063
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_south_sea_bundle",
+              "targets": [
+                {
+                  "target_label": "precip_echo.coverage",
+                  "answer": "widespread",
+                  "note": ""
+                },
+                {
+                  "target_label": "precip_echo.intensity",
+                  "answer": "strong",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_core.coverage",
+                  "answer": "clustered",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_core.intensity",
+                  "answer": "strong",
+                  "note": ""
+                },
+                {
+                  "target_label": "rain_band.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "rain_band.continuity",
+                  "answer": "continuous",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_west_sea_bundle",
+              "targets": [
+                {
+                  "target_label": "convective_core.coverage",
+                  "answer": "isolated",
+                  "note": ""
+                },
+                {
+                  "target_label": "convective_core.intensity",
+                  "answer": "weak",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "valid_time": "202604091200",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 9760,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_central_korea_bundle",
+          "region_id": "central_korea",
+          "region_label": "Central Korea",
+          "gate_signals": [
+            "precip_echo",
+            "convective_core",
+            "rain_band",
+            "stratiform_area",
+            "localized_maxima"
+          ],
+          "question_text": "Use the stage1 result for this region and determine the needed radar precipitation attributes.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "precip_echo.coverage",
+              "signal_key": "precip_echo",
+              "attribute_key": "coverage",
+              "question_text": "What is the precipitation echo coverage in this region?",
+              "allowed_answers": [
+                "isolated",
+                "scattered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "precip_echo.intensity",
+              "signal_key": "precip_echo",
+              "attribute_key": "intensity",
+              "question_text": "What is the dominant precipitation echo intensity in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "stratiform_area.coverage",
+              "signal_key": "stratiform_area",
+              "attribute_key": "coverage",
+              "question_text": "How large is the stratiform precipitation area in this region?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "stratiform_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_east_sea_bundle",
+          "region_id": "east_sea",
+          "region_label": "East Sea",
+          "gate_signals": [
+            "precip_echo",
+            "convective_core",
+            "rain_band",
+            "stratiform_area",
+            "localized_maxima"
+          ],
+          "question_text": "Use the stage1 result for this region and determine the needed radar precipitation attributes.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "precip_echo.coverage",
+              "signal_key": "precip_echo",
+              "attribute_key": "coverage",
+              "question_text": "What is the precipitation echo coverage in this region?",
+              "allowed_answers": [
+                "isolated",
+                "scattered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "precip_echo.intensity",
+              "signal_key": "precip_echo",
+              "attribute_key": "intensity",
+              "question_text": "What is the dominant precipitation echo intensity in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "stratiform_area.coverage",
+              "signal_key": "stratiform_area",
+              "attribute_key": "coverage",
+              "question_text": "How large is the stratiform precipitation area in this region?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "stratiform_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_south_korea_bundle",
+          "region_id": "south_korea",
+          "region_label": "South Korea",
+          "gate_signals": [
+            "precip_echo",
+            "convective_core",
+            "rain_band",
+            "stratiform_area",
+            "localized_maxima"
+          ],
+          "question_text": "Use the stage1 result for this region and determine the needed radar precipitation attributes.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "precip_echo.coverage",
+              "signal_key": "precip_echo",
+              "attribute_key": "coverage",
+              "question_text": "What is the precipitation echo coverage in this region?",
+              "allowed_answers": [
+                "isolated",
+                "scattered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "precip_echo.intensity",
+              "signal_key": "precip_echo",
+              "attribute_key": "intensity",
+              "question_text": "What is the dominant precipitation echo intensity in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "convective_core.coverage",
+              "signal_key": "convective_core",
+              "attribute_key": "coverage",
+              "question_text": "How widespread are convective cores in this region?",
+              "allowed_answers": [
+                "isolated",
+                "clustered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "convective_core.intensity",
+              "signal_key": "convective_core",
+              "attribute_key": "intensity",
+              "question_text": "How strong are the convective cores in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "stratiform_area.coverage",
+              "signal_key": "stratiform_area",
+              "attribute_key": "coverage",
+              "question_text": "How large is the stratiform precipitation area in this region?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "stratiform_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 8,
+              "target_label": "localized_maxima.distribution",
+              "signal_key": "localized_maxima",
+              "attribute_key": "distribution",
+              "question_text": "How are localized reflectivity maxima distributed in this region?",
+              "allowed_answers": [
+                "isolated",
+                "multiple",
+                "clustered",
+                "unknown"
+              ],
+              "gate_on_stage1": "localized_maxima",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_south_sea_bundle",
+          "region_id": "south_sea",
+          "region_label": "South Sea",
+          "gate_signals": [
+            "precip_echo",
+            "convective_core",
+            "rain_band",
+            "stratiform_area",
+            "localized_maxima"
+          ],
+          "question_text": "Use the stage1 result for this region and determine the needed radar precipitation attributes.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "precip_echo.coverage",
+              "signal_key": "precip_echo",
+              "attribute_key": "coverage",
+              "question_text": "What is the precipitation echo coverage in this region?",
+              "allowed_answers": [
+                "isolated",
+                "scattered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "precip_echo.intensity",
+              "signal_key": "precip_echo",
+              "attribute_key": "intensity",
+              "question_text": "What is the dominant precipitation echo intensity in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "convective_core.coverage",
+              "signal_key": "convective_core",
+              "attribute_key": "coverage",
+              "question_text": "How widespread are convective cores in this region?",
+              "allowed_answers": [
+                "isolated",
+                "clustered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "convective_core.intensity",
+              "signal_key": "convective_core",
+              "attribute_key": "intensity",
+              "question_text": "How strong are the convective cores in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "convective_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 5,
+              "target_label": "rain_band.orientation",
+              "signal_key": "rain_band",
+              "attribute_key": "orientation",
+              "question_text": "What is the dominant orientation of the radar rain band in this region?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "rain_band",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "rain_band.continuity",
+              "signal_key": "rain_band",
+              "attribute_key": "continuity",
+              "question_text": "How continuous is the rain band in this region?",
+              "allowed_answers": [
+                "fragmented",
+                "partial",
+                "continuous",
+                "unknown"
+              ],
+              "gate_on_stage1": "rain_band",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 8,
+              "target_label": "localized_maxima.distribution",
+              "signal_key": "localized_maxima",
+              "attribute_key": "distribution",
+              "question_text": "How are localized reflectivity maxima distributed in this region?",
+              "allowed_answers": [
+                "isolated",
+                "multiple",
+                "clustered",
+                "unknown"
+              ],
+              "gate_on_stage1": "localized_maxima",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_west_sea_bundle",
+          "region_id": "west_sea",
+          "region_label": "West Sea",
+          "gate_signals": [
+            "precip_echo",
+            "convective_core",
+            "rain_band",
+            "stratiform_area",
+            "localized_maxima"
+          ],
+          "question_text": "Use the stage1 result for this region and determine the needed radar precipitation attributes.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "precip_echo.coverage",
+              "signal_key": "precip_echo",
+              "attribute_key": "coverage",
+              "question_text": "What is the precipitation echo coverage in this region?",
+              "allowed_answers": [
+                "isolated",
+                "scattered",
+                "widespread",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "precip_echo.intensity",
+              "signal_key": "precip_echo",
+              "attribute_key": "intensity",
+              "question_text": "What is the dominant precipitation echo intensity in this region?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "precip_echo",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "stratiform_area.coverage",
+              "signal_key": "stratiform_area",
+              "attribute_key": "coverage",
+              "question_text": "How large is the stratiform precipitation area in this region?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "stratiform_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 3325,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 749,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4074
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\radar\\cmi\\rdr_cmp_cmi_202604091200.png",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_radar_precipitation_stage2\ndomain=radar_precipitation\nstage=stage2\nimage_ref=rdr_cmp_cmi_202604091200\nvalid_time=202604091200\nBundles:\n1. bundle_id=stage2_central_korea_bundle | region_id=central_korea | region_label=Central Korea | lat_range=36~38N | lon_range=126~129E | question_text=Use the stage1 result for this region and determine the needed radar precipitation attributes. | gate_summary={\"convective_core\": \"no\", \"localized_maxima\": \"no\", \"precip_echo\": \"yes\", \"rain_band\": \"no\", \"stratiform_area\": \"yes\"}\n   - target_label=precip_echo.coverage | signal_key=precip_echo | attribute_key=coverage | target_order=1 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|scattered|widespread|unknown | question_text=What is the precipitation echo coverage in this region?\n   - target_label=precip_echo.intensity | signal_key=precip_echo | attribute_key=intensity | target_order=2 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=What is the dominant precipitation echo intensity in this region?\n   - target_label=stratiform_area.coverage | signal_key=stratiform_area | attribute_key=coverage | target_order=7 | tier=core | gate_on_stage1=stratiform_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=How large is the stratiform precipitation area in this region?\n2. bundle_id=stage2_east_sea_bundle | region_id=east_sea | region_label=East Sea | lat_range=36~39N | lon_range=129~132E | question_text=Use the stage1 result for this region and determine the needed radar precipitation attributes. | gate_summary={\"convective_core\": \"no\", \"localized_maxima\": \"no\", \"precip_echo\": \"yes\", \"rain_band\": \"no\", \"stratiform_area\": \"yes\"}\n   - target_label=precip_echo.coverage | signal_key=precip_echo | attribute_key=coverage | target_order=1 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|scattered|widespread|unknown | question_text=What is the precipitation echo coverage in this region?\n   - target_label=precip_echo.intensity | signal_key=precip_echo | attribute_key=intensity | target_order=2 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=What is the dominant precipitation echo intensity in this region?\n   - target_label=stratiform_area.coverage | signal_key=stratiform_area | attribute_key=coverage | target_order=7 | tier=core | gate_on_stage1=stratiform_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=How large is the stratiform precipitation area in this region?\n3. bundle_id=stage2_south_korea_bundle | region_id=south_korea | region_label=South Korea | lat_range=34~36N | lon_range=126~129E | question_text=Use the stage1 result for this region and determine the needed radar precipitation attributes. | gate_summary={\"convective_core\": \"yes\", \"localized_maxima\": \"yes\", \"precip_echo\": \"yes\", \"rain_band\": \"no\", \"stratiform_area\": \"yes\"}\n   - target_label=precip_echo.coverage | signal_key=precip_echo | attribute_key=coverage | target_order=1 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|scattered|widespread|unknown | question_text=What is the precipitation echo coverage in this region?\n   - target_label=precip_echo.intensity | signal_key=precip_echo | attribute_key=intensity | target_order=2 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=What is the dominant precipitation echo intensity in this region?\n   - target_label=convective_core.coverage | signal_key=convective_core | attribute_key=coverage | target_order=3 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|clustered|widespread|unknown | question_text=How widespread are convective cores in this region?\n   - target_label=convective_core.intensity | signal_key=convective_core | attribute_key=intensity | target_order=4 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=How strong are the convective cores in this region?\n   - target_label=stratiform_area.coverage | signal_key=stratiform_area | attribute_key=coverage | target_order=7 | tier=core | gate_on_stage1=stratiform_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=How large is the stratiform precipitation area in this region?\n   - target_label=localized_maxima.distribution | signal_key=localized_maxima | attribute_key=distribution | target_order=8 | tier=extended | gate_on_stage1=localized_maxima | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=isolated|multiple|clustered|unknown | question_text=How are localized reflectivity maxima distributed in this region?\n4. bundle_id=stage2_south_sea_bundle | region_id=south_sea | region_label=South Sea | lat_range=33~35N | lon_range=127~130E | question_text=Use the stage1 result for this region and determine the needed radar precipitation attributes. | gate_summary={\"convective_core\": \"yes\", \"localized_maxima\": \"yes\", \"precip_echo\": \"yes\", \"rain_band\": \"yes\", \"stratiform_area\": \"no\"}\n   - target_label=precip_echo.coverage | signal_key=precip_echo | attribute_key=coverage | target_order=1 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|scattered|widespread|unknown | question_text=What is the precipitation echo coverage in this region?\n   - target_label=precip_echo.intensity | signal_key=precip_echo | attribute_key=intensity | target_order=2 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=What is the dominant precipitation echo intensity in this region?\n   - target_label=convective_core.coverage | signal_key=convective_core | attribute_key=coverage | target_order=3 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|clustered|widespread|unknown | question_text=How widespread are convective cores in this region?\n   - target_label=convective_core.intensity | signal_key=convective_core | attribute_key=intensity | target_order=4 | tier=core | gate_on_stage1=convective_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=How strong are the convective cores in this region?\n   - target_label=rain_band.orientation | signal_key=rain_band | attribute_key=orientation | target_order=5 | tier=extended | gate_on_stage1=rain_band | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=What is the dominant orientation of the radar rain band in this region?\n   - target_label=rain_band.continuity | signal_key=rain_band | attribute_key=continuity | target_order=6 | tier=extended | gate_on_stage1=rain_band | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=fragmented|partial|continuous|unknown | question_text=How continuous is the rain band in this region?\n   - target_label=localized_maxima.distribution | signal_key=localized_maxima | attribute_key=distribution | target_order=8 | tier=extended | gate_on_stage1=localized_maxima | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=isolated|multiple|clustered|unknown | question_text=How are localized reflectivity maxima distributed in this region?\n5. bundle_id=stage2_west_sea_bundle | region_id=west_sea | region_label=West Sea | lat_range=35~38N | lon_range=124~126E | question_text=Use the stage1 result for this region and determine the needed radar precipitation attributes. | gate_summary={\"convective_core\": \"no\", \"localized_maxima\": \"no\", \"precip_echo\": \"yes\", \"rain_band\": \"no\", \"stratiform_area\": \"yes\"}\n   - target_label=precip_echo.coverage | signal_key=precip_echo | attribute_key=coverage | target_order=1 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=isolated|scattered|widespread|unknown | question_text=What is the precipitation echo coverage in this region?\n   - target_label=precip_echo.intensity | signal_key=precip_echo | attribute_key=intensity | target_order=2 | tier=core | gate_on_stage1=precip_echo | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=What is the dominant precipitation echo intensity in this region?\n   - target_label=stratiform_area.coverage | signal_key=stratiform_area | attribute_key=coverage | target_order=7 | tier=core | gate_on_stage1=stratiform_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=How large is the stratiform precipitation area in this region?"
+        },
+        "response": {
+          "id": "resp_01906c841f08daae0069d88fc7813c819c882ccbc2add9e06e",
+          "object": "response",
+          "created_at": 1775800263,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800277,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_01906c841f08daae0069d88fc82ea0819c9ae3a4ad1029c73f",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_central_korea_bundle\",\"targets\":[{\"target_label\":\"precip_echo.coverage\",\"answer\":\"scattered\",\"note\":\"Precipitation echoes cover multiple areas but not continuous over entire region.\"},{\"target_label\":\"precip_echo.intensity\",\"answer\":\"moderate\",\"note\":\"Dominant echo intensity mostly moderate with some weaker spots.\"},{\"target_label\":\"stratiform_area.coverage\",\"answer\":\"regional\",\"note\":\"Stratiform precipitation area spans a regional scale across central Korea.\"}],\"note\":\"Central Korea has scattered moderate precipitation with regional stratiform area.\"},{\"bundle_id\":\"stage2_east_sea_bundle\",\"targets\":[{\"target_label\":\"precip_echo.coverage\",\"answer\":\"isolated\",\"note\":\"Limited isolated precipitation echoes over the East Sea region.\"},{\"target_label\":\"precip_echo.intensity\",\"answer\":\"weak\",\"note\":\"Precipitation echoes mostly weak intensity in East Sea region.\"},{\"target_label\":\"stratiform_area.coverage\",\"answer\":\"local\",\"note\":\"Stratiform precipitation area is local in extent here.\"}],\"note\":\"East Sea region has isolated weak precipitation and limited stratiform area.\"},{\"bundle_id\":\"stage2_south_korea_bundle\",\"targets\":[{\"target_label\":\"precip_echo.coverage\",\"answer\":\"widespread\",\"note\":\"Widespread precipitation echoes across South Korea in multiple areas.\"},{\"target_label\":\"precip_echo.intensity\",\"answer\":\"strong\",\"note\":\"Strong precipitation echoes dominate in southern Korea region.\"},{\"target_label\":\"convective_core.coverage\",\"answer\":\"clustered\",\"note\":\"Convective cores mainly clustered in southern Korea.\"},{\"target_label\":\"convective_core.intensity\",\"answer\":\"strong\",\"note\":\"Convective cores show strong intensity.\"},{\"target_label\":\"stratiform_area.coverage\",\"answer\":\"broad\",\"note\":\"Stratiform precipitation shows a broad area coverage.\"},{\"target_label\":\"localized_maxima.distribution\",\"answer\":\"multiple\",\"note\":\"Multiple localized reflectivity maxima are observed.\"}],\"note\":\"South Korea shows strong, widespread precipitation with clustered strong convective cores and broad stratiform area.\"},{\"bundle_id\":\"stage2_south_sea_bundle\",\"targets\":[{\"target_label\":\"precip_echo.coverage\",\"answer\":\"widespread\",\"note\":\"Precipitation echoes are widespread over the South Sea region.\"},{\"target_label\":\"precip_echo.intensity\",\"answer\":\"strong\",\"note\":\"Dominant precipitation intensity is strong.\"},{\"target_label\":\"convective_core.coverage\",\"answer\":\"clustered\",\"note\":\"Convective cores appear clustered here.\"},{\"target_label\":\"convective_core.intensity\",\"answer\":\"strong\",\"note\":\"Convective cores have strong intensity.\"},{\"target_label\":\"rain_band.orientation\",\"answer\":\"curved\",\"note\":\"Rain band has a curved orientation.\"},{\"target_label\":\"rain_band.continuity\",\"answer\":\"continuous\",\"note\":\"Rain band is continuous without breaks.\"},{\"target_label\":\"localized_maxima.distribution\",\"answer\":\"clustered\",\"note\":\"Localized maxima are clustered in this region.\"}],\"note\":\"South Sea features widespread strong precipitation, clustered strong convective cores, continuous curved rain band, and clustered maxima.\"},{\"bundle_id\":\"stage2_west_sea_bundle\",\"targets\":[{\"target_label\":\"precip_echo.coverage\",\"answer\":\"scattered\",\"note\":\"Scattered precipitation echoes across West Sea region.\"},{\"target_label\":\"precip_echo.intensity\",\"answer\":\"moderate\",\"note\":\"Precipitation echoes moderately intense.\"},{\"target_label\":\"stratiform_area.coverage\",\"answer\":\"regional\",\"note\":\"Stratiform precipitation covers regional scale here.\"}],\"note\":\"West Sea shows scattered moderate precipitation with regional stratiform area.\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3325,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 749,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4074
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_central_korea_bundle",
+              "targets": [
+                {
+                  "target_label": "precip_echo.coverage",
+                  "answer": "scattered",
+                  "note": "Precipitation echoes cover multiple areas but not continuous over entire region."
+                },
+                {
+                  "target_label": "precip_echo.intensity",
+                  "answer": "moderate",
+                  "note": "Dominant echo intensity mostly moderate with some weaker spots."
+                },
+                {
+                  "target_label": "stratiform_area.coverage",
+                  "answer": "regional",
+                  "note": "Stratiform precipitation area spans a regional scale across central Korea."
+                }
+              ],
+              "note": "Central Korea has scattered moderate precipitation with regional stratiform area."
+            },
+            {
+              "bundle_id": "stage2_east_sea_bundle",
+              "targets": [
+                {
+                  "target_label": "precip_echo.coverage",
+                  "answer": "isolated",
+                  "note": "Limited isolated precipitation echoes over the East Sea region."
+                },
+                {
+                  "target_label": "precip_echo.intensity",
+                  "answer": "weak",
+                  "note": "Precipitation echoes mostly weak intensity in East Sea region."
+                },
+                {
+                  "target_label": "stratiform_area.coverage",
+                  "answer": "local",
+                  "note": "Stratiform precipitation area is local in extent here."
+                }
+              ],
+              "note": "East Sea region has isolated weak precipitation and limited stratiform area."
+            },
+            {
+              "bundle_id": "stage2_south_korea_bundle",
+              "targets": [
+                {
+                  "target_label": "precip_echo.coverage",
+                  "answer": "widespread",
+                  "note": "Widespread precipitation echoes across South Korea in multiple areas."
+                },
+                {
+                  "target_label": "precip_echo.intensity",
+                  "answer": "strong",
+                  "note": "Strong precipitation echoes dominate in southern Korea region."
+                },
+                {
+                  "target_label": "convective_core.coverage",
+                  "answer": "clustered",
+                  "note": "Convective cores mainly clustered in southern Korea."
+                },
+                {
+                  "target_label": "convective_core.intensity",
+                  "answer": "strong",
+                  "note": "Convective cores show strong intensity."
+                },
+                {
+                  "target_label": "stratiform_area.coverage",
+                  "answer": "broad",
+                  "note": "Stratiform precipitation shows a broad area coverage."
+                },
+                {
+                  "target_label": "localized_maxima.distribution",
+                  "answer": "multiple",
+                  "note": "Multiple localized reflectivity maxima are observed."
+                }
+              ],
+              "note": "South Korea shows strong, widespread precipitation with clustered strong convective cores and broad stratiform area."
+            },
+            {
+              "bundle_id": "stage2_south_sea_bundle",
+              "targets": [
+                {
+                  "target_label": "precip_echo.coverage",
+                  "answer": "widespread",
+                  "note": "Precipitation echoes are widespread over the South Sea region."
+                },
+                {
+                  "target_label": "precip_echo.intensity",
+                  "answer": "strong",
+                  "note": "Dominant precipitation intensity is strong."
+                },
+                {
+                  "target_label": "convective_core.coverage",
+                  "answer": "clustered",
+                  "note": "Convective cores appear clustered here."
+                },
+                {
+                  "target_label": "convective_core.intensity",
+                  "answer": "strong",
+                  "note": "Convective cores have strong intensity."
+                },
+                {
+                  "target_label": "rain_band.orientation",
+                  "answer": "curved",
+                  "note": "Rain band has a curved orientation."
+                },
+                {
+                  "target_label": "rain_band.continuity",
+                  "answer": "continuous",
+                  "note": "Rain band is continuous without breaks."
+                },
+                {
+                  "target_label": "localized_maxima.distribution",
+                  "answer": "clustered",
+                  "note": "Localized maxima are clustered in this region."
+                }
+              ],
+              "note": "South Sea features widespread strong precipitation, clustered strong convective cores, continuous curved rain band, and clustered maxima."
+            },
+            {
+              "bundle_id": "stage2_west_sea_bundle",
+              "targets": [
+                {
+                  "target_label": "precip_echo.coverage",
+                  "answer": "scattered",
+                  "note": "Scattered precipitation echoes across West Sea region."
+                },
+                {
+                  "target_label": "precip_echo.intensity",
+                  "answer": "moderate",
+                  "note": "Precipitation echoes moderately intense."
+                },
+                {
+                  "target_label": "stratiform_area.coverage",
+                  "answer": "regional",
+                  "note": "Stratiform precipitation covers regional scale here."
+                }
+              ],
+              "note": "West Sea shows scattered moderate precipitation with regional stratiform area."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

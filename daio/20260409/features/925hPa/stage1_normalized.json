@@ -1,0 +1,5594 @@
+{
+  "manifest_id": "synoptic_925hPa_stage1",
+  "domain": "925hPa",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "records": [
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough over central part, cold advection in northern part, wet area nearby.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough and associated cold advection with wet area within region.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection identifiable in this area.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Area shows low-level trough, cold advection and wet area signals.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge, warm advection and thermal gradient zone present in southern Korea.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level trough with cold advection, a wet area and evidence of strong wind zone.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Multiple signals including low-level trough, cold advection, wet areas, strong wind zone over western Japan.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040900.gif",
+      "image_ref": "up92_6h_2026040900",
+      "note": "Low-level ridge and warm advection with thermal gradient zone offshore eastern Japan.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection",
+        "thermal_gradient_zone"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "thermal_gradient_zone",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Thermal gradient zone and wet area evident inside 41~47N, 120~130E.",
+      "selected_answers": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "thermal_gradient_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Strong wind zone and wet area detected in 38~41N, 120~123E.",
+      "selected_answers": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level ridge and warm advection inside 35~38N, 122~126E.",
+      "selected_answers": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "selected_signal_keys": [
+        "low_level_ridge",
+        "warm_advection"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough and cold advection seen inside 37~40N, 124~130E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Wet area inside 33~37N, 124~130E.",
+      "selected_answers": [
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No notable signals detected in 28~34N, 120~128E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "Low level trough, cold advection, strong wind zone in 31~38N, 130~138E.",
+      "selected_answers": [
+        "low_level_trough",
+        "cold_advection",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "cold_advection",
+        "low_level_trough",
+        "strong_wind_zone"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__low_level_trough",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "low_level_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__low_level_ridge",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "low_level_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__warm_advection",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "warm_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__cold_advection",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "cold_advection",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__thermal_gradient_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "thermal_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_925hPa_stage1",
+      "domain": "925hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__freezing_line_candidate",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "freezing_line_candidate",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_level_trough",
+        "low_level_ridge",
+        "warm_advection",
+        "cold_advection",
+        "thermal_gradient_zone",
+        "wet_area",
+        "strong_wind_zone",
+        "freezing_line_candidate",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up92_6h_2026040912.gif",
+      "image_ref": "up92_6h_2026040912",
+      "note": "No significant signals in 30~40N, 140~150E.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    }
+  ]
+}

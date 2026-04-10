@@ -1,0 +1,1990 @@
+{
+  "manifest_id": "synoptic_radar_precipitation_stage1",
+  "domain": "radar_precipitation",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "records": [
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_west_sea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Strong convective precipitation with intense cores apparent.",
+      "selected_answers": [
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_west_sea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Strong convective precipitation with intense cores apparent.",
+      "selected_answers": [
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_west_sea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Strong convective precipitation with intense cores apparent.",
+      "selected_answers": [
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_west_sea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Strong convective precipitation with intense cores apparent.",
+      "selected_answers": [
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_west_sea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Strong convective precipitation with intense cores apparent.",
+      "selected_answers": [
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_central_korea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_central_korea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_central_korea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_central_korea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_central_korea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_korea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_korea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_korea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_korea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_korea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_sea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Widespread precipitation echo with embedded convective cores and organized rain bands present.",
+      "selected_answers": [
+        "precip_echo",
+        "rain_band",
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_sea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Widespread precipitation echo with embedded convective cores and organized rain bands present.",
+      "selected_answers": [
+        "precip_echo",
+        "rain_band",
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_sea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Widespread precipitation echo with embedded convective cores and organized rain bands present.",
+      "selected_answers": [
+        "precip_echo",
+        "rain_band",
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_sea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Widespread precipitation echo with embedded convective cores and organized rain bands present.",
+      "selected_answers": [
+        "precip_echo",
+        "rain_band",
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_south_sea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "Widespread precipitation echo with embedded convective cores and organized rain bands present.",
+      "selected_answers": [
+        "precip_echo",
+        "rain_band",
+        "convective_core"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_east_sea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_east_sea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_east_sea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_east_sea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_east_sea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604090000.png",
+      "image_ref": "rdr_cmp_cmi_202604090000",
+      "note": "No precipitation signals detected in this region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_west_sea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "West Sea region shows areas of general precipitation echo and some widespread stratiform rain areas without strong core or band structures.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_west_sea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "West Sea region shows areas of general precipitation echo and some widespread stratiform rain areas without strong core or band structures.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_west_sea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "West Sea region shows areas of general precipitation echo and some widespread stratiform rain areas without strong core or band structures.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_west_sea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "West Sea region shows areas of general precipitation echo and some widespread stratiform rain areas without strong core or band structures.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_west_sea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_west_sea_signal_bundle",
+      "region_id": "west_sea",
+      "region_label": "West Sea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "West Sea region shows areas of general precipitation echo and some widespread stratiform rain areas without strong core or band structures.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_central_korea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "Central Korea has general precipitation echo with broad stratiform areas, no distinct convective cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_central_korea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "Central Korea has general precipitation echo with broad stratiform areas, no distinct convective cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_central_korea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "Central Korea has general precipitation echo with broad stratiform areas, no distinct convective cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_central_korea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "Central Korea has general precipitation echo with broad stratiform areas, no distinct convective cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_central_korea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_central_korea_signal_bundle",
+      "region_id": "central_korea",
+      "region_label": "Central Korea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "Central Korea has general precipitation echo with broad stratiform areas, no distinct convective cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_korea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Korea displays strong convective cores in southern and southeastern parts, surrounded by widespread precipitation and stratiform areas, with localized maxima indicating intense precipitation spots.",
+      "selected_answers": [
+        "convective_core",
+        "precip_echo",
+        "stratiform_area",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_korea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Korea displays strong convective cores in southern and southeastern parts, surrounded by widespread precipitation and stratiform areas, with localized maxima indicating intense precipitation spots.",
+      "selected_answers": [
+        "convective_core",
+        "precip_echo",
+        "stratiform_area",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_korea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Korea displays strong convective cores in southern and southeastern parts, surrounded by widespread precipitation and stratiform areas, with localized maxima indicating intense precipitation spots.",
+      "selected_answers": [
+        "convective_core",
+        "precip_echo",
+        "stratiform_area",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_korea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Korea displays strong convective cores in southern and southeastern parts, surrounded by widespread precipitation and stratiform areas, with localized maxima indicating intense precipitation spots.",
+      "selected_answers": [
+        "convective_core",
+        "precip_echo",
+        "stratiform_area",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_korea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_south_korea_signal_bundle",
+      "region_id": "south_korea",
+      "region_label": "South Korea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Korea displays strong convective cores in southern and southeastern parts, surrounded by widespread precipitation and stratiform areas, with localized maxima indicating intense precipitation spots.",
+      "selected_answers": [
+        "convective_core",
+        "precip_echo",
+        "stratiform_area",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_sea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Sea region shows prominent convective cores and rain bands with heavy localized maxima as well as general precipitation echoes.",
+      "selected_answers": [
+        "convective_core",
+        "rain_band",
+        "precip_echo",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_sea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Sea region shows prominent convective cores and rain bands with heavy localized maxima as well as general precipitation echoes.",
+      "selected_answers": [
+        "convective_core",
+        "rain_band",
+        "precip_echo",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_sea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Sea region shows prominent convective cores and rain bands with heavy localized maxima as well as general precipitation echoes.",
+      "selected_answers": [
+        "convective_core",
+        "rain_band",
+        "precip_echo",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_sea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Sea region shows prominent convective cores and rain bands with heavy localized maxima as well as general precipitation echoes.",
+      "selected_answers": [
+        "convective_core",
+        "rain_band",
+        "precip_echo",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_south_sea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_south_sea_signal_bundle",
+      "region_id": "south_sea",
+      "region_label": "South Sea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "South Sea region shows prominent convective cores and rain bands with heavy localized maxima as well as general precipitation echoes.",
+      "selected_answers": [
+        "convective_core",
+        "rain_band",
+        "precip_echo",
+        "localized_maxima"
+      ],
+      "selected_signal_keys": [
+        "convective_core",
+        "localized_maxima",
+        "precip_echo",
+        "rain_band"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_east_sea_signal_bundle__precip_echo",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "precip_echo",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "East Sea features wide stratiform precipitation and general echoes without isolated cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_east_sea_signal_bundle__convective_core",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "convective_core",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "East Sea features wide stratiform precipitation and general echoes without isolated cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_east_sea_signal_bundle__rain_band",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "rain_band",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "East Sea features wide stratiform precipitation and general echoes without isolated cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_east_sea_signal_bundle__stratiform_area",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "stratiform_area",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "East Sea features wide stratiform precipitation and general echoes without isolated cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_radar_precipitation_stage1",
+      "domain": "radar_precipitation",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_east_sea_signal_bundle__localized_maxima",
+      "bundle_question_id": "stage1_east_sea_signal_bundle",
+      "region_id": "east_sea",
+      "region_label": "East Sea",
+      "signal_key": "localized_maxima",
+      "attribute_key": "presence",
+      "question_text": "Select every radar precipitation signal present in this region.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "precip_echo",
+        "convective_core",
+        "rain_band",
+        "stratiform_area",
+        "localized_maxima",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/radar/cmi/rdr_cmp_cmi_202604091200.png",
+      "image_ref": "rdr_cmp_cmi_202604091200",
+      "note": "East Sea features wide stratiform precipitation and general echoes without isolated cores or rain bands.",
+      "selected_answers": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "selected_signal_keys": [
+        "precip_echo",
+        "stratiform_area"
+      ],
+      "none_selected": false
+    }
+  ]
+}

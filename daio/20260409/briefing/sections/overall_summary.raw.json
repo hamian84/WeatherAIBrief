@@ -1,0 +1,115 @@
+{
+  "request": {
+    "model": "gpt-4.1-mini",
+    "max_output_tokens": 3000,
+    "prompt_text": "당신은 기상 실황 브리핑 섹션 작성기다.\n\n목표:\n- 제공된 시간 변화 사건 목록을 바탕으로 \"전체 개황\" 섹션의 본문을 작성한다.\n- 본문은 관측 근거를 그대로 나열하지 말고, 시간 변화와 인과관계를 중심으로 서술한다.\n\n반드시 지킬 규칙:\n- 출력은 JSON만 반환한다.\n- title은 \"전체 개황\"로 고정한다.\n- source_event_ids는 입력 events에 있는 event_id만 사용한다.\n- body는 한국어로 작성한다.\n- body 첫 문장은 결론형으로 쓴다.\n- body에는 \"초반\", \"이후\", \"후반\", \"따라서\"의 흐름이 드러나야 한다.\n- body에는 횟수(예: 5회, 4회)를 쓰지 않는다.\n- body에는 내부 영문 키(kp_south, wet_area 같은 값)를 쓰지 않는다.\n- body에는 적용 패턴 문자열을 직접 쓰지 않는다.\n- body는 선택한 사건들을 자연스럽게 연결해 한 개의 서사형 단락으로 작성한다.\n- 입력에 없는 현상, 지역, 근거를 새로 추가하지 않는다.\n\n섹션 정보:\n- run_date: 20260409\n- section_id: overall_summary\n- section_title: 전체 개황\n\nevents:\n[{\"event_id\":\"overall_summary_01\",\"section_id\":\"overall_summary\",\"event_title\":\"한반도 주변에서 강한 제트 스트림과 저기압 순환의 형성 및 이동\",\"phase_early\":\"00시 기준으로 한반도 주변 300hPa 고도에서 강한 제트코어와 제트축이 동서 및 북서-남동 방향으로 내포되어 있다.\",\"phase_mid\":\"12시 경에 제트코어 강도가 일부 지역에서 강해지고, 저기압 중심과 폐합성 저기압성 순환이 영역 내부 및 서쪽에 위치하며 강한 고도경도대도 존재한다.\",\"phase_late\":\"이로 인해 한반도 북서 및 북동 지역까지 강풍대와 한랭핵이 광역에 걸쳐 확장되고, 저층에서는 한랭이류와 온난이류가 공존하며 복잡한 기압골과 능선축이 이어진다.\",\"causal_link\":\"상층 제트 스트림의 강화와 폐합성 저기압성 순환의 발달이 지상 저기압 및 기압골 형성을 촉진하여, 한반도 전역에 걸쳐 강풍대와 한랭 및 온난 이류가 나타난 것이다.\",\"regions\":[\"한반도 북서\",\"한반도 북동\",\"한반도 북부\",\"한반도 남서\",\"한반도 남부\"],\"domains\":[\"300hPa\",\"500hPa\",\"850hPa\",\"925hPa\",\"surface\"],\"evidence_refs\":[\"up30_6h_2026040900\",\"up50_6h_2026040900\",\"up85_6h_2026040900\",\"up92_6h_2026040900\",\"surf_12h_2026040900\",\"surf_anl_6h_2026040900\"],\"rule_refs\":[\"jet_coupling_heavy_rain\",\"explosive_cyclone_risk\"],\"confidence\":\"high\"},{\"event_id\":\"overall_summary_02\",\"section_id\":\"overall_summary\",\"event_title\":\"한반도에 광역 대류운 군집과 광범위 습윤 기류대의 진입과 강수 전개\",\"phase_early\":\"초기에는 한반도 서쪽과 북서 지역에 광역 대류운 군집이 발달하며 북서-남동 방향으로 습윤 기류대가 진입한다.\",\"phase_mid\":\"12시 경에는 대류운 군집의 규모가 광역으로 지속 확대되고 습윤 기류대 또한 한반도 전역에 걸쳐 내부에 분포하며, 저기압성 소용돌이 구름이 동반된다.\",\"phase_late\":\"이 영향으로 한반도 전역과 동해 북부까지 강한 집중 강수대와 강풍역이 형성되어, 광범위한 강수 및 대기 불안정이 심화된다.\",\"causal_link\":\"습윤 기류대와 대류운 군집의 진입 및 강화가 저기압성 소용돌이와 결합하면서, 한반도 및 인근 해상에 집중 강수대와 강풍대를 조성한 것으로 분석된다.\",\"regions\":[\"한반도 북서\",\"한반도 북동\",\"한반도 북부\",\"Central Korea\",\"East Sea\"],\"domains\":[\"satellite_wv\",\"radar_precipitation\",\"surface\"],\"evidence_refs\":[\"gk2a_le1b_WV063_EA_202604090000\",\"rdr_cmp_cmi_202604090000\",\"surf_12h_2026040900\"],\"rule_refs\":[\"mcs_convective_stratiform_split\",\"skewt_llj_heavy_rain\"],\"confidence\":\"high\"}]\n"
+  },
+  "response": {
+    "id": "resp_0477143bcf4d551e0069d8904392a88195941a63b56da14e6b",
+    "object": "response",
+    "created_at": 1775800387,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1775800393,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 3000,
+    "max_tool_calls": null,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "output": [
+      {
+        "id": "msg_0477143bcf4d551e0069d89044db2c819593181ac7470b3c1a",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"title\":\"전체 개황\",\"body\":\"초반에는 한반도 주변 상층에서 강한 제트 스트림과 저기압 순환이 형성되어 지역별로 북서-남동 방향의 강한 제트축과 저기압 중심이 관측되었다. 이후 이러한 상층 기압계의 발달과 이동으로 인해 지상에서는 복잡한 기압골과 능선축이 나타나며, 한반도 전역에 걸쳐 강한 한랭 및 온난 이류가 공존하는 상태가 지속되었다. 동시에 습윤 기류대와 대류운 군집이 북서 지역에서부터 한반도 전역으로 확장되었고, 저기압성 소용돌이 구름과 결합하며 광범위한 강수대와 강풍역이 동반되는 상황으로 심화되었다. 후반에는 이러한 상하층의 상호작용에 의해 한반도 북서와 북동 지역까지 강풍대와 집중 강수대가 확대되면서 대기 불안정이 극대화되었다. 따라서 상층의 제트 스트림 강화와 저기압 순환이 지상 기압계와 습윤 대류 구름의 강화로 이어져 한반도 전역에 걸친 강풍과 강수 현상을 주도하였다.\",\"source_event_ids\":[\"overall_summary_01\",\"overall_summary_02\"]}"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "structured_text_response",
+        "schema": {
+          "$id": "briefing_section_body.schema.json",
+          "title": "브리핑 섹션 본문 작성 응답 스키마",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body",
+            "source_event_ids"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "source_event_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1254,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 305,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1559
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "parsed_output": {
+    "title": "전체 개황",
+    "body": "초반에는 한반도 주변 상층에서 강한 제트 스트림과 저기압 순환이 형성되어 지역별로 북서-남동 방향의 강한 제트축과 저기압 중심이 관측되었다. 이후 이러한 상층 기압계의 발달과 이동으로 인해 지상에서는 복잡한 기압골과 능선축이 나타나며, 한반도 전역에 걸쳐 강한 한랭 및 온난 이류가 공존하는 상태가 지속되었다. 동시에 습윤 기류대와 대류운 군집이 북서 지역에서부터 한반도 전역으로 확장되었고, 저기압성 소용돌이 구름과 결합하며 광범위한 강수대와 강풍역이 동반되는 상황으로 심화되었다. 후반에는 이러한 상하층의 상호작용에 의해 한반도 북서와 북동 지역까지 강풍대와 집중 강수대가 확대되면서 대기 불안정이 극대화되었다. 따라서 상층의 제트 스트림 강화와 저기압 순환이 지상 기압계와 습윤 대류 구름의 강화로 이어져 한반도 전역에 걸친 강풍과 강수 현상을 주도하였다.",
+    "source_event_ids": [
+      "overall_summary_01",
+      "overall_summary_02"
+    ]
+  }
+}

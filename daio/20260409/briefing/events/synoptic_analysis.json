@@ -1,0 +1,86 @@
+{
+  "run_date": "20260409",
+  "section_id": "synoptic_analysis",
+  "section_title": "종관 해석",
+  "events": [
+    {
+      "event_id": "synoptic_analysis_01",
+      "section_id": "synoptic_analysis",
+      "event_title": "한반도 인근 상층 제트코어 강도 변화와 위치 변동",
+      "phase_early": "00시 기준으로 동중국해 북부와 한반도 주변 300hPa에서 제트축과 제트코어가 존재하며, 일부 지역에서 강한 제트코어가 관측되었다.",
+      "phase_mid": "12시에는 제트축의 방향이 일부 지역에서 동서 방향에서 북서-남동 방향으로 변하며 제트코어 강도가 변하였다.",
+      "phase_late": "이러한 제트코어 강도 및 위치 변화는 한반도 전역 및 동중국해 북부 지역의 대기 흐름에 영향을 미쳐 중규모 기압계 발전을 유도하였다.",
+      "causal_link": "초반에 강한 제트코어가 한반도 북서지역에 위치함에 따라 상층 기압골과 능선 배치가 변동되어 제트코어의 위치와 강도가 바뀌면서 한반도 주변 대기 불안정성이 확대되었다.",
+      "regions": [
+        "동중국해 북부",
+        "한반도 북서",
+        "한반도 북부",
+        "한반도 남서"
+      ],
+      "domains": [
+        "300hPa"
+      ],
+      "evidence_refs": [
+        "up30_6h_2026040900",
+        "up30_6h_2026040912"
+      ],
+      "rule_refs": [
+        "upper_jet_quadrant_selection",
+        "jet_coupling_heavy_rain"
+      ],
+      "confidence": "high"
+    },
+    {
+      "event_id": "synoptic_analysis_02",
+      "section_id": "synoptic_analysis",
+      "event_title": "500hPa 폐합성 저기압과 한랭핵의 강도 변화 및 지역 확대",
+      "phase_early": "00시 기준으로 한반도 남부와 만주 남부 일대에 폐합성 저기압과 한랭핵이 각각 보통 및 강한 강도로 존재하였다.",
+      "phase_mid": "12시에는 폐합성 저기압이 약화하였으나 한랭핵은 규모가 광역으로 확대되고 강도도 유지 또는 증가하였다.",
+      "phase_late": "한랭핵의 확대와 폐합성 저기압 강도 변화는 500hPa 레벨에서 강한 고도경도대를 형성하며 한반도 주변 대기 불안정을 증가시켰다.",
+      "causal_link": "초기의 폐합성 저기압 활성화가 한랭핵의 광역적 확장과 결합하여 기압골과 능선, 고도경도대 강화를 초래하였고, 이로 인한 대기 불안정성 증대가 연결된다.",
+      "regions": [
+        "한반도 남부",
+        "만주 남부",
+        "요동반도/발해만"
+      ],
+      "domains": [
+        "500hPa"
+      ],
+      "evidence_refs": [
+        "up50_6h_2026040900",
+        "up50_6h_2026040912"
+      ],
+      "rule_refs": [
+        "explosive_cyclone_risk",
+        "hail_cold_core_shear"
+      ],
+      "confidence": "high"
+    },
+    {
+      "event_id": "synoptic_analysis_03",
+      "section_id": "synoptic_analysis",
+      "event_title": "아열대 제트축과 한대 제트축의 상호 작용 현상",
+      "phase_early": "00시에는 일본 동부 해상과 동중국해 북부 300hPa 레벨에서 아열대 제트축과 한대 제트축이 혼재되어 관측되었다.",
+      "phase_mid": "12시에는 양 제트축의 위치와 강도가 변동하며, 일부 지역에서 혼합 제트 유형이 우세해졌다.",
+      "phase_late": "제트축의 다양화와 강도 변화는 일본 서부 및 동해 북부 지역에 기압골과 능선형 특성 변화를 유발하였다.",
+      "causal_link": "아열대 제트축과 한대 제트축이 상호작용하며 제트축 방향성과 강도에 변화를 주어 중규모 기압계의 형성과 변동에 영향을 주었다.",
+      "regions": [
+        "일본 동부 해상",
+        "일본 서부",
+        "동해 북부"
+      ],
+      "domains": [
+        "300hPa"
+      ],
+      "evidence_refs": [
+        "up30_6h_2026040900",
+        "up30_6h_2026040912"
+      ],
+      "rule_refs": [
+        "spring_heat_low_vs_frontal_low",
+        "upper_difffluence_heavy_rain"
+      ],
+      "confidence": "medium"
+    }
+  ]
+}

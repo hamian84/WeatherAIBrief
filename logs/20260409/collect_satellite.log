@@ -1,0 +1,85 @@
+2026-04-10 11:51:29,531 [INFO] 위성 수집 시작: input=2026040900 storage_date=20260409
+2026-04-10 11:51:29,531 [INFO] 로그 파일: logs\20260409\collect_satellite.log
+2026-04-10 11:51:29,535 [INFO] 기준 synoptic UTC 선택: 2026-04-09 00:00 UTC
+2026-04-10 11:51:29,535 [INFO] 기준 선택 방식: explicit_utc_cycle
+2026-04-10 11:51:29,536 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/EA/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:51:34,249 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/EA/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:51:55,273 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/KO/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:07,982 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/KO/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:08,525 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/EA/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:11,092 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/EA/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:11,918 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/KO/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:42,079 [WARNING] imageList HTTP 오류: 504 (https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/KO/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA)
+2026-04-10 11:52:42,081 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/EA/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:42,400 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/EA/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:43,314 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/KO/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:44,486 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/KO/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:44,866 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/EA/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:46,177 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/EA/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:46,949 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/KO/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:47,141 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/KO/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:47,809 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/EA/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:47,956 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/EA/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:48,684 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/KO/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:48,955 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/KO/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:49,947 [INFO] 수집 실패 건수: 1
+2026-04-10 11:52:50,111 [INFO] primary 검증 PASS
+2026-04-10 11:52:54,666 [INFO] 위성 수집 시작: input=2026040912 storage_date=20260409
+2026-04-10 11:52:54,667 [INFO] 로그 파일: logs\20260409\collect_satellite.log
+2026-04-10 11:52:54,668 [INFO] 기준 synoptic UTC 선택: 2026-04-09 12:00 UTC
+2026-04-10 11:52:54,668 [INFO] 기준 선택 방식: explicit_utc_cycle
+2026-04-10 11:52:54,669 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/EA/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:55,075 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/EA/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:55,723 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/KO/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:52:59,766 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/WV063/KO/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:00,111 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/EA/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:00,343 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/EA/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:01,101 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/KO/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:01,402 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/KO/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:01,712 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/EA/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:03,056 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/EA/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:03,936 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/KO/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:04,366 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR105/KO/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:04,673 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/EA/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:04,834 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/EA/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:06,736 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/KO/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:06,903 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR123/KO/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:07,256 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/EA/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:07,470 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/EA/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:08,198 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/KO/imageList?sDate=202604091200&eDate=202604091200&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:08,384 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR087/KO/image?date=202604091200&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 11:53:08,716 [INFO] 수집 실패 건수: 0
+2026-04-10 11:53:08,798 [INFO] primary 검증 PASS
+2026-04-10 13:03:10,580 [INFO] 위성 수집 시작: input=2026040900 storage_date=20260409
+2026-04-10 13:03:10,580 [INFO] 로그 파일: logs\20260409\collect_satellite.log
+2026-04-10 13:03:10,581 [INFO] 기준 synoptic UTC 선택: 2026-04-09 00:00 UTC
+2026-04-10 13:03:10,582 [INFO] 기준 선택 방식: explicit_utc_cycle
+2026-04-10 13:03:10,582 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\WV063\EA\gk2a_le1b_WV063_EA_202604090000.png
+2026-04-10 13:03:10,583 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\WV063\KO\gk2a_le1b_WV063_KO_202604090000.png
+2026-04-10 13:03:10,583 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR112\EA\gk2a_le1b_IR112_EA_202604090000.png
+2026-04-10 13:03:10,584 [INFO] 요청 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/KO/imageList?sDate=202604090000&eDate=202604090000&format=json&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 13:03:15,799 [INFO] 다운로드 주소: https://apihub.kma.go.kr/api/typ05/api/GK2A/LE1B/IR112/KO/image?date=202604090000&authKey=wf%2A%2A%2A%2AoA
+2026-04-10 13:03:16,449 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR105\EA\gk2a_le1b_IR105_EA_202604090000.png
+2026-04-10 13:03:16,450 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR105\KO\gk2a_le1b_IR105_KO_202604090000.png
+2026-04-10 13:03:16,450 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR123\EA\gk2a_le1b_IR123_EA_202604090000.png
+2026-04-10 13:03:16,451 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR123\KO\gk2a_le1b_IR123_KO_202604090000.png
+2026-04-10 13:03:16,451 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR087\EA\gk2a_le1b_IR087_EA_202604090000.png
+2026-04-10 13:03:16,452 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR087\KO\gk2a_le1b_IR087_KO_202604090000.png
+2026-04-10 13:03:16,452 [INFO] 수집 실패 건수: 0
+2026-04-10 13:03:16,540 [INFO] primary 검증 PASS
+2026-04-10 13:03:17,736 [INFO] 위성 수집 시작: input=2026040912 storage_date=20260409
+2026-04-10 13:03:17,737 [INFO] 로그 파일: logs\20260409\collect_satellite.log
+2026-04-10 13:03:17,738 [INFO] 기준 synoptic UTC 선택: 2026-04-09 12:00 UTC
+2026-04-10 13:03:17,738 [INFO] 기준 선택 방식: explicit_utc_cycle
+2026-04-10 13:03:17,739 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\WV063\EA\gk2a_le1b_WV063_EA_202604091200.png
+2026-04-10 13:03:17,739 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\WV063\KO\gk2a_le1b_WV063_KO_202604091200.png
+2026-04-10 13:03:17,740 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR112\EA\gk2a_le1b_IR112_EA_202604091200.png
+2026-04-10 13:03:17,740 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR112\KO\gk2a_le1b_IR112_KO_202604091200.png
+2026-04-10 13:03:17,741 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR105\EA\gk2a_le1b_IR105_EA_202604091200.png
+2026-04-10 13:03:17,741 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR105\KO\gk2a_le1b_IR105_KO_202604091200.png
+2026-04-10 13:03:17,742 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR123\EA\gk2a_le1b_IR123_EA_202604091200.png
+2026-04-10 13:03:17,742 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR123\KO\gk2a_le1b_IR123_KO_202604091200.png
+2026-04-10 13:03:17,743 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR087\EA\gk2a_le1b_IR087_EA_202604091200.png
+2026-04-10 13:03:17,744 [INFO] 이미 존재하는 파일 스킵: D:\99.project\03.WeatherAIBrief\dain\20260409\satellite\LE1B\IR087\KO\gk2a_le1b_IR087_KO_202604091200.png
+2026-04-10 13:03:17,744 [INFO] 수집 실패 건수: 0
+2026-04-10 13:03:17,835 [INFO] primary 검증 PASS

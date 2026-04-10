@@ -1,0 +1,42 @@
+2026-04-10 11:53:09,636 [INFO] run_feature_pipeline_start: date=20260409
+2026-04-10 11:53:09,636 [INFO] log_file: logs\20260409\run_feature_pipeline.log
+2026-04-10 11:53:09,658 [INFO] feature_manifest_start: synoptic_300hPa_stage1.yaml
+2026-04-10 11:53:10,092 [ERROR] feature_manifest_fail: synoptic_300hPa_stage1.yaml (code=1, elapsed=0.43s)
+2026-04-10 13:03:18,178 [INFO] run_feature_pipeline_start: date=20260409
+2026-04-10 13:03:18,179 [INFO] log_file: logs\20260409\run_feature_pipeline.log
+2026-04-10 13:03:18,201 [INFO] feature_manifest_start: synoptic_300hPa_stage1.yaml
+2026-04-10 13:03:18,497 [ERROR] feature_manifest_fail: synoptic_300hPa_stage1.yaml (code=1, elapsed=0.30s)
+2026-04-10 14:46:51,114 [INFO] run_feature_pipeline_start: date=20260409
+2026-04-10 14:46:51,115 [INFO] log_file: logs\20260409\run_feature_pipeline.log
+2026-04-10 14:46:51,148 [INFO] feature_manifest_start: synoptic_300hPa_stage1.yaml
+2026-04-10 14:47:04,440 [INFO] feature_manifest_done: synoptic_300hPa_stage1.yaml (elapsed=13.29s)
+2026-04-10 14:47:04,440 [INFO] feature_manifest_start: synoptic_500hPa_stage1.yaml
+2026-04-10 14:47:17,066 [INFO] feature_manifest_done: synoptic_500hPa_stage1.yaml (elapsed=12.63s)
+2026-04-10 14:47:17,067 [INFO] feature_manifest_start: synoptic_850hPa_stage1.yaml
+2026-04-10 14:47:29,553 [INFO] feature_manifest_done: synoptic_850hPa_stage1.yaml (elapsed=12.49s)
+2026-04-10 14:47:29,554 [INFO] feature_manifest_start: synoptic_925hPa_stage1.yaml
+2026-04-10 14:47:41,881 [INFO] feature_manifest_done: synoptic_925hPa_stage1.yaml (elapsed=12.33s)
+2026-04-10 14:47:41,881 [INFO] feature_manifest_start: synoptic_radar_precipitation_stage1.yaml
+2026-04-10 14:47:49,157 [INFO] feature_manifest_done: synoptic_radar_precipitation_stage1.yaml (elapsed=7.28s)
+2026-04-10 14:47:49,158 [INFO] feature_manifest_start: synoptic_satellite_wv_stage1.yaml
+2026-04-10 14:48:06,570 [INFO] feature_manifest_done: synoptic_satellite_wv_stage1.yaml (elapsed=17.41s)
+2026-04-10 14:48:06,570 [INFO] feature_manifest_start: synoptic_sfc12h_stage1.yaml
+2026-04-10 14:48:21,573 [INFO] feature_manifest_done: synoptic_sfc12h_stage1.yaml (elapsed=15.00s)
+2026-04-10 14:48:21,574 [INFO] feature_manifest_start: synoptic_surface_stage1.yaml
+2026-04-10 14:48:33,560 [INFO] feature_manifest_done: synoptic_surface_stage1.yaml (elapsed=11.99s)
+2026-04-10 14:48:33,560 [INFO] feature_manifest_start: synoptic_300hPa_stage2.yaml
+2026-04-10 14:48:47,575 [INFO] feature_manifest_done: synoptic_300hPa_stage2.yaml (elapsed=14.01s)
+2026-04-10 14:48:47,575 [INFO] feature_manifest_start: synoptic_500hPa_stage2.yaml
+2026-04-10 14:48:59,225 [INFO] feature_manifest_done: synoptic_500hPa_stage2.yaml (elapsed=11.65s)
+2026-04-10 14:48:59,226 [INFO] feature_manifest_start: synoptic_850hPa_stage2.yaml
+2026-04-10 14:50:41,477 [INFO] feature_manifest_done: synoptic_850hPa_stage2.yaml (elapsed=102.25s)
+2026-04-10 14:50:41,478 [INFO] feature_manifest_start: synoptic_925hPa_stage2.yaml
+2026-04-10 14:50:59,450 [INFO] feature_manifest_done: synoptic_925hPa_stage2.yaml (elapsed=17.97s)
+2026-04-10 14:50:59,450 [INFO] feature_manifest_start: synoptic_radar_precipitation_stage2.yaml
+2026-04-10 14:51:17,888 [INFO] feature_manifest_done: synoptic_radar_precipitation_stage2.yaml (elapsed=18.44s)
+2026-04-10 14:51:17,888 [INFO] feature_manifest_start: synoptic_satellite_wv_stage2.yaml
+2026-04-10 14:51:50,683 [INFO] feature_manifest_done: synoptic_satellite_wv_stage2.yaml (elapsed=32.79s)
+2026-04-10 14:51:50,683 [INFO] feature_manifest_start: synoptic_sfc12h_stage2.yaml
+2026-04-10 14:52:23,005 [INFO] feature_manifest_done: synoptic_sfc12h_stage2.yaml (elapsed=32.32s)
+2026-04-10 14:52:23,005 [INFO] feature_manifest_start: synoptic_surface_stage2.yaml
+2026-04-10 14:52:54,507 [INFO] feature_manifest_done: synoptic_surface_stage2.yaml (elapsed=31.50s)

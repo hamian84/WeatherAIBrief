@@ -1,0 +1,274 @@
+{
+  "request": {
+    "model": "gpt-4.1-mini",
+    "max_output_tokens": 4000,
+    "prompt_text": "당신은 기상 실황 브리핑용 시간 변화 사건 추출기다.\n\n목표:\n- 제공된 section_source를 읽고, 이 섹션에서 가장 중요한 시간 변화 사건만 추출한다.\n- 단순 신호 나열이 아니라 \"초반 -> 이후 -> 후반 -> 인과\" 흐름으로 사건을 구성한다.\n\n반드시 지킬 규칙:\n- 출력은 JSON만 반환한다.\n- 사건 개수는 최대 3개다.\n- 중요하지 않은 세부 신호를 모두 나열하지 말고, 큰 흐름을 설명하는 사건만 남긴다.\n- event_title, phase_early, phase_mid, phase_late, causal_link는 모두 한국어 문장으로 작성한다.\n- regions에는 한국어 지역명만 넣는다.\n- domains에는 입력에 있는 도메인 문자열만 넣는다.\n- evidence_refs는 입력 evidence_catalog에 있는 값만 사용한다.\n- rule_refs는 입력 rule_catalog에 있는 rule_id만 사용한다.\n- evidence_refs와 rule_refs는 오탈자 없이 입력 목록의 값을 그대로 복사해서 사용한다.\n- 입력에 없는 현상, 없는 지역, 없는 근거를 추론해서 추가하지 않는다.\n- phase_early, phase_mid, phase_late는 시간 흐름이 드러나야 한다.\n- causal_link는 앞선 구조가 뒤의 현상을 어떻게 만들었는지 설명해야 한다.\n- confidence는 low, medium, high 중 하나만 사용한다.\n- 각 event의 section_id는 \"precipitation_structure\"로 고정한다.\n- event_id는 \"precipitation_structure_01\", \"precipitation_structure_02\" 같은 형식으로 작성한다.\n\n섹션 정보:\n- run_date: 20260409\n- section_id: precipitation_structure\n- section_title: 강수 구조 해석\n\nsection_source:\n{\"run_date\":\"20260409\",\"section_id\":\"precipitation_structure\",\"section_title\":\"강수 구조 해석\",\"max_events\":3,\"source_domains\":[\"850hPa\",\"925hPa\",\"satellite_wv\",\"radar_precipitation\"],\"time_catalog\":[\"2026-04-09 00:00\",\"2026-04-09 12:00\"],\"region_catalog\":[{\"region_id\":\"central_korea\",\"region_label\":\"Central Korea\"},{\"region_id\":\"east_sea\",\"region_label\":\"East Sea\"},{\"region_id\":\"ecs_north\",\"region_label\":\"동중국해 북부\"},{\"region_id\":\"japan_east_offshore\",\"region_label\":\"일본 동부 해상\"},{\"region_id\":\"japan_w\",\"region_label\":\"일본 서부\"},{\"region_id\":\"kp_north\",\"region_label\":\"한반도 북부\"},{\"region_id\":\"kp_south\",\"region_label\":\"한반도 남부\"},{\"region_id\":\"liao_bohai\",\"region_label\":\"요동반도/발해만\"},{\"region_id\":\"manchuria_s\",\"region_label\":\"만주 남부\"},{\"region_id\":\"south_korea\",\"region_label\":\"South Korea\"},{\"region_id\":\"south_sea\",\"region_label\":\"South Sea\"},{\"region_id\":\"west_sea\",\"region_label\":\"West Sea\"},{\"region_id\":\"ws_mid\",\"region_label\":\"서해 중부\"}],\"signal_catalog\":[{\"signal_key\":\"band_cloud\",\"signal_label\":\"띠구름\"},{\"signal_key\":\"cold_advection\",\"signal_label\":\"한랭이류\"},{\"signal_key\":\"comma_cloud\",\"signal_label\":\"쉼표형 구름\"},{\"signal_key\":\"convective_cloud_cluster\",\"signal_label\":\"대류운 군집\"},{\"signal_key\":\"convective_core\",\"signal_label\":\"convective_core\"},{\"signal_key\":\"cyclonic_swirl_cloud\",\"signal_label\":\"저기압성 소용돌이 구름\"},{\"signal_key\":\"freezing_line_candidate\",\"signal_label\":\"결빙선 후보\"},{\"signal_key\":\"jet_related_cloud_band\",\"signal_label\":\"제트 관련 구름대\"},{\"signal_key\":\"localized_maxima\",\"signal_label\":\"localized_maxima\"},{\"signal_key\":\"low_level_convergence_candidate\",\"signal_label\":\"저층 수렴 후보\"},{\"signal_key\":\"low_level_jet\",\"signal_label\":\"저층제트\"},{\"signal_key\":\"low_level_ridge\",\"signal_label\":\"저층 능선\"},{\"signal_key\":\"low_level_trough\",\"signal_label\":\"저층 기압골\"},{\"signal_key\":\"moist_plume\",\"signal_label\":\"습윤 기류대\"},{\"signal_key\":\"moisture_transport_axis\",\"signal_label\":\"수증기 수송축\"},{\"signal_key\":\"precip_echo\",\"signal_label\":\"precip_echo\"},{\"signal_key\":\"rain_band\",\"signal_label\":\"rain_band\"},{\"signal_key\":\"ridge_axis\",\"signal_label\":\"능선축\"},{\"signal_key\":\"stratiform_area\",\"signal_label\":\"stratiform_area\"},{\"signal_key\":\"strong_wind_zone\",\"signal_label\":\"강풍대\"},{\"signal_key\":\"subsidence_clear_slot\",\"signal_label\":\"침강에 따른 맑은 틈\"},{\"signal_key\":\"thermal_gradient_zone\",\"signal_label\":\"열적 경도대\"},{\"signal_key\":\"trough_axis\",\"signal_label\":\"기압골축\"},{\"signal_key\":\"upper_dry_intrusion\",\"signal_label\":\"상층 건조역 유입\"},{\"signal_key\":\"warm_advection\",\"signal_label\":\"온난이류\"},{\"signal_key\":\"wet_area\",\"signal_label\":\"습윤역\"}],\"evidence_catalog\":[\"gk2a_le1b_WV063_EA_202604090000\",\"gk2a_le1b_WV063_EA_202604091200\",\"rdr_cmp_cmi_202604090000\",\"rdr_cmp_cmi_202604091200\",\"up85_6h_2026040900\",\"up85_6h_2026040912\",\"up92_6h_2026040900\",\"up92_6h_2026040912\"],\"rule_catalog\":[{\"rule_id\":\"philippines_high_moist_inflow\",\"section_no\":1,\"page_range\":\"p.4-11\"},{\"rule_id\":\"spring_heat_low_vs_frontal_low\",\"section_no\":1,\"page_range\":\"p.4-11\"},{\"rule_id\":\"summer_monsoon_lowlevel_pattern\",\"section_no\":2,\"page_range\":\"p.12-17\"},{\"rule_id\":\"upper_difffluence_heavy_rain\",\"section_no\":2,\"page_range\":\"p.12-17\"},{\"rule_id\":\"moisture_flux_convergence_focus\",\"section_no\":3,\"page_range\":\"p.18-23\"},{\"rule_id\":\"pw_convergence_crosscheck\",\"section_no\":3,\"page_range\":\"p.18-23\"},{\"rule_id\":\"skewt_llj_heavy_rain\",\"section_no\":5,\"page_range\":\"p.34-43\"},{\"rule_id\":\"front_boundary_identification\",\"section_no\":9,\"page_range\":\"p.68-77\"},{\"rule_id\":\"mesoscale_boundary_attention\",\"section_no\":9,\"page_range\":\"p.68-77\"},{\"rule_id\":\"llj_broad_rain\",\"section_no\":11,\"page_range\":\"p.84-89\"},{\"rule_id\":\"llj_narrow_convective_rain\",\"section_no\":11,\"page_range\":\"p.84-89\"},{\"rule_id\":\"jet_coupling_heavy_rain\",\"section_no\":13,\"page_range\":\"p.98-101\"},{\"rule_id\":\"mcs_convective_stratiform_split\",\"section_no\":14,\"page_range\":\"p.102-113\"},{\"rule_id\":\"squall_line_attention\",\"section_no\":14,\"page_range\":\"p.102-113\"},{\"rule_id\":\"changma_like_structure\",\"section_no\":15,\"page_range\":\"p.114-125\"},{\"rule_id\":\"changma_vertical_shear_support\",\"section_no\":15,\"page_range\":\"p.114-125\"}],\"row_fields\":[\"time_idx\",\"domain\",\"region_idx\",\"signal_idx\",\"stage\",\"count\",\"detail_text\",\"evidence_idx_list\"],\"rows\":[[0,\"850hPa\",0,1,\"stage1\",1,\"한랭이류 존재\",[4]],[0,\"850hPa\",0,10,\"stage2\",2,\"저층제트 세부 판독: 강도 보통, 방향 동서 방향\",[4]],[0,\"850hPa\",0,21,\"stage2\",1,\"열적 경도대 세부 판독: 강도 보통\",[4]],[0,\"850hPa\",0,22,\"stage1\",1,\"기압골축 존재\",[4]],[0,\"850hPa\",0,25,\"stage1\",1,\"습윤역 존재\",[4]],[0,\"850hPa\",1,14,\"stage2\",2,\"수증기 수송축 세부 판독: 강도 보통, 방향 북서-남동 방향\",[4]],[0,\"850hPa\",1,17,\"stage1\",1,\"능선축 존재\",[4]],[0,\"850hPa\",1,17,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[4]],[0,\"850hPa\",1,24,\"stage1\",1,\"온난이류 존재\",[4]],[0,\"850hPa\",2,9,\"stage2\",1,\"저층 수렴 후보 세부 판독: 강도 약함\",[4]],[0,\"850hPa\",2,22,\"stage2\",1,\"기압골축 세부 판독: 위치 영역 내부\",[4]],[0,\"850hPa\",3,22,\"stage1\",1,\"기압골축 존재\",[4]],[0,\"850hPa\",3,22,\"stage2\",1,\"기압골축 세부 판독: 위치 서쪽\",[4]],[0,\"850hPa\",3,25,\"stage1\",1,\"습윤역 존재\",[4]],[0,\"850hPa\",3,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 서쪽\",[4]],[0,\"850hPa\",4,17,\"stage1\",1,\"능선축 존재\",[4]],[0,\"850hPa\",4,17,\"stage2\",1,\"능선축 세부 판독: 위치 동쪽\",[4]],[0,\"850hPa\",4,19,\"stage1\",1,\"강풍대 존재\",[4]],[0,\"850hPa\",4,19,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[4]],[0,\"850hPa\",5,10,\"stage1\",1,\"저층제트 존재\",[4]],[0,\"850hPa\",5,17,\"stage2\",1,\"능선축 세부 판독: 위치 서쪽\",[4]],[0,\"850hPa\",5,21,\"stage1\",1,\"열적 경도대 존재\",[4]],[0,\"850hPa\",5,24,\"stage2\",1,\"온난이류 세부 판독: 강도 약함\",[4]],[0,\"850hPa\",6,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 약함\",[4]],[0,\"850hPa\",6,9,\"stage1\",1,\"저층 수렴 후보 존재\",[4]],[0,\"850hPa\",6,22,\"stage1\",1,\"기압골축 존재\",[4]],[0,\"850hPa\",6,22,\"stage2\",1,\"기압골축 세부 판독: 위치 영역 내부\",[4]],[0,\"850hPa\",6,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[4]],[0,\"850hPa\",7,14,\"stage1\",1,\"수증기 수송축 존재\",[4]],[0,\"850hPa\",7,17,\"stage1\",1,\"능선축 존재\",[4]],[0,\"925hPa\",0,1,\"stage1\",1,\"한랭이류 존재\",[6]],[0,\"925hPa\",0,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 강함\",[6]],[0,\"925hPa\",0,12,\"stage1\",1,\"저층 기압골 존재\",[6]],[0,\"925hPa\",0,12,\"stage2\",1,\"저층 기압골 세부 판독: 위치 영역 내부\",[6]],[0,\"925hPa\",0,19,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[6]],[0,\"925hPa\",0,25,\"stage1\",1,\"습윤역 존재\",[6]],[0,\"925hPa\",0,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[6]],[0,\"925hPa\",1,1,\"stage1\",1,\"한랭이류 존재\",[6]],[0,\"925hPa\",1,11,\"stage2\",1,\"저층 능선 세부 판독: 위치 영역 내부\",[6]],[0,\"925hPa\",1,12,\"stage1\",1,\"저층 기압골 존재\",[6]],[0,\"925hPa\",1,21,\"stage2\",1,\"열적 경도대 세부 판독: 강도 보통\",[6]],[0,\"925hPa\",1,24,\"stage2\",1,\"온난이류 세부 판독: 강도 강함\",[6]],[0,\"925hPa\",1,25,\"stage1\",1,\"습윤역 존재\",[6]],[0,\"925hPa\",2,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[6]],[0,\"925hPa\",2,11,\"stage1\",1,\"저층 능선 존재\",[6]],[0,\"925hPa\",2,12,\"stage2\",1,\"저층 기압골 세부 판독: 위치 영역 내부\",[6]],[0,\"925hPa\",2,19,\"stage2\",1,\"강풍대 세부 판독: 강도 강함\",[6]],[0,\"925hPa\",2,24,\"stage1\",1,\"온난이류 존재\",[6]],[0,\"925hPa\",2,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 동쪽\",[6]],[0,\"925hPa\",3,1,\"stage1\",1,\"한랭이류 존재\",[6]],[0,\"925hPa\",3,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[6]],[0,\"925hPa\",3,12,\"stage1\",1,\"저층 기압골 존재\",[6]],[0,\"925hPa\",3,12,\"stage2\",1,\"저층 기압골 세부 판독: 위치 서쪽\",[6]],[0,\"925hPa\",3,25,\"stage1\",1,\"습윤역 존재\",[6]],[0,\"925hPa\",3,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 영역 내부\",[6]],[0,\"925hPa\",4,11,\"stage1\",1,\"저층 능선 존재\",[6]],[0,\"925hPa\",4,11,\"stage2\",1,\"저층 능선 세부 판독: 위치 영역 내부\",[6]],[0,\"925hPa\",4,21,\"stage1\",1,\"열적 경도대 존재\",[6]],[0,\"925hPa\",4,21,\"stage2\",1,\"열적 경도대 세부 판독: 강도 약함\",[6]],[0,\"925hPa\",4,24,\"stage1\",1,\"온난이류 존재\",[6]],[0,\"925hPa\",4,24,\"stage2\",1,\"온난이류 세부 판독: 강도 보통\",[6]],[0,\"925hPa\",5,1,\"stage1\",1,\"한랭이류 존재\",[6]],[0,\"925hPa\",5,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[6]],[0,\"925hPa\",5,12,\"stage1\",1,\"저층 기압골 존재\",[6]],[0,\"925hPa\",5,12,\"stage2\",1,\"저층 기압골 세부 판독: 위치 영역 내부\",[6]],[0,\"925hPa\",5,19,\"stage1\",1,\"강풍대 존재\",[6]],[0,\"925hPa\",5,25,\"stage1\",1,\"습윤역 존재\",[6]],[0,\"925hPa\",5,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 동쪽\",[6]],[0,\"925hPa\",6,1,\"stage1\",1,\"한랭이류 존재\",[6]],[0,\"925hPa\",6,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[6]],[0,\"925hPa\",6,12,\"stage1\",1,\"저층 기압골 존재\",[6]],[0,\"925hPa\",6,12,\"stage2\",1,\"저층 기압골 세부 판독: 위치 서쪽\",[6]],[0,\"925hPa\",6,19,\"stage1\",1,\"강풍대 존재\",[6]],[0,\"925hPa\",6,25,\"stage1\",1,\"습윤역 존재\",[6]],[0,\"925hPa\",6,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 동쪽\",[6]],[0,\"925hPa\",7,11,\"stage1\",1,\"저층 능선 존재\",[6]],[0,\"925hPa\",7,11,\"stage2\",1,\"저층 능선 세부 판독: 위치 서쪽\",[6]],[0,\"925hPa\",7,21,\"stage1\",1,\"열적 경도대 존재\",[6]],[0,\"925hPa\",7,24,\"stage1\",1,\"온난이류 존재\",[6]],[0,\"925hPa\",7,24,\"stage2\",1,\"온난이류 세부 판독: 강도 약함\",[6]],[0,\"satellite_wv\",0,3,\"stage2\",1,\"대류운 군집 세부 판독: 규모 광역\",[0]],[0,\"satellite_wv\",0,5,\"stage1\",1,\"저기압성 소용돌이 구름 존재\",[0]],[0,\"satellite_wv\",0,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 북서-남동 방향, 위치 영역 내부\",[0]],[0,\"satellite_wv\",1,3,\"stage1\",1,\"대류운 군집 존재\",[0]],[0,\"satellite_wv\",1,13,\"stage1\",1,\"습윤 기류대 존재\",[0]],[0,\"satellite_wv\",1,23,\"stage2\",2,\"상층 건조역 유입 세부 판독: 강도 보통, 위치 동쪽\",[0]],[0,\"satellite_wv\",2,3,\"stage1\",1,\"대류운 군집 존재\",[0]],[0,\"satellite_wv\",2,5,\"stage2\",1,\"저기압성 소용돌이 구름 세부 판독: 강도 보통\",[0]],[0,\"satellite_wv\",3,0,\"stage1\",1,\"띠구름 존재\",[0]],[0,\"satellite_wv\",3,0,\"stage2\",2,\"띠구름 세부 판독: 방향 동서 방향, 연속성 continuous\",[0]],[0,\"satellite_wv\",3,13,\"stage1\",1,\"습윤 기류대 존재\",[0]],[0,\"satellite_wv\",3,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 북서-남동 방향, 위치 영역 내부\",[0]],[0,\"satellite_wv\",4,3,\"stage1\",1,\"대류운 군집 존재\",[0]],[0,\"satellite_wv\",4,3,\"stage2\",1,\"대류운 군집 세부 판독: 규모 국지\",[0]],[0,\"satellite_wv\",5,3,\"stage1\",1,\"대류운 군집 존재\",[0]],[0,\"satellite_wv\",5,3,\"stage2\",1,\"대류운 군집 세부 판독: 규모 광역\",[0]],[0,\"satellite_wv\",5,13,\"stage1\",1,\"습윤 기류대 존재\",[0]],[0,\"satellite_wv\",5,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 북서-남동 방향, 위치 영역 내부\",[0]],[0,\"satellite_wv\",6,5,\"stage1\",1,\"저기압성 소용돌이 구름 존재\",[0]],[0,\"satellite_wv\",6,5,\"stage2\",1,\"저기압성 소용돌이 구름 세부 판독: 강도 보통\",[0]],[0,\"satellite_wv\",7,3,\"stage2\",1,\"대류운 군집 세부 판독: 규모 광역\",[0]],[0,\"satellite_wv\",7,23,\"stage1\",1,\"상층 건조역 유입 존재\",[0]],[0,\"radar_precipitation\",0,4,\"stage1\",1,\"convective_core 존재\",[2]],[0,\"radar_precipitation\",0,4,\"stage2\",2,\"convective_core 세부 판독: intensity 강함, 규모 clustered\",[2]],[0,\"radar_precipitation\",0,15,\"stage2\",2,\"precip_echo 세부 판독: intensity 강함, 규모 widespread\",[2]],[0,\"radar_precipitation\",0,16,\"stage2\",2,\"rain_band 세부 판독: 방향 북서-남동 방향, 연속성 continuous\",[2]],[0,\"radar_precipitation\",1,4,\"stage2\",2,\"convective_core 세부 판독: intensity 약함, 규모 isolated\",[2]],[0,\"radar_precipitation\",3,4,\"stage1\",1,\"convective_core 존재\",[2]],[0,\"radar_precipitation\",3,15,\"stage1\",1,\"precip_echo 존재\",[2]],[0,\"radar_precipitation\",3,16,\"stage1\",1,\"rain_band 존재\",[2]],[1,\"850hPa\",0,1,\"stage1\",1,\"한랭이류 존재\",[5]],[1,\"850hPa\",0,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[5]],[1,\"850hPa\",0,17,\"stage1\",1,\"능선축 존재\",[5]],[1,\"850hPa\",0,21,\"stage1\",1,\"열적 경도대 존재\",[5]],[1,\"850hPa\",0,22,\"stage1\",1,\"기압골축 존재\",[5]],[1,\"850hPa\",0,22,\"stage2\",1,\"기압골축 세부 판독: 위치 영역 내부\",[5]],[1,\"850hPa\",0,25,\"stage1\",1,\"습윤역 존재\",[5]],[1,\"850hPa\",0,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[5]],[1,\"850hPa\",1,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[5]],[1,\"850hPa\",1,22,\"stage2\",1,\"기압골축 세부 판독: 위치 동쪽\",[5]],[1,\"850hPa\",1,24,\"stage1\",1,\"온난이류 존재\",[5]],[1,\"850hPa\",1,25,\"stage1\",1,\"습윤역 존재\",[5]],[1,\"850hPa\",1,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[5]],[1,\"850hPa\",2,1,\"stage1\",1,\"한랭이류 존재\",[5]],[1,\"850hPa\",2,17,\"stage1\",1,\"능선축 존재\",[5]],[1,\"850hPa\",2,17,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[5]],[1,\"850hPa\",2,24,\"stage2\",1,\"온난이류 세부 판독: 강도 약함\",[5]],[1,\"850hPa\",2,25,\"stage1\",1,\"습윤역 존재\",[5]],[1,\"850hPa\",2,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 서쪽\",[5]],[1,\"850hPa\",3,1,\"stage1\",1,\"한랭이류 존재\",[5]],[1,\"850hPa\",3,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[5]],[1,\"850hPa\",3,22,\"stage1\",1,\"기압골축 존재\",[5]],[1,\"850hPa\",3,22,\"stage2\",1,\"기압골축 세부 판독: 위치 서쪽\",[5]],[1,\"850hPa\",3,25,\"stage1\",1,\"습윤역 존재\",[5]],[1,\"850hPa\",3,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 서쪽\",[5]],[1,\"850hPa\",4,17,\"stage1\",1,\"능선축 존재\",[5]],[1,\"850hPa\",4,17,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[5]],[1,\"850hPa\",4,24,\"stage1\",1,\"온난이류 존재\",[5]],[1,\"850hPa\",4,24,\"stage2\",1,\"온난이류 세부 판독: 강도 약함\",[5]],[1,\"850hPa\",5,1,\"stage1\",1,\"한랭이류 존재\",[5]],[1,\"850hPa\",5,22,\"stage1\",1,\"기압골축 존재\",[5]],[1,\"850hPa\",5,24,\"stage2\",1,\"온난이류 세부 판독: 강도 약함\",[5]],[1,\"850hPa\",5,25,\"stage1\",1,\"습윤역 존재\",[5]],[1,\"850hPa\",5,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 서쪽\",[5]],[1,\"850hPa\",6,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 약함\",[5]],[1,\"850hPa\",6,17,\"stage1\",1,\"능선축 존재\",[5]],[1,\"850hPa\",6,17,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[5]],[1,\"850hPa\",6,21,\"stage2\",1,\"열적 경도대 세부 판독: 강도 보통\",[5]],[1,\"850hPa\",6,22,\"stage2\",1,\"기압골축 세부 판독: 위치 영역 내부\",[5]],[1,\"850hPa\",6,24,\"stage1\",1,\"온난이류 존재\",[5]],[1,\"850hPa\",6,25,\"stage1\",1,\"습윤역 존재\",[5]],[1,\"850hPa\",6,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 영역 내부\",[5]],[1,\"850hPa\",7,1,\"stage1\",1,\"한랭이류 존재\",[5]],[1,\"850hPa\",7,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[5]],[1,\"850hPa\",7,17,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[5]],[1,\"850hPa\",7,22,\"stage1\",1,\"기압골축 존재\",[5]],[1,\"850hPa\",7,25,\"stage1\",1,\"습윤역 존재\",[5]],[1,\"850hPa\",7,25,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 영역 내부\",[5]],[1,\"925hPa\",0,21,\"stage1\",1,\"열적 경도대 존재\",[7]],[1,\"925hPa\",0,25,\"stage1\",1,\"습윤역 존재\",[7]],[1,\"925hPa\",1,19,\"stage1\",1,\"강풍대 존재\",[7]],[1,\"925hPa\",1,25,\"stage1\",1,\"습윤역 존재\",[7]],[1,\"925hPa\",2,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 강함\",[7]],[1,\"925hPa\",2,11,\"stage1\",1,\"저층 능선 존재\",[7]],[1,\"925hPa\",2,12,\"stage2\",1,\"저층 기압골 세부 판독: 위치 영역 내부\",[7]],[1,\"925hPa\",2,19,\"stage2\",1,\"강풍대 세부 판독: 강도 강함\",[7]],[1,\"925hPa\",2,24,\"stage1\",1,\"온난이류 존재\",[7]],[1,\"925hPa\",3,1,\"stage1\",1,\"한랭이류 존재\",[7]],[1,\"925hPa\",3,1,\"stage2\",1,\"한랭이류 세부 판독: 강도 보통\",[7]],[1,\"925hPa\",3,12,\"stage1\",1,\"저층 기압골 존재\",[7]],[1,\"925hPa\",3,12,\"stage2\",1,\"저층 기압골 세부 판독: 위치 영역 내부\",[7]],[1,\"925hPa\",4,25,\"stage1\",1,\"습윤역 존재\",[7]],[1,\"925hPa\",4,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[7]],[1,\"925hPa\",5,19,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[7]],[1,\"925hPa\",5,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 영역 내부\",[7]],[1,\"925hPa\",6,1,\"stage1\",1,\"한랭이류 존재\",[7]],[1,\"925hPa\",6,12,\"stage1\",1,\"저층 기압골 존재\",[7]],[1,\"925hPa\",6,19,\"stage1\",1,\"강풍대 존재\",[7]],[1,\"925hPa\",6,21,\"stage2\",1,\"열적 경도대 세부 판독: 강도 보통\",[7]],[1,\"925hPa\",6,25,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 서쪽\",[7]],[1,\"925hPa\",7,11,\"stage2\",1,\"저층 능선 세부 판독: 위치 서쪽\",[7]],[1,\"925hPa\",7,24,\"stage2\",1,\"온난이류 세부 판독: 강도 약함\",[7]],[1,\"satellite_wv\",0,0,\"stage1\",1,\"띠구름 존재\",[1]],[1,\"satellite_wv\",0,0,\"stage2\",2,\"띠구름 세부 판독: 방향 동서 방향, 연속성 continuous\",[1]],[1,\"satellite_wv\",0,13,\"stage1\",1,\"습윤 기류대 존재\",[1]],[1,\"satellite_wv\",0,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 북서-남동 방향, 위치 서쪽\",[1]],[1,\"satellite_wv\",0,23,\"stage1\",1,\"상층 건조역 유입 존재\",[1]],[1,\"satellite_wv\",1,3,\"stage2\",1,\"대류운 군집 세부 판독: 규모 광역\",[1]],[1,\"satellite_wv\",1,5,\"stage2\",1,\"저기압성 소용돌이 구름 세부 판독: 강도 보통\",[1]],[1,\"satellite_wv\",1,13,\"stage1\",1,\"습윤 기류대 존재\",[1]],[1,\"satellite_wv\",1,23,\"stage1\",1,\"상층 건조역 유입 존재\",[1]],[1,\"satellite_wv\",2,3,\"stage2\",1,\"대류운 군집 세부 판독: 규모 국지\",[1]],[1,\"satellite_wv\",2,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 동서 방향, 위치 동쪽\",[1]],[1,\"satellite_wv\",3,5,\"stage1\",1,\"저기압성 소용돌이 구름 존재\",[1]],[1,\"satellite_wv\",3,5,\"stage2\",1,\"저기압성 소용돌이 구름 세부 판독: 강도 약함\",[1]],[1,\"satellite_wv\",4,3,\"stage1\",1,\"대류운 군집 존재\",[1]],[1,\"satellite_wv\",4,3,\"stage2\",1,\"대류운 군집 세부 판독: 규모 광역\",[1]],[1,\"satellite_wv\",4,13,\"stage1\",1,\"습윤 기류대 존재\",[1]],[1,\"satellite_wv\",4,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 곡선형, 위치 영역 내부\",[1]],[1,\"satellite_wv\",5,0,\"stage1\",1,\"띠구름 존재\",[1]],[1,\"satellite_wv\",5,13,\"stage1\",1,\"습윤 기류대 존재\",[1]],[1,\"satellite_wv\",5,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 남서-북동 방향, 위치 영역 내부\",[1]],[1,\"satellite_wv\",5,23,\"stage2\",2,\"상층 건조역 유입 세부 판독: 강도 보통, 위치 동쪽\",[1]],[1,\"satellite_wv\",6,0,\"stage2\",2,\"띠구름 세부 판독: 방향 남서-북동 방향, 연속성 partial\",[1]],[1,\"satellite_wv\",6,3,\"stage1\",1,\"대류운 군집 존재\",[1]],[1,\"satellite_wv\",6,13,\"stage1\",1,\"습윤 기류대 존재\",[1]],[1,\"satellite_wv\",6,13,\"stage2\",2,\"습윤 기류대 세부 판독: 방향 동서 방향, 위치 동쪽\",[1]],[1,\"satellite_wv\",6,23,\"stage2\",2,\"상층 건조역 유입 세부 판독: 강도 약함, 위치 서쪽\",[1]],[1,\"satellite_wv\",7,3,\"stage1\",1,\"대류운 군집 존재\",[1]],[1,\"satellite_wv\",7,5,\"stage1\",1,\"저기압성 소용돌이 구름 존재\",[1]],[1,\"radar_precipitation\",0,4,\"stage2\",2,\"convective_core 세부 판독: intensity 강함, 규모 clustered\",[3]],[1,\"radar_precipitation\",0,8,\"stage2\",1,\"localized_maxima 세부 판독: distribution clustered\",[3]],[1,\"radar_precipitation\",0,15,\"stage1\",1,\"precip_echo 존재\",[3]],[1,\"radar_precipitation\",0,15,\"stage2\",2,\"precip_echo 세부 판독: intensity 강함, 규모 widespread\",[3]],[1,\"radar_precipitation\",0,16,\"stage2\",2,\"rain_band 세부 판독: 방향 곡선형, 연속성 continuous\",[3]],[1,\"radar_precipitation\",0,18,\"stage1\",1,\"stratiform_area 존재\",[3]],[1,\"radar_precipitation\",1,15,\"stage1\",1,\"precip_echo 존재\",[3]],[1,\"radar_precipitation\",1,15,\"stage2\",2,\"precip_echo 세부 판독: intensity 보통, 규모 scattered\",[3]],[1,\"radar_precipitation\",1,18,\"stage1\",1,\"stratiform_area 존재\",[3]],[1,\"radar_precipitation\",1,18,\"stage2\",1,\"stratiform_area 세부 판독: 규모 광역\",[3]],[1,\"radar_precipitation\",2,4,\"stage1\",1,\"convective_core 존재\",[3]],[1,\"radar_precipitation\",2,8,\"stage1\",1,\"localized_maxima 존재\",[3]],[1,\"radar_precipitation\",2,15,\"stage1\",1,\"precip_echo 존재\",[3]],[1,\"radar_precipitation\",2,15,\"stage2\",2,\"precip_echo 세부 판독: intensity 보통, 규모 scattered\",[3]],[1,\"radar_precipitation\",2,18,\"stage1\",1,\"stratiform_area 존재\",[3]],[1,\"radar_precipitation\",2,18,\"stage2\",1,\"stratiform_area 세부 판독: 규모 광역\",[3]],[1,\"radar_precipitation\",3,4,\"stage1\",1,\"convective_core 존재\",[3]],[1,\"radar_precipitation\",3,8,\"stage1\",1,\"localized_maxima 존재\",[3]],[1,\"radar_precipitation\",3,15,\"stage1\",1,\"precip_echo 존재\",[3]],[1,\"radar_precipitation\",3,15,\"stage2\",2,\"precip_echo 세부 판독: intensity 약함, 규모 isolated\",[3]],[1,\"radar_precipitation\",3,16,\"stage1\",1,\"rain_band 존재\",[3]],[1,\"radar_precipitation\",3,18,\"stage2\",1,\"stratiform_area 세부 판독: 규모 국지\",[3]],[1,\"radar_precipitation\",4,4,\"stage2\",2,\"convective_core 세부 판독: intensity 강함, 규모 clustered\",[3]],[1,\"radar_precipitation\",4,8,\"stage2\",1,\"localized_maxima 세부 판독: distribution multiple\",[3]],[1,\"radar_precipitation\",4,15,\"stage1\",1,\"precip_echo 존재\",[3]],[1,\"radar_precipitation\",4,15,\"stage2\",2,\"precip_echo 세부 판독: intensity 강함, 규모 widespread\",[3]],[1,\"radar_precipitation\",4,18,\"stage1\",1,\"stratiform_area 존재\",[3]],[1,\"radar_precipitation\",4,18,\"stage2\",1,\"stratiform_area 세부 판독: 규모 광범위\",[3]]]}\n"
+  },
+  "response": {
+    "id": "resp_0d43b7e5ff39b9ad0069d890653dac81978999a2f167e17c56",
+    "object": "response",
+    "created_at": 1775800421,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1775800433,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4000,
+    "max_tool_calls": null,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "output": [
+      {
+        "id": "msg_0d43b7e5ff39b9ad0069d89065dc4c8197a0766642ef0e070a",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"run_date\":\"20260409\",\"section_id\":\"precipitation_structure\",\"section_title\":\"강수 구조 해석\",\"events\":[{\"event_id\":\"precipitation_structure_01\",\"section_id\":\"precipitation_structure\",\"event_title\":\"한랭이류와 저층 기압골 존재에 따른 광역 습윤역 형성 및 강수 증대\",\"phase_early\":\"초반에는 850hPa 및 925hPa에서 한랭이류와 저층 기압골이 광역적으로 존재하며 습윤역도 관측되었다.\",\"phase_mid\":\"중반에는 한랭이류가 보통 내지 강하게 나타나고 저층 기압골의 위치가 영역 내부 및 동서로 분포함에 따라 강풍대도 발달해 습윤역이 더욱 광역적으로 확대되었다.\",\"phase_late\":\"후반에는 한랭이류가 유지되고 저층 기압골과 강풍대가 서쪽 중심으로 위치하면서 습윤역 규모는 국지적이나 지속되었다.\",\"causal_link\":\"한랭이류와 저층 기압골에 의한 대기 불안정과 강풍대의 발달이 습윤역의 광역 내지 국지적 확장과 유지에 영향을 주어 강수량 증가를 야기하였다.\",\"regions\":[\"Central Korea\",\"South Korea\",\"한반도 남부\"],\"domains\":[\"850hPa\",\"925hPa\"],\"evidence_refs\":[\"up85_6h_2026040900\",\"up85_6h_2026040912\",\"up92_6h_2026040900\",\"up92_6h_2026040912\"],\"rule_refs\":[\"spring_heat_low_vs_frontal_low\",\"moisture_flux_convergence_focus\",\"skewt_llj_heavy_rain\"],\"confidence\":\"high\"},{\"event_id\":\"precipitation_structure_02\",\"section_id\":\"precipitation_structure\",\"event_title\":\"대류운 군집과 저기압성 소용돌이 구름의 발달에 따른 강한 대류성 강수 구간 형성\",\"phase_early\":\"초반에 위성 수증기 영상에서 대류운 군집과 저기압성 소용돌이 구름이 존재하였다.\",\"phase_mid\":\"중반에는 대류운 군집의 규모가 광역적으로 확대되고 저기압성 소용돌이 구름의 강도가 보통으로 발달하였다.\",\"phase_late\":\"후반에는 대류운 군집이 지속되며 대류핵(convective_core)의 intensity가 강함으로 증가하고 강력한 강수 반향이 형성되었다.\",\"causal_link\":\"대류운 군집과 저기압성 소용돌이 구름의 발달이 강한 대류성 구간의 형성과 집중 강수를 유발하였다.\",\"regions\":[\"Central Korea\",\"South Korea\"],\"domains\":[\"satellite_wv\",\"radar_precipitation\"],\"evidence_refs\":[\"gk2a_le1b_WV063_EA_202604090000\",\"gk2a_le1b_WV063_EA_202604091200\",\"rdr_cmp_cmi_202604090000\",\"rdr_cmp_cmi_202604091200\"],\"rule_refs\":[\"mcs_convective_stratiform_split\",\"squall_line_attention\"],\"confidence\":\"high\"},{\"event_id\":\"precipitation_structure_03\",\"section_id\":\"precipitation_structure\",\"event_title\":\"저층제트와 열적 경도대의 상호작용에 따른 집중 강수대 및 연속성 강수대 형성\",\"phase_early\":\"초반에는 850hPa에서 저층제트가 동서 방향으로 존재하며 열적 경도대 또한 보통 강도로 관측되었다.\",\"phase_mid\":\"중반에는 저층수렴 후보와 능선축이 활성화되고 열적 경도대가 유지되면서 강풍대도 발달하였다.\",\"phase_late\":\"후반에는 연속적 rain_band가 북서-남동 방향으로 발달하며 연속성이 유지되어 집중 강수대가 형성되었다.\",\"causal_link\":\"저층제트와 열적 경도대의 상호작용이 저층 수렴 및 능선축 활성화를 촉진하여 연속적인 강수대를 형성하였다.\",\"regions\":[\"Central Korea\",\"South Korea\"],\"domains\":[\"850hPa\",\"radar_precipitation\"],\"evidence_refs\":[\"up85_6h_2026040900\",\"rdr_cmp_cmi_202604090000\"],\"rule_refs\":[\"llj_broad_rain\",\"jet_coupling_heavy_rain\"],\"confidence\":\"high\"}]}"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "structured_text_response",
+        "schema": {
+          "$id": "timeline_event_list.schema.json",
+          "title": "시간 변화 사건 목록 스키마",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "run_date",
+            "section_id",
+            "section_title",
+            "events"
+          ],
+          "properties": {
+            "run_date": {
+              "type": "string"
+            },
+            "section_id": {
+              "type": "string"
+            },
+            "section_title": {
+              "type": "string"
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "timeline_event.schema.json",
+                "title": "시간 변화 사건 스키마",
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "event_id",
+                  "section_id",
+                  "event_title",
+                  "phase_early",
+                  "phase_mid",
+                  "phase_late",
+                  "causal_link",
+                  "regions",
+                  "domains",
+                  "evidence_refs",
+                  "rule_refs",
+                  "confidence"
+                ],
+                "properties": {
+                  "event_id": {
+                    "type": "string"
+                  },
+                  "section_id": {
+                    "type": "string"
+                  },
+                  "event_title": {
+                    "type": "string"
+                  },
+                  "phase_early": {
+                    "type": "string"
+                  },
+                  "phase_mid": {
+                    "type": "string"
+                  },
+                  "phase_late": {
+                    "type": "string"
+                  },
+                  "causal_link": {
+                    "type": "string"
+                  },
+                  "regions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "domains": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "rule_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "confidence": {
+                    "type": "string",
+                    "enum": [
+                      "low",
+                      "medium",
+                      "high"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 8975,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 999,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 9974
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "parsed_output": {
+    "run_date": "20260409",
+    "section_id": "precipitation_structure",
+    "section_title": "강수 구조 해석",
+    "events": [
+      {
+        "event_id": "precipitation_structure_01",
+        "section_id": "precipitation_structure",
+        "event_title": "한랭이류와 저층 기압골 존재에 따른 광역 습윤역 형성 및 강수 증대",
+        "phase_early": "초반에는 850hPa 및 925hPa에서 한랭이류와 저층 기압골이 광역적으로 존재하며 습윤역도 관측되었다.",
+        "phase_mid": "중반에는 한랭이류가 보통 내지 강하게 나타나고 저층 기압골의 위치가 영역 내부 및 동서로 분포함에 따라 강풍대도 발달해 습윤역이 더욱 광역적으로 확대되었다.",
+        "phase_late": "후반에는 한랭이류가 유지되고 저층 기압골과 강풍대가 서쪽 중심으로 위치하면서 습윤역 규모는 국지적이나 지속되었다.",
+        "causal_link": "한랭이류와 저층 기압골에 의한 대기 불안정과 강풍대의 발달이 습윤역의 광역 내지 국지적 확장과 유지에 영향을 주어 강수량 증가를 야기하였다.",
+        "regions": [
+          "Central Korea",
+          "South Korea",
+          "한반도 남부"
+        ],
+        "domains": [
+          "850hPa",
+          "925hPa"
+        ],
+        "evidence_refs": [
+          "up85_6h_2026040900",
+          "up85_6h_2026040912",
+          "up92_6h_2026040900",
+          "up92_6h_2026040912"
+        ],
+        "rule_refs": [
+          "spring_heat_low_vs_frontal_low",
+          "moisture_flux_convergence_focus",
+          "skewt_llj_heavy_rain"
+        ],
+        "confidence": "high"
+      },
+      {
+        "event_id": "precipitation_structure_02",
+        "section_id": "precipitation_structure",
+        "event_title": "대류운 군집과 저기압성 소용돌이 구름의 발달에 따른 강한 대류성 강수 구간 형성",
+        "phase_early": "초반에 위성 수증기 영상에서 대류운 군집과 저기압성 소용돌이 구름이 존재하였다.",
+        "phase_mid": "중반에는 대류운 군집의 규모가 광역적으로 확대되고 저기압성 소용돌이 구름의 강도가 보통으로 발달하였다.",
+        "phase_late": "후반에는 대류운 군집이 지속되며 대류핵(convective_core)의 intensity가 강함으로 증가하고 강력한 강수 반향이 형성되었다.",
+        "causal_link": "대류운 군집과 저기압성 소용돌이 구름의 발달이 강한 대류성 구간의 형성과 집중 강수를 유발하였다.",
+        "regions": [
+          "Central Korea",
+          "South Korea"
+        ],
+        "domains": [
+          "satellite_wv",
+          "radar_precipitation"
+        ],
+        "evidence_refs": [
+          "gk2a_le1b_WV063_EA_202604090000",
+          "gk2a_le1b_WV063_EA_202604091200",
+          "rdr_cmp_cmi_202604090000",
+          "rdr_cmp_cmi_202604091200"
+        ],
+        "rule_refs": [
+          "mcs_convective_stratiform_split",
+          "squall_line_attention"
+        ],
+        "confidence": "high"
+      },
+      {
+        "event_id": "precipitation_structure_03",
+        "section_id": "precipitation_structure",
+        "event_title": "저층제트와 열적 경도대의 상호작용에 따른 집중 강수대 및 연속성 강수대 형성",
+        "phase_early": "초반에는 850hPa에서 저층제트가 동서 방향으로 존재하며 열적 경도대 또한 보통 강도로 관측되었다.",
+        "phase_mid": "중반에는 저층수렴 후보와 능선축이 활성화되고 열적 경도대가 유지되면서 강풍대도 발달하였다.",
+        "phase_late": "후반에는 연속적 rain_band가 북서-남동 방향으로 발달하며 연속성이 유지되어 집중 강수대가 형성되었다.",
+        "causal_link": "저층제트와 열적 경도대의 상호작용이 저층 수렴 및 능선축 활성화를 촉진하여 연속적인 강수대를 형성하였다.",
+        "regions": [
+          "Central Korea",
+          "South Korea"
+        ],
+        "domains": [
+          "850hPa",
+          "radar_precipitation"
+        ],
+        "evidence_refs": [
+          "up85_6h_2026040900",
+          "rdr_cmp_cmi_202604090000"
+        ],
+        "rule_refs": [
+          "llj_broad_rain",
+          "jet_coupling_heavy_rain"
+        ],
+        "confidence": "high"
+      }
+    ]
+  }
+}

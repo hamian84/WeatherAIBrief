@@ -1,0 +1,267 @@
+{
+  "request": {
+    "model": "gpt-4.1-mini",
+    "max_output_tokens": 4000,
+    "prompt_text": "당신은 기상 실황 브리핑용 시간 변화 사건 추출기다.\n\n목표:\n- 제공된 section_source를 읽고, 이 섹션에서 가장 중요한 시간 변화 사건만 추출한다.\n- 단순 신호 나열이 아니라 \"초반 -> 이후 -> 후반 -> 인과\" 흐름으로 사건을 구성한다.\n\n반드시 지킬 규칙:\n- 출력은 JSON만 반환한다.\n- 사건 개수는 최대 3개다.\n- 중요하지 않은 세부 신호를 모두 나열하지 말고, 큰 흐름을 설명하는 사건만 남긴다.\n- event_title, phase_early, phase_mid, phase_late, causal_link는 모두 한국어 문장으로 작성한다.\n- regions에는 한국어 지역명만 넣는다.\n- domains에는 입력에 있는 도메인 문자열만 넣는다.\n- evidence_refs는 입력 evidence_catalog에 있는 값만 사용한다.\n- rule_refs는 입력 rule_catalog에 있는 rule_id만 사용한다.\n- evidence_refs와 rule_refs는 오탈자 없이 입력 목록의 값을 그대로 복사해서 사용한다.\n- 입력에 없는 현상, 없는 지역, 없는 근거를 추론해서 추가하지 않는다.\n- phase_early, phase_mid, phase_late는 시간 흐름이 드러나야 한다.\n- causal_link는 앞선 구조가 뒤의 현상을 어떻게 만들었는지 설명해야 한다.\n- confidence는 low, medium, high 중 하나만 사용한다.\n- 각 event의 section_id는 \"surface_marine_impacts\"로 고정한다.\n- event_id는 \"surface_marine_impacts_01\", \"surface_marine_impacts_02\" 같은 형식으로 작성한다.\n\n섹션 정보:\n- run_date: 20260409\n- section_id: surface_marine_impacts\n- section_title: 지상 및 해상 영향 해석\n\nsection_source:\n{\"run_date\":\"20260409\",\"section_id\":\"surface_marine_impacts\",\"section_title\":\"지상 및 해상 영향 해석\",\"max_events\":3,\"source_domains\":[\"surface\",\"sfc12h_synoptic\"],\"time_catalog\":[\"2026-04-09 00:00\",\"2026-04-09 12:00\"],\"region_catalog\":[{\"region_id\":\"ecs_north\",\"region_label\":\"동중국해 북부\"},{\"region_id\":\"japan_east_offshore\",\"region_label\":\"일본 동부 해상\"},{\"region_id\":\"japan_w\",\"region_label\":\"일본 서부\"},{\"region_id\":\"kp_north\",\"region_label\":\"한반도 북부\"},{\"region_id\":\"kp_south\",\"region_label\":\"한반도 남부\"},{\"region_id\":\"liao_bohai\",\"region_label\":\"요동반도/발해만\"},{\"region_id\":\"manchuria_s\",\"region_label\":\"만주 남부\"},{\"region_id\":\"ws_mid\",\"region_label\":\"서해 중부\"}],\"signal_catalog\":[{\"signal_key\":\"front\",\"signal_label\":\"전선\"},{\"signal_key\":\"frontal_zone\",\"signal_label\":\"전선대\"},{\"signal_key\":\"gale_wind_area\",\"signal_label\":\"강풍역\"},{\"signal_key\":\"high_center\",\"signal_label\":\"고기압 중심\"},{\"signal_key\":\"low_center\",\"signal_label\":\"저기압 중심\"},{\"signal_key\":\"movement_signal\",\"signal_label\":\"이동 신호\"},{\"signal_key\":\"strong_wind_zone\",\"signal_label\":\"강풍대\"},{\"signal_key\":\"surface_ridge\",\"signal_label\":\"지상 능선\"},{\"signal_key\":\"surface_ridge_axis\",\"signal_label\":\"지상 능선축\"},{\"signal_key\":\"surface_trough\",\"signal_label\":\"지상 기압골\"},{\"signal_key\":\"surface_trough_axis\",\"signal_label\":\"지상 기압골축\"},{\"signal_key\":\"synoptic_high_center\",\"signal_label\":\"종관 규모 고기압 중심\"},{\"signal_key\":\"synoptic_low_center\",\"signal_label\":\"종관 규모 저기압 중심\"},{\"signal_key\":\"tight_pressure_gradient\",\"signal_label\":\"강한 기압경도대\"},{\"signal_key\":\"tight_pressure_gradient_zone\",\"signal_label\":\"기압경도대\"},{\"signal_key\":\"wet_area\",\"signal_label\":\"습윤역\"}],\"evidence_catalog\":[\"surf_12h_2026040900\",\"surf_12h_2026040912\",\"surf_anl_6h_2026040900\",\"surf_anl_6h_2026040912\"],\"rule_catalog\":[{\"rule_id\":\"spring_heat_low_vs_frontal_low\",\"section_no\":1,\"page_range\":\"p.4-11\"},{\"rule_id\":\"summer_monsoon_lowlevel_pattern\",\"section_no\":2,\"page_range\":\"p.12-17\"},{\"rule_id\":\"skewt_llj_heavy_rain\",\"section_no\":5,\"page_range\":\"p.34-43\"},{\"rule_id\":\"front_boundary_identification\",\"section_no\":9,\"page_range\":\"p.68-77\"},{\"rule_id\":\"llj_narrow_convective_rain\",\"section_no\":11,\"page_range\":\"p.84-89\"},{\"rule_id\":\"jet_coupling_heavy_rain\",\"section_no\":13,\"page_range\":\"p.98-101\"},{\"rule_id\":\"changma_like_structure\",\"section_no\":15,\"page_range\":\"p.114-125\"},{\"rule_id\":\"explosive_cyclone_risk\",\"section_no\":24,\"page_range\":\"p.210-217\"}],\"row_fields\":[\"time_idx\",\"domain\",\"region_idx\",\"signal_idx\",\"stage\",\"count\",\"detail_text\",\"evidence_idx_list\"],\"rows\":[[0,\"surface\",0,0,\"stage1\",1,\"전선 존재\",[2]],[0,\"surface\",0,4,\"stage1\",1,\"저기압 중심 존재\",[2]],[0,\"surface\",0,9,\"stage1\",1,\"지상 기압골 존재\",[2]],[0,\"surface\",0,9,\"stage2\",1,\"지상 기압골 세부 판독: 위치 영역 내부\",[2]],[0,\"surface\",0,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",0,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[2]],[0,\"surface\",1,0,\"stage1\",1,\"전선 존재\",[2]],[0,\"surface\",1,3,\"stage2\",1,\"고기압 중심 세부 판독: 위치 서쪽\",[2]],[0,\"surface\",1,4,\"stage1\",1,\"저기압 중심 존재\",[2]],[0,\"surface\",1,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[2]],[0,\"surface\",1,9,\"stage1\",1,\"지상 기압골 존재\",[2]],[0,\"surface\",1,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",1,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 서쪽\",[2]],[0,\"surface\",2,0,\"stage1\",1,\"전선 존재\",[2]],[0,\"surface\",2,3,\"stage2\",1,\"고기압 중심 세부 판독: 위치 영역 내부\",[2]],[0,\"surface\",2,6,\"stage1\",1,\"강풍대 존재\",[2]],[0,\"surface\",2,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",2,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 영역 내부\",[2]],[0,\"surface\",3,0,\"stage1\",1,\"전선 존재\",[2]],[0,\"surface\",3,0,\"stage2\",2,\"전선 세부 판독: 위치 영역 내부, 유형 cold_front\",[2]],[0,\"surface\",3,6,\"stage1\",1,\"강풍대 존재\",[2]],[0,\"surface\",3,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[2]],[0,\"surface\",3,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",3,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 영역 내부\",[2]],[0,\"surface\",4,0,\"stage1\",1,\"전선 존재\",[2]],[0,\"surface\",4,0,\"stage2\",2,\"전선 세부 판독: 위치 영역 내부, 유형 cold_front\",[2]],[0,\"surface\",4,6,\"stage1\",1,\"강풍대 존재\",[2]],[0,\"surface\",4,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[2]],[0,\"surface\",4,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",4,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 영역 내부\",[2]],[0,\"surface\",5,0,\"stage2\",2,\"전선 세부 판독: 위치 영역 내부, 유형 cold_front\",[2]],[0,\"surface\",5,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 영역 내부\",[2]],[0,\"surface\",5,9,\"stage1\",1,\"지상 기압골 존재\",[2]],[0,\"surface\",5,9,\"stage2\",1,\"지상 기압골 세부 판독: 위치 영역 내부\",[2]],[0,\"surface\",5,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",5,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 영역 내부\",[2]],[0,\"surface\",6,0,\"stage2\",2,\"전선 세부 판독: 위치 영역 내부, 유형 cold_front\",[2]],[0,\"surface\",6,3,\"stage1\",1,\"고기압 중심 존재\",[2]],[0,\"surface\",6,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 동쪽\",[2]],[0,\"surface\",6,9,\"stage2\",1,\"지상 기압골 세부 판독: 위치 동쪽\",[2]],[0,\"surface\",6,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",6,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 영역 내부\",[2]],[0,\"surface\",7,0,\"stage2\",2,\"전선 세부 판독: 위치 영역 내부, 유형 cold_front\",[2]],[0,\"surface\",7,3,\"stage1\",1,\"고기압 중심 존재\",[2]],[0,\"surface\",7,6,\"stage1\",1,\"강풍대 존재\",[2]],[0,\"surface\",7,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[2]],[0,\"surface\",7,15,\"stage1\",1,\"습윤역 존재\",[2]],[0,\"surface\",7,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광범위, 위치 영역 내부\",[2]],[0,\"sfc12h_synoptic\",0,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",0,1,\"stage2\",2,\"전선대 세부 판독: 위치 영역 내부, 유형 warm_front\",[0]],[0,\"sfc12h_synoptic\",0,2,\"stage1\",1,\"강풍역 존재\",[0]],[0,\"sfc12h_synoptic\",0,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[0]],[0,\"sfc12h_synoptic\",0,10,\"stage1\",1,\"지상 기압골축 존재\",[0]],[0,\"sfc12h_synoptic\",0,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",0,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",0,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 서쪽\",[0]],[0,\"sfc12h_synoptic\",1,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",1,1,\"stage2\",2,\"전선대 세부 판독: 위치 서쪽, 유형 cold_front\",[0]],[0,\"sfc12h_synoptic\",1,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[0]],[0,\"sfc12h_synoptic\",1,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 서쪽\",[0]],[0,\"sfc12h_synoptic\",1,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",1,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",2,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",2,1,\"stage2\",2,\"전선대 세부 판독: 위치 서쪽, 유형 cold_front\",[0]],[0,\"sfc12h_synoptic\",2,2,\"stage1\",1,\"강풍역 존재\",[0]],[0,\"sfc12h_synoptic\",2,2,\"stage2\",1,\"강풍역 세부 판독: 강도 약함\",[0]],[0,\"sfc12h_synoptic\",2,10,\"stage1\",1,\"지상 기압골축 존재\",[0]],[0,\"sfc12h_synoptic\",2,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 서쪽\",[0]],[0,\"sfc12h_synoptic\",2,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",2,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 서쪽\",[0]],[0,\"sfc12h_synoptic\",3,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",3,1,\"stage2\",2,\"전선대 세부 판독: 위치 영역 내부, 유형 warm_front\",[0]],[0,\"sfc12h_synoptic\",3,2,\"stage1\",1,\"강풍역 존재\",[0]],[0,\"sfc12h_synoptic\",3,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[0]],[0,\"sfc12h_synoptic\",3,10,\"stage1\",1,\"지상 기압골축 존재\",[0]],[0,\"sfc12h_synoptic\",3,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",3,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",3,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",4,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",4,1,\"stage2\",2,\"전선대 세부 판독: 위치 영역 내부, 유형 warm_front\",[0]],[0,\"sfc12h_synoptic\",4,2,\"stage1\",1,\"강풍역 존재\",[0]],[0,\"sfc12h_synoptic\",4,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[0]],[0,\"sfc12h_synoptic\",4,10,\"stage1\",1,\"지상 기압골축 존재\",[0]],[0,\"sfc12h_synoptic\",4,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",4,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",4,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",5,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",5,1,\"stage2\",2,\"전선대 세부 판독: 위치 서쪽, 유형 warm_front\",[0]],[0,\"sfc12h_synoptic\",5,2,\"stage1\",1,\"강풍역 존재\",[0]],[0,\"sfc12h_synoptic\",5,10,\"stage1\",1,\"지상 기압골축 존재\",[0]],[0,\"sfc12h_synoptic\",5,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",5,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 동쪽\",[0]],[0,\"sfc12h_synoptic\",6,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",6,1,\"stage2\",2,\"전선대 세부 판독: 위치 영역 내부, 유형 warm_front\",[0]],[0,\"sfc12h_synoptic\",6,2,\"stage1\",1,\"강풍역 존재\",[0]],[0,\"sfc12h_synoptic\",6,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[0]],[0,\"sfc12h_synoptic\",6,10,\"stage1\",1,\"지상 기압골축 존재\",[0]],[0,\"sfc12h_synoptic\",6,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",6,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",6,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",7,1,\"stage1\",1,\"전선대 존재\",[0]],[0,\"sfc12h_synoptic\",7,1,\"stage2\",2,\"전선대 세부 판독: 위치 영역 내부, 유형 warm_front\",[0]],[0,\"sfc12h_synoptic\",7,2,\"stage1\",1,\"강풍역 존재\",[0]],[0,\"sfc12h_synoptic\",7,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[0]],[0,\"sfc12h_synoptic\",7,10,\"stage1\",1,\"지상 기압골축 존재\",[0]],[0,\"sfc12h_synoptic\",7,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[0]],[0,\"sfc12h_synoptic\",7,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[0]],[0,\"sfc12h_synoptic\",7,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 서쪽\",[0]],[1,\"surface\",0,0,\"stage1\",1,\"전선 존재\",[3]],[1,\"surface\",0,0,\"stage2\",2,\"전선 세부 판독: 위치 동쪽, 유형 cold_front\",[3]],[1,\"surface\",0,3,\"stage2\",1,\"고기압 중심 세부 판독: 위치 서쪽\",[3]],[1,\"surface\",0,4,\"stage1\",1,\"저기압 중심 존재\",[3]],[1,\"surface\",0,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 영역 내부\",[3]],[1,\"surface\",0,6,\"stage1\",1,\"강풍대 존재\",[3]],[1,\"surface\",0,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[3]],[1,\"surface\",0,13,\"stage2\",1,\"강한 기압경도대 세부 판독: 강도 강함\",[3]],[1,\"surface\",0,15,\"stage1\",1,\"습윤역 존재\",[3]],[1,\"surface\",0,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 동쪽\",[3]],[1,\"surface\",1,0,\"stage1\",1,\"전선 존재\",[3]],[1,\"surface\",1,3,\"stage2\",1,\"고기압 중심 세부 판독: 위치 영역 내부\",[3]],[1,\"surface\",1,4,\"stage1\",1,\"저기압 중심 존재\",[3]],[1,\"surface\",1,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[3]],[1,\"surface\",1,7,\"stage2\",1,\"지상 능선 세부 판독: 위치 서쪽\",[3]],[1,\"surface\",1,15,\"stage1\",1,\"습윤역 존재\",[3]],[1,\"surface\",1,15,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 동쪽\",[3]],[1,\"surface\",2,0,\"stage2\",2,\"전선 세부 판독: 위치 동쪽, 유형 cold_front\",[3]],[1,\"surface\",2,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 영역 내부\",[3]],[1,\"surface\",2,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[3]],[1,\"surface\",2,15,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 동쪽\",[3]],[1,\"surface\",3,0,\"stage1\",1,\"전선 존재\",[3]],[1,\"surface\",3,0,\"stage2\",2,\"전선 세부 판독: 위치 서쪽, 유형 cold_front\",[3]],[1,\"surface\",3,4,\"stage1\",1,\"저기압 중심 존재\",[3]],[1,\"surface\",3,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 영역 내부\",[3]],[1,\"surface\",3,6,\"stage1\",1,\"강풍대 존재\",[3]],[1,\"surface\",3,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[3]],[1,\"surface\",3,15,\"stage1\",1,\"습윤역 존재\",[3]],[1,\"surface\",3,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[3]],[1,\"surface\",4,0,\"stage1\",1,\"전선 존재\",[3]],[1,\"surface\",4,0,\"stage2\",2,\"전선 세부 판독: 위치 서쪽, 유형 cold_front\",[3]],[1,\"surface\",4,4,\"stage1\",1,\"저기압 중심 존재\",[3]],[1,\"surface\",4,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 영역 내부\",[3]],[1,\"surface\",4,6,\"stage1\",1,\"강풍대 존재\",[3]],[1,\"surface\",4,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[3]],[1,\"surface\",4,15,\"stage1\",1,\"습윤역 존재\",[3]],[1,\"surface\",4,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[3]],[1,\"surface\",5,0,\"stage1\",1,\"전선 존재\",[3]],[1,\"surface\",5,0,\"stage2\",2,\"전선 세부 판독: 위치 서쪽, 유형 cold_front\",[3]],[1,\"surface\",5,3,\"stage1\",1,\"고기압 중심 존재\",[3]],[1,\"surface\",5,4,\"stage1\",1,\"저기압 중심 존재\",[3]],[1,\"surface\",5,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 동쪽\",[3]],[1,\"surface\",5,6,\"stage1\",1,\"강풍대 존재\",[3]],[1,\"surface\",5,13,\"stage1\",1,\"강한 기압경도대 존재\",[3]],[1,\"surface\",5,15,\"stage1\",1,\"습윤역 존재\",[3]],[1,\"surface\",5,15,\"stage2\",2,\"습윤역 세부 판독: 규모 국지, 위치 영역 내부\",[3]],[1,\"surface\",6,0,\"stage1\",1,\"전선 존재\",[3]],[1,\"surface\",6,0,\"stage2\",2,\"전선 세부 판독: 위치 동쪽, 유형 cold_front\",[3]],[1,\"surface\",6,4,\"stage1\",1,\"저기압 중심 존재\",[3]],[1,\"surface\",6,4,\"stage2\",1,\"저기압 중심 세부 판독: 위치 영역 내부\",[3]],[1,\"surface\",6,6,\"stage1\",1,\"강풍대 존재\",[3]],[1,\"surface\",6,6,\"stage2\",1,\"강풍대 세부 판독: 강도 보통\",[3]],[1,\"surface\",6,15,\"stage1\",1,\"습윤역 존재\",[3]],[1,\"surface\",6,15,\"stage2\",2,\"습윤역 세부 판독: 규모 광역, 위치 영역 내부\",[3]],[1,\"surface\",7,3,\"stage1\",1,\"고기압 중심 존재\",[3]],[1,\"surface\",7,6,\"stage1\",1,\"강풍대 존재\",[3]],[1,\"surface\",7,7,\"stage1\",1,\"지상 능선 존재\",[3]],[1,\"surface\",7,15,\"stage1\",1,\"습윤역 존재\",[3]],[1,\"sfc12h_synoptic\",0,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",0,1,\"stage2\",2,\"전선대 세부 판독: 위치 동쪽, 유형 warm_front\",[1]],[1,\"sfc12h_synoptic\",0,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[1]],[1,\"sfc12h_synoptic\",0,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",0,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 eastward, 속도 등급 보통\",[1]],[1,\"sfc12h_synoptic\",0,10,\"stage1\",1,\"지상 기압골축 존재\",[1]],[1,\"sfc12h_synoptic\",0,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[1]],[1,\"sfc12h_synoptic\",0,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 영역 내부\",[1]],[1,\"sfc12h_synoptic\",1,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",1,1,\"stage2\",2,\"전선대 세부 판독: 위치 영역 내부, 유형 occluded_front\",[1]],[1,\"sfc12h_synoptic\",1,2,\"stage2\",1,\"강풍역 세부 판독: 강도 보통\",[1]],[1,\"sfc12h_synoptic\",1,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",1,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 eastward, 속도 등급 fast\",[1]],[1,\"sfc12h_synoptic\",1,10,\"stage1\",1,\"지상 기압골축 존재\",[1]],[1,\"sfc12h_synoptic\",1,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[1]],[1,\"sfc12h_synoptic\",1,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 서쪽\",[1]],[1,\"sfc12h_synoptic\",2,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",2,1,\"stage2\",2,\"전선대 세부 판독: 위치 동쪽, 유형 stationary_front\",[1]],[1,\"sfc12h_synoptic\",2,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",2,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 eastward, 속도 등급 보통\",[1]],[1,\"sfc12h_synoptic\",2,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 동쪽\",[1]],[1,\"sfc12h_synoptic\",3,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",3,1,\"stage2\",2,\"전선대 세부 판독: 위치 서쪽, 유형 cold_front\",[1]],[1,\"sfc12h_synoptic\",3,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",3,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 northward, 속도 등급 slow\",[1]],[1,\"sfc12h_synoptic\",3,10,\"stage1\",1,\"지상 기압골축 존재\",[1]],[1,\"sfc12h_synoptic\",3,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[1]],[1,\"sfc12h_synoptic\",4,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",4,1,\"stage2\",2,\"전선대 세부 판독: 위치 동쪽, 유형 warm_front\",[1]],[1,\"sfc12h_synoptic\",4,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",4,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 northward, 속도 등급 slow\",[1]],[1,\"sfc12h_synoptic\",4,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[1]],[1,\"sfc12h_synoptic\",4,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 영역 내부\",[1]],[1,\"sfc12h_synoptic\",5,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",5,1,\"stage2\",2,\"전선대 세부 판독: 위치 서쪽, 유형 cold_front\",[1]],[1,\"sfc12h_synoptic\",5,2,\"stage1\",1,\"강풍역 존재\",[1]],[1,\"sfc12h_synoptic\",5,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",5,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 westward, 속도 등급 slow\",[1]],[1,\"sfc12h_synoptic\",5,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[1]],[1,\"sfc12h_synoptic\",5,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[1]],[1,\"sfc12h_synoptic\",5,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 서쪽\",[1]],[1,\"sfc12h_synoptic\",6,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",6,1,\"stage2\",2,\"전선대 세부 판독: 위치 서쪽, 유형 cold_front\",[1]],[1,\"sfc12h_synoptic\",6,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",6,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 westward, 속도 등급 slow\",[1]],[1,\"sfc12h_synoptic\",6,10,\"stage2\",1,\"지상 기압골축 세부 판독: 위치 영역 내부\",[1]],[1,\"sfc12h_synoptic\",6,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[1]],[1,\"sfc12h_synoptic\",6,12,\"stage2\",1,\"종관 규모 저기압 중심 세부 판독: 위치 서쪽\",[1]],[1,\"sfc12h_synoptic\",7,1,\"stage1\",1,\"전선대 존재\",[1]],[1,\"sfc12h_synoptic\",7,1,\"stage2\",2,\"전선대 세부 판독: 위치 서쪽, 유형 cold_front\",[1]],[1,\"sfc12h_synoptic\",7,2,\"stage1\",1,\"강풍역 존재\",[1]],[1,\"sfc12h_synoptic\",7,5,\"stage1\",1,\"이동 신호 존재\",[1]],[1,\"sfc12h_synoptic\",7,5,\"stage2\",2,\"이동 신호 세부 판독: 방향 northward, 속도 등급 slow\",[1]],[1,\"sfc12h_synoptic\",7,12,\"stage1\",1,\"종관 규모 저기압 중심 존재\",[1]]]}\n"
+  },
+  "response": {
+    "id": "resp_014c9078352f14910069d89077759481a2a19f6a268a3da4e5",
+    "object": "response",
+    "created_at": 1775800439,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1775800450,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4000,
+    "max_tool_calls": null,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "output": [
+      {
+        "id": "msg_014c9078352f14910069d89078058c81a29e3a18b4aeb3ceaa",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"run_date\":\"20260409\",\"section_id\":\"surface_marine_impacts\",\"section_title\":\"지상 및 해상 영향 해석\",\"events\":[{\"event_id\":\"surface_marine_impacts_01\",\"section_id\":\"surface_marine_impacts\",\"event_title\":\"한반도 동쪽 및 동중국해 북부 지역에서의 저기압 발달과 전선 이동에 따른 강풍 및 습윤역 확대\",\"phase_early\":\"한반도 동쪽과 동중국해 북부에 저기압 중심이 존재하며, 전선 및 강풍대가 광역에 걸쳐 분포하고 습윤역이 존재한다.\",\"phase_mid\":\"저기압 중심은 영역 내부로 위치하며 강풍대의 강도는 보통 수준을 유지하면서 습윤역이 점차 광역으로 확대되고 전선이 cold_front 유형으로 활성화된다.\",\"phase_late\":\"전선과 강풍대가 동쪽 방향으로 이동하고 습윤역은 광역적으로 계속 유지되며 강한 기압경도대 형성으로 풍속과 강수 가능성이 증가한다.\",\"causal_link\":\"저기압 중심의 발달과 전선의 동쪽 이동은 강풍대 및 습윤역의 확대를 유도하고, 강한 기압경도대의 형성은 해상 및 지상에서의 기상 악화를 촉진한다.\",\"regions\":[\"동중국해 북부\",\"한반도 남부\",\"한반도 북부\",\"서해 중부\"],\"domains\":[\"surface\",\"sfc12h_synoptic\"],\"evidence_refs\":[\"surf_12h_2026040900\",\"surf_12h_2026040912\",\"surf_anl_6h_2026040900\",\"surf_anl_6h_2026040912\"],\"rule_refs\":[\"front_boundary_identification\",\"explosive_cyclone_risk\"],\"confidence\":\"high\"},{\"event_id\":\"surface_marine_impacts_02\",\"section_id\":\"surface_marine_impacts\",\"event_title\":\"전선대 유형 변화와 관련한 해상 강풍 역세의 동반 변화\",\"phase_early\":\"전선대는 동중국해 북부부터 일본 동부 해상까지 다양한 유형(warm_front, cold_front, occluded_front)으로 존재하며, 강풍역은 보통 강도로 분포한다.\",\"phase_mid\":\"전선대 유형 변동에 따라 특히 cold_front와 warm_front 유형이 교차하면서 위치가 북동쪽 및 동쪽으로 이동하고 강풍역의 분포 및 강도에 변화를 준다.\",\"phase_late\":\"이동 신호의 등급이 보통에서 빠른 속도로 변하며 전선대와 강풍역의 동북 방향 이동이 심화되고, 이에 따라 해상 강풍 역세가 지속적으로 유지된다.\",\"causal_link\":\"전선대의 유형 변화 및 이동 속도 증가는 강풍역 분포와 강도에 직접적인 영향을 미쳐 해상 강풍 역세의 발생 및 지속에 기여한다.\",\"regions\":[\"동중국해 북부\",\"일본 동부 해상\",\"일본 서부\"],\"domains\":[\"sfc12h_synoptic\"],\"evidence_refs\":[\"surf_12h_2026040912\"],\"rule_refs\":[\"front_boundary_identification\"],\"confidence\":\"medium\"},{\"event_id\":\"surface_marine_impacts_03\",\"section_id\":\"surface_marine_impacts\",\"event_title\":\"요동반도 및 만주 남부 부근 고기압과 저기압 배치에 따른 기압분포 변화와 기상 영향\",\"phase_early\":\"요동반도와 만주 남부에서 고기압 중심과 저기압 중심이 각각 존재하며 지상 기압골과 능선이 관측된다.\",\"phase_mid\":\"고기압 중심은 위치 내부로 자리잡고, 저기압 중심은 영역 내부로 이동하며 기압골축 또한 영역 내부에 형성된다.\",\"phase_late\":\"기압골과 능선의 위치 변화는 기압경도대를 강화시키고, 이로 인해 기압분포의 변화가 해상 및 인근 육상 기상에 영향을 미친다.\",\"causal_link\":\"고기압과 저기압의 위치 변화는 기압골과 능선의 이동을 유발하며, 이것이 강한 기압경도대 형성과 함께 지역 기상 상황에 변화를 발생시킨다.\",\"regions\":[\"요동반도/발해만\",\"만주 남부\"],\"domains\":[\"surface\"],\"evidence_refs\":[\"surf_12h_2026040912\"],\"rule_refs\":[\"spring_heat_low_vs_frontal_low\"],\"confidence\":\"medium\"}]}"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "structured_text_response",
+        "schema": {
+          "$id": "timeline_event_list.schema.json",
+          "title": "시간 변화 사건 목록 스키마",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "run_date",
+            "section_id",
+            "section_title",
+            "events"
+          ],
+          "properties": {
+            "run_date": {
+              "type": "string"
+            },
+            "section_id": {
+              "type": "string"
+            },
+            "section_title": {
+              "type": "string"
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "timeline_event.schema.json",
+                "title": "시간 변화 사건 스키마",
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "event_id",
+                  "section_id",
+                  "event_title",
+                  "phase_early",
+                  "phase_mid",
+                  "phase_late",
+                  "causal_link",
+                  "regions",
+                  "domains",
+                  "evidence_refs",
+                  "rule_refs",
+                  "confidence"
+                ],
+                "properties": {
+                  "event_id": {
+                    "type": "string"
+                  },
+                  "section_id": {
+                    "type": "string"
+                  },
+                  "event_title": {
+                    "type": "string"
+                  },
+                  "phase_early": {
+                    "type": "string"
+                  },
+                  "phase_mid": {
+                    "type": "string"
+                  },
+                  "phase_late": {
+                    "type": "string"
+                  },
+                  "causal_link": {
+                    "type": "string"
+                  },
+                  "regions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "domains": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "rule_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "confidence": {
+                    "type": "string",
+                    "enum": [
+                      "low",
+                      "medium",
+                      "high"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 7919,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 990,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 8909
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "parsed_output": {
+    "run_date": "20260409",
+    "section_id": "surface_marine_impacts",
+    "section_title": "지상 및 해상 영향 해석",
+    "events": [
+      {
+        "event_id": "surface_marine_impacts_01",
+        "section_id": "surface_marine_impacts",
+        "event_title": "한반도 동쪽 및 동중국해 북부 지역에서의 저기압 발달과 전선 이동에 따른 강풍 및 습윤역 확대",
+        "phase_early": "한반도 동쪽과 동중국해 북부에 저기압 중심이 존재하며, 전선 및 강풍대가 광역에 걸쳐 분포하고 습윤역이 존재한다.",
+        "phase_mid": "저기압 중심은 영역 내부로 위치하며 강풍대의 강도는 보통 수준을 유지하면서 습윤역이 점차 광역으로 확대되고 전선이 cold_front 유형으로 활성화된다.",
+        "phase_late": "전선과 강풍대가 동쪽 방향으로 이동하고 습윤역은 광역적으로 계속 유지되며 강한 기압경도대 형성으로 풍속과 강수 가능성이 증가한다.",
+        "causal_link": "저기압 중심의 발달과 전선의 동쪽 이동은 강풍대 및 습윤역의 확대를 유도하고, 강한 기압경도대의 형성은 해상 및 지상에서의 기상 악화를 촉진한다.",
+        "regions": [
+          "동중국해 북부",
+          "한반도 남부",
+          "한반도 북부",
+          "서해 중부"
+        ],
+        "domains": [
+          "surface",
+          "sfc12h_synoptic"
+        ],
+        "evidence_refs": [
+          "surf_12h_2026040900",
+          "surf_12h_2026040912",
+          "surf_anl_6h_2026040900",
+          "surf_anl_6h_2026040912"
+        ],
+        "rule_refs": [
+          "front_boundary_identification",
+          "explosive_cyclone_risk"
+        ],
+        "confidence": "high"
+      },
+      {
+        "event_id": "surface_marine_impacts_02",
+        "section_id": "surface_marine_impacts",
+        "event_title": "전선대 유형 변화와 관련한 해상 강풍 역세의 동반 변화",
+        "phase_early": "전선대는 동중국해 북부부터 일본 동부 해상까지 다양한 유형(warm_front, cold_front, occluded_front)으로 존재하며, 강풍역은 보통 강도로 분포한다.",
+        "phase_mid": "전선대 유형 변동에 따라 특히 cold_front와 warm_front 유형이 교차하면서 위치가 북동쪽 및 동쪽으로 이동하고 강풍역의 분포 및 강도에 변화를 준다.",
+        "phase_late": "이동 신호의 등급이 보통에서 빠른 속도로 변하며 전선대와 강풍역의 동북 방향 이동이 심화되고, 이에 따라 해상 강풍 역세가 지속적으로 유지된다.",
+        "causal_link": "전선대의 유형 변화 및 이동 속도 증가는 강풍역 분포와 강도에 직접적인 영향을 미쳐 해상 강풍 역세의 발생 및 지속에 기여한다.",
+        "regions": [
+          "동중국해 북부",
+          "일본 동부 해상",
+          "일본 서부"
+        ],
+        "domains": [
+          "sfc12h_synoptic"
+        ],
+        "evidence_refs": [
+          "surf_12h_2026040912"
+        ],
+        "rule_refs": [
+          "front_boundary_identification"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "event_id": "surface_marine_impacts_03",
+        "section_id": "surface_marine_impacts",
+        "event_title": "요동반도 및 만주 남부 부근 고기압과 저기압 배치에 따른 기압분포 변화와 기상 영향",
+        "phase_early": "요동반도와 만주 남부에서 고기압 중심과 저기압 중심이 각각 존재하며 지상 기압골과 능선이 관측된다.",
+        "phase_mid": "고기압 중심은 위치 내부로 자리잡고, 저기압 중심은 영역 내부로 이동하며 기압골축 또한 영역 내부에 형성된다.",
+        "phase_late": "기압골과 능선의 위치 변화는 기압경도대를 강화시키고, 이로 인해 기압분포의 변화가 해상 및 인근 육상 기상에 영향을 미친다.",
+        "causal_link": "고기압과 저기압의 위치 변화는 기압골과 능선의 이동을 유발하며, 이것이 강한 기압경도대 형성과 함께 지역 기상 상황에 변화를 발생시킨다.",
+        "regions": [
+          "요동반도/발해만",
+          "만주 남부"
+        ],
+        "domains": [
+          "surface"
+        ],
+        "evidence_refs": [
+          "surf_12h_2026040912"
+        ],
+        "rule_refs": [
+          "spring_heat_low_vs_frontal_low"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  }
+}

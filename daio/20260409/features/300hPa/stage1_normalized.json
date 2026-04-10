@@ -1,0 +1,1946 @@
+{
+  "manifest_id": "synoptic_300hPa_stage1",
+  "domain": "300hPa",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "records": [
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "There is a jet axis and jet core visible in Manchuria South.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "There is a jet axis and jet core visible in Manchuria South.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "There is a jet axis and jet core visible in Manchuria South.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__confluent_flow",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "confluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "There is a jet axis and jet core visible in Manchuria South.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "There is a jet axis and jet core visible in Manchuria South.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Both jet axis and jet core signals are present in Northern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Both jet axis and jet core signals are present in Northern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Both jet axis and jet core signals are present in Northern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__confluent_flow",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "confluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Both jet axis and jet core signals are present in Northern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Both jet axis and jet core signals are present in Northern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis and core found in Southern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis and core found in Southern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis and core found in Southern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__confluent_flow",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "confluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis and core found in Southern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis and core found in Southern Korean Peninsula.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__subtropical_jet_axis",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "subtropical_jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "subtropical_jet_axis",
+        "jet_core",
+        "upper_ridge",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet core observed in Northern East China Sea with no subtropical jet axis or ridge.",
+      "selected_answers": [
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "subtropical_jet_axis",
+        "jet_core",
+        "upper_ridge",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet core observed in Northern East China Sea with no subtropical jet axis or ridge.",
+      "selected_answers": [
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__upper_ridge",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "upper_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "subtropical_jet_axis",
+        "jet_core",
+        "upper_ridge",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet core observed in Northern East China Sea with no subtropical jet axis or ridge.",
+      "selected_answers": [
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Western Japan area shows jet axis and jet core but no diffluent flow.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Western Japan area shows jet axis and jet core but no diffluent flow.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Western Japan area shows jet axis and jet core but no diffluent flow.",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis detected east offshore of Japan but no jet core or upper trough.",
+      "selected_answers": [
+        "jet_axis"
+      ],
+      "selected_signal_keys": [
+        "jet_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis detected east offshore of Japan but no jet core or upper trough.",
+      "selected_answers": [
+        "jet_axis"
+      ],
+      "selected_signal_keys": [
+        "jet_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "Jet axis detected east offshore of Japan but no jet core or upper trough.",
+      "selected_answers": [
+        "jet_axis"
+      ],
+      "selected_signal_keys": [
+        "jet_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_tibet_n_signal_bundle__polar_jet_axis",
+      "bundle_question_id": "stage1_tibet_n_signal_bundle",
+      "region_id": "tibet_n",
+      "region_label": "티베트고원 북쪽",
+      "signal_key": "polar_jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "polar_jet_axis",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "note": "No polar jet axis signal identified in Northern Tibet region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__confluent_flow",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "confluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__confluent_flow",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "confluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__confluent_flow",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "confluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "confluent_flow",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__subtropical_jet_axis",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "subtropical_jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "subtropical_jet_axis",
+        "jet_core",
+        "upper_ridge",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "subtropical_jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_core",
+        "subtropical_jet_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "subtropical_jet_axis",
+        "jet_core",
+        "upper_ridge",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "subtropical_jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_core",
+        "subtropical_jet_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__upper_ridge",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "upper_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "subtropical_jet_axis",
+        "jet_core",
+        "upper_ridge",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "subtropical_jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_core",
+        "subtropical_jet_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__diffluent_flow",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "diffluent_flow",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "diffluent_flow",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__jet_axis",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__jet_core",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "jet_core",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__upper_trough",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "upper_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "jet_axis",
+        "jet_core",
+        "upper_trough",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "selected_signal_keys": [
+        "jet_axis",
+        "jet_core"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_300hPa_stage1",
+      "domain": "300hPa",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_tibet_n_signal_bundle__polar_jet_axis",
+      "bundle_question_id": "stage1_tibet_n_signal_bundle",
+      "region_id": "tibet_n",
+      "region_label": "티베트고원 북쪽",
+      "signal_key": "polar_jet_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "polar_jet_axis",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "note": "",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    }
+  ]
+}

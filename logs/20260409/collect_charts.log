@@ -1,0 +1,96 @@
+2026-04-10 11:51:27,173 [INFO] chart collection start: input=2026040900 storage_date=20260409
+2026-04-10 11:51:27,173 [INFO] log file: logs\20260409\collect_charts.log
+2026-04-10 11:51:27,179 [INFO] selected synoptic UTC: 2026-04-09 00:00 UTC
+2026-04-10 11:51:27,179 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 11:51:27,180 [INFO] download request: file=surf_12h_2026040900.png url=https://www.weather.go.kr/w/repositary/image/cht/img/surf_2026040900.png
+2026-04-10 11:51:27,444 [INFO] download complete: file=surf_12h_2026040900.png size=842299
+2026-04-10 11:51:27,445 [INFO] download request: file=sfc3_3h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_sfc3_anlden_pa4_2026040900.gif
+2026-04-10 11:51:27,544 [INFO] download complete: file=sfc3_3h_2026040900.gif size=187159
+2026-04-10 11:51:27,545 [INFO] download request: file=up92_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up92_anlmod_pa4_2026040900.gif
+2026-04-10 11:51:27,630 [INFO] download complete: file=up92_6h_2026040900.gif size=176787
+2026-04-10 11:51:27,630 [INFO] download request: file=up85_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up85_anlmod_pa4_2026040900.gif
+2026-04-10 11:51:27,747 [INFO] download complete: file=up85_6h_2026040900.gif size=177825
+2026-04-10 11:51:27,748 [INFO] download request: file=up70_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up70_anlmod_pa4_2026040900.gif
+2026-04-10 11:51:27,834 [INFO] download complete: file=up70_6h_2026040900.gif size=154877
+2026-04-10 11:51:27,835 [INFO] download request: file=up50_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up50_anlmod_pa4_2026040900.gif
+2026-04-10 11:51:28,355 [INFO] download complete: file=up50_6h_2026040900.gif size=150921
+2026-04-10 11:51:28,357 [INFO] download request: file=up30_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up30_anlmod_pa4_2026040900.gif
+2026-04-10 11:51:28,452 [INFO] download complete: file=up30_6h_2026040900.gif size=173110
+2026-04-10 11:51:28,453 [INFO] download request: file=up20_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up20_anlmod_pa4_2026040900.gif
+2026-04-10 11:51:28,525 [INFO] download complete: file=up20_6h_2026040900.gif size=167059
+2026-04-10 11:51:28,526 [INFO] download request: file=up10_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up10_anlmod_pa4_2026040900.gif
+2026-04-10 11:51:28,623 [INFO] download complete: file=up10_6h_2026040900.gif size=134400
+2026-04-10 11:51:28,624 [INFO] download request: file=surf_anl_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_surf_newsur_pa4_2026040900.gif
+2026-04-10 11:51:28,732 [INFO] download complete: file=surf_anl_6h_2026040900.gif size=175742
+2026-04-10 11:51:28,732 [INFO] download request: file=kor1_anl_1h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040900.gif
+2026-04-10 11:51:28,783 [WARNING] non-image response: content-type=text/html;charset=utf-8 url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040900.gif
+2026-04-10 11:51:28,784 [INFO] download request: file=n500_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_n500_anlmod_pb4_2026040900.gif
+2026-04-10 11:51:28,889 [INFO] download complete: file=n500_6h_2026040900.gif size=237147
+2026-04-10 11:51:28,889 [INFO] download request: file=n500_dif_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_n500_difmod_pb4_2026040900.gif
+2026-04-10 11:51:28,983 [INFO] download complete: file=n500_dif_6h_2026040900.gif size=283066
+2026-04-10 11:51:28,984 [INFO] download request: file=gdps_axfe01_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_gdps_anal_axfe01_pb4_2026040900.gif
+2026-04-10 11:51:29,111 [INFO] download complete: file=gdps_axfe01_6h_2026040900.gif size=475702
+2026-04-10 11:51:29,111 [INFO] download request: file=gdps_axfe02_6h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_gdps_anal_axfe02_pb4_2026040900.gif
+2026-04-10 11:51:29,252 [INFO] download complete: file=gdps_axfe02_6h_2026040900.gif size=526366
+2026-04-10 11:51:29,252 [INFO] downloads completed: 14
+2026-04-10 11:51:29,252 [WARNING] download failures: 1
+2026-04-10 11:51:29,337 [WARNING] optional charts missing: 1
+2026-04-10 11:51:29,337 [INFO] primary verification passed
+2026-04-10 11:52:52,888 [INFO] chart collection start: input=2026040912 storage_date=20260409
+2026-04-10 11:52:52,889 [INFO] log file: logs\20260409\collect_charts.log
+2026-04-10 11:52:52,890 [INFO] selected synoptic UTC: 2026-04-09 12:00 UTC
+2026-04-10 11:52:52,890 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 11:52:52,891 [INFO] download request: file=surf_12h_2026040912.png url=https://www.weather.go.kr/w/repositary/image/cht/img/surf_2026040912.png
+2026-04-10 11:52:53,076 [INFO] download complete: file=surf_12h_2026040912.png size=809956
+2026-04-10 11:52:53,077 [INFO] download request: file=sfc3_3h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_sfc3_anlden_pa4_2026040912.gif
+2026-04-10 11:52:53,133 [INFO] download complete: file=sfc3_3h_2026040912.gif size=183701
+2026-04-10 11:52:53,133 [INFO] download request: file=up92_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up92_anlmod_pa4_2026040912.gif
+2026-04-10 11:52:53,223 [INFO] download complete: file=up92_6h_2026040912.gif size=171395
+2026-04-10 11:52:53,224 [INFO] download request: file=up85_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up85_anlmod_pa4_2026040912.gif
+2026-04-10 11:52:53,311 [INFO] download complete: file=up85_6h_2026040912.gif size=171737
+2026-04-10 11:52:53,312 [INFO] download request: file=up70_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up70_anlmod_pa4_2026040912.gif
+2026-04-10 11:52:53,416 [INFO] download complete: file=up70_6h_2026040912.gif size=148620
+2026-04-10 11:52:53,417 [INFO] download request: file=up50_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up50_anlmod_pa4_2026040912.gif
+2026-04-10 11:52:53,518 [INFO] download complete: file=up50_6h_2026040912.gif size=147033
+2026-04-10 11:52:53,519 [INFO] download request: file=up30_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up30_anlmod_pa4_2026040912.gif
+2026-04-10 11:52:53,623 [INFO] download complete: file=up30_6h_2026040912.gif size=165271
+2026-04-10 11:52:53,624 [INFO] download request: file=up20_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up20_anlmod_pa4_2026040912.gif
+2026-04-10 11:52:53,698 [INFO] download complete: file=up20_6h_2026040912.gif size=163641
+2026-04-10 11:52:53,698 [INFO] download request: file=up10_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_up10_anlmod_pa4_2026040912.gif
+2026-04-10 11:52:53,777 [INFO] download complete: file=up10_6h_2026040912.gif size=129636
+2026-04-10 11:52:53,778 [INFO] download request: file=surf_anl_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_surf_newsur_pa4_2026040912.gif
+2026-04-10 11:52:53,885 [INFO] download complete: file=surf_anl_6h_2026040912.gif size=164893
+2026-04-10 11:52:53,886 [INFO] download request: file=kor1_anl_1h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040912.gif
+2026-04-10 11:52:53,953 [WARNING] non-image response: content-type=text/html;charset=utf-8 url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040912.gif
+2026-04-10 11:52:53,953 [INFO] download request: file=n500_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_n500_anlmod_pb4_2026040912.gif
+2026-04-10 11:52:54,118 [INFO] download complete: file=n500_6h_2026040912.gif size=232727
+2026-04-10 11:52:54,119 [INFO] download request: file=n500_dif_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_n500_difmod_pb4_2026040912.gif
+2026-04-10 11:52:54,234 [INFO] download complete: file=n500_dif_6h_2026040912.gif size=279455
+2026-04-10 11:52:54,235 [INFO] download request: file=gdps_axfe01_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_gdps_anal_axfe01_pb4_2026040912.gif
+2026-04-10 11:52:54,375 [INFO] download complete: file=gdps_axfe01_6h_2026040912.gif size=478767
+2026-04-10 11:52:54,376 [INFO] download request: file=gdps_axfe02_6h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kim_gdps_anal_axfe02_pb4_2026040912.gif
+2026-04-10 11:52:54,498 [INFO] download complete: file=gdps_axfe02_6h_2026040912.gif size=525182
+2026-04-10 11:52:54,498 [INFO] downloads completed: 14
+2026-04-10 11:52:54,498 [WARNING] download failures: 1
+2026-04-10 11:52:54,501 [WARNING] optional charts missing: 1
+2026-04-10 11:52:54,501 [INFO] primary verification passed
+2026-04-10 13:03:10,297 [INFO] chart collection start: input=2026040900 storage_date=20260409
+2026-04-10 13:03:10,297 [INFO] log file: logs\20260409\collect_charts.log
+2026-04-10 13:03:10,298 [INFO] selected synoptic UTC: 2026-04-09 00:00 UTC
+2026-04-10 13:03:10,298 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 13:03:10,300 [INFO] download request: file=kor1_anl_1h_2026040900.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040900.gif
+2026-04-10 13:03:10,395 [WARNING] non-image response: content-type=text/html;charset=utf-8 url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040900.gif
+2026-04-10 13:03:10,396 [INFO] downloads completed: 0
+2026-04-10 13:03:10,396 [WARNING] download failures: 1
+2026-04-10 13:03:10,399 [WARNING] optional charts missing: 1
+2026-04-10 13:03:10,399 [INFO] primary verification passed
+2026-04-10 13:03:17,421 [INFO] chart collection start: input=2026040912 storage_date=20260409
+2026-04-10 13:03:17,422 [INFO] log file: logs\20260409\collect_charts.log
+2026-04-10 13:03:17,422 [INFO] selected synoptic UTC: 2026-04-09 12:00 UTC
+2026-04-10 13:03:17,423 [INFO] selection mode: explicit_utc_cycle
+2026-04-10 13:03:17,424 [INFO] download request: file=kor1_anl_1h_2026040912.gif url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040912.gif
+2026-04-10 13:03:17,566 [WARNING] non-image response: content-type=text/html;charset=utf-8 url=https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040912.gif
+2026-04-10 13:03:17,567 [INFO] downloads completed: 0
+2026-04-10 13:03:17,567 [WARNING] download failures: 1
+2026-04-10 13:03:17,569 [WARNING] optional charts missing: 1
+2026-04-10 13:03:17,570 [INFO] primary verification passed

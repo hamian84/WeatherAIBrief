@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "expected_total": 15,
+  "found_total": 14,
+  "expected_required_total": 6,
+  "found_required_total": 6,
+  "expected_optional_total": 9,
+  "found_optional_total": 8,
+  "missing_items": [],
+  "optional_missing_items": [
+    {
+      "name": "kor1_anl_1h",
+      "yyyymmddHH": "2026040912",
+      "filename": "kor1_anl_1h_2026040912.gif",
+      "url": "https://www.weather.go.kr/w/repositary/image/cht/img/kor1_anlmod_pb4_2026040912.gif"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "run_date": "20260409",
+  "section_id": "precipitation_structure",
+  "section_title": "강수 구조 해석",
+  "events": [
+    {
+      "event_id": "precipitation_structure_01",
+      "section_id": "precipitation_structure",
+      "event_title": "한랭이류와 저층 기압골 존재에 따른 광역 습윤역 형성 및 강수 증대",
+      "phase_early": "초반에는 850hPa 및 925hPa에서 한랭이류와 저층 기압골이 광역적으로 존재하며 습윤역도 관측되었다.",
+      "phase_mid": "중반에는 한랭이류가 보통 내지 강하게 나타나고 저층 기압골의 위치가 영역 내부 및 동서로 분포함에 따라 강풍대도 발달해 습윤역이 더욱 광역적으로 확대되었다.",
+      "phase_late": "후반에는 한랭이류가 유지되고 저층 기압골과 강풍대가 서쪽 중심으로 위치하면서 습윤역 규모는 국지적이나 지속되었다.",
+      "causal_link": "한랭이류와 저층 기압골에 의한 대기 불안정과 강풍대의 발달이 습윤역의 광역 내지 국지적 확장과 유지에 영향을 주어 강수량 증가를 야기하였다.",
+      "regions": [
+        "Central Korea",
+        "South Korea",
+        "한반도 남부"
+      ],
+      "domains": [
+        "850hPa",
+        "925hPa"
+      ],
+      "evidence_refs": [
+        "up85_6h_2026040900",
+        "up85_6h_2026040912",
+        "up92_6h_2026040900",
+        "up92_6h_2026040912"
+      ],
+      "rule_refs": [
+        "spring_heat_low_vs_frontal_low",
+        "moisture_flux_convergence_focus",
+        "skewt_llj_heavy_rain"
+      ],
+      "confidence": "high"
+    },
+    {
+      "event_id": "precipitation_structure_02",
+      "section_id": "precipitation_structure",
+      "event_title": "대류운 군집과 저기압성 소용돌이 구름의 발달에 따른 강한 대류성 강수 구간 형성",
+      "phase_early": "초반에 위성 수증기 영상에서 대류운 군집과 저기압성 소용돌이 구름이 존재하였다.",
+      "phase_mid": "중반에는 대류운 군집의 규모가 광역적으로 확대되고 저기압성 소용돌이 구름의 강도가 보통으로 발달하였다.",
+      "phase_late": "후반에는 대류운 군집이 지속되며 대류핵(convective_core)의 intensity가 강함으로 증가하고 강력한 강수 반향이 형성되었다.",
+      "causal_link": "대류운 군집과 저기압성 소용돌이 구름의 발달이 강한 대류성 구간의 형성과 집중 강수를 유발하였다.",
+      "regions": [
+        "Central Korea",
+        "South Korea"
+      ],
+      "domains": [
+        "satellite_wv",
+        "radar_precipitation"
+      ],
+      "evidence_refs": [
+        "gk2a_le1b_WV063_EA_202604090000",
+        "gk2a_le1b_WV063_EA_202604091200",
+        "rdr_cmp_cmi_202604090000",
+        "rdr_cmp_cmi_202604091200"
+      ],
+      "rule_refs": [
+        "mcs_convective_stratiform_split",
+        "squall_line_attention"
+      ],
+      "confidence": "high"
+    },
+    {
+      "event_id": "precipitation_structure_03",
+      "section_id": "precipitation_structure",
+      "event_title": "저층제트와 열적 경도대의 상호작용에 따른 집중 강수대 및 연속성 강수대 형성",
+      "phase_early": "초반에는 850hPa에서 저층제트가 동서 방향으로 존재하며 열적 경도대 또한 보통 강도로 관측되었다.",
+      "phase_mid": "중반에는 저층수렴 후보와 능선축이 활성화되고 열적 경도대가 유지되면서 강풍대도 발달하였다.",
+      "phase_late": "후반에는 연속적 rain_band가 북서-남동 방향으로 발달하며 연속성이 유지되어 집중 강수대가 형성되었다.",
+      "causal_link": "저층제트와 열적 경도대의 상호작용이 저층 수렴 및 능선축 활성화를 촉진하여 연속적인 강수대를 형성하였다.",
+      "regions": [
+        "Central Korea",
+        "South Korea"
+      ],
+      "domains": [
+        "850hPa",
+        "radar_precipitation"
+      ],
+      "evidence_refs": [
+        "up85_6h_2026040900",
+        "rdr_cmp_cmi_202604090000"
+      ],
+      "rule_refs": [
+        "llj_broad_rain",
+        "jet_coupling_heavy_rain"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

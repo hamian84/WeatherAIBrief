@@ -1,0 +1,36 @@
+2026-04-10 11:51:25,542 [INFO] run_collection_stage_start: input=20260409 storage_date=20260409 expanded_inputs=2026040900,2026040912
+2026-04-10 11:51:25,542 [INFO] log_file: logs\20260409\run_collection_stage.log
+2026-04-10 11:51:25,542 [INFO] collection_step_start: collect_asos:2026040900
+2026-04-10 11:51:26,870 [INFO] collection_step_done: collect_asos:2026040900 (elapsed=1.33s)
+2026-04-10 11:51:26,871 [INFO] collection_step_start: collect_charts:2026040900
+2026-04-10 11:51:29,354 [INFO] collection_step_done: collect_charts:2026040900 (elapsed=2.48s)
+2026-04-10 11:51:29,355 [INFO] collection_step_start: collect_satellite:2026040900
+2026-04-10 11:52:50,129 [INFO] collection_step_done: collect_satellite:2026040900 (elapsed=80.77s)
+2026-04-10 11:52:50,129 [INFO] collection_step_start: collect_radar:2026040900
+2026-04-10 11:52:50,555 [INFO] collection_step_done: collect_radar:2026040900 (elapsed=0.43s)
+2026-04-10 11:52:50,555 [INFO] collection_step_start: collect_asos:2026040912
+2026-04-10 11:52:52,724 [INFO] collection_step_done: collect_asos:2026040912 (elapsed=2.17s)
+2026-04-10 11:52:52,724 [INFO] collection_step_start: collect_charts:2026040912
+2026-04-10 11:52:54,515 [INFO] collection_step_done: collect_charts:2026040912 (elapsed=1.79s)
+2026-04-10 11:52:54,515 [INFO] collection_step_start: collect_satellite:2026040912
+2026-04-10 11:53:08,812 [INFO] collection_step_done: collect_satellite:2026040912 (elapsed=14.30s)
+2026-04-10 11:53:08,812 [INFO] collection_step_start: collect_radar:2026040912
+2026-04-10 11:53:09,420 [INFO] collection_step_done: collect_radar:2026040912 (elapsed=0.61s)
+2026-04-10 13:03:09,420 [INFO] run_collection_stage_start: input=20260409 storage_date=20260409 expanded_inputs=2026040900,2026040912
+2026-04-10 13:03:09,420 [INFO] log_file: logs\20260409\run_collection_stage.log
+2026-04-10 13:03:09,420 [INFO] collection_step_start: collect_asos:2026040900
+2026-04-10 13:03:10,134 [INFO] collection_step_done: collect_asos:2026040900 (elapsed=0.71s)
+2026-04-10 13:03:10,134 [INFO] collection_step_start: collect_charts:2026040900
+2026-04-10 13:03:10,415 [INFO] collection_step_done: collect_charts:2026040900 (elapsed=0.28s)
+2026-04-10 13:03:10,415 [INFO] collection_step_start: collect_satellite:2026040900
+2026-04-10 13:03:16,558 [INFO] collection_step_done: collect_satellite:2026040900 (elapsed=6.14s)
+2026-04-10 13:03:16,558 [INFO] collection_step_start: collect_radar:2026040900
+2026-04-10 13:03:16,731 [INFO] collection_step_done: collect_radar:2026040900 (elapsed=0.17s)
+2026-04-10 13:03:16,731 [INFO] collection_step_start: collect_asos:2026040912
+2026-04-10 13:03:17,269 [INFO] collection_step_done: collect_asos:2026040912 (elapsed=0.54s)
+2026-04-10 13:03:17,269 [INFO] collection_step_start: collect_charts:2026040912
+2026-04-10 13:03:17,585 [INFO] collection_step_done: collect_charts:2026040912 (elapsed=0.32s)
+2026-04-10 13:03:17,585 [INFO] collection_step_start: collect_satellite:2026040912
+2026-04-10 13:03:17,850 [INFO] collection_step_done: collect_satellite:2026040912 (elapsed=0.26s)
+2026-04-10 13:03:17,850 [INFO] collection_step_start: collect_radar:2026040912
+2026-04-10 13:03:18,019 [INFO] collection_step_done: collect_radar:2026040912 (elapsed=0.17s)

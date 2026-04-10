@@ -1,0 +1,5914 @@
+{
+  "manifest_id": "synoptic_sfc12h_stage1",
+  "domain": "sfc12h_synoptic",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "records": [
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040900.png",
+      "image_ref": "surf_12h_2026040900",
+      "note": "",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure centered around Manchuria South with frontal zone and trough; arrows indicate movement.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone near Liaodong Peninsula/Bohai; trough axis present; movement indicated.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone visible in West Sea Mid-region with wind arrows indicating movement.",
+      "selected_answers": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Frontal zone and surface trough axis crossing Northern Korea Peninsula; movement signal seen.",
+      "selected_answers": [
+        "frontal_zone",
+        "surface_trough_axis",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "surface_trough_axis"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure center, frontal zone, and movement signal present over Southern Korean Peninsula.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low pressure and frontal zone over Northern East China Sea with gale area indicated by shaded region and movement signal.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal",
+        "gale_wind_area"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center and frontal zone west of Japan with movement signals over the area.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__synoptic_low_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "synoptic_low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__synoptic_high_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "synoptic_high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__frontal_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "frontal_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_trough_axis",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_trough_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_ridge_axis",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_ridge_axis",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__gale_wind_area",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "gale_wind_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__tight_pressure_gradient_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "tight_pressure_gradient_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_sfc12h_stage1",
+      "domain": "sfc12h_synoptic",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__movement_signal",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "movement_signal",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "synoptic_low_center",
+        "synoptic_high_center",
+        "frontal_zone",
+        "surface_trough_axis",
+        "surface_ridge_axis",
+        "gale_wind_area",
+        "tight_pressure_gradient_zone",
+        "movement_signal",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_12h_2026040912.png",
+      "image_ref": "surf_12h_2026040912",
+      "note": "Low center offshore east of Japan with frontal zone, gale wind area, and movement signals.",
+      "selected_answers": [
+        "synoptic_low_center",
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal"
+      ],
+      "selected_signal_keys": [
+        "frontal_zone",
+        "gale_wind_area",
+        "movement_signal",
+        "synoptic_low_center"
+      ],
+      "none_selected": false
+    }
+  ]
+}

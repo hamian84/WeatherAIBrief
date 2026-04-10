@@ -1,0 +1,269 @@
+{
+  "request": {
+    "model": "gpt-4.1-mini",
+    "max_output_tokens": 4000,
+    "prompt_text": "당신은 기상 실황 브리핑용 시간 변화 사건 추출기다.\n\n목표:\n- 제공된 section_source를 읽고, 이 섹션에서 가장 중요한 시간 변화 사건만 추출한다.\n- 단순 신호 나열이 아니라 \"초반 -> 이후 -> 후반 -> 인과\" 흐름으로 사건을 구성한다.\n\n반드시 지킬 규칙:\n- 출력은 JSON만 반환한다.\n- 사건 개수는 최대 3개다.\n- 중요하지 않은 세부 신호를 모두 나열하지 말고, 큰 흐름을 설명하는 사건만 남긴다.\n- event_title, phase_early, phase_mid, phase_late, causal_link는 모두 한국어 문장으로 작성한다.\n- regions에는 한국어 지역명만 넣는다.\n- domains에는 입력에 있는 도메인 문자열만 넣는다.\n- evidence_refs는 입력 evidence_catalog에 있는 값만 사용한다.\n- rule_refs는 입력 rule_catalog에 있는 rule_id만 사용한다.\n- evidence_refs와 rule_refs는 오탈자 없이 입력 목록의 값을 그대로 복사해서 사용한다.\n- 입력에 없는 현상, 없는 지역, 없는 근거를 추론해서 추가하지 않는다.\n- phase_early, phase_mid, phase_late는 시간 흐름이 드러나야 한다.\n- causal_link는 앞선 구조가 뒤의 현상을 어떻게 만들었는지 설명해야 한다.\n- confidence는 low, medium, high 중 하나만 사용한다.\n- 각 event의 section_id는 \"synoptic_analysis\"로 고정한다.\n- event_id는 \"synoptic_analysis_01\", \"synoptic_analysis_02\" 같은 형식으로 작성한다.\n\n섹션 정보:\n- run_date: 20260409\n- section_id: synoptic_analysis\n- section_title: 종관 해석\n\nsection_source:\n{\"run_date\":\"20260409\",\"section_id\":\"synoptic_analysis\",\"section_title\":\"종관 해석\",\"max_events\":3,\"source_domains\":[\"300hPa\",\"500hPa\"],\"time_catalog\":[\"2026-04-09 00:00\",\"2026-04-09 12:00\"],\"region_catalog\":[{\"region_id\":\"ecs_north\",\"region_label\":\"동중국해 북부\"},{\"region_id\":\"es_n\",\"region_label\":\"동해 북부\"},{\"region_id\":\"japan_east_offshore\",\"region_label\":\"일본 동부 해상\"},{\"region_id\":\"japan_w\",\"region_label\":\"일본 서부\"},{\"region_id\":\"kp_ne\",\"region_label\":\"한반도 북동\"},{\"region_id\":\"kp_north\",\"region_label\":\"한반도 북부\"},{\"region_id\":\"kp_nw\",\"region_label\":\"한반도 북서\"},{\"region_id\":\"kp_se\",\"region_label\":\"한반도 남동\"},{\"region_id\":\"kp_south\",\"region_label\":\"한반도 남부\"},{\"region_id\":\"kp_sw\",\"region_label\":\"한반도 남서\"},{\"region_id\":\"liao_bohai\",\"region_label\":\"요동반도/발해만\"},{\"region_id\":\"manchuria_s\",\"region_label\":\"만주 남부\"},{\"region_id\":\"tibet_n\",\"region_label\":\"티베트고원 북쪽\"},{\"region_id\":\"ws_n\",\"region_label\":\"서해 북부\"}],\"signal_catalog\":[{\"signal_key\":\"closed_cyclonic_circulation\",\"signal_label\":\"폐합성 저기압성 순환\"},{\"signal_key\":\"cold_core\",\"signal_label\":\"한랭핵\"},{\"signal_key\":\"confluent_flow\",\"signal_label\":\"합류형 흐름\"},{\"signal_key\":\"diffluent_flow\",\"signal_label\":\"분류형 흐름\"},{\"signal_key\":\"influencing_jet_type\",\"signal_label\":\"영향 제트 유형\"},{\"signal_key\":\"jet_axis\",\"signal_label\":\"제트축\"},{\"signal_key\":\"jet_core\",\"signal_label\":\"제트코어\"},{\"signal_key\":\"polar_jet_axis\",\"signal_label\":\"한대제트축\"},{\"signal_key\":\"ridge_axis\",\"signal_label\":\"능선축\"},{\"signal_key\":\"subtropical_jet_axis\",\"signal_label\":\"아열대제트축\"},{\"signal_key\":\"tight_height_gradient\",\"signal_label\":\"강한 고도경도대\"},{\"signal_key\":\"trough_axis\",\"signal_label\":\"기압골축\"},{\"signal_key\":\"upper_ridge\",\"signal_label\":\"상층 능선\"},{\"signal_key\":\"upper_trough\",\"signal_label\":\"상층 기압골\"}],\"evidence_catalog\":[\"up30_6h_2026040900\",\"up30_6h_2026040912\",\"up50_6h_2026040900\",\"up50_6h_2026040912\"],\"rule_catalog\":[{\"rule_id\":\"spring_heat_low_vs_frontal_low\",\"section_no\":1,\"page_range\":\"p.4-11\"},{\"rule_id\":\"upper_difffluence_heavy_rain\",\"section_no\":2,\"page_range\":\"p.12-17\"},{\"rule_id\":\"jet_coupling_heavy_rain\",\"section_no\":13,\"page_range\":\"p.98-101\"},{\"rule_id\":\"upper_jet_quadrant_selection\",\"section_no\":13,\"page_range\":\"p.98-101\"},{\"rule_id\":\"changma_like_structure\",\"section_no\":15,\"page_range\":\"p.114-125\"},{\"rule_id\":\"changma_vertical_shear_support\",\"section_no\":15,\"page_range\":\"p.114-125\"},{\"rule_id\":\"hail_cold_core_shear\",\"section_no\":23,\"page_range\":\"p.200-209\"},{\"rule_id\":\"explosive_cyclone_risk\",\"section_no\":24,\"page_range\":\"p.210-217\"}],\"row_fields\":[\"time_idx\",\"domain\",\"region_idx\",\"signal_idx\",\"stage\",\"count\",\"detail_text\",\"evidence_idx_list\"],\"rows\":[[0,\"300hPa\",0,5,\"stage1\",1,\"제트축 존재\",[0]],[0,\"300hPa\",0,6,\"stage1\",1,\"제트코어 존재\",[0]],[0,\"300hPa\",0,6,\"stage2\",1,\"제트코어 세부 판독: 강도 강함\",[0]],[0,\"300hPa\",1,5,\"stage1\",1,\"제트축 존재\",[0]],[0,\"300hPa\",1,5,\"stage2\",2,\"제트축 세부 판독: 방향 동서 방향, 위치 서쪽\",[0]],[0,\"300hPa\",1,6,\"stage1\",1,\"제트코어 존재\",[0]],[0,\"300hPa\",2,5,\"stage1\",1,\"제트축 존재\",[0]],[0,\"300hPa\",2,5,\"stage2\",2,\"제트축 세부 판독: 방향 곡선형, 위치 영역 내부\",[0]],[0,\"300hPa\",2,6,\"stage1\",1,\"제트코어 존재\",[0]],[0,\"300hPa\",2,6,\"stage2\",1,\"제트코어 세부 판독: 강도 보통\",[0]],[0,\"300hPa\",3,4,\"stage2\",1,\"영향 제트 유형 세부 판독: 제트 유형 mixed\",[0]],[0,\"300hPa\",3,5,\"stage2\",2,\"제트축 세부 판독: 방향 북서-남동 방향, 위치 영역 내부\",[0]],[0,\"300hPa\",3,6,\"stage1\",1,\"제트코어 존재\",[0]],[0,\"300hPa\",3,6,\"stage2\",1,\"제트코어 세부 판독: 강도 보통\",[0]],[0,\"300hPa\",4,4,\"stage2\",1,\"영향 제트 유형 세부 판독: 제트 유형 subtropical_jet\",[0]],[0,\"300hPa\",4,5,\"stage1\",1,\"제트축 존재\",[0]],[0,\"300hPa\",4,5,\"stage2\",2,\"제트축 세부 판독: 방향 북서-남동 방향, 위치 동쪽\",[0]],[0,\"300hPa\",4,6,\"stage1\",1,\"제트코어 존재\",[0]],[0,\"300hPa\",4,6,\"stage2\",1,\"제트코어 세부 판독: 강도 약함\",[0]],[0,\"300hPa\",5,5,\"stage1\",1,\"제트축 존재\",[0]],[0,\"300hPa\",5,5,\"stage2\",2,\"제트축 세부 판독: 방향 남서-북동 방향, 위치 서쪽\",[0]],[0,\"300hPa\",5,6,\"stage2\",1,\"제트코어 세부 판독: 강도 강함\",[0]],[0,\"500hPa\",0,1,\"stage1\",1,\"한랭핵 존재\",[2]],[0,\"500hPa\",0,8,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[2]],[0,\"500hPa\",0,11,\"stage1\",1,\"기압골축 존재\",[2]],[0,\"500hPa\",1,1,\"stage2\",2,\"한랭핵 세부 판독: 강도 보통, 규모 국지\",[2]],[0,\"500hPa\",1,8,\"stage1\",1,\"능선축 존재\",[2]],[0,\"500hPa\",1,11,\"stage2\",1,\"기압골축 세부 판독: 위치 서쪽\",[2]],[0,\"500hPa\",2,8,\"stage1\",1,\"능선축 존재\",[2]],[0,\"500hPa\",2,8,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[2]],[0,\"500hPa\",3,8,\"stage1\",1,\"능선축 존재\",[2]],[0,\"500hPa\",3,8,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[2]],[0,\"500hPa\",4,0,\"stage2\",1,\"폐합성 저기압성 순환 세부 판독: 강도 보통\",[2]],[0,\"500hPa\",4,1,\"stage2\",2,\"한랭핵 세부 판독: 강도 강함, 규모 광역\",[2]],[0,\"500hPa\",4,10,\"stage2\",1,\"강한 고도경도대 세부 판독: 강도 강함\",[2]],[0,\"500hPa\",4,11,\"stage1\",1,\"기압골축 존재\",[2]],[0,\"500hPa\",5,0,\"stage2\",1,\"폐합성 저기압성 순환 세부 판독: 강도 보통\",[2]],[0,\"500hPa\",6,0,\"stage1\",1,\"폐합성 저기압성 순환 존재\",[2]],[0,\"500hPa\",6,1,\"stage1\",1,\"한랭핵 존재\",[2]],[0,\"500hPa\",6,10,\"stage1\",1,\"강한 고도경도대 존재\",[2]],[0,\"500hPa\",6,11,\"stage2\",1,\"기압골축 세부 판독: 위치 영역 내부\",[2]],[0,\"500hPa\",7,0,\"stage1\",1,\"폐합성 저기압성 순환 존재\",[2]],[1,\"300hPa\",0,5,\"stage1\",1,\"제트축 존재\",[1]],[1,\"300hPa\",0,6,\"stage1\",1,\"제트코어 존재\",[1]],[1,\"300hPa\",0,6,\"stage2\",1,\"제트코어 세부 판독: 강도 보통\",[1]],[1,\"300hPa\",0,9,\"stage2\",1,\"아열대제트축 세부 판독: 강도 보통\",[1]],[1,\"300hPa\",1,5,\"stage1\",1,\"제트축 존재\",[1]],[1,\"300hPa\",1,5,\"stage2\",2,\"제트축 세부 판독: 방향 북서-남동 방향, 위치 영역 내부\",[1]],[1,\"300hPa\",1,6,\"stage1\",1,\"제트코어 존재\",[1]],[1,\"300hPa\",1,6,\"stage2\",1,\"제트코어 세부 판독: 강도 강함\",[1]],[1,\"300hPa\",2,5,\"stage1\",1,\"제트축 존재\",[1]],[1,\"300hPa\",2,5,\"stage2\",2,\"제트축 세부 판독: 방향 북서-남동 방향, 위치 영역 내부\",[1]],[1,\"300hPa\",2,6,\"stage1\",1,\"제트코어 존재\",[1]],[1,\"300hPa\",2,6,\"stage2\",1,\"제트코어 세부 판독: 강도 보통\",[1]],[1,\"300hPa\",3,4,\"stage2\",1,\"영향 제트 유형 세부 판독: 제트 유형 mixed\",[1]],[1,\"300hPa\",3,5,\"stage2\",2,\"제트축 세부 판독: 방향 동서 방향, 위치 서쪽\",[1]],[1,\"300hPa\",3,6,\"stage1\",1,\"제트코어 존재\",[1]],[1,\"300hPa\",3,6,\"stage2\",1,\"제트코어 세부 판독: 강도 보통\",[1]],[1,\"300hPa\",3,9,\"stage1\",1,\"아열대제트축 존재\",[1]],[1,\"300hPa\",4,4,\"stage2\",1,\"영향 제트 유형 세부 판독: 제트 유형 mixed\",[1]],[1,\"300hPa\",4,5,\"stage1\",1,\"제트축 존재\",[1]],[1,\"300hPa\",4,5,\"stage2\",2,\"제트축 세부 판독: 방향 동서 방향, 위치 영역 내부\",[1]],[1,\"300hPa\",4,6,\"stage1\",1,\"제트코어 존재\",[1]],[1,\"300hPa\",4,6,\"stage2\",1,\"제트코어 세부 판독: 강도 보통\",[1]],[1,\"300hPa\",5,5,\"stage1\",1,\"제트축 존재\",[1]],[1,\"300hPa\",5,5,\"stage2\",2,\"제트축 세부 판독: 방향 동서 방향, 위치 서쪽\",[1]],[1,\"300hPa\",5,6,\"stage1\",1,\"제트코어 존재\",[1]],[1,\"300hPa\",5,6,\"stage2\",1,\"제트코어 세부 판독: 강도 보통\",[1]],[1,\"500hPa\",0,0,\"stage1\",1,\"폐합성 저기압성 순환 존재\",[3]],[1,\"500hPa\",0,8,\"stage1\",1,\"능선축 존재\",[3]],[1,\"500hPa\",0,8,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[3]],[1,\"500hPa\",1,0,\"stage2\",1,\"폐합성 저기압성 순환 세부 판독: 강도 약함\",[3]],[1,\"500hPa\",1,8,\"stage1\",1,\"능선축 존재\",[3]],[1,\"500hPa\",1,8,\"stage2\",1,\"능선축 세부 판독: 위치 영역 내부\",[3]],[1,\"500hPa\",2,11,\"stage2\",1,\"기압골축 세부 판독: 위치 서쪽\",[3]],[1,\"500hPa\",3,11,\"stage1\",1,\"기압골축 존재\",[3]],[1,\"500hPa\",4,8,\"stage1\",1,\"능선축 존재\",[3]],[1,\"500hPa\",4,8,\"stage2\",1,\"능선축 세부 판독: 위치 서쪽\",[3]],[1,\"500hPa\",4,10,\"stage2\",1,\"강한 고도경도대 세부 판독: 강도 보통\",[3]],[1,\"500hPa\",5,0,\"stage2\",1,\"폐합성 저기압성 순환 세부 판독: 강도 약함\",[3]],[1,\"500hPa\",5,1,\"stage1\",1,\"한랭핵 존재\",[3]],[1,\"500hPa\",6,8,\"stage1\",1,\"능선축 존재\",[3]],[1,\"500hPa\",6,8,\"stage2\",1,\"능선축 세부 판독: 위치 서쪽\",[3]],[1,\"500hPa\",6,10,\"stage1\",1,\"강한 고도경도대 존재\",[3]],[1,\"500hPa\",7,0,\"stage1\",1,\"폐합성 저기압성 순환 존재\",[3]],[1,\"500hPa\",7,1,\"stage2\",2,\"한랭핵 세부 판독: 강도 보통, 규모 광역\",[3]]]}\n"
+  },
+  "response": {
+    "id": "resp_02ac62ee2db6be580069d8904a4f38819d98ccbbaffafc4e14",
+    "object": "response",
+    "created_at": 1775800394,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1775800414,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4000,
+    "max_tool_calls": null,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "output": [
+      {
+        "id": "msg_02ac62ee2db6be580069d8904b30a8819dae3ea5310b24322e",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"run_date\":\"20260409\",\"section_id\":\"synoptic_analysis\",\"section_title\":\"종관 해석\",\"events\":[{\"event_id\":\"synoptic_analysis_01\",\"section_id\":\"synoptic_analysis\",\"event_title\":\"한반도 인근 상층 제트코어 강도 변화와 위치 변동\",\"phase_early\":\"00시 기준으로 동중국해 북부와 한반도 주변 300hPa에서 제트축과 제트코어가 존재하며, 일부 지역에서 강한 제트코어가 관측되었다.\",\"phase_mid\":\"12시에는 제트축의 방향이 일부 지역에서 동서 방향에서 북서-남동 방향으로 변하며 제트코어 강도가 변하였다.\",\"phase_late\":\"이러한 제트코어 강도 및 위치 변화는 한반도 전역 및 동중국해 북부 지역의 대기 흐름에 영향을 미쳐 중규모 기압계 발전을 유도하였다.\",\"causal_link\":\"초반에 강한 제트코어가 한반도 북서지역에 위치함에 따라 상층 기압골과 능선 배치가 변동되어 제트코어의 위치와 강도가 바뀌면서 한반도 주변 대기 불안정성이 확대되었다.\",\"regions\":[\"동중국해 북부\",\"한반도 북서\",\"한반도 북부\",\"한반도 남서\"],\"domains\":[\"300hPa\"],\"evidence_refs\":[\"up30_6h_2026040900\",\"up30_6h_2026040912\"],\"rule_refs\":[\"upper_jet_quadrant_selection\",\"jet_coupling_heavy_rain\"],\"confidence\":\"high\"},{\"event_id\":\"synoptic_analysis_02\",\"section_id\":\"synoptic_analysis\",\"event_title\":\"500hPa 폐합성 저기압과 한랭핵의 강도 변화 및 지역 확대\",\"phase_early\":\"00시 기준으로 한반도 남부와 만주 남부 일대에 폐합성 저기압과 한랭핵이 각각 보통 및 강한 강도로 존재하였다.\",\"phase_mid\":\"12시에는 폐합성 저기압이 약화하였으나 한랭핵은 규모가 광역으로 확대되고 강도도 유지 또는 증가하였다.\",\"phase_late\":\"한랭핵의 확대와 폐합성 저기압 강도 변화는 500hPa 레벨에서 강한 고도경도대를 형성하며 한반도 주변 대기 불안정을 증가시켰다.\",\"causal_link\":\"초기의 폐합성 저기압 활성화가 한랭핵의 광역적 확장과 결합하여 기압골과 능선, 고도경도대 강화를 초래하였고, 이로 인한 대기 불안정성 증대가 연결된다.\",\"regions\":[\"한반도 남부\",\"만주 남부\",\"요동반도/발해만\"],\"domains\":[\"500hPa\"],\"evidence_refs\":[\"up50_6h_2026040900\",\"up50_6h_2026040912\"],\"rule_refs\":[\"explosive_cyclone_risk\",\"hail_cold_core_shear\"],\"confidence\":\"high\"},{\"event_id\":\"synoptic_analysis_03\",\"section_id\":\"synoptic_analysis\",\"event_title\":\"아열대 제트축과 한대 제트축의 상호 작용 현상\",\"phase_early\":\"00시에는 일본 동부 해상과 동중국해 북부 300hPa 레벨에서 아열대 제트축과 한대 제트축이 혼재되어 관측되었다.\",\"phase_mid\":\"12시에는 양 제트축의 위치와 강도가 변동하며, 일부 지역에서 혼합 제트 유형이 우세해졌다.\",\"phase_late\":\"제트축의 다양화와 강도 변화는 일본 서부 및 동해 북부 지역에 기압골과 능선형 특성 변화를 유발하였다.\",\"causal_link\":\"아열대 제트축과 한대 제트축이 상호작용하며 제트축 방향성과 강도에 변화를 주어 중규모 기압계의 형성과 변동에 영향을 주었다.\",\"regions\":[\"일본 동부 해상\",\"일본 서부\",\"동해 북부\"],\"domains\":[\"300hPa\"],\"evidence_refs\":[\"up30_6h_2026040900\",\"up30_6h_2026040912\"],\"rule_refs\":[\"spring_heat_low_vs_frontal_low\",\"upper_difffluence_heavy_rain\"],\"confidence\":\"medium\"}]}"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "structured_text_response",
+        "schema": {
+          "$id": "timeline_event_list.schema.json",
+          "title": "시간 변화 사건 목록 스키마",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "run_date",
+            "section_id",
+            "section_title",
+            "events"
+          ],
+          "properties": {
+            "run_date": {
+              "type": "string"
+            },
+            "section_id": {
+              "type": "string"
+            },
+            "section_title": {
+              "type": "string"
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "$id": "timeline_event.schema.json",
+                "title": "시간 변화 사건 스키마",
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "event_id",
+                  "section_id",
+                  "event_title",
+                  "phase_early",
+                  "phase_mid",
+                  "phase_late",
+                  "causal_link",
+                  "regions",
+                  "domains",
+                  "evidence_refs",
+                  "rule_refs",
+                  "confidence"
+                ],
+                "properties": {
+                  "event_id": {
+                    "type": "string"
+                  },
+                  "section_id": {
+                    "type": "string"
+                  },
+                  "event_title": {
+                    "type": "string"
+                  },
+                  "phase_early": {
+                    "type": "string"
+                  },
+                  "phase_mid": {
+                    "type": "string"
+                  },
+                  "phase_late": {
+                    "type": "string"
+                  },
+                  "causal_link": {
+                    "type": "string"
+                  },
+                  "regions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "domains": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "evidence_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "rule_refs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "confidence": {
+                    "type": "string",
+                    "enum": [
+                      "low",
+                      "medium",
+                      "high"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 4076,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 974,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 5050
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "parsed_output": {
+    "run_date": "20260409",
+    "section_id": "synoptic_analysis",
+    "section_title": "종관 해석",
+    "events": [
+      {
+        "event_id": "synoptic_analysis_01",
+        "section_id": "synoptic_analysis",
+        "event_title": "한반도 인근 상층 제트코어 강도 변화와 위치 변동",
+        "phase_early": "00시 기준으로 동중국해 북부와 한반도 주변 300hPa에서 제트축과 제트코어가 존재하며, 일부 지역에서 강한 제트코어가 관측되었다.",
+        "phase_mid": "12시에는 제트축의 방향이 일부 지역에서 동서 방향에서 북서-남동 방향으로 변하며 제트코어 강도가 변하였다.",
+        "phase_late": "이러한 제트코어 강도 및 위치 변화는 한반도 전역 및 동중국해 북부 지역의 대기 흐름에 영향을 미쳐 중규모 기압계 발전을 유도하였다.",
+        "causal_link": "초반에 강한 제트코어가 한반도 북서지역에 위치함에 따라 상층 기압골과 능선 배치가 변동되어 제트코어의 위치와 강도가 바뀌면서 한반도 주변 대기 불안정성이 확대되었다.",
+        "regions": [
+          "동중국해 북부",
+          "한반도 북서",
+          "한반도 북부",
+          "한반도 남서"
+        ],
+        "domains": [
+          "300hPa"
+        ],
+        "evidence_refs": [
+          "up30_6h_2026040900",
+          "up30_6h_2026040912"
+        ],
+        "rule_refs": [
+          "upper_jet_quadrant_selection",
+          "jet_coupling_heavy_rain"
+        ],
+        "confidence": "high"
+      },
+      {
+        "event_id": "synoptic_analysis_02",
+        "section_id": "synoptic_analysis",
+        "event_title": "500hPa 폐합성 저기압과 한랭핵의 강도 변화 및 지역 확대",
+        "phase_early": "00시 기준으로 한반도 남부와 만주 남부 일대에 폐합성 저기압과 한랭핵이 각각 보통 및 강한 강도로 존재하였다.",
+        "phase_mid": "12시에는 폐합성 저기압이 약화하였으나 한랭핵은 규모가 광역으로 확대되고 강도도 유지 또는 증가하였다.",
+        "phase_late": "한랭핵의 확대와 폐합성 저기압 강도 변화는 500hPa 레벨에서 강한 고도경도대를 형성하며 한반도 주변 대기 불안정을 증가시켰다.",
+        "causal_link": "초기의 폐합성 저기압 활성화가 한랭핵의 광역적 확장과 결합하여 기압골과 능선, 고도경도대 강화를 초래하였고, 이로 인한 대기 불안정성 증대가 연결된다.",
+        "regions": [
+          "한반도 남부",
+          "만주 남부",
+          "요동반도/발해만"
+        ],
+        "domains": [
+          "500hPa"
+        ],
+        "evidence_refs": [
+          "up50_6h_2026040900",
+          "up50_6h_2026040912"
+        ],
+        "rule_refs": [
+          "explosive_cyclone_risk",
+          "hail_cold_core_shear"
+        ],
+        "confidence": "high"
+      },
+      {
+        "event_id": "synoptic_analysis_03",
+        "section_id": "synoptic_analysis",
+        "event_title": "아열대 제트축과 한대 제트축의 상호 작용 현상",
+        "phase_early": "00시에는 일본 동부 해상과 동중국해 북부 300hPa 레벨에서 아열대 제트축과 한대 제트축이 혼재되어 관측되었다.",
+        "phase_mid": "12시에는 양 제트축의 위치와 강도가 변동하며, 일부 지역에서 혼합 제트 유형이 우세해졌다.",
+        "phase_late": "제트축의 다양화와 강도 변화는 일본 서부 및 동해 북부 지역에 기압골과 능선형 특성 변화를 유발하였다.",
+        "causal_link": "아열대 제트축과 한대 제트축이 상호작용하며 제트축 방향성과 강도에 변화를 주어 중규모 기압계의 형성과 변동에 영향을 주었다.",
+        "regions": [
+          "일본 동부 해상",
+          "일본 서부",
+          "동해 북부"
+        ],
+        "domains": [
+          "300hPa"
+        ],
+        "evidence_refs": [
+          "up30_6h_2026040900",
+          "up30_6h_2026040912"
+        ],
+        "rule_refs": [
+          "spring_heat_low_vs_frontal_low",
+          "upper_difffluence_heavy_rain"
+        ],
+        "confidence": "medium"
+      }
+    ]
+  }
+}

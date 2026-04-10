@@ -1,0 +1,74 @@
+{
+  "run_date": "20260409",
+  "section_id": "overall_summary",
+  "section_title": "전체 개황",
+  "events": [
+    {
+      "event_id": "overall_summary_01",
+      "section_id": "overall_summary",
+      "event_title": "한반도 주변에서 강한 제트 스트림과 저기압 순환의 형성 및 이동",
+      "phase_early": "00시 기준으로 한반도 주변 300hPa 고도에서 강한 제트코어와 제트축이 동서 및 북서-남동 방향으로 내포되어 있다.",
+      "phase_mid": "12시 경에 제트코어 강도가 일부 지역에서 강해지고, 저기압 중심과 폐합성 저기압성 순환이 영역 내부 및 서쪽에 위치하며 강한 고도경도대도 존재한다.",
+      "phase_late": "이로 인해 한반도 북서 및 북동 지역까지 강풍대와 한랭핵이 광역에 걸쳐 확장되고, 저층에서는 한랭이류와 온난이류가 공존하며 복잡한 기압골과 능선축이 이어진다.",
+      "causal_link": "상층 제트 스트림의 강화와 폐합성 저기압성 순환의 발달이 지상 저기압 및 기압골 형성을 촉진하여, 한반도 전역에 걸쳐 강풍대와 한랭 및 온난 이류가 나타난 것이다.",
+      "regions": [
+        "한반도 북서",
+        "한반도 북동",
+        "한반도 북부",
+        "한반도 남서",
+        "한반도 남부"
+      ],
+      "domains": [
+        "300hPa",
+        "500hPa",
+        "850hPa",
+        "925hPa",
+        "surface"
+      ],
+      "evidence_refs": [
+        "up30_6h_2026040900",
+        "up50_6h_2026040900",
+        "up85_6h_2026040900",
+        "up92_6h_2026040900",
+        "surf_12h_2026040900",
+        "surf_anl_6h_2026040900"
+      ],
+      "rule_refs": [
+        "jet_coupling_heavy_rain",
+        "explosive_cyclone_risk"
+      ],
+      "confidence": "high"
+    },
+    {
+      "event_id": "overall_summary_02",
+      "section_id": "overall_summary",
+      "event_title": "한반도에 광역 대류운 군집과 광범위 습윤 기류대의 진입과 강수 전개",
+      "phase_early": "초기에는 한반도 서쪽과 북서 지역에 광역 대류운 군집이 발달하며 북서-남동 방향으로 습윤 기류대가 진입한다.",
+      "phase_mid": "12시 경에는 대류운 군집의 규모가 광역으로 지속 확대되고 습윤 기류대 또한 한반도 전역에 걸쳐 내부에 분포하며, 저기압성 소용돌이 구름이 동반된다.",
+      "phase_late": "이 영향으로 한반도 전역과 동해 북부까지 강한 집중 강수대와 강풍역이 형성되어, 광범위한 강수 및 대기 불안정이 심화된다.",
+      "causal_link": "습윤 기류대와 대류운 군집의 진입 및 강화가 저기압성 소용돌이와 결합하면서, 한반도 및 인근 해상에 집중 강수대와 강풍대를 조성한 것으로 분석된다.",
+      "regions": [
+        "한반도 북서",
+        "한반도 북동",
+        "한반도 북부",
+        "Central Korea",
+        "East Sea"
+      ],
+      "domains": [
+        "satellite_wv",
+        "radar_precipitation",
+        "surface"
+      ],
+      "evidence_refs": [
+        "gk2a_le1b_WV063_EA_202604090000",
+        "rdr_cmp_cmi_202604090000",
+        "surf_12h_2026040900"
+      ],
+      "rule_refs": [
+        "mcs_convective_stratiform_split",
+        "skewt_llj_heavy_rain"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

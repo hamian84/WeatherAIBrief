@@ -1,0 +1,679 @@
+{
+  "manifest_id": "synoptic_500hPa_stage1",
+  "domain": "500hPa",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": null,
+  "prompt_table_mode": "stage1_bundle",
+  "images": [
+    {
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040900.gif",
+      "image_ref": "up50_6h_2026040900",
+      "valid_time": "2026040900",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 2862,
+      "prompt_table_mode": "stage1_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_kp_nw_signal_bundle",
+          "region_id": "kp_nw",
+          "region_label": "한반도 북서",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_ne_signal_bundle",
+          "region_id": "kp_ne",
+          "region_label": "한반도 북동",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_sw_signal_bundle",
+          "region_id": "kp_sw",
+          "region_label": "한반도 남서",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_se_signal_bundle",
+          "region_id": "kp_se",
+          "region_label": "한반도 남동",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_n_signal_bundle",
+          "region_id": "ws_n",
+          "region_label": "서해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_es_n_signal_bundle",
+          "region_id": "es_n",
+          "region_label": "동해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_signal_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_signal_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 2100,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 402,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2502
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up50_6h_2026040900.gif",
+          "prompt_text": "You are extracting stage1 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every question_id exactly once.\nNever omit a question_id and never repeat a question_id.\nselected_answers must contain unique values only.\nEvery selected_answers value must be exactly one of the allowed_answers values.\nIf none is selected, selected_answers must be exactly ['none'].\nNever mix none with any other signal.\nBad example: ['none', 'ridge_axis']\nGood example 1: ['none']\nGood example 2: ['ridge_axis', 'warm_advection']\nmanifest_id=synoptic_500hPa_stage1\ndomain=500hPa\nstage=stage1\nimage_ref=up50_6h_2026040900\nvalid_time=2026040900\nBundles:\n1. question_id=stage1_kp_nw_signal_bundle | region_id=kp_nw | region_label=한반도 북서 | lat_range=37~40N | lon_range=124~127E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n2. question_id=stage1_kp_ne_signal_bundle | region_id=kp_ne | region_label=한반도 북동 | lat_range=37~40N | lon_range=127~130E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n3. question_id=stage1_kp_sw_signal_bundle | region_id=kp_sw | region_label=한반도 남서 | lat_range=34~37N | lon_range=124~127E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n4. question_id=stage1_kp_se_signal_bundle | region_id=kp_se | region_label=한반도 남동 | lat_range=34~37N | lon_range=127~130E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n5. question_id=stage1_ws_n_signal_bundle | region_id=ws_n | region_label=서해 북부 | lat_range=37~40N | lon_range=122~124E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n6. question_id=stage1_es_n_signal_bundle | region_id=es_n | region_label=동해 북부 | lat_range=37~40N | lon_range=130~133E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n7. question_id=stage1_liao_bohai_signal_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n8. question_id=stage1_manchuria_s_signal_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~45N | lon_range=123~128E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라."
+        },
+        "response": {
+          "id": "resp_0b647eea8058e11f0069d88ed8bd5c819d902e00f6850fab2f",
+          "object": "response",
+          "created_at": 1775800024,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800031,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0b647eea8058e11f0069d88eda6514819da98c2b715bb54583",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_kp_nw_signal_bundle\",\"selected_answers\":[\"trough_axis\",\"cold_core\"] ,\"note\":\"A trough axis and cold core are evident around 37~40N, 124~127E area with lower height contours and cold temperature.\"},{\"question_id\":\"stage1_kp_ne_signal_bundle\",\"selected_answers\":[\"ridge_axis\"] ,\"note\":\"A ridge axis is present near 37~40N, 127~130E with elevated height contours.\"},{\"question_id\":\"stage1_kp_sw_signal_bundle\",\"selected_answers\":[\"ridge_axis\"] ,\"note\":\"A ridge axis is visible around 34~37N, 124~127E with elevated heights.\"},{\"question_id\":\"stage1_kp_se_signal_bundle\",\"selected_answers\":[\"ridge_axis\"] ,\"note\":\"Ridge axis feature is seen in 34~37N, 127~130E with raised height values.\"},{\"question_id\":\"stage1_ws_n_signal_bundle\",\"selected_answers\":[\"trough_axis\"] ,\"note\":\"There is an evident trough axis in 37~40N, 122~124E region indicated by lowered height contours.\"},{\"question_id\":\"stage1_es_n_signal_bundle\",\"selected_answers\":[\"none\"] ,\"note\":\"No significant signals of the listed types are observed in 37~40N, 130~133E region.\"},{\"question_id\":\"stage1_liao_bohai_signal_bundle\",\"selected_answers\":[\"cold_core\",\"closed_cyclonic_circulation\",\"tight_height_gradient\"] ,\"note\":\"In 38~41N, 120~123E region, there is a cold core with closed cyclonic circulation and tight height gradient as shown by tightly packed contours and cold temperatures.\"},{\"question_id\":\"stage1_manchuria_s_signal_bundle\",\"selected_answers\":[\"closed_cyclonic_circulation\"] ,\"note\":\"A closed cyclonic circulation is visible in 41~45N, 123~128E with circular contour pattern.\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "selected_answers",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "selected_answers": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2100,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 402,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2502
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_kp_nw_signal_bundle",
+              "selected_answers": [
+                "trough_axis",
+                "cold_core"
+              ],
+              "note": "A trough axis and cold core are evident around 37~40N, 124~127E area with lower height contours and cold temperature."
+            },
+            {
+              "question_id": "stage1_kp_ne_signal_bundle",
+              "selected_answers": [
+                "ridge_axis"
+              ],
+              "note": "A ridge axis is present near 37~40N, 127~130E with elevated height contours."
+            },
+            {
+              "question_id": "stage1_kp_sw_signal_bundle",
+              "selected_answers": [
+                "ridge_axis"
+              ],
+              "note": "A ridge axis is visible around 34~37N, 124~127E with elevated heights."
+            },
+            {
+              "question_id": "stage1_kp_se_signal_bundle",
+              "selected_answers": [
+                "ridge_axis"
+              ],
+              "note": "Ridge axis feature is seen in 34~37N, 127~130E with raised height values."
+            },
+            {
+              "question_id": "stage1_ws_n_signal_bundle",
+              "selected_answers": [
+                "trough_axis"
+              ],
+              "note": "There is an evident trough axis in 37~40N, 122~124E region indicated by lowered height contours."
+            },
+            {
+              "question_id": "stage1_es_n_signal_bundle",
+              "selected_answers": [
+                "none"
+              ],
+              "note": "No significant signals of the listed types are observed in 37~40N, 130~133E region."
+            },
+            {
+              "question_id": "stage1_liao_bohai_signal_bundle",
+              "selected_answers": [
+                "cold_core",
+                "closed_cyclonic_circulation",
+                "tight_height_gradient"
+              ],
+              "note": "In 38~41N, 120~123E region, there is a cold core with closed cyclonic circulation and tight height gradient as shown by tightly packed contours and cold temperatures."
+            },
+            {
+              "question_id": "stage1_manchuria_s_signal_bundle",
+              "selected_answers": [
+                "closed_cyclonic_circulation"
+              ],
+              "note": "A closed cyclonic circulation is visible in 41~45N, 123~128E with circular contour pattern."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/20260409/charts/nuri/up50_6h_2026040912.gif",
+      "image_ref": "up50_6h_2026040912",
+      "valid_time": "2026040912",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 2862,
+      "prompt_table_mode": "stage1_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_kp_nw_signal_bundle",
+          "region_id": "kp_nw",
+          "region_label": "한반도 북서",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_ne_signal_bundle",
+          "region_id": "kp_ne",
+          "region_label": "한반도 북동",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_sw_signal_bundle",
+          "region_id": "kp_sw",
+          "region_label": "한반도 남서",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_se_signal_bundle",
+          "region_id": "kp_se",
+          "region_label": "한반도 남동",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ws_n_signal_bundle",
+          "region_id": "ws_n",
+          "region_label": "서해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_es_n_signal_bundle",
+          "region_id": "es_n",
+          "region_label": "동해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_liao_bohai_signal_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_manchuria_s_signal_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "trough_axis",
+            "ridge_axis",
+            "cold_core",
+            "closed_cyclonic_circulation",
+            "tight_height_gradient",
+            "none"
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 2100,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 320,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2420
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up50_6h_2026040912.gif",
+          "prompt_text": "You are extracting stage1 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every question_id exactly once.\nNever omit a question_id and never repeat a question_id.\nselected_answers must contain unique values only.\nEvery selected_answers value must be exactly one of the allowed_answers values.\nIf none is selected, selected_answers must be exactly ['none'].\nNever mix none with any other signal.\nBad example: ['none', 'ridge_axis']\nGood example 1: ['none']\nGood example 2: ['ridge_axis', 'warm_advection']\nmanifest_id=synoptic_500hPa_stage1\ndomain=500hPa\nstage=stage1\nimage_ref=up50_6h_2026040912\nvalid_time=2026040912\nBundles:\n1. question_id=stage1_kp_nw_signal_bundle | region_id=kp_nw | region_label=한반도 북서 | lat_range=37~40N | lon_range=124~127E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n2. question_id=stage1_kp_ne_signal_bundle | region_id=kp_ne | region_label=한반도 북동 | lat_range=37~40N | lon_range=127~130E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n3. question_id=stage1_kp_sw_signal_bundle | region_id=kp_sw | region_label=한반도 남서 | lat_range=34~37N | lon_range=124~127E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n4. question_id=stage1_kp_se_signal_bundle | region_id=kp_se | region_label=한반도 남동 | lat_range=34~37N | lon_range=127~130E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n5. question_id=stage1_ws_n_signal_bundle | region_id=ws_n | region_label=서해 북부 | lat_range=37~40N | lon_range=122~124E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n6. question_id=stage1_es_n_signal_bundle | region_id=es_n | region_label=동해 북부 | lat_range=37~40N | lon_range=130~133E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n7. question_id=stage1_liao_bohai_signal_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n8. question_id=stage1_manchuria_s_signal_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~45N | lon_range=123~128E | allowed_answers=trough_axis|ridge_axis|cold_core|closed_cyclonic_circulation|tight_height_gradient|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라."
+        },
+        "response": {
+          "id": "resp_033ef1faf2458bcf0069d88edfa60c81a086b28234f22c67f4",
+          "object": "response",
+          "created_at": 1775800031,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800036,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_033ef1faf2458bcf0069d88ee0fd2881a08f066284cb23aead",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_kp_nw_signal_bundle\",\"selected_answers\":[\"ridge_axis\",\"closed_cyclonic_circulation\"] ,\"note\":\"There is a ridge axis visible near the region and a closed cyclonic circulation marked with 'L' on the northwest part of the Korean Peninsula.\"},{\"question_id\":\"stage1_kp_ne_signal_bundle\",\"selected_answers\":[\"ridge_axis\"] ,\"note\":\"A ridge axis extends into the northeastern part of the Korean Peninsula region.\"},{\"question_id\":\"stage1_kp_sw_signal_bundle\",\"selected_answers\":[\"none\"] ,\"note\":\"No significant signals detected in the southwest region of the Korean Peninsula.\"},{\"question_id\":\"stage1_kp_se_signal_bundle\",\"selected_answers\":[\"trough_axis\"] ,\"note\":\"A trough axis appears to be present in the southeast region of the Korean Peninsula.\"},{\"question_id\":\"stage1_ws_n_signal_bundle\",\"selected_answers\":[\"ridge_axis\"] ,\"note\":\"Ridge axis indicated over the northern West Sea area.\"},{\"question_id\":\"stage1_es_n_signal_bundle\",\"selected_answers\":[\"cold_core\"] ,\"note\":\"Cold core low pressure is observed in the northeastern East Sea region.\"},{\"question_id\":\"stage1_liao_bohai_signal_bundle\",\"selected_answers\":[\"ridge_axis\",\"tight_height_gradient\"] ,\"note\":\"Ridge axis and tight height gradient lines are present in Liaoning/Bohai region.\"},{\"question_id\":\"stage1_manchuria_s_signal_bundle\",\"selected_answers\":[\"closed_cyclonic_circulation\"] ,\"note\":\"Closed cyclonic circulation is visible in southern Manchuria region.\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "selected_answers",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "selected_answers": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 2100,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 320,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2420
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_kp_nw_signal_bundle",
+              "selected_answers": [
+                "ridge_axis",
+                "closed_cyclonic_circulation"
+              ],
+              "note": "There is a ridge axis visible near the region and a closed cyclonic circulation marked with 'L' on the northwest part of the Korean Peninsula."
+            },
+            {
+              "question_id": "stage1_kp_ne_signal_bundle",
+              "selected_answers": [
+                "ridge_axis"
+              ],
+              "note": "A ridge axis extends into the northeastern part of the Korean Peninsula region."
+            },
+            {
+              "question_id": "stage1_kp_sw_signal_bundle",
+              "selected_answers": [
+                "none"
+              ],
+              "note": "No significant signals detected in the southwest region of the Korean Peninsula."
+            },
+            {
+              "question_id": "stage1_kp_se_signal_bundle",
+              "selected_answers": [
+                "trough_axis"
+              ],
+              "note": "A trough axis appears to be present in the southeast region of the Korean Peninsula."
+            },
+            {
+              "question_id": "stage1_ws_n_signal_bundle",
+              "selected_answers": [
+                "ridge_axis"
+              ],
+              "note": "Ridge axis indicated over the northern West Sea area."
+            },
+            {
+              "question_id": "stage1_es_n_signal_bundle",
+              "selected_answers": [
+                "cold_core"
+              ],
+              "note": "Cold core low pressure is observed in the northeastern East Sea region."
+            },
+            {
+              "question_id": "stage1_liao_bohai_signal_bundle",
+              "selected_answers": [
+                "ridge_axis",
+                "tight_height_gradient"
+              ],
+              "note": "Ridge axis and tight height gradient lines are present in Liaoning/Bohai region."
+            },
+            {
+              "question_id": "stage1_manchuria_s_signal_bundle",
+              "selected_answers": [
+                "closed_cyclonic_circulation"
+              ],
+              "note": "Closed cyclonic circulation is visible in southern Manchuria region."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

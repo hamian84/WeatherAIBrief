@@ -1,0 +1,26 @@
+{
+  "run_date": "20260409",
+  "section_id": "briefing_draft",
+  "title": "검토용 초안",
+  "body": "본 기간 동안 한반도 주변에서는 상층 제트 스트림과 저기압 순환의 강화가 주도한 대기 불안정상이 전개되었다. 초반에는 강한 상층 제트코어와 저기압 중심의 형성으로 북서-남동 방향의 강력한 기압계와 함께 광역적인 습윤 환경과 대류운 군집이 나타났으며, 이로 인해 강풍대와 강수대가 동반된 초기 기상 현상이 시작되었다. 이후 상하층 기압계의 발달과 이동, 한랭이류와 저층 기압골, 저층제트 및 열적 경도대의 상호작용으로 인한 습윤역 확장과 대류성 강수 구간의 확대가 이루어졌고, 전선대의 유형 변화 및 이동을 동반한 해상과 지상 강풍 분포 변화가 나타났다. 후반에는 상하층 상호작용에 의한 강풍대와 집중 강수대가 북서와 북동 지역까지 확장되고, 저기압 및 전선 이동에 따른 기압 경도대의 강화와 지역 기압 배치 변화로 기상 악화가 심화되었다. 따라서 한반도 주변의 상층 제트 스트림과 다양한 기압계의 복합적 상호작용이 강풍과 집중 강수 현상의 발생과 확산을 이끌어 낸 것으로 판단된다.",
+  "observation_basis": [
+    "전체 개황: 300hPa: Central Korea 제트축 2회, Central Korea 제트코어 2회, East Sea 제트축 2회, East Sea 제트코어 2회",
+    "종관 해석: 300hPa: 동중국해 북부 제트축 2회, 동중국해 북부 제트코어 2회, 동해 북부 제트축 2회, 동해 북부 제트코어 2회",
+    "강수 구조 해석: 850hPa: Central Korea 기압골축 2회, Central Korea 습윤역 2회, Central Korea 한랭이류 2회, East Sea 온난이류 2회",
+    "지상 및 해상 영향 해석: surface: 동중국해 북부 습윤역 2회, 동중국해 북부 저기압 중심 2회, 동중국해 북부 전선 2회, 만주 남부 습윤역 2회"
+  ],
+  "applied_patterns": [
+    "jet_coupling_heavy_rain, 섹션 13, p.98-101",
+    "explosive_cyclone_risk, 섹션 24, p.210-217",
+    "mcs_convective_stratiform_split, 섹션 14, p.102-113",
+    "skewt_llj_heavy_rain, 섹션 5, p.34-43",
+    "upper_jet_quadrant_selection, 섹션 13, p.98-101",
+    "hail_cold_core_shear, 섹션 23, p.200-209"
+  ],
+  "source_section_ids": [
+    "overall_summary",
+    "synoptic_analysis",
+    "precipitation_structure",
+    "surface_marine_impacts"
+  ]
+}

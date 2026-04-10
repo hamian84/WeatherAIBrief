@@ -1,0 +1,116 @@
+{
+  "request": {
+    "model": "gpt-4.1-mini",
+    "max_output_tokens": 3000,
+    "prompt_text": "당신은 기상 실황 브리핑 섹션 작성기다.\n\n목표:\n- 제공된 시간 변화 사건 목록을 바탕으로 \"지상 및 해상 영향 해석\" 섹션의 본문을 작성한다.\n- 본문은 관측 근거를 그대로 나열하지 말고, 시간 변화와 인과관계를 중심으로 서술한다.\n\n반드시 지킬 규칙:\n- 출력은 JSON만 반환한다.\n- title은 \"지상 및 해상 영향 해석\"로 고정한다.\n- source_event_ids는 입력 events에 있는 event_id만 사용한다.\n- body는 한국어로 작성한다.\n- body 첫 문장은 결론형으로 쓴다.\n- body에는 \"초반\", \"이후\", \"후반\", \"따라서\"의 흐름이 드러나야 한다.\n- body에는 횟수(예: 5회, 4회)를 쓰지 않는다.\n- body에는 내부 영문 키(kp_south, wet_area 같은 값)를 쓰지 않는다.\n- body에는 적용 패턴 문자열을 직접 쓰지 않는다.\n- body는 선택한 사건들을 자연스럽게 연결해 한 개의 서사형 단락으로 작성한다.\n- 입력에 없는 현상, 지역, 근거를 새로 추가하지 않는다.\n\n섹션 정보:\n- run_date: 20260409\n- section_id: surface_marine_impacts\n- section_title: 지상 및 해상 영향 해석\n\nevents:\n[{\"event_id\":\"surface_marine_impacts_01\",\"section_id\":\"surface_marine_impacts\",\"event_title\":\"한반도 동쪽 및 동중국해 북부 지역에서의 저기압 발달과 전선 이동에 따른 강풍 및 습윤역 확대\",\"phase_early\":\"한반도 동쪽과 동중국해 북부에 저기압 중심이 존재하며, 전선 및 강풍대가 광역에 걸쳐 분포하고 습윤역이 존재한다.\",\"phase_mid\":\"저기압 중심은 영역 내부로 위치하며 강풍대의 강도는 보통 수준을 유지하면서 습윤역이 점차 광역으로 확대되고 전선이 cold_front 유형으로 활성화된다.\",\"phase_late\":\"전선과 강풍대가 동쪽 방향으로 이동하고 습윤역은 광역적으로 계속 유지되며 강한 기압경도대 형성으로 풍속과 강수 가능성이 증가한다.\",\"causal_link\":\"저기압 중심의 발달과 전선의 동쪽 이동은 강풍대 및 습윤역의 확대를 유도하고, 강한 기압경도대의 형성은 해상 및 지상에서의 기상 악화를 촉진한다.\",\"regions\":[\"동중국해 북부\",\"한반도 남부\",\"한반도 북부\",\"서해 중부\"],\"domains\":[\"surface\",\"sfc12h_synoptic\"],\"evidence_refs\":[\"surf_12h_2026040900\",\"surf_12h_2026040912\",\"surf_anl_6h_2026040900\",\"surf_anl_6h_2026040912\"],\"rule_refs\":[\"front_boundary_identification\",\"explosive_cyclone_risk\"],\"confidence\":\"high\"},{\"event_id\":\"surface_marine_impacts_02\",\"section_id\":\"surface_marine_impacts\",\"event_title\":\"전선대 유형 변화와 관련한 해상 강풍 역세의 동반 변화\",\"phase_early\":\"전선대는 동중국해 북부부터 일본 동부 해상까지 다양한 유형(warm_front, cold_front, occluded_front)으로 존재하며, 강풍역은 보통 강도로 분포한다.\",\"phase_mid\":\"전선대 유형 변동에 따라 특히 cold_front와 warm_front 유형이 교차하면서 위치가 북동쪽 및 동쪽으로 이동하고 강풍역의 분포 및 강도에 변화를 준다.\",\"phase_late\":\"이동 신호의 등급이 보통에서 빠른 속도로 변하며 전선대와 강풍역의 동북 방향 이동이 심화되고, 이에 따라 해상 강풍 역세가 지속적으로 유지된다.\",\"causal_link\":\"전선대의 유형 변화 및 이동 속도 증가는 강풍역 분포와 강도에 직접적인 영향을 미쳐 해상 강풍 역세의 발생 및 지속에 기여한다.\",\"regions\":[\"동중국해 북부\",\"일본 동부 해상\",\"일본 서부\"],\"domains\":[\"sfc12h_synoptic\"],\"evidence_refs\":[\"surf_12h_2026040912\"],\"rule_refs\":[\"front_boundary_identification\"],\"confidence\":\"medium\"},{\"event_id\":\"surface_marine_impacts_03\",\"section_id\":\"surface_marine_impacts\",\"event_title\":\"요동반도 및 만주 남부 부근 고기압과 저기압 배치에 따른 기압분포 변화와 기상 영향\",\"phase_early\":\"요동반도와 만주 남부에서 고기압 중심과 저기압 중심이 각각 존재하며 지상 기압골과 능선이 관측된다.\",\"phase_mid\":\"고기압 중심은 위치 내부로 자리잡고, 저기압 중심은 영역 내부로 이동하며 기압골축 또한 영역 내부에 형성된다.\",\"phase_late\":\"기압골과 능선의 위치 변화는 기압경도대를 강화시키고, 이로 인해 기압분포의 변화가 해상 및 인근 육상 기상에 영향을 미친다.\",\"causal_link\":\"고기압과 저기압의 위치 변화는 기압골과 능선의 이동을 유발하며, 이것이 강한 기압경도대 형성과 함께 지역 기상 상황에 변화를 발생시킨다.\",\"regions\":[\"요동반도/발해만\",\"만주 남부\"],\"domains\":[\"surface\"],\"evidence_refs\":[\"surf_12h_2026040912\"],\"rule_refs\":[\"spring_heat_low_vs_frontal_low\"],\"confidence\":\"medium\"}]\n"
+  },
+  "response": {
+    "id": "resp_0006ecce76619aee0069d89083a8d081a2937d2daea838a916",
+    "object": "response",
+    "created_at": 1775800451,
+    "status": "completed",
+    "background": false,
+    "billing": {
+      "payer": "developer"
+    },
+    "completed_at": 1775800456,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 3000,
+    "max_tool_calls": null,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "output": [
+      {
+        "id": "msg_0006ecce76619aee0069d890844bf881a2aff9826b03d79a88",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"title\":\"지상 및 해상 영향 해석\",\"body\":\"한반도 동쪽 및 동중국해 북부에서 저기압이 발달함에 따라 강풍과 습윤 영역이 점차 확대되며 해상과 지상 기상 조건이 악화되었다. 초반에는 저기압 중심과 전선대가 광역에 걸쳐 형성되면서 강풍대와 습윤역이 시작되었고, 이후 전선대의 유형 변화와 이동 속도 증가가 해상 강풍 역세를 동반하며 강풍 분포와 강도를 변화시켰다. 후반에는 저기압과 전선이 동쪽으로 움직이며 강한 기압경도대가 형성되어 풍속과 강수 가능성이 증가하는 동시에, 요동반도와 만주 남부의 고기압과 저기압 배치 변화가 기압분포에 영향을 미쳐 지역 기상 상황의 변화를 촉진하였다. 따라서 이러한 저기압 중심의 발달과 전선 이동, 전선대 유형 변화 그리고 인근 지역의 기압 배치 변화가 종합적으로 지상 및 해상 기상 악화를 야기하였다.\",\"source_event_ids\":[\"surface_marine_impacts_01\",\"surface_marine_impacts_02\",\"surface_marine_impacts_03\"]}"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": true,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "structured_text_response",
+        "schema": {
+          "$id": "briefing_section_body.schema.json",
+          "title": "브리핑 섹션 본문 작성 응답 스키마",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body",
+            "source_event_ids"
+          ],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            },
+            "source_event_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          }
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 1.0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1432,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 288,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1720
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "parsed_output": {
+    "title": "지상 및 해상 영향 해석",
+    "body": "한반도 동쪽 및 동중국해 북부에서 저기압이 발달함에 따라 강풍과 습윤 영역이 점차 확대되며 해상과 지상 기상 조건이 악화되었다. 초반에는 저기압 중심과 전선대가 광역에 걸쳐 형성되면서 강풍대와 습윤역이 시작되었고, 이후 전선대의 유형 변화와 이동 속도 증가가 해상 강풍 역세를 동반하며 강풍 분포와 강도를 변화시켰다. 후반에는 저기압과 전선이 동쪽으로 움직이며 강한 기압경도대가 형성되어 풍속과 강수 가능성이 증가하는 동시에, 요동반도와 만주 남부의 고기압과 저기압 배치 변화가 기압분포에 영향을 미쳐 지역 기상 상황의 변화를 촉진하였다. 따라서 이러한 저기압 중심의 발달과 전선 이동, 전선대 유형 변화 그리고 인근 지역의 기압 배치 변화가 종합적으로 지상 및 해상 기상 악화를 야기하였다.",
+    "source_event_ids": [
+      "surface_marine_impacts_01",
+      "surface_marine_impacts_02",
+      "surface_marine_impacts_03"
+    ]
+  }
+}

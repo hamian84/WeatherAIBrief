@@ -1,0 +1,5402 @@
+{
+  "manifest_id": "synoptic_satellite_wv_stage1",
+  "domain": "satellite_wv",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "records": [
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604090000.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604090000",
+      "note": "",
+      "selected_answers": [
+        "upper_dry_intrusion"
+      ],
+      "selected_signal_keys": [
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion evident as dry air narrowing seen, moist plume and band-shaped clouds present in southern Manchuria.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Upper dry intrusion and moist plume signals in Liao Bohai area, visible cloud patterns indicate these features.",
+      "selected_answers": [
+        "upper_dry_intrusion",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "moist_plume",
+        "upper_dry_intrusion"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "No significant signals detected in the middle West Sea area.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud pattern visible in northern Korean Peninsula.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud"
+      ],
+      "selected_signal_keys": [
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plume and convective cloud clusters visible in southern Korean Peninsula.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Band clouds and moist plume structures observed over northern East China Sea.",
+      "selected_answers": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "selected_signal_keys": [
+        "band_cloud",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Moist plumes and convective cloud clusters evident around western Japan.",
+      "selected_answers": [
+        "moist_plume",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "moist_plume"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__upper_dry_intrusion",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "upper_dry_intrusion",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__moist_plume",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "moist_plume",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__band_cloud",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "band_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__comma_cloud",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "comma_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__jet_related_cloud_band",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "jet_related_cloud_band",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__cyclonic_swirl_cloud",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "cyclonic_swirl_cloud",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__convective_cloud_cluster",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "convective_cloud_cluster",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_satellite_wv_stage1",
+      "domain": "satellite_wv",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__subsidence_clear_slot",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "subsidence_clear_slot",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "upper_dry_intrusion",
+        "moist_plume",
+        "band_cloud",
+        "comma_cloud",
+        "jet_related_cloud_band",
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster",
+        "subsidence_clear_slot",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/satellite/LE1B/WV063/EA/gk2a_le1b_WV063_EA_202604091200.png",
+      "image_ref": "gk2a_le1b_WV063_EA_202604091200",
+      "note": "Cyclonic swirl cloud and convective clusters present off eastern Japan seas.",
+      "selected_answers": [
+        "cyclonic_swirl_cloud",
+        "convective_cloud_cluster"
+      ],
+      "selected_signal_keys": [
+        "convective_cloud_cluster",
+        "cyclonic_swirl_cloud"
+      ],
+      "none_selected": false
+    }
+  ]
+}

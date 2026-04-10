@@ -1,0 +1,1832 @@
+{
+  "manifest_id": "synoptic_850hPa_stage2",
+  "domain": "850hPa",
+  "stage": "stage2",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": "synoptic_850hPa_stage1",
+  "prompt_table_mode": "stage2_bundle",
+  "images": [
+    {
+      "source_image": "dain/20260409/charts/nuri/up85_6h_2026040900.gif",
+      "image_ref": "up85_6h_2026040900",
+      "valid_time": "2026040900",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 9650,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_ecs_north_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 5,
+              "target_label": "thermal_gradient_zone.strength",
+              "signal_key": "thermal_gradient_zone",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 온도경도대 또는 전선대 후보 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "thermal_gradient_zone",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 8,
+              "target_label": "low_level_jet.strength",
+              "signal_key": "low_level_jet",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 하층 제트 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "low_level_jet",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 9,
+              "target_label": "low_level_jet.orientation",
+              "signal_key": "low_level_jet",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 하층 제트 축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "low_level_jet",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_east_offshore_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 2,
+              "target_label": "ridge_axis.relative_position",
+              "signal_key": "ridge_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "ridge_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 11,
+              "target_label": "moisture_transport_axis.orientation",
+              "signal_key": "moisture_transport_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 수증기 수송축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "moisture_transport_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 12,
+              "target_label": "moisture_transport_axis.strength",
+              "signal_key": "moisture_transport_axis",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 수증기 수송 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "moisture_transport_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_w_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "trough_axis.relative_position",
+              "signal_key": "trough_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "trough_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 13,
+              "target_label": "low_level_convergence_candidate.strength",
+              "signal_key": "low_level_convergence_candidate",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 하층 수렴 후보 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "low_level_convergence_candidate",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_north_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "trough_axis.relative_position",
+              "signal_key": "trough_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "trough_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_south_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 2,
+              "target_label": "ridge_axis.relative_position",
+              "signal_key": "ridge_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "ridge_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 10,
+              "target_label": "strong_wind_zone.strength",
+              "signal_key": "strong_wind_zone",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 강풍역 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "strong_wind_zone",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_liao_bohai_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 2,
+              "target_label": "ridge_axis.relative_position",
+              "signal_key": "ridge_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "ridge_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "warm_advection.strength",
+              "signal_key": "warm_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 난기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "warm_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_manchuria_s_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "trough_axis.relative_position",
+              "signal_key": "trough_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "trough_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "cold_advection.strength",
+              "signal_key": "cold_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 한기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cold_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 4122,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 471,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4593
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up85_6h_2026040900.gif",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_850hPa_stage2\ndomain=850hPa\nstage=stage2\nimage_ref=up85_6h_2026040900\nvalid_time=2026040900\nBundles:\n1. bundle_id=stage2_ecs_north_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"yes\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"yes\", \"trough_axis\": \"no\", \"warm_advection\": \"no\", \"wet_area\": \"no\"}\n   - target_label=thermal_gradient_zone.strength | signal_key=thermal_gradient_zone | attribute_key=strength | target_order=5 | tier=core | gate_on_stage1=thermal_gradient_zone | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 온도경도대 또는 전선대 후보 강도는 어느 수준인가?\n   - target_label=low_level_jet.strength | signal_key=low_level_jet | attribute_key=strength | target_order=8 | tier=core | gate_on_stage1=low_level_jet | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 하층 제트 강도는 어느 수준인가?\n   - target_label=low_level_jet.orientation | signal_key=low_level_jet | attribute_key=orientation | target_order=9 | tier=extended | gate_on_stage1=low_level_jet | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 하층 제트 축 방향은 무엇인가?\n2. bundle_id=stage2_japan_east_offshore_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"yes\", \"ridge_axis\": \"yes\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"no\", \"warm_advection\": \"no\", \"wet_area\": \"no\"}\n   - target_label=ridge_axis.relative_position | signal_key=ridge_axis | attribute_key=relative_position | target_order=2 | tier=core | gate_on_stage1=ridge_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?\n   - target_label=moisture_transport_axis.orientation | signal_key=moisture_transport_axis | attribute_key=orientation | target_order=11 | tier=extended | gate_on_stage1=moisture_transport_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 수증기 수송축 방향은 무엇인가?\n   - target_label=moisture_transport_axis.strength | signal_key=moisture_transport_axis | attribute_key=strength | target_order=12 | tier=core | gate_on_stage1=moisture_transport_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 수증기 수송 강도는 어느 수준인가?\n3. bundle_id=stage2_japan_w_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"yes\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"yes\", \"warm_advection\": \"no\", \"wet_area\": \"no\"}\n   - target_label=trough_axis.relative_position | signal_key=trough_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=trough_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?\n   - target_label=low_level_convergence_candidate.strength | signal_key=low_level_convergence_candidate | attribute_key=strength | target_order=13 | tier=core | gate_on_stage1=low_level_convergence_candidate | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 하층 수렴 후보 강도는 어느 수준인가?\n4. bundle_id=stage2_kp_north_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"yes\", \"warm_advection\": \"no\", \"wet_area\": \"yes\"}\n   - target_label=trough_axis.relative_position | signal_key=trough_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=trough_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?\n5. bundle_id=stage2_kp_south_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"yes\", \"strong_wind_zone\": \"yes\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"no\", \"warm_advection\": \"no\", \"wet_area\": \"no\"}\n   - target_label=ridge_axis.relative_position | signal_key=ridge_axis | attribute_key=relative_position | target_order=2 | tier=core | gate_on_stage1=ridge_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?\n   - target_label=strong_wind_zone.strength | signal_key=strong_wind_zone | attribute_key=strength | target_order=10 | tier=core | gate_on_stage1=strong_wind_zone | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 강풍역 강도는 어느 수준인가?\n6. bundle_id=stage2_liao_bohai_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"yes\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"no\", \"warm_advection\": \"yes\", \"wet_area\": \"no\"}\n   - target_label=ridge_axis.relative_position | signal_key=ridge_axis | attribute_key=relative_position | target_order=2 | tier=core | gate_on_stage1=ridge_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?\n   - target_label=warm_advection.strength | signal_key=warm_advection | attribute_key=strength | target_order=3 | tier=core | gate_on_stage1=warm_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 난기 이류 강도는 어느 수준인가?\n7. bundle_id=stage2_manchuria_s_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"yes\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"yes\", \"warm_advection\": \"no\", \"wet_area\": \"yes\"}\n   - target_label=trough_axis.relative_position | signal_key=trough_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=trough_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?\n   - target_label=cold_advection.strength | signal_key=cold_advection | attribute_key=strength | target_order=4 | tier=core | gate_on_stage1=cold_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 한기 이류 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?"
+        },
+        "response": {
+          "id": "resp_0cb0c6c4c5cd41ad0069d88f4b4ef081958d65ea1f04229dc1",
+          "object": "response",
+          "created_at": 1775800139,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800149,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0cb0c6c4c5cd41ad0069d88f4d0e9c8195abf813ad40d24dda",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_ecs_north_bundle\",\"targets\":[{\"target_label\":\"thermal_gradient_zone.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"low_level_jet.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"low_level_jet.orientation\",\"answer\":\"W-E\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_east_offshore_bundle\",\"targets\":[{\"target_label\":\"ridge_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"moisture_transport_axis.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"moisture_transport_axis.strength\",\"answer\":\"moderate\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_w_bundle\",\"targets\":[{\"target_label\":\"trough_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"low_level_convergence_candidate.strength\",\"answer\":\"weak\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_north_bundle\",\"targets\":[{\"target_label\":\"trough_axis.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"local\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"west\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_south_bundle\",\"targets\":[{\"target_label\":\"ridge_axis.relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"target_label\":\"strong_wind_zone.strength\",\"answer\":\"moderate\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_liao_bohai_bundle\",\"targets\":[{\"target_label\":\"ridge_axis.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"warm_advection.strength\",\"answer\":\"weak\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_manchuria_s_bundle\",\"targets\":[{\"target_label\":\"trough_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"cold_advection.strength\",\"answer\":\"weak\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"regional\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"inside\",\"note\":\"\"}],\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 4122,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 471,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4593
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_ecs_north_bundle",
+              "targets": [
+                {
+                  "target_label": "thermal_gradient_zone.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "low_level_jet.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "low_level_jet.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_east_offshore_bundle",
+              "targets": [
+                {
+                  "target_label": "ridge_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "moisture_transport_axis.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "moisture_transport_axis.strength",
+                  "answer": "moderate",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_w_bundle",
+              "targets": [
+                {
+                  "target_label": "trough_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "low_level_convergence_candidate.strength",
+                  "answer": "weak",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_north_bundle",
+              "targets": [
+                {
+                  "target_label": "trough_axis.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "local",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "west",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_south_bundle",
+              "targets": [
+                {
+                  "target_label": "ridge_axis.relative_position",
+                  "answer": "east",
+                  "note": ""
+                },
+                {
+                  "target_label": "strong_wind_zone.strength",
+                  "answer": "moderate",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_liao_bohai_bundle",
+              "targets": [
+                {
+                  "target_label": "ridge_axis.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "warm_advection.strength",
+                  "answer": "weak",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_manchuria_s_bundle",
+              "targets": [
+                {
+                  "target_label": "trough_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "cold_advection.strength",
+                  "answer": "weak",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "regional",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/20260409/charts/nuri/up85_6h_2026040912.gif",
+      "image_ref": "up85_6h_2026040912",
+      "valid_time": "2026040912",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 13512,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_ecs_north_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "trough_axis.relative_position",
+              "signal_key": "trough_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "trough_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "cold_advection.strength",
+              "signal_key": "cold_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 한기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cold_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_east_offshore_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "trough_axis.relative_position",
+              "signal_key": "trough_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "trough_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "cold_advection.strength",
+              "signal_key": "cold_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 한기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cold_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_w_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 2,
+              "target_label": "ridge_axis.relative_position",
+              "signal_key": "ridge_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "ridge_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "warm_advection.strength",
+              "signal_key": "warm_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 난기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "warm_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_north_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "trough_axis.relative_position",
+              "signal_key": "trough_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "trough_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "cold_advection.strength",
+              "signal_key": "cold_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 한기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cold_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_south_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 2,
+              "target_label": "ridge_axis.relative_position",
+              "signal_key": "ridge_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "ridge_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "warm_advection.strength",
+              "signal_key": "warm_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 난기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "warm_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_liao_bohai_bundle",
+          "region_id": "liao_bohai",
+          "region_label": "요동반도/발해만",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 3,
+              "target_label": "warm_advection.strength",
+              "signal_key": "warm_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 난기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "warm_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_manchuria_s_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "trough_axis.relative_position",
+              "signal_key": "trough_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "trough_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "ridge_axis.relative_position",
+              "signal_key": "ridge_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "ridge_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "cold_advection.strength",
+              "signal_key": "cold_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 한기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cold_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 5,
+              "target_label": "thermal_gradient_zone.strength",
+              "signal_key": "thermal_gradient_zone",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 온도경도대 또는 전선대 후보 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "thermal_gradient_zone",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_ws_mid_bundle",
+          "region_id": "ws_mid",
+          "region_label": "서해 중부",
+          "gate_signals": [
+            "trough_axis",
+            "ridge_axis",
+            "warm_advection",
+            "cold_advection",
+            "thermal_gradient_zone",
+            "wet_area",
+            "low_level_jet",
+            "strong_wind_zone",
+            "moisture_transport_axis",
+            "low_level_convergence_candidate"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 2,
+              "target_label": "ridge_axis.relative_position",
+              "signal_key": "ridge_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "ridge_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 4,
+              "target_label": "cold_advection.strength",
+              "signal_key": "cold_advection",
+              "attribute_key": "strength",
+              "question_text": "이 영역의 850hPa 한기 이류 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "cold_advection",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "wet_area.coverage",
+              "signal_key": "wet_area",
+              "attribute_key": "coverage",
+              "question_text": "이 영역의 WET AREA 범위는 어느 수준인가?",
+              "allowed_answers": [
+                "local",
+                "regional",
+                "broad",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 7,
+              "target_label": "wet_area.relative_position",
+              "signal_key": "wet_area",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "wet_area",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 5227,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 673,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 5900
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up85_6h_2026040912.gif",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_850hPa_stage2\ndomain=850hPa\nstage=stage2\nimage_ref=up85_6h_2026040912\nvalid_time=2026040912\nBundles:\n1. bundle_id=stage2_ecs_north_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"yes\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"yes\", \"warm_advection\": \"no\", \"wet_area\": \"yes\"}\n   - target_label=trough_axis.relative_position | signal_key=trough_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=trough_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?\n   - target_label=cold_advection.strength | signal_key=cold_advection | attribute_key=strength | target_order=4 | tier=core | gate_on_stage1=cold_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 한기 이류 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?\n2. bundle_id=stage2_japan_east_offshore_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"yes\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"yes\", \"warm_advection\": \"no\", \"wet_area\": \"yes\"}\n   - target_label=trough_axis.relative_position | signal_key=trough_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=trough_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?\n   - target_label=cold_advection.strength | signal_key=cold_advection | attribute_key=strength | target_order=4 | tier=core | gate_on_stage1=cold_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 한기 이류 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?\n3. bundle_id=stage2_japan_w_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"yes\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"no\", \"warm_advection\": \"yes\", \"wet_area\": \"yes\"}\n   - target_label=ridge_axis.relative_position | signal_key=ridge_axis | attribute_key=relative_position | target_order=2 | tier=core | gate_on_stage1=ridge_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?\n   - target_label=warm_advection.strength | signal_key=warm_advection | attribute_key=strength | target_order=3 | tier=core | gate_on_stage1=warm_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 난기 이류 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?\n4. bundle_id=stage2_kp_north_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"yes\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"yes\", \"warm_advection\": \"no\", \"wet_area\": \"yes\"}\n   - target_label=trough_axis.relative_position | signal_key=trough_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=trough_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?\n   - target_label=cold_advection.strength | signal_key=cold_advection | attribute_key=strength | target_order=4 | tier=core | gate_on_stage1=cold_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 한기 이류 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?\n5. bundle_id=stage2_kp_south_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"yes\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"no\", \"warm_advection\": \"yes\", \"wet_area\": \"no\"}\n   - target_label=ridge_axis.relative_position | signal_key=ridge_axis | attribute_key=relative_position | target_order=2 | tier=core | gate_on_stage1=ridge_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?\n   - target_label=warm_advection.strength | signal_key=warm_advection | attribute_key=strength | target_order=3 | tier=core | gate_on_stage1=warm_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 난기 이류 강도는 어느 수준인가?\n6. bundle_id=stage2_liao_bohai_bundle | region_id=liao_bohai | region_label=요동반도/발해만 | lat_range=38~41N | lon_range=120~123E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"no\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"no\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"no\", \"warm_advection\": \"yes\", \"wet_area\": \"yes\"}\n   - target_label=warm_advection.strength | signal_key=warm_advection | attribute_key=strength | target_order=3 | tier=core | gate_on_stage1=warm_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 난기 이류 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?\n7. bundle_id=stage2_manchuria_s_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"yes\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"yes\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"yes\", \"trough_axis\": \"yes\", \"warm_advection\": \"no\", \"wet_area\": \"yes\"}\n   - target_label=trough_axis.relative_position | signal_key=trough_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=trough_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압골의 상대 위치는 무엇인가?\n   - target_label=ridge_axis.relative_position | signal_key=ridge_axis | attribute_key=relative_position | target_order=2 | tier=core | gate_on_stage1=ridge_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?\n   - target_label=cold_advection.strength | signal_key=cold_advection | attribute_key=strength | target_order=4 | tier=core | gate_on_stage1=cold_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 한기 이류 강도는 어느 수준인가?\n   - target_label=thermal_gradient_zone.strength | signal_key=thermal_gradient_zone | attribute_key=strength | target_order=5 | tier=core | gate_on_stage1=thermal_gradient_zone | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 온도경도대 또는 전선대 후보 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?\n8. bundle_id=stage2_ws_mid_bundle | region_id=ws_mid | region_label=서해 중부 | lat_range=35~38N | lon_range=122~126E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"cold_advection\": \"yes\", \"low_level_convergence_candidate\": \"no\", \"low_level_jet\": \"no\", \"moisture_transport_axis\": \"no\", \"ridge_axis\": \"yes\", \"strong_wind_zone\": \"no\", \"thermal_gradient_zone\": \"no\", \"trough_axis\": \"no\", \"warm_advection\": \"no\", \"wet_area\": \"yes\"}\n   - target_label=ridge_axis.relative_position | signal_key=ridge_axis | attribute_key=relative_position | target_order=2 | tier=core | gate_on_stage1=ridge_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 850hPa 기압능의 상대 위치는 무엇인가?\n   - target_label=cold_advection.strength | signal_key=cold_advection | attribute_key=strength | target_order=4 | tier=core | gate_on_stage1=cold_advection | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역의 850hPa 한기 이류 강도는 어느 수준인가?\n   - target_label=wet_area.coverage | signal_key=wet_area | attribute_key=coverage | target_order=6 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=local|regional|broad|unknown | question_text=이 영역의 WET AREA 범위는 어느 수준인가?\n   - target_label=wet_area.relative_position | signal_key=wet_area | attribute_key=relative_position | target_order=7 | tier=core | gate_on_stage1=wet_area | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 WET AREA의 상대 위치는 무엇인가?"
+        },
+        "response": {
+          "id": "resp_08b11e0af5a2850d0069d88f577d6081a38114a07e50e8f7ee",
+          "object": "response",
+          "created_at": 1775800153,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800238,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_08b11e0af5a2850d0069d88f5ce95881a3b9bd6e67955445b1",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_ecs_north_bundle\",\"targets\":[{\"target_label\":\"trough_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"cold_advection.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"regional\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"inside\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_east_offshore_bundle\",\"targets\":[{\"target_label\":\"trough_axis.relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"target_label\":\"cold_advection.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"regional\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"inside\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_w_bundle\",\"targets\":[{\"target_label\":\"ridge_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"warm_advection.strength\",\"answer\":\"weak\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"local\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"west\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_north_bundle\",\"targets\":[{\"target_label\":\"trough_axis.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"cold_advection.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"local\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"west\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_south_bundle\",\"targets\":[{\"target_label\":\"ridge_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"warm_advection.strength\",\"answer\":\"weak\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_liao_bohai_bundle\",\"targets\":[{\"target_label\":\"warm_advection.strength\",\"answer\":\"weak\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"local\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"west\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_manchuria_s_bundle\",\"targets\":[{\"target_label\":\"trough_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"ridge_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"cold_advection.strength\",\"answer\":\"weak\",\"note\":\"\"},{\"target_label\":\"thermal_gradient_zone.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"local\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"inside\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_ws_mid_bundle\",\"targets\":[{\"target_label\":\"ridge_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"cold_advection.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"wet_area.coverage\",\"answer\":\"local\",\"note\":\"\"},{\"target_label\":\"wet_area.relative_position\",\"answer\":\"inside\",\"note\":\"\"}],\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5227,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 673,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5900
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_ecs_north_bundle",
+              "targets": [
+                {
+                  "target_label": "trough_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "cold_advection.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "regional",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_east_offshore_bundle",
+              "targets": [
+                {
+                  "target_label": "trough_axis.relative_position",
+                  "answer": "east",
+                  "note": ""
+                },
+                {
+                  "target_label": "cold_advection.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "regional",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_w_bundle",
+              "targets": [
+                {
+                  "target_label": "ridge_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "warm_advection.strength",
+                  "answer": "weak",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "local",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "west",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_north_bundle",
+              "targets": [
+                {
+                  "target_label": "trough_axis.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "cold_advection.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "local",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "west",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_south_bundle",
+              "targets": [
+                {
+                  "target_label": "ridge_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "warm_advection.strength",
+                  "answer": "weak",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_liao_bohai_bundle",
+              "targets": [
+                {
+                  "target_label": "warm_advection.strength",
+                  "answer": "weak",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "local",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "west",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_manchuria_s_bundle",
+              "targets": [
+                {
+                  "target_label": "trough_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "ridge_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "cold_advection.strength",
+                  "answer": "weak",
+                  "note": ""
+                },
+                {
+                  "target_label": "thermal_gradient_zone.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "local",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_ws_mid_bundle",
+              "targets": [
+                {
+                  "target_label": "ridge_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "cold_advection.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.coverage",
+                  "answer": "local",
+                  "note": ""
+                },
+                {
+                  "target_label": "wet_area.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

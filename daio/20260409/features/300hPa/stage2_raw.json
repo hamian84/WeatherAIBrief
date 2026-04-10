@@ -1,0 +1,1382 @@
+{
+  "manifest_id": "synoptic_300hPa_stage2",
+  "domain": "300hPa",
+  "stage": "stage2",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": "synoptic_300hPa_stage1",
+  "prompt_table_mode": "stage2_bundle",
+  "images": [
+    {
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "valid_time": "2026040900",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 7428,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_ecs_north_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "gate_signals": [
+            "subtropical_jet_axis",
+            "jet_core",
+            "upper_ridge"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_east_offshore_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_w_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_north_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "influencing_jet_type.jet_type",
+              "signal_key": "influencing_jet_type",
+              "attribute_key": "jet_type",
+              "question_text": "이 영역에 영향을 주는 제트 종류는 무엇인가?",
+              "allowed_answers": [
+                "polar_jet",
+                "subtropical_jet",
+                "mixed",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis|subtropical_jet_axis|polar_jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_south_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "influencing_jet_type.jet_type",
+              "signal_key": "influencing_jet_type",
+              "attribute_key": "jet_type",
+              "question_text": "이 영역에 영향을 주는 제트 종류는 무엇인가?",
+              "allowed_answers": [
+                "polar_jet",
+                "subtropical_jet",
+                "mixed",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis|subtropical_jet_axis|polar_jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_manchuria_s_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 3479,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 409,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3888
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up30_6h_2026040900.gif",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_300hPa_stage2\ndomain=300hPa\nstage=stage2\nimage_ref=up30_6h_2026040900\nvalid_time=2026040900\nBundles:\n1. bundle_id=stage2_ecs_north_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"jet_core\": \"yes\", \"subtropical_jet_axis\": \"no\", \"upper_ridge\": \"no\"}\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=1 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n2. bundle_id=stage2_japan_east_offshore_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"jet_axis\": \"yes\", \"jet_core\": \"no\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n3. bundle_id=stage2_japan_w_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_core\": \"yes\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n4. bundle_id=stage2_kp_north_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_axis|subtropical_jet_axis|polar_jet_axis\": \"yes\", \"jet_core\": \"yes\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n   - target_label=influencing_jet_type.jet_type | signal_key=influencing_jet_type | attribute_key=jet_type | target_order=6 | tier=extended | gate_on_stage1=jet_axis|subtropical_jet_axis|polar_jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=polar_jet|subtropical_jet|mixed|unknown | question_text=이 영역에 영향을 주는 제트 종류는 무엇인가?\n5. bundle_id=stage2_kp_south_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_axis|subtropical_jet_axis|polar_jet_axis\": \"yes\", \"jet_core\": \"yes\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n   - target_label=influencing_jet_type.jet_type | signal_key=influencing_jet_type | attribute_key=jet_type | target_order=6 | tier=extended | gate_on_stage1=jet_axis|subtropical_jet_axis|polar_jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=polar_jet|subtropical_jet|mixed|unknown | question_text=이 영역에 영향을 주는 제트 종류는 무엇인가?\n6. bundle_id=stage2_manchuria_s_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_core\": \"yes\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?"
+        },
+        "response": {
+          "id": "resp_0c79695ce8471ba20069d88f31ba04819fbaf7b31b2861edde",
+          "object": "response",
+          "created_at": 1775800113,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800120,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0c79695ce8471ba20069d88f328394819f982ad6da4733aade",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_ecs_north_bundle\",\"targets\":[{\"target_label\":\"jet_core.strength\",\"answer\":\"strong\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_east_offshore_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"W-E\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_w_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"curved\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_north_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"influencing_jet_type.jet_type\",\"answer\":\"mixed\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_south_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"east\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"weak\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"},{\"target_label\":\"influencing_jet_type.jet_type\",\"answer\":\"subtropical_jet\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_manchuria_s_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"strong\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"SW-NE\",\"note\":\"\"}],\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3479,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 409,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 3888
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_ecs_north_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "strong",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_east_offshore_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_w_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "curved",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_north_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "influencing_jet_type.jet_type",
+                  "answer": "mixed",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_south_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "east",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "weak",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                },
+                {
+                  "target_label": "influencing_jet_type.jet_type",
+                  "answer": "subtropical_jet",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_manchuria_s_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "strong",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "SW-NE",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "valid_time": "2026040912",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 8033,
+      "prompt_table_mode": "stage2_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "bundle_id": "stage2_ecs_north_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "gate_signals": [
+            "subtropical_jet_axis",
+            "jet_core",
+            "upper_ridge"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "subtropical_jet_axis.strength",
+              "signal_key": "subtropical_jet_axis",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 아열대제트 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "subtropical_jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_east_offshore_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_japan_w_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_north_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "influencing_jet_type.jet_type",
+              "signal_key": "influencing_jet_type",
+              "attribute_key": "jet_type",
+              "question_text": "이 영역에 영향을 주는 제트 종류는 무엇인가?",
+              "allowed_answers": [
+                "polar_jet",
+                "subtropical_jet",
+                "mixed",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis|subtropical_jet_axis|polar_jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_kp_south_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 6,
+              "target_label": "influencing_jet_type.jet_type",
+              "signal_key": "influencing_jet_type",
+              "attribute_key": "jet_type",
+              "question_text": "이 영역에 영향을 주는 제트 종류는 무엇인가?",
+              "allowed_answers": [
+                "polar_jet",
+                "subtropical_jet",
+                "mixed",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis|subtropical_jet_axis|polar_jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        },
+        {
+          "bundle_id": "stage2_manchuria_s_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "gate_signals": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow"
+          ],
+          "question_text": "이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라.",
+          "targets": [
+            {
+              "target_order": 1,
+              "target_label": "jet_axis.relative_position",
+              "signal_key": "jet_axis",
+              "attribute_key": "relative_position",
+              "question_text": "이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?",
+              "allowed_answers": [
+                "west",
+                "inside",
+                "east",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 2,
+              "target_label": "jet_core.strength",
+              "signal_key": "jet_core",
+              "attribute_key": "strength",
+              "question_text": "이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?",
+              "allowed_answers": [
+                "weak",
+                "moderate",
+                "strong",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_core",
+              "gate_rule": "full_if_yes_core_if_unknown_skip_if_no",
+              "tier": "core",
+              "gate_answer": "yes"
+            },
+            {
+              "target_order": 3,
+              "target_label": "jet_axis.orientation",
+              "signal_key": "jet_axis",
+              "attribute_key": "orientation",
+              "question_text": "이 영역과 가장 관련된 제트축 방향은 무엇인가?",
+              "allowed_answers": [
+                "W-E",
+                "NW-SE",
+                "SW-NE",
+                "curved",
+                "unknown"
+              ],
+              "gate_on_stage1": "jet_axis",
+              "gate_rule": "full_if_yes_extended_if_unknown_skip_if_no",
+              "tier": "extended",
+              "gate_answer": "yes"
+            }
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 3655,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 444,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4099
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up30_6h_2026040912.gif",
+          "prompt_text": "You are extracting stage2 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every bundle_id exactly once.\nNever omit a bundle_id and never repeat a bundle_id.\nInside each bundle, return every target_label exactly once.\nNever omit a target_label and never repeat a target_label.\nEach answer must be exactly one of the allowed_answers values for that target.\nmanifest_id=synoptic_300hPa_stage2\ndomain=300hPa\nstage=stage2\nimage_ref=up30_6h_2026040912\nvalid_time=2026040912\nBundles:\n1. bundle_id=stage2_ecs_north_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"jet_core\": \"yes\", \"subtropical_jet_axis\": \"yes\", \"upper_ridge\": \"no\"}\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=1 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=subtropical_jet_axis.strength | signal_key=subtropical_jet_axis | attribute_key=strength | target_order=3 | tier=core | gate_on_stage1=subtropical_jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 아열대제트 강도는 어느 수준인가?\n2. bundle_id=stage2_japan_east_offshore_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"jet_axis\": \"yes\", \"jet_core\": \"yes\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n3. bundle_id=stage2_japan_w_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_core\": \"yes\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n4. bundle_id=stage2_kp_north_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_axis|subtropical_jet_axis|polar_jet_axis\": \"yes\", \"jet_core\": \"yes\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n   - target_label=influencing_jet_type.jet_type | signal_key=influencing_jet_type | attribute_key=jet_type | target_order=6 | tier=extended | gate_on_stage1=jet_axis|subtropical_jet_axis|polar_jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=polar_jet|subtropical_jet|mixed|unknown | question_text=이 영역에 영향을 주는 제트 종류는 무엇인가?\n5. bundle_id=stage2_kp_south_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_axis|subtropical_jet_axis|polar_jet_axis\": \"yes\", \"jet_core\": \"yes\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?\n   - target_label=influencing_jet_type.jet_type | signal_key=influencing_jet_type | attribute_key=jet_type | target_order=6 | tier=extended | gate_on_stage1=jet_axis|subtropical_jet_axis|polar_jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=polar_jet|subtropical_jet|mixed|unknown | question_text=이 영역에 영향을 주는 제트 종류는 무엇인가?\n6. bundle_id=stage2_manchuria_s_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | question_text=이 영역에서 stage1 결과를 참고하여 필요한 2차 속성을 판단하라. | gate_summary={\"confluent_flow|diffluent_flow\": \"no\", \"jet_axis\": \"yes\", \"jet_core\": \"yes\", \"upper_trough\": \"no\"}\n   - target_label=jet_axis.relative_position | signal_key=jet_axis | attribute_key=relative_position | target_order=1 | tier=core | gate_on_stage1=jet_axis | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=west|inside|east|unknown | question_text=이 영역과 가장 관련된 제트축의 상대 위치는 무엇인가?\n   - target_label=jet_core.strength | signal_key=jet_core | attribute_key=strength | target_order=2 | tier=core | gate_on_stage1=jet_core | gate_rule=full_if_yes_core_if_unknown_skip_if_no | allowed_answers=weak|moderate|strong|unknown | question_text=이 영역과 가장 관련된 제트코어 강도는 어느 수준인가?\n   - target_label=jet_axis.orientation | signal_key=jet_axis | attribute_key=orientation | target_order=3 | tier=extended | gate_on_stage1=jet_axis | gate_rule=full_if_yes_extended_if_unknown_skip_if_no | allowed_answers=W-E|NW-SE|SW-NE|curved|unknown | question_text=이 영역과 가장 관련된 제트축 방향은 무엇인가?"
+        },
+        "response": {
+          "id": "resp_01543a5c89206a710069d88f389d588192af91dbc06a45420e",
+          "object": "response",
+          "created_at": 1775800120,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800126,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_01543a5c89206a710069d88f39929081928cd5b43fab471562",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"bundle_answers\":[{\"bundle_id\":\"stage2_ecs_north_bundle\",\"targets\":[{\"target_label\":\"jet_core.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"subtropical_jet_axis.strength\",\"answer\":\"moderate\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_east_offshore_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"strong\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_japan_w_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"NW-SE\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_north_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"W-E\",\"note\":\"\"},{\"target_label\":\"influencing_jet_type.jet_type\",\"answer\":\"mixed\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_kp_south_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"inside\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"W-E\",\"note\":\"\"},{\"target_label\":\"influencing_jet_type.jet_type\",\"answer\":\"mixed\",\"note\":\"\"}],\"note\":\"\"},{\"bundle_id\":\"stage2_manchuria_s_bundle\",\"targets\":[{\"target_label\":\"jet_axis.relative_position\",\"answer\":\"west\",\"note\":\"\"},{\"target_label\":\"jet_core.strength\",\"answer\":\"moderate\",\"note\":\"\"},{\"target_label\":\"jet_axis.orientation\",\"answer\":\"W-E\",\"note\":\"\"}],\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "bundle_answers"
+                ],
+                "properties": {
+                  "bundle_answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bundle_id",
+                        "targets",
+                        "note"
+                      ],
+                      "properties": {
+                        "bundle_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "targets": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "required": [
+                              "target_label",
+                              "answer",
+                              "note"
+                            ],
+                            "properties": {
+                              "target_label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "answer": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "note": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 3655,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 444,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 4099
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "bundle_answers": [
+            {
+              "bundle_id": "stage2_ecs_north_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "subtropical_jet_axis.strength",
+                  "answer": "moderate",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_east_offshore_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "strong",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_japan_w_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "NW-SE",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_north_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                },
+                {
+                  "target_label": "influencing_jet_type.jet_type",
+                  "answer": "mixed",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_kp_south_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "inside",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                },
+                {
+                  "target_label": "influencing_jet_type.jet_type",
+                  "answer": "mixed",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            },
+            {
+              "bundle_id": "stage2_manchuria_s_bundle",
+              "targets": [
+                {
+                  "target_label": "jet_axis.relative_position",
+                  "answer": "west",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_core.strength",
+                  "answer": "moderate",
+                  "note": ""
+                },
+                {
+                  "target_label": "jet_axis.orientation",
+                  "answer": "W-E",
+                  "note": ""
+                }
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5850 @@
+{
+  "manifest_id": "synoptic_surface_stage1",
+  "domain": "surface",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "records": [
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__low_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__high_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__front",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 43N 125E, surface trough along 44N, front and wet area in southern Manchuria",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__low_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__high_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__front",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Low center near 39N 122E, surface trough and front near Liaodong Peninsula, wet area present",
+      "selected_answers": [
+        "low_center",
+        "surface_trough",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__low_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__high_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__front",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ws_mid_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front extends through mid Yellow Sea, wet area and strong wind zone indicated by shaded region and wind barbs",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__low_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__high_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__front",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front and wet area along northern Korean Peninsula, strong wind zone also detected",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__low_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__high_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__front",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_kp_south_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Front, wet area and strong wind zone also appear over southern Korean Peninsula",
+      "selected_answers": [
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__low_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__high_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__front",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_ecs_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "Surface trough and wet area seen over northern East China Sea region",
+      "selected_answers": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "surface_trough",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__low_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__high_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__front",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_w_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High pressure center west of Japan and wet area present over western Japan region",
+      "selected_answers": [
+        "high_center",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__low_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__high_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__front",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 00:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040900.gif",
+      "image_ref": "surf_anl_6h_2026040900",
+      "note": "High center over east offshore region of Japan with wet area and strong wind zone observed",
+      "selected_answers": [
+        "high_center",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__low_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__high_center",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__front",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_manchuria_s_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_manchuria_s_signal_bundle",
+      "region_id": "manchuria_s",
+      "region_label": "만주 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure centered in southern Manchuria with associated front, wet area and strong wind zone.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__low_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__high_center",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__front",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_liao_bohai_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_liao_bohai_signal_bundle",
+      "region_id": "liao_bohai",
+      "region_label": "요동반도/발해만",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure in Liao Bohai area with front and wet area present.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__low_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__high_center",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__front",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ws_mid_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ws_mid_signal_bundle",
+      "region_id": "ws_mid",
+      "region_label": "서해 중부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "No significant signals detected in West Sea mid region.",
+      "selected_answers": [
+        "none"
+      ],
+      "selected_signal_keys": [],
+      "none_selected": true
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__low_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__high_center",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__front",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_north_signal_bundle",
+      "region_id": "kp_north",
+      "region_label": "한반도 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with front, wet area and strong wind zone in northern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__low_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__high_center",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__front",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_kp_south_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_kp_south_signal_bundle",
+      "region_id": "kp_south",
+      "region_label": "한반도 남부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure and related front, wet area, strong winds in southern Korean Peninsula.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__low_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__high_center",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__front",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_ecs_north_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_ecs_north_signal_bundle",
+      "region_id": "ecs_north",
+      "region_label": "동중국해 북부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Complex pattern with low and high centers, fronts, wet area, tight gradients and strong winds in northern East China Sea.",
+      "selected_answers": [
+        "low_center",
+        "high_center",
+        "front",
+        "wet_area",
+        "tight_pressure_gradient",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "high_center",
+        "low_center",
+        "strong_wind_zone",
+        "tight_pressure_gradient",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__low_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__high_center",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__front",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_w_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_w_signal_bundle",
+      "region_id": "japan_w",
+      "region_label": "일본 서부",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "Low pressure with frontal zone, wet area and strong winds in western Japan.",
+      "selected_answers": [
+        "low_center",
+        "front",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "front",
+        "low_center",
+        "strong_wind_zone",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__low_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "low_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__high_center",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "high_center",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_trough",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_trough",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__surface_ridge",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "surface_ridge",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__front",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "front",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__tight_pressure_gradient",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "tight_pressure_gradient",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "no",
+      "model_answer_normalized": "no",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__wet_area",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "wet_area",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    },
+    {
+      "manifest_id": "synoptic_surface_stage1",
+      "domain": "surface",
+      "stage": "stage1",
+      "valid_time": "2026-04-09 12:00",
+      "question_id": "stage1_japan_east_offshore_signal_bundle__strong_wind_zone",
+      "bundle_question_id": "stage1_japan_east_offshore_signal_bundle",
+      "region_id": "japan_east_offshore",
+      "region_label": "일본 동부 해상",
+      "signal_key": "strong_wind_zone",
+      "attribute_key": "presence",
+      "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+      "allowed_answers": [
+        "yes",
+        "no"
+      ],
+      "bundle_allowed_answers": [
+        "low_center",
+        "high_center",
+        "surface_trough",
+        "surface_ridge",
+        "front",
+        "tight_pressure_gradient",
+        "wet_area",
+        "strong_wind_zone",
+        "none"
+      ],
+      "model_answer_raw": "yes",
+      "model_answer_normalized": "yes",
+      "is_valid_answer": true,
+      "source_image": "dain/20260409/charts/nuri/surf_anl_6h_2026040912.gif",
+      "image_ref": "surf_anl_6h_2026040912",
+      "note": "High pressure and surface ridge offshore of eastern Japan with wet area and strong winds.",
+      "selected_answers": [
+        "high_center",
+        "surface_ridge",
+        "wet_area",
+        "strong_wind_zone"
+      ],
+      "selected_signal_keys": [
+        "high_center",
+        "strong_wind_zone",
+        "surface_ridge",
+        "wet_area"
+      ],
+      "none_selected": false
+    }
+  ]
+}

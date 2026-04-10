@@ -1,0 +1,26 @@
+{
+  "run_date": "20260409",
+  "section_id": "precipitation_structure",
+  "title": "강수 구조 해석",
+  "body": "본 사례에서는 한랭이류와 저층 기압골, 대류운 군집과 저기압성 소용돌이 구름, 그리고 저층제트와 열적 경도대의 상호작용이 복합적으로 작용하여 강수 패턴이 형성되었다. 초반에는 한랭이류와 저층 기압골이 광역적인 습윤역 형성에 영향을 미치며 대규모 습윤 환경을 조성하였고, 동시에 위성 자료상 대류운 군집과 소용돌이 구름이 관측되어 초기 대류성 강수가 발생하였다. 이후 한랭이류가 강해지고 저층 기압골 위치 변화에 따라 강풍대가 발달하며 습윤역이 더욱 확장되었으며, 대류운 군집 또한 광역적으로 커져 강력한 대류성 강수 구간이 형성되었다. 또한, 저층제트의 동서 방향 유지와 열적 경도대의 지속은 저층 수렴과 능선축 활성화를 촉진하여 연속적인 집중 강수대를 만들어냈다. 후반에는 한랭이류와 저층 기압골, 강풍대가 국지적 위치에서 유지되면서 습윤역 규모는 다소 축소되었으나 지속되었고, 대류운 군집은 강도가 증가하며 집중 강수 반응으로 이어졌다. 따라서 이러한 다양한 대기 요인의 상호작용이 복합적으로 작용하여 강수 구조의 광역성과 집중성을 동시에 나타낸 것으로 해석된다.",
+  "observation_basis": [
+    "850hPa: Central Korea 기압골축 2회, Central Korea 습윤역 2회, Central Korea 한랭이류 2회, East Sea 온난이류 2회",
+    "925hPa: Central Korea 습윤역 2회, East Sea 습윤역 2회, 동중국해 북부 온난이류 2회, 동중국해 북부 저층 능선 2회",
+    "satellite_wv: East Sea 습윤 기류대 2회, 일본 서부 대류운 군집 2회, 한반도 북부 습윤 기류대 2회, Central Korea 띠구름 1회",
+    "radar_precipitation: 일본 동부 해상 convective_core 2회, 일본 동부 해상 precip_echo 2회, 일본 동부 해상 rain_band 2회, Central Korea convective_core 1회"
+  ],
+  "applied_patterns": [
+    "spring_heat_low_vs_frontal_low, 섹션 1, p.4-11",
+    "moisture_flux_convergence_focus, 섹션 3, p.18-23",
+    "skewt_llj_heavy_rain, 섹션 5, p.34-43",
+    "mcs_convective_stratiform_split, 섹션 14, p.102-113",
+    "squall_line_attention, 섹션 14, p.102-113",
+    "llj_broad_rain, 섹션 11, p.84-89",
+    "jet_coupling_heavy_rain, 섹션 13, p.98-101"
+  ],
+  "source_event_ids": [
+    "precipitation_structure_01",
+    "precipitation_structure_02",
+    "precipitation_structure_03"
+  ]
+}

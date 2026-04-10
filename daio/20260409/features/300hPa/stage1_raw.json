@@ -1,0 +1,618 @@
+{
+  "manifest_id": "synoptic_300hPa_stage1",
+  "domain": "300hPa",
+  "stage": "stage1",
+  "run_date": "20260409",
+  "model": "gpt-4.1-mini",
+  "status": "completed",
+  "gating_source": null,
+  "prompt_table_mode": "stage1_bundle",
+  "images": [
+    {
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040900.gif",
+      "image_ref": "up30_6h_2026040900",
+      "valid_time": "2026040900",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 2367,
+      "prompt_table_mode": "stage1_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_manchuria_s_signal_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_signal_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_signal_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_signal_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "subtropical_jet_axis",
+            "jet_core",
+            "upper_ridge",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_signal_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_signal_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_tibet_n_signal_bundle",
+          "region_id": "tibet_n",
+          "region_label": "티베트고원 북쪽",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "polar_jet_axis",
+            "none"
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 1966,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 269,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2235
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up30_6h_2026040900.gif",
+          "prompt_text": "You are extracting stage1 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every question_id exactly once.\nNever omit a question_id and never repeat a question_id.\nselected_answers must contain unique values only.\nEvery selected_answers value must be exactly one of the allowed_answers values.\nIf none is selected, selected_answers must be exactly ['none'].\nNever mix none with any other signal.\nBad example: ['none', 'ridge_axis']\nGood example 1: ['none']\nGood example 2: ['ridge_axis', 'warm_advection']\nmanifest_id=synoptic_300hPa_stage1\ndomain=300hPa\nstage=stage1\nimage_ref=up30_6h_2026040900\nvalid_time=2026040900\nBundles:\n1. question_id=stage1_manchuria_s_signal_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | allowed_answers=jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n2. question_id=stage1_kp_north_signal_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | allowed_answers=jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n3. question_id=stage1_kp_south_signal_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | allowed_answers=jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n4. question_id=stage1_ecs_north_signal_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | allowed_answers=subtropical_jet_axis|jet_core|upper_ridge|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n5. question_id=stage1_japan_w_signal_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | allowed_answers=jet_axis|jet_core|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n6. question_id=stage1_japan_east_offshore_signal_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | allowed_answers=jet_axis|jet_core|upper_trough|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n7. question_id=stage1_tibet_n_signal_bundle | region_id=tibet_n | region_label=티베트고원 북쪽 | lat_range=35~45N | lon_range=90~105E | allowed_answers=polar_jet_axis|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라."
+        },
+        "response": {
+          "id": "resp_0afeaf513f279f260069d88eccd91c819c97a4ec4be561bd7a",
+          "object": "response",
+          "created_at": 1775800012,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800018,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0afeaf513f279f260069d88eceb0f4819cb38bba1f3f6fe837",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_manchuria_s_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"There is a jet axis and jet core visible in Manchuria South.\"},{\"question_id\":\"stage1_kp_north_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"Both jet axis and jet core signals are present in Northern Korean Peninsula.\"},{\"question_id\":\"stage1_kp_south_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"Jet axis and core found in Southern Korean Peninsula.\"},{\"question_id\":\"stage1_ecs_north_signal_bundle\",\"selected_answers\":[\"jet_core\"] ,\"note\":\"Jet core observed in Northern East China Sea with no subtropical jet axis or ridge.\"},{\"question_id\":\"stage1_japan_w_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"Western Japan area shows jet axis and jet core but no diffluent flow.\"},{\"question_id\":\"stage1_japan_east_offshore_signal_bundle\",\"selected_answers\":[\"jet_axis\"] ,\"note\":\"Jet axis detected east offshore of Japan but no jet core or upper trough.\"},{\"question_id\":\"stage1_tibet_n_signal_bundle\",\"selected_answers\":[\"none\"] ,\"note\":\"No polar jet axis signal identified in Northern Tibet region.\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "selected_answers",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "selected_answers": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1966,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 269,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2235
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_manchuria_s_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": "There is a jet axis and jet core visible in Manchuria South."
+            },
+            {
+              "question_id": "stage1_kp_north_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": "Both jet axis and jet core signals are present in Northern Korean Peninsula."
+            },
+            {
+              "question_id": "stage1_kp_south_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": "Jet axis and core found in Southern Korean Peninsula."
+            },
+            {
+              "question_id": "stage1_ecs_north_signal_bundle",
+              "selected_answers": [
+                "jet_core"
+              ],
+              "note": "Jet core observed in Northern East China Sea with no subtropical jet axis or ridge."
+            },
+            {
+              "question_id": "stage1_japan_w_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": "Western Japan area shows jet axis and jet core but no diffluent flow."
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_signal_bundle",
+              "selected_answers": [
+                "jet_axis"
+              ],
+              "note": "Jet axis detected east offshore of Japan but no jet core or upper trough."
+            },
+            {
+              "question_id": "stage1_tibet_n_signal_bundle",
+              "selected_answers": [
+                "none"
+              ],
+              "note": "No polar jet axis signal identified in Northern Tibet region."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source_image": "dain/20260409/charts/nuri/up30_6h_2026040912.gif",
+      "image_ref": "up30_6h_2026040912",
+      "valid_time": "2026040912",
+      "batch_index": 1,
+      "batch_count": 1,
+      "prompt_text_length": 2367,
+      "prompt_table_mode": "stage1_bundle",
+      "validation_attempts": 1,
+      "prompt_rows": [
+        {
+          "question_id": "stage1_manchuria_s_signal_bundle",
+          "region_id": "manchuria_s",
+          "region_label": "만주 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_north_signal_bundle",
+          "region_id": "kp_north",
+          "region_label": "한반도 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_kp_south_signal_bundle",
+          "region_id": "kp_south",
+          "region_label": "한반도 남부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "confluent_flow",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_ecs_north_signal_bundle",
+          "region_id": "ecs_north",
+          "region_label": "동중국해 북부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "subtropical_jet_axis",
+            "jet_core",
+            "upper_ridge",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_w_signal_bundle",
+          "region_id": "japan_w",
+          "region_label": "일본 서부",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "diffluent_flow",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_japan_east_offshore_signal_bundle",
+          "region_id": "japan_east_offshore",
+          "region_label": "일본 동부 해상",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "jet_axis",
+            "jet_core",
+            "upper_trough",
+            "none"
+          ]
+        },
+        {
+          "question_id": "stage1_tibet_n_signal_bundle",
+          "region_id": "tibet_n",
+          "region_label": "티베트고원 북쪽",
+          "signal_key": "signal_bundle",
+          "attribute_key": "presence_bundle",
+          "question_text": "이 영역 내부에 존재하는 신호를 모두 선택하라.",
+          "allowed_answers": [
+            "polar_jet_axis",
+            "none"
+          ]
+        }
+      ],
+      "llm_usage": {
+        "input_tokens": 1966,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 188,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2154
+      },
+      "llm_result": {
+        "request": {
+          "model": "gpt-4.1-mini",
+          "max_output_tokens": 4000,
+          "source_image": "D:\\99.project\\03.WeatherAIBrief\\dain\\20260409\\charts\\nuri\\up30_6h_2026040912.gif",
+          "prompt_text": "You are extracting stage1 bundle features from a single image.\nReturn strict JSON only and follow the schema exactly.\nReturn every question_id exactly once.\nNever omit a question_id and never repeat a question_id.\nselected_answers must contain unique values only.\nEvery selected_answers value must be exactly one of the allowed_answers values.\nIf none is selected, selected_answers must be exactly ['none'].\nNever mix none with any other signal.\nBad example: ['none', 'ridge_axis']\nGood example 1: ['none']\nGood example 2: ['ridge_axis', 'warm_advection']\nmanifest_id=synoptic_300hPa_stage1\ndomain=300hPa\nstage=stage1\nimage_ref=up30_6h_2026040912\nvalid_time=2026040912\nBundles:\n1. question_id=stage1_manchuria_s_signal_bundle | region_id=manchuria_s | region_label=만주 남부 | lat_range=41~47N | lon_range=120~130E | allowed_answers=jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n2. question_id=stage1_kp_north_signal_bundle | region_id=kp_north | region_label=한반도 북부 | lat_range=37~40N | lon_range=124~130E | allowed_answers=jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n3. question_id=stage1_kp_south_signal_bundle | region_id=kp_south | region_label=한반도 남부 | lat_range=33~37N | lon_range=124~130E | allowed_answers=jet_axis|jet_core|upper_trough|confluent_flow|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n4. question_id=stage1_ecs_north_signal_bundle | region_id=ecs_north | region_label=동중국해 북부 | lat_range=28~34N | lon_range=120~128E | allowed_answers=subtropical_jet_axis|jet_core|upper_ridge|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n5. question_id=stage1_japan_w_signal_bundle | region_id=japan_w | region_label=일본 서부 | lat_range=31~38N | lon_range=130~138E | allowed_answers=jet_axis|jet_core|diffluent_flow|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n6. question_id=stage1_japan_east_offshore_signal_bundle | region_id=japan_east_offshore | region_label=일본 동부 해상 | lat_range=30~40N | lon_range=140~150E | allowed_answers=jet_axis|jet_core|upper_trough|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라.\n7. question_id=stage1_tibet_n_signal_bundle | region_id=tibet_n | region_label=티베트고원 북쪽 | lat_range=35~45N | lon_range=90~105E | allowed_answers=polar_jet_axis|none | question_text=이 영역 내부에 존재하는 신호를 모두 선택하라."
+        },
+        "response": {
+          "id": "resp_0058e9375adc66560069d88ed36ed48190b9bbebf4d1b3ace6",
+          "object": "response",
+          "created_at": 1775800019,
+          "status": "completed",
+          "background": false,
+          "billing": {
+            "payer": "developer"
+          },
+          "completed_at": 1775800023,
+          "error": null,
+          "frequency_penalty": 0.0,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": 4000,
+          "max_tool_calls": null,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "output": [
+            {
+              "id": "msg_0058e9375adc66560069d88ed58f888190a5aad45de389a578",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "logprobs": [],
+                  "text": "{\"answers\":[{\"question_id\":\"stage1_manchuria_s_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"],\"note\":\"\"},{\"question_id\":\"stage1_kp_north_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"\"},{\"question_id\":\"stage1_kp_south_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"\"},{\"question_id\":\"stage1_ecs_north_signal_bundle\",\"selected_answers\":[\"subtropical_jet_axis\",\"jet_core\"] ,\"note\":\"\"},{\"question_id\":\"stage1_japan_w_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"\"},{\"question_id\":\"stage1_japan_east_offshore_signal_bundle\",\"selected_answers\":[\"jet_axis\",\"jet_core\"] ,\"note\":\"\"},{\"question_id\":\"stage1_tibet_n_signal_bundle\",\"selected_answers\":[\"none\"] ,\"note\":\"\"}]}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "presence_penalty": 0.0,
+          "previous_response_id": null,
+          "prompt_cache_key": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "safety_identifier": null,
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "feature_stage_response",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "answers"
+                ],
+                "properties": {
+                  "answers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "question_id",
+                        "selected_answers",
+                        "note"
+                      ],
+                      "properties": {
+                        "question_id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "selected_answers": {
+                          "type": "array",
+                          "minItems": 1,
+                          "items": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "note": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            },
+            "verbosity": "medium"
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_logprobs": 0,
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 1966,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 188,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 2154
+          },
+          "user": null,
+          "metadata": {}
+        },
+        "parsed_output": {
+          "answers": [
+            {
+              "question_id": "stage1_manchuria_s_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_north_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": ""
+            },
+            {
+              "question_id": "stage1_kp_south_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": ""
+            },
+            {
+              "question_id": "stage1_ecs_north_signal_bundle",
+              "selected_answers": [
+                "subtropical_jet_axis",
+                "jet_core"
+              ],
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_w_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": ""
+            },
+            {
+              "question_id": "stage1_japan_east_offshore_signal_bundle",
+              "selected_answers": [
+                "jet_axis",
+                "jet_core"
+              ],
+              "note": ""
+            },
+            {
+              "question_id": "stage1_tibet_n_signal_bundle",
+              "selected_answers": [
+                "none"
+              ],
+              "note": ""
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
